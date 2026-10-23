@@ -507,3 +507,290 @@ In either case, revive it only as a module of IDEA-46.
 - **Kill** if the interview test fails, if diesel falls below the reference so that lines turn negative for months, or if a free TMS or the Ministry adds automatic invoice lines.
 - **Strengthen** if Fenadismer or gestorías agree to distribute it, or if inspections sanction refusing shippers (which would make carriers bolder).
 
+---
+
+#### IDEA-49: Packaging EPR, PPWR and plastic-tax compliance kit — KILL (medium)
+
+**Validated definition.**
+- **What was tested:** a packaging bill-of-materials kit for SMEs that pack goods or first place packaged goods in Spain. From the bill of materials it would produce:
+  - tonnage by material (household against commercial and industrial);
+  - the 31 March MITECO declaration and the scheme declarations;
+  - invoice fee lines, PPWR declarations of conformity and a modelo 592 worksheet;
+  - a supplier registration-number tracker.
+- **Price tested:** €19–49 a month, or €39 a month for food firms plus a food-waste module.
+- **Verdict:** the duty is real and is biting through marketplaces. But:
+  - the collective schemes already bundle data platforms, declaration and producer-registry services into membership;
+  - a Spanish SaaS already sells the RD 1055/2022 declaration at €49–99 a year (gestoría tier €349–599 a year);
+  - the PPWR's heavy redesign duties are dated 2030.
+  - The remaining gap is a cheap, copyable calculator.
+
+**(a) Problem reality and rule status**
+- **The declaration duty.** Producers report each calendar year's packaging to MITECO "antes del 31 de marzo del año siguiente". The window for 2026 data runs from 2 Jan to 31 Mar 2027, with a simplified form below 15 t.
+- **The register.** It is published as an Excel file updated "en general cada mes", and a web service for automated queries is "under development".
+- **Platforms must check producers.** Online platforms must check producers' NIF, name and registration number against the public list before letting them sell.
+- **The PPWR widens who counts as a producer.** The PPWR (applicable since 12 Aug 2026) changes the "productor" definition (MITECO nota interpretativa dated 27/07/2026). [All: new: https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/registro-productores-producto/registro-productores-producto-seccion-envases.html, seen 23 Oct 2026.]
+- **Sanctions.** Failing to register in the Registro de Productores, or to report the data, is **grave** under Ley 7/2022 art. 108.3.ac, with fines of €2,001–100,000 (art. 109.1) [new: https://www.boe.es/buscar/act.php?id=BOE-A-2022-5809, seen 23 Oct 2026]. No enforcement cases were found (the [S\*] was not run).
+- **PPWR.** It has applied since 12 Aug 2026, but its headline targets (recyclability by 2030) come later. The Dec 2025 Omnibus proposal to suspend the authorised-representative duty "is currently being examined" [new: https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en, seen 23 Oct 2026]. The EC page gives no dates for declarations of conformity or labels, so the DoC timing comes only from the notes [notes: RET-15].
+- **EUDR.** 30 Dec 2026 for large and medium operators and 30 Jun 2027 for micro and small ones. Delegated Regulation (EU) 2026/2102 adds products from 30 Dec 2027 [new: https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en, seen 23 Oct 2026].
+- **C-12 (Ley 1/2025 dates): settled.**
+  - The final provision literally says "entrará en vigor el 2 de enero de 2025", although the law was published on 2 Apr 2025.
+  - The art. 6 obligations apply "transcurrido el plazo de un año" from BOE publication, so from April 2026.
+  - Having no prevention plan is a grave infraction (art. 20.2.b) of €2,001–60,000 (art. 21.b), defined by the regions. Micro firms are exempt (art. 6.6).
+  - [new: https://www.boe.es/eli/es/l/2025/04/01/1/con, seen 23 Oct 2026.]
+- **Plastic tax.** €0.45/kg, a 5 kg/month import exemption and modelo 592 [notes: RET-16]; the AEAT page was not re-fetched.
+- **No election lapse risk.** The PPWR is EU law, and RD 1055/2022 and Ley 7/2022 are in force.
+
+**(b) Competitors**
+
+| Provider | Offer | Price | Notes |
+|---|---|---|---|
+| **Ecoembes Comerciales** (Ecoembes' scheme for commercial packaging) [new: https://www.ecoembes.com/sites/default/files/inline-files/corporativo/ecoembes/presentacion-asamblea-general-2026.pdf, deck of 30 Jun 2026] | "Integramos todo el ciclo de cumplimiento": a **"Plataforma del Dato"**, **"Declaración de envases"** and **"Registro de productores"**. Also the "CircularCheck" tool, PPWR anticipation, ecomodulation cost tools and "The Circular Campus". ISO 27001. 1,541,750 t adhered; 80 alliances, including CEPYME and CEOE | 2027 fees per tonne: flexible plastics €164, rigid plastics €173, paper and cardboard €37, steel €132, aluminium €132, wood €20, other €173, plus €2.5/t integral management | **The declaration and registry service is bundled into membership.** This is the kill criterion, largely met |
+| **Ecoembes** (household packaging) [new: Grant Thornton alert, https://www.grantthornton.es/contentassets/4fb8a959b6d54b6d89d3e2bf34e43199/nuevos-procedimientos-de-verificacion-para-auditores-en-las-declaraciones-anuales-ordinarias-de-envases-a-ecoembes.pdf, Apr 2026] | The member "Área Privada" gives each firm its declaration type and report model. Members file DAE Domésticos and, since 2025, **DAE Comerciales**, verified by an **auditor's agreed-procedures report** (full or partial). The 2025 data were due on 31 May 2026 | Fees per material (2024: rigid plastic €776/t, paper €190/t; search 6 snippet) | The auditor report is an adjacent spend; its fees were not found |
+| Envalora, Cartón Circular, GENCI [new: https://cartoncircular.es/, seen 23 Oct 2026; Envalora's 2026–2027 tariff headlines in search 6; genci.es returned 401] | Commercial and industrial schemes with member declaration areas | Ecomodulated tariffs (2027) | Cartón Circular has a login "Acceso declaraciones" |
+| **Envasify** [new: https://envasify.com/planes-y-precios/; https://wordpress.org/plugins/envasify-lite/, seen 23 Oct 2026] | WooCommerce and Shopify packaging data, tonnage by material, MITECO eSIR templates, a SHA-256 audit PDF, and a multi-client gestoría panel with white label | Lite €0 (up to 3 t); Professional **€49/year** (launch price; €99 list from 1 Apr 2027); Enterprise **€349/year** (€599 list) for gestorías, covering 25 NIFs | The WordPress plugin has **fewer than 10 active installations**: weak organic demand. No PPWR or modelo 592 |
+| SEIDOR (SAP partner) [search 8 snippet] | Solution to prepare the SCRAP files | Not published | ERP add-on |
+| Ecovidrio [search 8 snippet] | "Working on an integral solution for all your packaging" with other schemes | — | The schemes are converging on one-stop tools |
+
+**(c) Buyers and market size**
+
+From my parse of MITECO's public register Excel of 30 Sep 2026 [new: Excel linked from the MITECO page above, downloaded 23 Oct 2026]:
+- **66,742 registration numbers for 61,279 unique NIFs.**
+- **New registrations rose sharply in 2026.** By the year in the registration number: 9 (2022), 22,980 (2023), 8,999 (2024), 11,405 (2025) and **23,349 (January–September 2026)**. That is consistent with the PPWR and platform checks driving registrations.
+- **About 44% are foreign entities.** 27,077 NIFs start with N (foreign entity) and 163 with W.
+- **About 34,000 are Spanish legal entities:** B (SL) 24,706, A (SA) 7,025, F (cooperative) 1,447, and others.
+- **Natural persons are almost absent:** 3 NIFs outside the letter prefixes. This suggests that sole-trader sellers are largely unregistered, or file through others.
+
+Two other sources:
+- **Conflicting counts.** Alimarket reports 43,996 registered firms at the start of 2026, with 13,278 registrations in 2024 and 6,631 in 2025 [new: https://www.alimarket.es/envase/noticia/420353/mas-del-50--de-las-empresas-obligadas-a-gestionar-sus-residuos-de-envase-aun-no-figurarian-en-el-registro-del-miteco]. Its yearly figures differ from my count by number year, but the start-2026 total is consistent with mine (43,393 numbers dated 2025 or earlier).
+- **Under-registration.** The packaging cluster estimates that over half of obliged firms are still unregistered (no census exists).
+
+**Revenue ceiling (my arithmetic).** At Envasify-level prices, 5% of about 34,000 Spanish registrants paying €99 a year is about €0.17M. At €39 a month, 1% paying would bring about €0.16M.
+
+**(d) Willingness to pay**
+- **Anchors:** Envasify at €49–99 a year for SMEs and €349–599 a year for gestorías. The scheme fees are paid anyway, and the platforms come with them.
+- **Adjacent spend:** auditors' agreed-procedures reports for Ecoembes declarations, and consultants (fees not found).
+- **Implication:** the longlist's €19–49 a month for online sellers is 2–10 times the market price.
+
+**(e) Distribution**
+- **Marketplaces' duty to check registration numbers** is the strongest demand driver [new: MITECO page].
+- **Gestorías:** Envasify already has a white-label gestoría tier.
+- **Schemes:** they build their own tools; Ecoembes Comerciales has 80 alliances, including CEPYME and CEOE.
+- **Other channels:** FIAB (for food firms) and packaging suppliers.
+
+**(f) Build feasibility**
+- **Easy.** The register is a public Excel file, eSIR templates exist, and AI extraction from spec sheets is commodity. MVP in 1–2 months.
+- **Legal:** low data sensitivity. PPWR conformity documents must track delegated acts.
+
+**(g) Defensibility**
+- Low. The schemes own the declaration flow and data, a cheap Spanish competitor exists, and calculators are trivially copied. A verified supplier and packaging library would take years and would compete with the schemes' "Plataforma del Dato".
+
+**(h) Kill criteria**
+- **Schemes give members free declaration tools: largely met.** Ecoembes Comerciales integrates the data platform, declaration and producer registry; Ecoembes members declare in the Área Privada.
+- **A typical SME prepares the declaration in under a day:** open [I].
+- **Small sellers report no checks from marketplaces or inspectors:** contradicted. Platforms must now verify registration numbers.
+
+**Scores (as specified)**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | A legal duty with a 31 Mar 2027 deadline and grave-infraction fines, but enforcement beyond marketplace checks is unevidenced |
+| S2 Buyers in Spain | 3 | About 34k Spanish registrants plus the unregistered |
+| S3 Willingness to pay | 2 | The market price is €49–99 a year, and the scheme platforms are included in fees |
+| S4 Reachability | 2 | Gestorías, schemes and marketplaces exist, but the schemes compete and the plugin channel shows fewer than 10 installs |
+| S5 Competitive gap | 2 | Several decent tools: the scheme platforms, Envasify and SEIDOR |
+| S6 Build speed | 4 | 1–2 months |
+| S7 Defensibility | 2 | Copyable; the schemes hold the data |
+| S8 Retention | 4 | An annual legal duty plus an accumulated bill of materials, but used once a year |
+| **Sellability** | **2.88** | |
+| P | 3 | Moderate: scheme fees plus a declaration chore; the fine risk is real but rarely evidenced |
+| **Overall** | **2.93** | 0.6 × 2.875 + 0.4 × 3 |
+
+**Open [I] checks**
+- Interview 10 online sellers or importers and 10 food SMEs: hours per declaration, auditor fees, who files today. Revive only if a typical food SME spends 2 days or more and pays €1,000 or more a year in consultant and auditor fees that the product could replace.
+
+**What would change the verdict**
+- **Revive as a white-label for gestorías or auditors** if the interviews show material hours and fees.
+- **Revive for food firms with 10+ staff** if it combined DAE Domésticos and DAE Comerciales, the auditor evidence pack, modelo 592 and the Ley 1/2025 plan in one place.
+
+The 27k foreign registrants point to a cross-border EPR service market (section 3), outside the user's target.
+
+---
+
+#### IDEA-50: RCA autopilot: food-contract generation and registration before delivery — GO (pilot; fruit, vegetables and citrus first, wine for the 2027 harvest) (medium)
+
+**Validated definition (after a scope change).**
+- **Buyer:** food buyers that purchase from farmers: fruit, vegetable and citrus packers and origin wholesalers first, wineries next, then olive mills, meat and dairy buyers and cooperatives buying from non-members.
+- **What it does:**
+  - templates with all minimum terms and a cost-of-production clause, signed by the grower through a mobile link;
+  - registration in the RCA through the buyer's own RCA API access, triggered by a purchase order or weighbridge ticket and confirmed before the load is accepted;
+  - automatic re-registration of amendments;
+  - alerts for the 30-day payment term;
+  - a per-grower evidence file and an inspection pack.
+- **Price:** €39/month (up to 300 contracts a year) or €99/month (up to 3,000), or a €149 season pass.
+- **The change:** the citrus and fruit-and-vegetable season runs October to June, and that is where AICA's registration controls concentrate. Wineries are pre-sold for the August–October 2027 harvest.
+
+**(a) Problem reality and rule status**
+- **The rules:** Ley 12/2013 (as amended by Ley 16/2021) and RD 1028/2022 are in force. The RCA has been live since Dec 2022.
+- **Who registers, and when** [new: https://www.aica.gob.es/servicios-en-linea/Registro%20de%20Contratos%20Alimentarios/preguntas-frecuentes-rca, seen 23 Oct 2026]:
+  - The buyer registers ("el operador que compra"), or the integrator in integration contracts, "antes de la entrega".
+  - Amendments are registered before delivery of the affected product. Multi-year contracts without changes are not re-registered.
+  - Cooperative–member contracts are exempt; purchases from non-members are not.
+- **AICA's 2025 report: what the tables show** [new: https://www.aica.gob.es/content/dam/aica/docs/publicaciones/memorias/Memoria_Anual_de_Actividades_2025.pdf, published 24 Sep 2026; text extracted 23 Oct 2026]:
+  - **991 infractions and 109 companies sanctioned.**
+  - **506 failures to register in the RCA, all by the "industria" link.** The cumulative table since 2014 also shows 506, so **every RCA sanction to date came in 2025**: enforcement has only just started to bite.
+  - **619 infractions in wine (616 on wine grapes)** and 162 in fruit and vegetables (111 in citrus).
+  - **Concentration.** The dedicated RCA-registration programme ran 31 controls, all in fruit and vegetables. The general contract programme checked art. 11 bis.2 in 120 actions, only 2 of them on wine grapes and 11 on wine. So the 616 grape infractions probably come from very few wineries, each with hundreds of unregistered contracts (inference: 109 companies sanctioned in total).
+  - **Fines:** minor €250–3,000 per infraction (non-registration is minor), serious €3,001–100,000, published if serious or very serious [notes: IND-18]. Since 2014, €27,923,451 in fines.
+- **The inspection decree.** The draft royal decree on AICA's inspection regime has been at "trámite de audiencia e información pública" since 30 Sep 2026 [new: https://www.aica.gob.es/, seen 23 Oct 2026]. It is a regulation, not a bill, so it does not lapse. It is likely to slip into 2027, given the hearing stage, a probable Consejo de Estado opinion and the 29 Nov election (inference). The duty to register does not depend on it.
+- **Practical friction.** AICA's homepage warns that the Cl@ve login gateway "is unstable and may block access".
+
+**(b) Competitors**
+- **AICA's own channels.** A web form with a digital certificate (up to 5 documents and 5 MB per upload), and an **"API de servicios RCA"**, requested by form, with an integration manual for developers and open only to registered buyers [new: RCA FAQ]. The API was built for "operadores con un elevado volumen de contratos" [new: Memoria 2025].
+- **Winery ERPs: none found advertising RCA integration** (search 9):
+  - eVins, cloud winery ERP "desde 40 €/mes", with no RCA, Ley de la Cadena or weighbridge mention [new: https://www.softwaredoit.es/evins/evins.html];
+  - Solmicro ERP Bodegas (Zucchetti), with grape reception linked to the weighbridge [search 9 snippet];
+  - Uvatec (Tecon, on Microsoft Business Central) [search 9 snippet].
+- **E-signature:** Signaturit costs €35–57 per user per month for 5–20 envelopes [notes: G5-I05].
+- **Gestorías and consultants:** no prices found.
+
+**(c) Buyers and market size**
+- **Pool:** 27,300+ food and drink firms, 3,669 cooperatives and 950+ FEV wineries [notes: IND-18, IND-19]. The subset that buys directly from primary producers is not published (the RCA "no es un registro de acceso público"). My estimate is 10,000–20,000 buyers.
+- **Revenue ceiling (my arithmetic):** 3% of them (300–600) at €468–1,188 a year gives about €0.14–0.71M ARR.
+
+**(d) Willingness to pay**
+- **Adjacent spend:** winery ERPs from €40/month, e-signature at €35–57 per user per month, and gestoría filing.
+- **Exposure is large for the few who are caught.** A buyer with 300 unregistered grower contracts faces at least 300 × €250 = €75,000 if each contract counts as one infraction, as AICA's counts suggest (my arithmetic). That is a strong insurance argument, against a low probability of inspection.
+
+**(e) Distribution**
+- **Associations:** FEV, Cooperativas Agro-alimentarias and FIAB [notes].
+- **Farm unions:** COAG and ASAJA run Ley de la Cadena sessions before the harvest (search 18 titles; older items).
+- **ERP and weighbridge vendors:** Zucchetti/Solmicro, Doit/eVins and Tecon/Uvatec as integration partners.
+- **Agri gestorías.**
+
+**(f) Build feasibility and legal constraints**
+- **API access.** It is requested by the buyer once it is registered. A SaaS would operate the buyer's credentials, which needs a legal check [I].
+- **Representation.** The legal representative logs in with a representation certificate through Cl@ve and can authorise named natural persons [new: RCA FAQ].
+- **Data protection.** Growers' personal data falls under the GDPR.
+- **Contract templates** need a food-chain lawyer's review.
+- **Time to MVP:** 6–8 weeks, plus reliability at harvest peaks.
+
+**(g) Defensibility**
+- Medium. The RCA integration, weighbridge and ERP connectors, harvest-peak reliability and the contract archive create friction. ERP vendors are the main threat, since they could add the same connection.
+
+**(h) Kill criteria**
+- **Leading winery and agri ERPs integrate the RCA at no extra cost:** not met on desk evidence (search 9). Confirm with 5 vendors [I].
+- **Buyers spend under an hour a season on the RCA:** open [I].
+- **New risk: enforcement concentration.** The low probability of inspection (22 wine inspections, 109 firms sanctioned) may leave most buyers feeling no urgency.
+
+**Scores (pilot scope)**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | An enforced duty triggered by every purchase, with record 2025 sanctions; no new deadline |
+| S2 Buyers in Spain | 2 | An estimated 10k–20k buyers from primary producers |
+| S3 Willingness to pay | 3 | Some adjacent spend (ERPs from €40/month, e-signature, gestorías) |
+| S4 Reachability | 3 | Concentrated associations and ERP partners, unproven |
+| S5 Competitive gap | 4 | Only the manual web form, in-house API builds and gestorías; no SaaS or ERP integration found |
+| S6 Build speed | 3 | API, e-signature, templates and harvest reliability: 2–4 months |
+| S7 Defensibility | 3 | Integration, archive and partner channels |
+| S8 Retention | 4 | A recurring legal duty and a contract archive, though the wine segment is seasonal |
+| **Sellability** | **3.25** | |
+| P | 3 | Fines are serious when caught, but inspection probability is low |
+| **Overall** | **3.15** | 0.6 × 3.25 + 0.4 × 3 |
+
+**Open [I] checks**
+- Ask AICA how many of the 616 grape infractions were non-registration, and across how many companies.
+- Interview 10 buyers (5 citrus or fruit and vegetables, 5 wineries) on RCA hours per season, who uploads, and gestoría fees.
+- Confirm with 5 ERP and weighbridge vendors whether they connect to the RCA.
+- Get a legal opinion on a SaaS acting with the buyer's API credentials.
+
+**What would change the verdict**
+- **Kill** if ERPs already integrate the RCA, or if buyers report under an hour per season.
+- **Strengthen** if an ERP vendor or FEV agrees to pilot, or if AICA's 2026 campaign again targets RCA registration.
+
+---
+
+#### IDEA-51: Fertilisation-plan and nutrient-record workspace — RESHAPE to a cooperative-channel tool aiming at "recognised software" status under RD 1051/2022 art. 20 (low)
+
+**Validated definition (after reshape).**
+- **Buyer:** cooperatives' technical services (white-label for member farms), with REGFER advisers as a secondary buyer.
+- **What it does:**
+  - a plan de abonado for each production unit;
+  - fertilisation records within one month, logged by the farmer by mobile or WhatsApp;
+  - sign-off by the adviser or technical service;
+  - exports to SIEX and the CUE once their formats are defined.
+- **The strategic aim:** recognition as a "programa informático" by the regions that use RD 1051/2022 art. 20. That would let farmers meet the advisory duty (from about Sep 2027 in vulnerable zones and Sep 2028 elsewhere) through software instead of a paid adviser.
+- **Price:** €1.50–3 per farm per month, paid by the cooperative, or €39 per adviser per month.
+
+**(a) Problem reality and rule status**
+
+RD 1051/2022, consolidated text updated 3 Nov 2025 [new: https://www.boe.es/eli/es/rd/2022/12/27/1051/con, seen 23 Oct 2026]:
+- **Who makes the plan.** The **farm holder**, not an adviser, is "responsable de la elaboración y aplicación de un plan de abonado en cada unidad de producción". It applies from 1 Sep 2026, or from 1 Jan 2026 for irrigated crops sown between March and June 2026 (arts. 4.2 and 6).
+- **Records.** Each fertilisation must be recorded within one month (art. 4.1).
+- **Exemptions.** Farms of 5 ha or less with 1 ha or less irrigated are exempt from records; rainfed units of 10 ha or less are exempt from the plan.
+- **Advisory duty.** It starts one year after the plan duty in vulnerable zones and two years after elsewhere (art. 6.6), so about Sep 2027 and Sep 2028 (derived).
+- **Advisers** must be registered in REGFER from 1 Jul 2026 (art. 18.6).
+- **Art. 20, the software route.** Where the region so provides, "las obligaciones de asesoramiento podrán cumplirse si el titular de la explotación emplea un programa informático" recognised by the authority, as long as the holder keeps a digital farm notebook.
+- **Sanctions** refer to the sectoral laws (art. 26).
+
+Other status points:
+- **Digital notebook.** The CUE is voluntary until the next CAP period [notes: IND-20; search 10]. An Aug 2025 report notes there was no official clarity on when the plan must go into the notebook [search 10: infoagro, 28 Aug 2025].
+- **Political risk.** The duty is a royal decree, so no lapse, but the sector calls it "inasumible" and the 28 Oct 2026 tractor protest demands simplification [notes: IND-20]. A new government could amend it without the Cortes.
+
+**(b) Competitors**
+- **FertiliCalc** (Universidad de Córdoba): nutrient requirements and fertiliser amounts for 150 crops; downloads, an app and Python code; updated 23 Nov 2024; free downloads [new: https://www.uco.es/fitotecnia/fertilicalc.html, seen 23 Oct 2026].
+- **Agroptima:** the official cuaderno de explotación with fertiliser records. Priced "según hectáreas y usuarios" on quote; no plan de abonado listed [new: https://www.agroptima.com/es/precios/, seen 23 Oct 2026].
+- **Cuaderno de Campo Cooperativo:** only a rollout map is visible; its features are unverified [new: https://www.agro-alimentarias.coop/, seen 23 Oct 2026].
+- **MAPA's free CUE software and regional tools:** unverified, because the MAPA site returned 503.
+- **Kill criterion "free public software or the cooperative notebook generates plans": open.**
+
+**(c) Buyers and market size**
+- 3,669 cooperatives with over 1M member families [notes: IND-20]. The number of REGFER advisers and of non-exempt farms is unknown, and the S\* check was not run.
+- **Revenue ceiling (illustrative, my arithmetic):** 100 cooperatives × 200 farms × €2 a month is about €0.48M a year.
+
+**(d) Willingness to pay**
+- Weak. The calculators are free, the incumbents price by quote, and advisers are price-sensitive [notes: G5-I06].
+- The art. 20 route, if it exists in a region, would give a concrete saving: the cost of an adviser.
+
+**(e) Distribution**
+- Cooperativas Agro-alimentarias, UPA, ASAJA, Unió de Pagesos and input distributors [notes]. All are unproven [I].
+
+**(f) Build feasibility**
+- **Agronomy:** the rule tables need an agronomist, and regional formats differ.
+- **Recognition:** whether any region has opened the art. 20 recognition is unknown.
+- **SIEX:** the exchange format and API are unverified (the S\* was not run).
+- **Time to MVP:** 6–8 weeks for the main crops.
+
+**(g) Defensibility**
+- Low, unless regional recognition is obtained. That would be an accreditation-type moat.
+
+**(h) Kill criteria**
+- **The CUE software or the cooperative notebook already generates plans:** open.
+- **Additional finding against the original idea.** The adviser buyer is not yet compelled, since advice becomes mandatory only in 2027 and 2028, and holders can draft plans themselves with free calculators.
+
+**Scores (reshaped)**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | The plan duty has been in force since 1 Sep 2026, and the advisory duty in vulnerable zones starts in about 11 months |
+| S2 Buyers in Spain | 2 | Cooperatives (3,669) plus advisers and larger farms: an estimated 5k–20k paying entities |
+| S3 Willingness to pay | 2 | Free calculators; quote-only incumbents; price-sensitive advisers |
+| S4 Reachability | 3 | Concentrated cooperative federations, unproven |
+| S5 Competitive gap | 3 | Free calculators and farm notebooks exist, but plan generation by the public tools is unverified |
+| S6 Build speed | 3 | Agronomy tables, regional formats and possible recognition |
+| S7 Defensibility | 2 | Low, unless recognised under art. 20 |
+| S8 Retention | 4 | An annual plan, monthly records and an accumulated farm history |
+| **Sellability** | **2.88** | |
+| P | 3 | A described but unquantified burden ("inasumible") |
+| **Overall** | **2.93** | 0.6 × 2.875 + 0.4 × 3 |
+
+**Open [I] checks**
+- Ask 3 regional agriculture departments (for example Castilla-La Mancha, Andalucía and Cataluña) whether they have opened or plan the art. 20 recognition.
+- Test whether MAPA's CUE app and the Cuaderno de Campo Cooperativo generate plans.
+- Ask Cooperativas Agro-alimentarias whether it would distribute the tool.
+- Count REGFER advisers.
+
+**What would change the verdict**
+- **To GO:** a region opens art. 20 recognition and a cooperative federation agrees to pilot.
+- **To KILL:** the public CUE app or the cooperative notebook already generates plans, or the duty is postponed by a new government.
+

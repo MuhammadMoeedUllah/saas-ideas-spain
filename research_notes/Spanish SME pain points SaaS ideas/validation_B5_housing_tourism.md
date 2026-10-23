@@ -726,3 +726,188 @@ No cheap self-serve kit for micro agencies was found in one search. That is weak
 - **Towards GO:** an association or a CRM agrees to distribute before Q1 2027, or SEPBLAC announces inspections of micro agencies.
 - **Towards KILL:** CRMs bundle AML for free, or the AMLR or Spanish implementation exempts micro agencies from the new duties.
 
+
+## 3. Cross-cutting findings (rule status and market facts that affect other batches)
+
+### 3.1 RDL 29/2026 and RDL 28/2026 (batch 5 owns this check)
+- **Status on 23 Oct 2026.**
+  - RDL 29/2026 has been in force since 8 Oct 2026 (BOE-A-2026-20823; DF 11ª). The convalidation vote is "prevista para el 12 de noviembre de 2026" in the Diputación Permanente. The date and the 35–34 forecast are single-source (gestionatualojamiento, 18–20 Oct 2026). PNV support is reported by idealista (13 Oct 2026).
+  - **The vote has not happened yet.**
+  - **Arithmetic (my inference):** PP 27 + Vox 6 + Junts 1 = 34 against, so it passes only if all other 35 members attend and vote yes. A persistent tie means rejection (Reglamento del Congreso art. 88: "se entenderá desechado"). Periods count in working days (art. 90.1).
+- **If it lapses:** repeal is "pro futuro", and the decree contains no transitional rule for its own lapse. The items below lapse; contracts signed between 8 Oct and the vote are probably judged under the law at signature, but that is an argument, not a rule.
+
+| Item | Where it sits | Ideas affected |
+|---|---|---|
+| Seasonal and room-rental rules | LAU arts. 2.3, 7.2, 9 bis, 11.2, 17.8–17.9, 21 bis, 36.5–36.7 | IDEA-29, IDEA-31 |
+| 2% update cap to 31 Dec 2027 | DF 6ª | IDEA-30 |
+| Extraordinary 2-year extension | DF 5ª | IDEA-30 |
+| Eviction-suspension regime to 2030 and "enervación extraordinaria" | art. 2; DT 2ª | IDEA-01 (landlord module, batch 1) |
+| 10% VAT on furnished stays of 30 nights or fewer | art. 7; effects from 1 Dec 2026, so it would never apply | Filtered TAX-24 / HOU-17 |
+| IBI surcharges on tourist flats | art. 8 | — |
+| Platform fines of €1M / €500k / €100k | new LAU Title V, arts. 40–43 | IDEA-32 |
+
+- **RDL 28/2026** (automatic 5/7-year renewal, compensation of up to 12 months' rent, due 15 Nov 2026): "lo más probable es que sea un brindis al sol y no entre en vigor" (idealista, 13 Oct 2026). gestionatualojamiento expects it to fall because the PNV votes against. Since the vote precedes 15 Nov, it would never apply. **Build nothing on it.**
+- **Election (29 Nov 2026; new Cortes 23 Dec): not yet held.** The substantive rental debate "se ha aplazado, no se ha cerrado" (LegalToday, 8 Oct 2026). Party programmes were not checked (budget). Treat every national rental rule as carrying 12-month political risk even if convalidated.
+
+### 3.2 New AML rule for all micro obliged entities (affects batches 2, 3, 4 and 7)
+- **RD 813/2026, de 7 de octubre** (BOE-A-2026-20915, BOE 8 Oct 2026), in force **28 Oct 2026** (DF 4ª: "a los veinte días de su publicación").
+  - **Representative:** it rewrites art. 35.1 of RD 304/2014 so that **every** obliged entity under Ley 10/2010 must designate a representative before SEPBLAC. This removes the exemption for entities with fewer than 10 persons and €2M or less.
+  - **Deadline:** DT 2ª gives micro entities **nine months**, to about 28 Jul 2027.
+  - **New policies duty:** art. 31.1 now also requires written policies on "sanciones y contramedidas financieras internacionales". Micro entities keep their exemption from arts. 31–33, 38 and 39.
+  - **Lapse risk:** none; it is a Real Decreto, so no convalidation is needed and the election does not affect it.
+- **Who it hits beyond estate agents (Ley 10/2010 art. 2.1, per the SEPBLAC compilation):**
+  - (m) "auditores de cuentas, contables externos o asesores fiscales", meaning **gestorías and asesorías**, which matters for IDEA-06's rule feed and IDEA-16 in batch 2;
+  - (ñ) lawyers in property and corporate operations, relevant to batches 3 and 7;
+  - (q) and (r) dealers in jewellery and art;
+  - (w) traders in goods under art. 38.
+- **Size of the penalty:** a practitioner column says failing to communicate the appointment is a serious infraction with a "multa mínima de 60.000 euros" (InmoDiario, 23 Oct 2026; single source). Known real-estate sanctions include two of €60,001 for representative failures (CoreBC data, Jun 2024).
+- **Opportunity:** a cross-SME "SEPBLAC representative plus basic due-diligence kit", whose cheapest channel is gestorías.
+
+### 3.3 Prices, indices and market sizes
+- **CPI and IRAV:** INE CPI was 4.9% year on year in Sept 2026, core 3.1% (published 14 Oct 2026). The IRAV for Sept 2026 was 2.54%, the highest since INE began publishing it. This matters for any idea with CPI-indexed contracts or price updates.
+- **Landlord count:** AEAT IRPF 2023 shows **3,142,656 declarants with rental (capital inmobiliario) income** (partida 102, €29.5bn), probably common territory only. It sizes IDEA-01's landlord module and any landlord-facing product.
+- **Nomad permits:** UGE teleworker (DNV) permits stood at 44,966 in Sept 2025 [notes: EXP-08]. That figure **supersedes the single-source 27,875 used in the housing track**, which matters for batch 7 and the regional table.
+- **Homming:** no free tier for managers any more (from €47/month on annual billing for 1–10 assets). This contradicts the notes; correct it wherever Homming is used as an anchor.
+- **Chekin** (€3.95 / €5.95 / €7.95 per property per month) still states **both** "minimum 3" and "minimum 20" units on the same pricing page. C-16 is **not settled**; ask sales.
+
+### 3.4 Enforcement and platform facts
+- **Alquiler Seguro:** Consumo's €3.6M fine became **final in the administrative route on 8 Apr 2026** (six very serious infractions and one serious), and a second agency is under investigation. This bears on any idea that charges tenants (IDEA-01 landlord module, IDEA-31) and on consumer-law ideas (batch 4, IDEA-20).
+- **Airbnb:** for the €64,055,311 fine, the TSJ de Madrid denied interim relief (Consumo note, 22–23 Mar 2026).
+- **Airbnb Terms §11.1:** "Do not use bots, crawlers, scrapers, or other automated means to access or collect data" (updated 5 Feb 2026). This constrains any idea that scrapes platforms; check the equivalent Google terms for IDEA-14.
+- **AEPD tenant-screening fines** (press, 2023): €2,000 for not informing a non-selected applicant (art. 13 GDPR) and €4,000 for passing tenant data to third parties (art. 6.1). Useful data points for C-07-style framing.
+- **Regional tourist-register open data:**
+  - Andalucía OpenRTA: daily, JSON, CSV and OpenAPI, CC BY 4.0;
+  - Comunitat Valenciana: daily, with API;
+  - Comunidad de Madrid: weekly, CC BY, updated 19 Oct 2026;
+  - Canarias: CSV, XLSX and JSON;
+  - Catalonia and Baleares: not found.
+- **Málaga:** the 43-barrio VUT ban has been **in force since 14 Jan 2025**, on BOP publication of the initial PGOU approval (municipal communiqué, 13 Jan 2025). The July 2026 three-year suspension is still single-source.
+- **Canarias Ley 6/2025** (BOC 12 Dec 2025): registration number mandatory in any advertising (art. 8.6); a new infraction for advertising without it (art. 75.16 of Ley 7/1995); five years for existing vacation homes to continue (DT 2ª).
+
+### 3.5 Basque tourist tax (for batch 4 hospitality ideas and any gestoría rule feed)
+- **It is a municipal tax.** Each ayuntamiento sets rates within the foral band by ordinance and manages, inspects and collects it. Filing is quarterly. **Intermediaries that intervene in the booking or the payment are jointly liable** (Gipuzkoa NF 3/2026 art. 7; Bizkaia NF 3/2026 has the same structure).
+- **Ordinances are still being approved.** Vitoria-Gasteiz's final approval is expected in November 2026.
+
+### 3.6 Conflicts settled (or not) in this batch
+| Conflict | Outcome |
+|---|---|
+| C-14 fianza for temporary leases outside Catalonia | **Mostly settled: one month** while RDL 29/2026 stands. Literal LAU art. 36.1 plus art. 2.3; INCASÒL FAQ; Lázaro Amable. Two months again if contracts revert to "uso distinto" after a lapse. No case law yet |
+| C-14 Basque tensioned municipalities | **Leaning to 17,** with a BOE trail: BOE-A-2026-9175 of 27 Apr 2026 added Pasaia, Zestoa and Arrasate (Inmostats). Vivara says 15. The official MIVAU page blocks automated access, so not fully settled |
+| C-14 coliving inside the Catalan cap | **Not settled:** the Generalitat was still "analitzant" (3Cat, 16 Feb 2026); nothing later found |
+| C-14 Canarias deposit fines (35–100% or 5–75%) | **Not settled.** El Español puts Canarias in the 5–75% group; Lázaro Amable gives 35–100% citing Ley 2/2014. The BOC text was not read |
+| C-16 SES card data | Not re-checked |
+| C-16 Barcelona tax amounts | **Not settled.** Forbes gives a €4.50 maximum to Mar 2027, then €6, with a municipal surcharge up to €8. DonPorqué's combined figures probably add the regional and municipal parts. The DOGC tables were not retrieved |
+| C-16 Chekin minimum units | **Not settled:** the same page says 3 and 20 |
+| Section 5.2: RDL 29/2026 | Pending; see 3.1 |
+| Section 5.2: AMLR | "desde julio de 2027" (finReg360). The exact day and the small-entity proportionality were not verified (EUR-Lex not fetchable) |
+| Section 5.2: EU 2024/1028 | In force since 20 May 2026 [notes] |
+| Balearic "Ley 4/2026" | Still single-source; not verified |
+
+## 4. Search log
+
+**WebSearch queries (22 of the 24 allowed)**
+| # | Idea | Query |
+|---|---|---|
+| 1 | IDEA-29 (shared with 30, 31, 32, 01) | Diputación Permanente convalidación Real Decreto-ley 29/2026 vivienda votación noviembre Junts Podemos PNV |
+| 2 | IDEA-29 | Tribunal Constitucional llei 11/2025 lloguer de temporada habitacions recurs PP coliving topall Generalitat 2026 |
+| 3 | IDEA-29 | sentencia Audiencia Provincial 2026 alquiler de temporada fraude de ley recalifica vivienda habitual causa no acreditada desahucio desestimado |
+| 4 | IDEA-29 | software gestión alquiler de temporada arrendamiento vivienda temporal causa acreditable documentación contratos propietarios gestores Rentger Homming RDL 29/2026 |
+| 5 | IDEA-29 | modelo contrato arrendamiento de vivienda temporal 2026 generador online causa desplazamiento anexo acreditativo precio plantilla actualizado RDL 29/2026 |
+| 6 | IDEA-29 | INCASÒL fiances contractes de lloguer temporal 2026 nombre contractes de temporada habitacions dipositats dades Catalunya |
+| 7 | IDEA-29 | SES.Hospedajes arrendamiento de vivienda temporal más de 31 días obligación parte de viajeros RDL 29/2026 fianza una mensualidad o dos alquiler temporal |
+| 8 | IDEA-29 | precio redactar contrato alquiler de temporada abogado honorarios revisión contrato arrendamiento temporal euros gestión alquiler temporada comisión Barcelona Madrid |
+| 9 | IDEA-30 | IRAV septiembre 2026 valor INE actualización alquiler 2% calculadora gratis idealista fotocasa |
+| 10 | IDEA-30 | número de caseros particulares en España declarantes IRPF rendimientos capital inmobiliario vivienda alquilada millones de arrendadores Agencia Tributaria 2024 2025 |
+| 11 | IDEA-31 | scoring de inquilinos España startup informe de solvencia inquilino pagado por propietario garantía alquiler extranjeros sin nómina española avalista empresa |
+| 12 | IDEA-31 | Consumo expediente sanción 2026 estudio de solvencia inquilino honorarios encubiertos inmobiliaria plataforma comisión inquilino artículo 20.2 LAU Alquiler Seguro multa firme |
+| 13 | IDEA-31 | AEPD inmobiliaria datos inquilinos solvencia nóminas declaración renta proporcionalidad sanción resolución alquiler posibles arrendatarios conservación datos |
+| 14 | IDEA-32 | datos abiertos registro viviendas de uso turístico descarga CSV API Registro de Turismo de Andalucía Cataluña HUT Comunitat Valenciana Madrid Baleares ETV Canarias consulta pública número registro |
+| 15 | IDEA-32 | software comprobar número de registro licencia turística anuncios Airbnb Booking gestores cumplimiento Reglamento 2024/1028 Chekin Avantio Hostaway validación código registro |
+| 16 | IDEA-32 | Málaga prohibición nuevas viviendas turísticas 43 barrios BOP aprobación definitiva suspensión licencias tres años 2026 Palma prohibición alquiler turístico aprobación definitiva Ley 4/2026 Baleares multas coercitivas |
+| 17 | IDEA-33 | impuesto sobre estancias turísticas Bizkaia Norma Foral 2026 Álava Araba norma foral tarifas ordenanza fiscal Donostia Bilbao Vitoria-Gasteiz recargo 1 enero 2027 autoliquidación trimestral |
+| 18 | IDEA-33 | impuesto estancias turísticas Euskadi 2027 software PMS cálculo autoliquidación net2rent Avantio Smoobu Mews Cloudbeds Hostaway tasa turística Gipuzkoa Bizkaia gestión automática |
+| 19 | IDEA-33 | Ertzaintza registro de viajeros envío partes establecimientos fichero servicio web software Mossos d'Esquadra registre de viatgers servei web programari allotjaments 2026 |
+| 20 | IDEA-34 | software administrador de fincas calendario mantenimiento inspecciones obligatorias ascensores ITE extintores CAE proveedores votaciones actas precio por comunidad Gesfincas Fynkus Tucomunidad |
+| 21 | IDEA-34 | inspecciones periódicas obligatorias comunidad de propietarios ascensores Real Decreto 355/2024 periodicidad ITE IEE extintores RIPCI baja tensión garaje ventilación legionela calendario obligaciones edificio |
+| 22 | IDEA-35 | SEPBLAC inmobiliarias sanciones inspecciones 2025 2026 prevención blanqueo agencias inmobiliarias Reglamento UE 2024/1624 10 julio 2027 alquiler renta mensual 10.000 euros |
+
+**Allocation used:** IDEA-29 8 (search 1 also serves IDEA-30, 31 and 32); IDEA-30 2; IDEA-31 3; IDEA-32 3; IDEA-33 3; IDEA-34 2; IDEA-35 1.
+
+**Main pages fetched directly (not counted against the budget), all seen 23 Oct 2026**
+- **Official texts:**
+  - BOE RDL 29/2026 (BOE-A-2026-20823, read in four parts);
+  - BOE consolidated LAU (BOE-A-1994-26003);
+  - BOE Reglamento del Congreso (BOE-A-1982-5196, arts. 88 and 90);
+  - BOE RD 933/2021 consolidated (BOE-A-2021-17461);
+  - BOE LPH consolidated (BOE-A-1960-10906);
+  - BOE RD 813/2026 (BOE-A-2026-20915, read in two parts);
+  - BOPV Gipuzkoa NF 3/2026 (full PDF, 11 pages);
+  - BOC Canarias Ley 6/2025 (read in three parts);
+  - SEPBLAC list of obliged entities (PDF);
+  - INCASÒL deposit page and FAQ;
+  - Agència Catalana del Consum sanctions note;
+  - DSCA notes on Airbnb (Mar 2026) and Alquiler Seguro (8 Apr 2026);
+  - INE calcula and the CPI Sept 2026 release;
+  - AEAT IRPF 2023 statistics (bienes inmobiliarios table);
+  - malaga.eu communiqué of 13 Jan 2025 (PDF);
+  - Vitoria-Gasteiz press note of 22 Sep 2026;
+  - open-data portals: Junta de Andalucía OpenRTA, datos.comunidad.madrid.
+- **Vendors and competitors:**
+  - Homming pricing, help centre and October 2026 changelog;
+  - Captain.Legal home page and seasonal-contract page;
+  - Vivara blog and free tools;
+  - Inmostats;
+  - Fotocasa calculator article;
+  - Alquigest; Lexway;
+  - Spotahome plans; HousingAnywhere landlord pricing;
+  - Didit tenant screening;
+  - SKOR; Garantilo;
+  - Chekin pricing, code-check guide, Basque-tax guide and traveller-register guide;
+  - Check-in Scan Basque page;
+  - Airbnb Terms of Service;
+  - Fynkus pricing; CIAX Gesfincas page and the 2026 comparison;
+  - Grupo Adaptalia; CoreBC;
+  - LeaseGuard.
+- **Press and analysis:**
+  - gestionatualojamiento (convalidation);
+  - idealista (13 Oct 2026 decrees; 6 Jul 2026 re-classification; 7 Sep 2026 Consumo estimate; 30 Sep 2026 RDL 26; 24 Jun 2026 INE tourist homes);
+  - Pressdigital (20 Oct 2026);
+  - LegalToday (8 Oct 2026);
+  - OCU (zones, 20 Oct 2026; insurance, 28 Sep 2026);
+  - El Español (18 Mar 2026);
+  - 3Cat (16 Feb and 16 Mar 2026);
+  - Lázaro Amable (22 Oct 2026);
+  - DiG Abogados (7 Oct 2026);
+  - Forbes (25 Feb 2026, Catalan tax);
+  - ANA (2024);
+  - finReg360 (23 Dec 2025);
+  - InmoDiario (23 Oct 2026);
+  - observatorioinmobiliario (Jun 2024).
+- **Failed or blocked:**
+  - MIVAU zones page (403);
+  - Rentger (403);
+  - GarantíaYa (503);
+  - Interior SES page (403);
+  - Noticias de Navarra (406);
+  - Barcelona open data (403);
+  - EUR-Lex AMLR (empty);
+  - Gesfincas domain (DNS);
+  - Booking connectivity docs (404);
+  - Open Data Euskadi (404).
+
+**Checks left open for lack of budget, or blocked**
+- Party programmes on repealing or replacing the national rental rules.
+- Junts and Podemos positions on the 12 Nov vote.
+- Rentger features and prices; Fincas Pro and Comunidad Feliz.
+- Spotahome's Spanish rates; whether HousingAnywhere's tenant fee is lawful in Spain.
+- Catalonia (RTC/HUT) and Baleares register data.
+- Booking and Airbnb partner APIs for licence fields.
+- Palma's ban and the Balearic Ley 4/2026.
+- Málaga's three-year suspension (BOP).
+- The Álava norm number; Donostia and Bilbao ordinances.
+- Euskadi establishment counts (Eustat/REATE); the stage of INFR(2026)4005.
+- The DOGC Barcelona rate tables.
+- The AMLR text (scope of letting intermediation, small-entity proportionality); agency CRMs' AML modules.
+- The INE DIRCE count for CNAE 6831.
+- SERPAVI bulk data; BOE publication of the 53 Catalan municipalities.
+- The nota simple price and API; the Generalitat's position on coliving and the cap.
