@@ -4,13 +4,27 @@
 
 *Method: [F] direct fetches of official, vendor and press pages (unlimited) first, then at most 24 web searches (log in section 4). Citations: [new: URL, date seen or published] for evidence gathered in this batch; [notes: PAIN-ID] for stage-1 evidence. "Single source" marks claims seen in one place only. Political context: Cortes dissolved 6 Oct 2026; general election 29 Nov 2026.*
 
-*Status: work in progress. Sections are appended as each idea is finished.*
+*Status: complete for desk research, 23 Oct 2026. 22 of the 24 permitted searches were used. Every [I] check is still open and listed per idea.*
 
 ---
 
 ## 1. Batch summary table
 
-(filled in at the end)
+Sellability is the mean of S1–S8. Overall = 0.6 × Sellability + 0.4 × P. Where the verdict is RESHAPE, the scores are for the reshaped version.
+
+| ID | Name | Type | Verdict | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | Sellability | P | Overall | Confidence |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| IDEA-45 | DeCA evidence vault for small hauliers | C | **KILL** as stand-alone (keep as a free "DeCA inbox" inside IDEA-46) | 5 | 4 | 3 | 3 | 2 | 5 | 1 | 4 | 3.38 | 3 | 3.23 | medium |
+| IDEA-46 | Haulier revenue recovery (fuel line, late interest, detention) | B (C add-on) | **GO** (pilot; scope changes) | 4 | 4 | 3 | 3 | 4 | 4 | 2 | 4 | 3.50 | 4 | 3.70 | medium |
+| IDEA-47 | ZBE checker and fleet permit ledger, reshaped fleet-first | C → B | **RESHAPE** (fleet-first permit and dispatch ledger; autónomo tier free or €29–39/year) | 4 | 3 | 2 | 3 | 4 | 3 | 3 | 3 | 3.13 | 3 | 3.08 | low |
+| IDEA-48 | EcoRoute reshaped: ZBE rules and compliance API [U3] | B | **KILL** as stand-alone (the dataset becomes IDEA-47's engine) | 3 | 1 | 2 | 3 | 3 | 3 | 2 | 3 | 2.50 | 2 | 2.30 | medium |
+| IDEA-49 | Packaging EPR, PPWR and plastic-tax kit | B | **KILL** | 4 | 3 | 2 | 2 | 2 | 4 | 2 | 4 | 2.88 | 3 | 2.93 | medium |
+| IDEA-50 | RCA autopilot (food contracts before delivery) | B | **GO** (pilot; fruit, vegetables and citrus first, wine for the 2027 harvest) | 4 | 2 | 3 | 3 | 4 | 3 | 3 | 4 | 3.25 | 3 | 3.15 | medium |
+| IDEA-51 | Fertilisation-plan workspace, reshaped to a cooperative channel with the art. 20 route | B | **RESHAPE** | 4 | 2 | 2 | 3 | 3 | 3 | 2 | 4 | 2.88 | 3 | 2.93 | low |
+
+**Reading the table.**
+- **IDEA-45 scores above two RESHAPE ideas yet is killed.** The formula rewards its urgent duty and large buyer count, but near-free incumbents (DecaFirma, Cargoffer) already include the evidence features (S5 = 2, S7 = 1).
+- **The user's idea (U3, IDEA-48) does not survive as an API business.** Its curated legal-status dataset survives as the engine of IDEA-47. The claim-by-claim verdict is at the end of the IDEA-48 section.
 
 ---
 
@@ -96,7 +110,7 @@ The legal base is unchanged and unaffected by the election: Ley 7/2021 art. 14 a
 **(c) Buyers and market size**
 - **Vendor pool.** One commercial directory lists 34 GPS and fleet-software companies based in Spain (refreshed 3 Sep 2026; partial, sign-up wall) [new: https://revenuebase.ai/companies/gps-software-companies/spain]. Add route planners and TMS (Routal, Cargoffer and others) and international telematics firms with Spanish operations, and the plausible pool is about 50–150 software vendors (my estimate). Renting, leasing and insurer counts were not verified.
 - **Telematics reach.** Telematics is widespread: 74% of Spanish fleets use GPS tracking (77% of small fleets), so a vendor channel would reach many fleets [new: Geotab/ABI Research, https://www.geotab.com/CMS-GeneralFiles-production/EMEA/connected-fleets/local-2026/Geotab-Connected-Fleets-Report-2026-Local-ES-ES.pdf, 2026 report; vendor survey].
-- **ZBEs are not top of mind.** The same 35-page Spanish fleet report never mentions ZBEs; its only "bajas emisiones" hit is about EV logistics. That is weak disconfirming evidence.
+- **ZBEs are not top of mind.** The same 45-page Spanish fleet report never mentions ZBEs; its only "bajas emisiones" hit is about EV logistics. That is weak disconfirming evidence.
 - **Revenue ceiling (my arithmetic).** If 20–30 vendors paid €149–499 a month and a handful bought enterprise licences, Spanish revenue would be about €0.1–0.3M a year. Renting firms at €0.20–0.50 per vehicle would add little without large contracts.
 
 **(d) Willingness to pay**
@@ -203,7 +217,7 @@ The legal base is unchanged and unaffected by the election: Ley 7/2021 art. 14 a
 - **Autónomo tier:** no longer a €4.99/month product. It becomes a free single-check and alert page (lead generation), or a €29–39/year plan bundled by van-rental firms, insurers or associations.
 
 **(a) Problem reality and rule status**
-- **City statuses:** as settled in IDEA-48 (a). Nine cities sanction by label or access, and Valencia, Málaga (from 14 Oct 2026), Murcia, Las Palmas, Alicante and Vigo (to 10 Sep 2027) do not [new: sources in IDEA-48 (a); notes: ZBE city table].
+- **City statuses:** as settled in IDEA-48 (a). Of the 16 profiled cities, nine sanction by label (Madrid, Barcelona/AMB, Sevilla-Cartuja, Zaragoza, Bilbao, Palma, Valladolid, Granada, Córdoba) and A Coruña by access control. Valencia, Málaga (from 14 Oct 2026), Murcia, Las Palmas, Alicante and Vigo (to 10 Sep 2027) do not [new: sources in IDEA-48 (a); notes: ZBE city table].
 - **Dated changes within 12 months:**
   - Palma admits only C, ECO and Cero from 1 Jan 2027 [notes: ZBE-14, BOIB 167/2024].
   - Badalona's moratorium ends on 1 Jan 2027 [notes: ZBE-23].
@@ -454,7 +468,7 @@ In either case, revive it only as a module of IDEA-46.
 - **Revenue ceiling (my arithmetic):** reaching 2–5% gives 3,000–7,600 firms; at €228 a year (€19/month) that is about €0.7–1.7M ARR, before per-vehicle add-ons.
 
 **(d) Willingness to pay**
-- **Value at stake (my arithmetic, illustrative).** With C ≈ 0.4 for heavy trucks and a G variation of 44.6%, the revision is about 18% of the base price. A carrier that cannot bill it loses that share of revenue.
+- **Value at stake (my arithmetic, illustrative).** Take a contract priced in early January 2026. With C ≈ 0.4 for heavy trucks and the G variation of 44.6% to 1 Oct, the revision is about 0.4 × 44.6% ≈ 18% of the base price. A carrier that cannot bill it loses that share of revenue. The exact formula terms were not re-derived from the Orden FOM/1882/2012 text.
 - **Adjacent spend:** invoicing software at €6.60–29.50/month, TMS at €99/month (Cargoffer Professional), and DeCA tools.
 - **The risk:** carriers may not dare to bill (the DIA case). This is the kill test.
 
@@ -794,3 +808,160 @@ Other status points:
 - **To GO:** a region opens art. 20 recognition and a cooperative federation agrees to pilot.
 - **To KILL:** the public CUE app or the cooperative notebook already generates plans, or the duty is postponed by a new government.
 
+---
+
+## 3. Cross-cutting findings (for other batches and the final ranking)
+
+**Rule status and the election**
+1. **Decree-laws are being convalidated during the dissolution.**
+   - The Diputación Permanente convalidated RDL 25/2026 on 16 Oct 2026 [new: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-21788].
+   - Congress had convalidated RDL 9/2026 on 30 Apr 2026 [new: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9793].
+   - Relevance to batch 5 (the RDL 29/2026 vote around 12 Nov) and batch 1 (any VeriFactu decree-law): the mechanism works during the dissolution, and each vote still depends on majorities.
+2. **Other decree-laws seen in the BOE.**
+   - **RDL 27/2026** of 29 Sep 2026, "por el que se adoptan medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual" (BOE 1 Oct 2026, BOE-A-2026-20385) [new: https://www.boe.es/boe/dias/2026/10/01/]. Only the title was seen; its convalidation status was not checked. It is for batch 5, alongside the notes' RDL 26/2026 and RDL 29/2026.
+   - **RDL 18/2026** exists. It is cited in Orden TRM/1034/2026 (art. 28, rail aid) and by CETM for the indexation tools dated 1 Jul 2026; its content was not verified.
+3. **Caretaker status (background, not fetched).** Under art. 101 CE the Government ceases only after the 29 Nov election, so royal decrees can still be approved until then. Drafts at the hearing stage, such as AICA's inspection decree (since 30 Sep 2026), are unlikely to finish before the election (inference).
+
+**ZBE city status (C-01, C-13), settled for all batches; details in IDEA-48 (a)**
+4. **Valencia: no ZBE.** Final approval was rejected on 28 Oct 2025 by 19 votes to 13, there has been no vote since, and Vox requires "sin régimen sancionador". The cities track's valencia.es source was a committee approval.
+   - The regional-claims row "Valencia: low-emission-zone logistics API" is **contradicted**.
+   - The DGT NAP shows Valencia "active" from 1 Jun 2026, which is wrong.
+5. **The other contested schemes:**
+   - **Málaga:** annulled; fines stopped on 14 Oct 2026; finality expected on 25 Nov 2026. The defect was the domicile criterion.
+   - **Madrid:** TSJM 405/2024 of 17 Sep 2024 became final on 15 Apr 2026; Ordenanza 2/2026 has applied since 7 Apr 2026.
+   - **Valladolid:** annulled on 16 Mar 2026, not final, and still fining.
+   - **Zaragoza:** fining since 12 Dec 2025; Zone 2 from 2030; an episode-only proposal is pending, tied to the 2027 budget.
+   - **Vigo:** label B restricted from 2029.
+   - **Catalonia:** a permanent label-B ban from 1 Jan 2028 under Decree 132/2024; Barcelona's ordinance amendment has not started.
+   - **Barcelona's suspension:** ran from 22 Jan to 13 Mar 2026.
+6. **The NAP has not been updated since July 2026, and the datos.gob.es request is still unanswered (19 Oct 2026).**
+
+**Data access**
+7. **DGT label data.**
+   - The bulk daily file of every plate with its label and the locality of its fiscal domicile is free but **restricted to municipalities with a ZBE registered in DGT 3.0** [new: https://sede.dgt.gob.es/es/vehiculos/tramites-para-administraciones/descarga-de-fichero-zbe-zona-de-bajas-emisiones/].
+   - Private firms get only the single-plate web lookup.
+   - **Unresolved conflict:** the DGT's label page also refers to a "fichero de distintivos ambientales" in DGT en Cifras, which could not be located.
+   - Any idea that needs plate-level labels or domiciles must collect them from customers.
+8. **The MITECO packaging register is a public monthly Excel file**, with a web service under development, and **platforms must check sellers' registration numbers before letting them sell** [new: MITECO page].
+   - At 30 Sep 2026 it held 66,742 registration numbers and 61,279 NIFs, with 23,349 new numbers in January–September 2026.
+   - About 27,000 are foreign (N-prefix) NIFs, and almost no natural persons appear.
+   - Relevant to batch 4 (retail, e-commerce, RET-15/16) and to any marketplace-seller idea.
+   - It also points to a cross-border EPR service market (foreign marketplace sellers), outside the user's target.
+9. **AICA's RCA.**
+   - API access is by request for registered buyers.
+   - Representation works through a legal representative's Cl@ve certificate, and the Cl@ve gateway is "unstable".
+   - Relevant to ADM-07 (custody of company certificates) in batch 2.
+
+**Packaging and food rules**
+10. **C-12 (Ley 1/2025): settled.**
+    - The final provision reads "entrará en vigor el 2 de enero de 2025", and the art. 6 duties apply one year after the 2 Apr 2025 publication, so from April 2026.
+    - Having no plan is grave (€2,001–60,000; the regions define it), and micro firms are exempt.
+    - Affects IDEA-37 in batch 4.
+11. **Ley 7/2022: failing to register in the Registro de Productores or to report is grave (€2,001–100,000).**
+12. **Ecoembes now requires DAE Comerciales as well as DAE Domésticos**, each with an auditor's agreed-procedures report where Ecoembes requires one (deadline 31 May for the prior year).
+    - The scheme platforms bundle declaration and registry services.
+    - Relevant to any gestoría or auditor-channel idea.
+
+**Market and price anchors**
+13. **Cargoffer**, a Spanish TMS and freight marketplace, prices:
+    - TMS: €0 for up to 5 vehicles, €99/month for up to 50, €299/month unlimited;
+    - DeCA and eCMR documents: €0 for 10 a month, up to €199 for 1,000;
+    - route optimisation: €0–29/month.
+
+    **Routal** route planning costs €199/month for 4 vehicles plus €49 per extra vehicle. These are anchors for any fleet or route product (batch 3, IDEA-44 home-help routing) and for batch 1's SME software bill.
+14. **74% of Spanish fleets use GPS tracking (77% of small fleets).** Source: Geotab and ABI Research, 2026 Spanish report, a vendor survey. The report never mentions ZBEs.
+15. **Fenadismer publicly accused DIA (11 May 2026) of systematically refusing fuel-cost updates.** This is evidence of shipper resistance, relevant to IDEA-02 (batch 1) as the haulage vertical.
+16. **Two Valencia Sandbox metrics** for any idea that wants a city pilot (batch 8): 98% of 75 requests authorised and a 90-day average response, with 48 pilots so far (single source, 24 Sep 2026).
+
+---
+
+## 4. Search log
+
+**Total: 22 WebSearch calls** (the limit was 24). By idea: IDEA-48 8; IDEA-47 2 (search 14 is shared with IDEA-48); IDEA-45 3; IDEA-46 2; IDEA-49 3; IDEA-50 2; IDEA-51 2. IDEA-46's convalidation check was answered by direct BOE fetches instead of a search.
+
+| # | Query | Idea and check | Useful result |
+|---|---|---|---|
+| 1 | València zona de bajas emisiones nueva ordenanza pleno votación octubre 2026 | 48 (a) C-01 | Yes: no vote after Sep 2026; led to the valencia.es items of 25 Feb and 1 Dec 2025 |
+| 2 | routing API Spain low emission zones DGT environmental label "ES" sticker PTV OR HERE OR TomTom OR Sygic ZBE | 48 (b)(g)(h) | Partly: no vendor-side DGT semantics found; led to the Cargoffer MCP listing |
+| 3 | DeCA documento electrónico de control app transportista precio "al mes" generar QR repositorio | 45 (b)(d) | Yes: DecaFirma, ValenciaportPCS |
+| 4 | DeCA herramienta gratuita asociados CETM OR Fenadismer OR UNO OR Ministerio Transportes generador documento de control gratis | 45 (b)(h) | Yes, a negative: no free official or association tool; UNO guide; ICargo |
+| 5 | software gestión transporte factura revisión precio combustible automática fórmula Real Decreto-ley 9/2026 TMS transportistas | 46 (b)(g) | Partly: no TMS automation found; led to trans.info on the Ministry calculator |
+| 6 | Ecoembes GENCI declaración anual de envases plataforma online adheridos tarifa 2026 cuota por kilo envases comerciales industriales | 49 (b)(h) | Yes: Grant Thornton alert, Ecoembes Comerciales deck, Envalora tariffs |
+| 7 | número de productores inscritos sección envases Registro de Productores de Producto MITECO empresas registradas 2025 2026 | 49 (c) | Yes: Alimarket counts; the MITECO page with the register Excel |
+| 8 | software declaración anual envases RD 1055/2022 PPWR SaaS empresas precio plataforma cumplimiento envases pymes | 49 (b)(d) | Yes: Envasify, SEIDOR, Ecovidrio |
+| 9 | "Registro de Contratos Alimentarios" integración software bodega ERP API inscripción automática contratos uva | 50 (b)(h) | Yes, a negative: no ERP advertising RCA integration (eVins, Solmicro, Uvatec) |
+| 10 | plan de abonado RD 1051/2022 herramienta gratuita MAPA cuaderno digital CUE SIEX generar plan de abonado aplicación cooperativas | 51 (b)(h) | Partly: CUE status; led to RD 1051/2022 art. 20 |
+| 11 | software plan de abonado asesor fertilización REGFER programa elaborar plan de abonado precio licencia 2026 | 51 (b)(d) | No: irrelevant results |
+| 12 | "Sandbox Urbano" València ordenanza aprobación definitiva pleno BOP proyectos admitidos 2025 2026 | 48 (e) | Yes: Pleno of 30 Apr 2024 (provisional); two-year metrics |
+| 13 | API consulta distintivo ambiental por matrícula DGT etiqueta medioambiental servicio web empresas flotas | 48 (a)(f) | Yes: DGT label page; Ganvam for fleets |
+| 14 | software gestión de flotas zonas de bajas emisiones ZBE alertas furgonetas etiqueta DGT planificador rutas reparto España Webfleet Movertis Routal | 48 (b), 47 (b) | Negative: no Spanish fleet tool with ZBE semantics found |
+| 15 | renting multas ZBE identificación conductor tasa gestión multa cliente flota AER número de multas tramitadas renting furgonetas | 48 (c)(d) | Partly: Gesthispania, the Avis sanction, AEA on fees over €60 |
+| 16 | app alertas zona de bajas emisiones matrícula aviso cambios normativa ZBE notificaciones vehículo furgoneta autónomos España | 47 (b)(h) | Yes: Google Maps "Z" warnings, Bip&Drive |
+| 17 | DeCA denuncias sanciones número inspecciones transporte primeras semanas octubre 2026 Guardia Civil documento de control cifras | 45 (a)(c) | A negative: no official fine counts; trans.info of 9 Oct |
+| 18 | vendimia 2026 contratos uva inscripción Registro de Contratos Alimentarios bodegas viticultores AICA antes de la entrega sanciones | 50 (a) | No: only older items |
+| 19 | precio localizador GPS gestión de flotas cuota mensual euros por vehículo España furgonetas empresa 2026 | 47 (d), 48 (d) | Partly: no prices; led to the Geotab 2026 Spain report and a vendor list |
+| 20 | transportistas aplican revisión precio gasóleo factura encuesta porcentaje cargadores rechazan indexación combustible 2026 Fenadismer CETM | 46 (h) | Partly: the DIA accusation; no survey share |
+| 21 | ZBE etiqueta B 2028 Decret 132/2024 modificació ordenança AMB municipis restricció distintiu B tramitació 2026 | 48 (a) C-13 | Yes: the decree's 2026 and 2028 steps; Reus; no amendment found |
+| 22 | API datos zonas de bajas emisiones España normativa ZBE desarrolladores flotas consulta vehículo permitido base de datos ZBE empresas | 48 (b)(f) | Yes: the DGT ZBE file is restricted to municipalities |
+
+**Checks left open for lack of searches or access:**
+- [S\*] liability and professional-insurance cost for ZBE answers (48);
+- the share of Madrid ZBE fines going to companies (47; no city publishes it);
+- a machine-readable source of episode declarations (47);
+- modelo 592 filer counts (49);
+- MITECO enforcement cases (49);
+- REGFER adviser counts and SIEX formats (51; MAPA returned 503);
+- whether the Holded, Quipu and a3factura APIs support invoice lines (46);
+- the depth of Sadler's Spanish city pages (48; they did not render statically).
+
+**Main pages fetched directly (not counted against the budget), all on 23 Oct 2026**
+- **ZBE status:**
+  - ecomovilidad city pages: Valencia, Málaga, Madrid, Barcelona, Zaragoza, Valladolid;
+  - valencia.es news of 25 Feb 2025, 21 Oct 2025 and 1 Dec 2025, and of 30 Apr 2024 (Sandbox);
+  - El Español (7 Mar 2026), Motorpasión (22 Oct 2026), Atlántico (10 Sep 2026), El Diario de Madrid (15 Jul 2026);
+  - the madrid.es FAQ;
+  - the DGT NAP index and Valencia.xml;
+  - the datos.gob.es request;
+  - zbe.barcelona and bilbao.eus;
+  - UNO's ordinances directory;
+  - the BOIB Palma notice (BOIB 37/2026; PDF extracted).
+- **Sandbox:** sede.valencia.es AE.IN.100; Paréntesis.Media (28 Jun 2026); valencianews (24 Sep 2026).
+- **ZBE competitors:**
+  - HERE routing docs;
+  - TomTom release notes and pricing;
+  - PTV low-emission-zones docs;
+  - Glama (two listings);
+  - zbe.cargoffer.com, cargoffer.com and its pricing page;
+  - the Apify actor;
+  - the App Store page for ZBE España;
+  - urbanaccessregulations.eu (homepage and the UVAR-data page, HTML parsed);
+  - Routal pricing;
+  - motor.es and androidguias on Google Maps;
+  - the revenuebase.ai vendor list;
+  - the Geotab 2026 Spain report (PDF extracted).
+- **DGT:** the label-lookup page and the ZBE-file page on sede.dgt.gob.es.
+- **Haulage:**
+  - BOE: RDL 9/2026 record and analysis; BOE-A-2026-9793; RDL 25/2026 (ELI and analysis); BOE-A-2026-21788; Orden TRM/1034/2026; Ley 15/2009 consolidated; BOE daily summaries of 29–30 Sep and 1 Oct 2026;
+  - six Fenadismer articles (7 Jul 2024; 10 Sep, 8 Oct, 13 Oct, 15 Oct and 22 Oct 2026);
+  - GA-P's DeCA guide;
+  - trans.info (11 May, 24 Apr, 9 Oct and 20 Oct 2026);
+  - CETM's homepage and calculator page;
+  - DecaFirma, Fieldeas, container-news (ValenciaportPCS), Interempresas (Fenaex).
+- **Packaging:**
+  - the EC packaging and EUDR pages;
+  - the MITECO register page and the register Excel (parsed);
+  - Alimarket;
+  - Cartón Circular;
+  - Grant Thornton's alert and the Ecoembes Comerciales deck (PDFs extracted);
+  - Envasify pricing and its WordPress plugin page;
+  - BOE: Ley 7/2022 arts. 108–109 and Ley 1/2025 final provisions.
+- **Food chain and farms:**
+  - the AICA RCA FAQ and AICA homepage;
+  - the AICA Memoria 2025 (PDF extracted, tables 6, 20–21, 37–40);
+  - eVins;
+  - RD 1051/2022 consolidated;
+  - FertiliCalc, Agroptima pricing, Cooperativas Agro-alimentarias, Interempresas (CUE), Infoagro.
+- **Failed fetches:**
+  - Astac (503), RACE (404), the MAPA CUE page (503), La Rioja CUE (503), GENCI (401);
+  - Ecoembes empresas (403), the Ministry diesel-index page (403), Holded developers (header overflow), npm (403), PTV pricing (404);
+  - Bip&Drive (503), the Webfleet pricing guess (404), the G2 seller page (403).

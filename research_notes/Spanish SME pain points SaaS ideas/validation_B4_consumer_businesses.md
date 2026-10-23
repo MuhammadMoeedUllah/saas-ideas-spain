@@ -382,3 +382,172 @@
 
 ---
 
+#### IDEA-37: Digital APPCC, allergen and food-waste logbook for bars and restaurants — KILL (medium)
+
+**Validated definition.** A €5–9/month logbook: daily phone checklists (temperatures, cleaning, pests, deliveries) with photos and timestamps, a recipe-based allergen matrix that regenerates the allergen sheet and signage, a Ley 1/2025 food-waste module, an inspection PDF and optional sensors. Kill it: the food-waste duties do not apply to the micro venues it targets; a POS suite already includes APPCC records in a plan, an enterprise app serves chains, and a generic free checklist app covers a small kitchen; inspections reach a small share of venues each year and allergen information was not a main infraction in Andalusia in 2025; and there is no moat.
+
+**(a) Problem reality and rule status**
+- **APPCC and allergens:** Reglamento (CE) 852/2004 art. 5, RD 1021/2022 and RD 126/2015 are in force. RD 126/2015 art. 6.5 allows oral allergen information if it is "registrada de forma escrita o electrónica", so digital records are explicitly acceptable for allergens. Ley 17/2011 art. 52 fines: up to €5,000, €5,001–20,000, €20,001–600,000, and closure for up to five years [notes: HOS-09, citing the BOE].
+- **Ley 1/2025, food waste (settles C-12).** BOE-A-2025-6597, BOE núm. 80, 2 Apr 2025. The header's "Entrada en vigor: 02/01/2025" reproduces *disposición final vigésima* itself ("La presente ley entrará en vigor el 2 de enero de 2025"); the same provision says the art. 6 measures "serán aplicadas transcurrido el plazo de un año desde la publicación", so from about 3 Apr 2026 [new: https://www.boe.es/eli/es/l/2025/04/01/1/con, seen 23 Oct 2026]. G3's date is right; the anomaly is in the official text.
+  - Who is covered (art. 6): art. 6.6, "Las microempresas quedan excluidas"; art. 6.4.c exempts hospitality "en establecimientos iguales o inferiores a 1.300 m2", except that premises under one tax ID that together exceed 1,300 m² are obliged [new: same]. So the prevention-plan and donation duties hit chains, not the micro bar or restaurant the idea targets.
+  - Art. 8 (all hospitality): customers may take uneaten food "sin coste adicional alguno" (buffets excepted), the venue must say so visibly, preferably on the menu, and use food-grade, reusable or easily recyclable containers [new: same].
+  - Art. 20 lists no infraction for failing to offer containers; art. 21 fines are up to €2,000 or a warning (minor), €2,001–60,000 (serious), €60,001–500,000 (very serious), and regions may raise them [new: same]. Press stories of fines "for no tupper" are overstated unless a region adds an infraction [notes: HOS-08].
+- **How often anyone checks.** Andalusian consumer campaigns (not health inspections): 2024, 798 restaurants visited, 18.7% non-compliant; 2025, 629 establishments, 1,060 actions, 626 files, 97 non-compliant (15.49%), with complaint forms and price display as the main infractions and allergen information not among them [new: consumoresponde.es campaign pages via search 14, and https://www.consumoresponde.es/actualidad/noticias/la_junta_inspecciona_un_millar_de_establecimientos_de_restauracion_en_la, undated, seen 23 Oct 2026]. The 2026 campaign covers at least 1,000 restaurants and checks allergen information and the take-home rule [new: same]. Against 43,957 food-service companies in Andalusia (DIRCE 2025), consumer inspections reach about 2% a year. Health-inspection frequency was not found (open).
+- Election risk: none.
+
+**(b) Competitors**
+- Qamarero's APPCC software: manual temperature readings from the till or phone with person, time and optional photo; automatic readings with sensors; cleaning routines; out-of-range incidents with email alerts; PDF and Excel exports. "El control de temperaturas está disponible para todos los clientes del plan Control"; sensors and installation are quoted separately [new: https://www.qamarero.com/software-appcc-restaurantes/, seen 23 Oct 2026]. Qamarero's plans run from €119/month after a free first month, with €249 shown [new: https://www.qamarero.com/precios/, seen 23 Oct 2026]. This settles the batch question: Qamarero does sell its own module, inside a POS plan.
+- Andy (Intowin): APPCC, labelling, audits, sensors and checklists for chains of more than 5–10 sites, contract caterers, supermarkets and hotel groups (McDonald's, Starbucks, Domino's, IKEA named); no prices; "Empieza gratis" [new: https://andyapp.io/, seen 23 Oct 2026].
+- Mitti (by SafetyCulture): Free plan at $0 for "small teams (up to 10)" with 5 active inspection templates; Premium $24 per seat per month on annual billing [new: https://mitti.com/pricing/, seen 23 Oct 2026]. Enough for one kitchen's daily checks.
+- Conhostur (Alicante hospitality association) with the AINIA technology centre launched a mobile app for hygiene plans and APPCC records (announced Dec 2021; price and uptake unknown) [new: https://alicanteplaza.es/alicanteplaza/unaplataformadeconhosturyainiagestionalainformacionderequisitoshigienicosdeloslocales, 30 Dec 2021].
+- Last.app (€50/95/175 per location per month plus €500 set-up) shows no allergen or APPCC feature on its price page [new: https://www.last.app/precios, seen 23 Oct 2026]. APPCC consultancies remain unpriced [notes: HOS-09].
+
+**(c) Buyers and market size:** DIRCE 2025: restaurants (561) 73,296; catering (562) 14,751; bars (563) 146,853; total 234,900 companies, 183,898 with employees [new: INE table 39372]. Ceiling: 2% at €7/month is about 4,700 × €84, or about €395k ARR.
+
+**(d) Willingness to pay:** venues pay €50–249/month for POS suites, but a standalone logbook competes with a free generic app and a POS bundle; paper logbooks are cheap.
+
+**(e) Distribution:** APPCC consultancies as resellers (unproven), associations (which may build their own, as Conhostur did), POS marketplaces (where POS vendors compete), food distributors.
+
+**(f) Build and legal:** easy, 4–6 weeks, offline-capable. Low data sensitivity. Allergen extraction from recipes with AI is cheap but carries liability if wrong, so a human must confirm.
+
+**(g) Defensibility:** none.
+
+**Type C check (~€5/month):** automatable, and daily use would make the value visible if adopted, but the free generic plan and POS bundles cap the price at about €5 or less, which is the kill condition itself.
+
+**(h) Kill criteria**
+- "Several apps sell for €5/month or less": **met in substance** (Mitti's free plan; Andy's free start).
+- "POS suites include it free": **partly met** (Qamarero includes APPCC records in its Control plan).
+- "Inspectors rarely ask for records": **partly met** for consumer inspections (about 2% of Andalusian venues a year; allergen information not a main infraction); **open** for health inspections.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 3 | Recurring duty with low inspection intensity; the food-waste angle does not reach micro venues. |
+| S2 Buyers | 4 | About 235k food-service companies. |
+| S3 Willingness to pay | 2 | Free generic apps and POS bundles. |
+| S4 Reachability | 3 | Consultancies, associations and POS marketplaces exist. |
+| S5 Competitive gap | 2 | Several decent tools at both ends. |
+| S6 Build speed | 5 | Under 4–6 weeks. |
+| S7 Defensibility | 1 | Trivially copyable. |
+| S8 Retention | 3 | Daily records if adopted; micro venues churn. |
+| **Sellability** | **2.88** | |
+| **P** | **3** | Large fines exist but are rare; daily burden moderate. |
+| **Overall** | **2.93** | 0.6 × 2.875 + 0.4 × 3 |
+
+**Open [I] checks:** what APPCC consultancies charge for a plan plus yearly upkeep and whether they would resell; health-inspection frequency from a regional health department; whether inspectors in Madrid, Catalonia and Andalusia accept photo logs.
+
+**What would change the verdict:** health-inspection data showing frequent record checks and fines for small venues; a consultancy network wanting a white-label logbook for its clients.
+
+---
+
+#### IDEA-38: Returns and exchange portal with serial-returner rules for small online fashion shops — KILL (high)
+
+**Validated definition.** A €19–39/month returns portal for Shopify, WooCommerce or PrestaShop shops: branded portal, exchange-first flow, reason capture, return-window enforcement and per-customer rules for serial and late returners. Kill it: the type A thesis fails, because cheaper or equal incumbents already sit at the proposed price (AfterShip Returns $19/month with exchanges and eligibility rules and Spanish support; Return Prime $19.99/month with exchanges and store credit; Shopify's native self-serve returns), while Spanish mid-market players (Outvio, Rever, Sendcloud from €87/month) cover larger shops. There is no moat, and the returner rules carry consumer-law and profiling conditions.
+
+**(a) Problem reality and rule status**
+- The pain is real: 23.7% of non-food online orders returned in 2025 (clothing 31%), €13.3bn; serial returners are 11% of shoppers and 23% of returns [notes: RET-11] (vendor-sourced data, ZigZag with Retail Economics).
+- **No regulatory trigger in force in Spain yet.** The EU online withdrawal function (Directive (EU) 2023/2673, new art. 11a of the Consumer Rights Directive) "took effect on June 19, 2026" across the EU [new: https://help.shopify.com/en/manual/compliance/legal/eu-right-of-withdrawal, seen 23 Oct 2026]. Spain had not transposed it: "España no haya incorporado aún a su ordenamiento jurídico la Directiva (UE) 2023/2673" [new: OCU press note, 19 Jun 2026, https://www.ocu.org/organizacion/prensa/notas-de-prensa/2026/normabotondesistimiento190626]. The Commission opened infringement proceedings against Spain and 20 other states with a letter of formal notice [new: Europa Press via https://elderecho.com/bruselas-expedienta-a-espana-por-no-transponer-la-directiva-sobre-servicios-financieros-a-distancia, 30 Jan 2026]. With the Cortes dissolved, transposition now needs a decree-law (convalidation risk) or waits for the new Cortes, which meet on 23 Dec 2026. A directive does not bind private traders directly (my legal reading).
+- **Return fees and inspection before refund (batch 4's consumer-law check).** TRLGDCU (consolidated, last update 28 Feb 2026): refund "antes de que hayan transcurrido 14 días naturales" from the withdrawal notice (art. 107.1); the trader "podrá retener el reembolso hasta haber recibido los bienes" or proof of return (art. 107.3); the consumer bears the direct return cost unless the trader agreed to bear it "o no le ha informado" (art. 108.1); the consumer is liable for diminished value from handling beyond what is needed to establish the goods' nature (art. 108.2) [new: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555, seen 23 Oct 2026].
+  - So charging return shipping is lawful if the customer was told before contracting; charging only serial returners is lawful if that customer sees the rule before buying; and inspection before refund is lawful within the 14-day clock (my reading).
+  - Ley 10/2025 *disposición final primera* adds to the Unfair Competition Law a misleading practice: addressing consumers "de forma individualizada y personalizada" without stating in the same communication the parameters used [new: BOE Ley 10/2025; KPMG alert, Jan 2026]. A score-based rule must disclose what drives it. GDPR art. 22 may apply if the score alone decides a refusal (my reading).
+
+**(b) Competitors (vendor and app-store pages)**
+- AfterShip Returns & Exchanges (4.7, 1,541 reviews): Free plan (shopper-funded labels); Essentials "$19 / month" with 20 returns, $0.50 extra, refunds and exchanges, eligibility rules and analytics; Premium "$119 / month" adds fraud prevention; languages include Spanish [new: https://apps.shopify.com/returns-center-by-aftership, seen 23 Oct 2026].
+- Return Prime (4.8, 776 reviews): Start free with 5 requests; Grow "$19.99 / month" with 60 requests, exchanges and store credit; Thrive AI "$79.99 / month" with return fees; Scale "$149.99 / month"; "Customer blocklists" listed [new: https://apps.shopify.com/return-prime, seen 23 Oct 2026].
+- ReturnGO (4.9, 409): Premium $147, Pro $297 a month [new: https://apps.shopify.com/returngo, seen 23 Oct 2026]. Loop: Checkout+ free (US and Canada labels), Essential from $155, Advanced from $340 with fraud prevention [new: https://www.loopreturns.com/pricing/, seen 23 Oct 2026].
+- Sendcloud (Spain): Free; Lite €28 + €0.11 per label (no returns portal listed); Growth €87 + €0.10 with "Portal de devoluciones personalizado"; Premium €175 with advanced returns; prices appear to be annual billing [new: https://www.sendcloud.com/es/precios/, seen 23 Oct 2026].
+- Outvio: no prices published; its Post-Checkout plan has a branded returns portal, automatic Shopify exchanges and "Reglas de Devoluciones y Cambios Inteligentes" [new: https://outvio.com/es/pricing/, seen 23 Oct 2026]; about €375/month by ShippyPro's estimate, which also lists ShippyPro Professional at €207.20/month (April 2026, competitor source) [new: https://www.shippypro.com/es/shippypro-vs-outvio].
+- Rever: returns platform for Shopify, WooCommerce, Magento and PrestaShop with Spanish customers (Misako case study), demo-only pricing, now pitching the EU withdrawal button ("Compliance with Directive (EU) 2023/2673 is your responsibility as a merchant") [new: https://www.itsrever.com/, seen 23 Oct 2026].
+- Shopify's own return rules and self-serve returns [new: Shopify help page above].
+
+**(c) Buyers and market size:** DIRCE 2025 non-store retail (CNAE 479) 13,663 companies across all products; store-based fashion retailers that also sell online sit in CNAE 477 (120,270 companies) [new: INE table 39372]. The number of online fashion and footwear SMEs with meaningful return volumes was not found (S* not run); 5k–20k is my estimate.
+
+**(d) Willingness to pay:** strong adjacent spend, $19–375 a month, which is exactly why the price point is taken.
+
+**(e) Distribution:** app stores, which are high-intent but crowded with well-reviewed apps.
+
+**(f) Build and legal:** 1–2 months; labels through an aggregator; consumer-law and profiling conditions above.
+
+**(g) Defensibility:** none.
+
+**Type A check:** the incumbents' entry price is not high (about $19–20 a month, or free on Shopify), so there is no price gap to exploit, and Spanish-language support already exists.
+
+**(h) Kill criteria**
+- "Any plan under about €30/month already offers exchange-first flows and returner rules": **met** for exchange-first flows (AfterShip Essentials, Return Prime Grow) and **partly met** for returner rules (blocklists listed; return fees and fraud prevention only in the $79.99–119 tiers).
+- "Interviews show the cost is logistics rather than abusive returners": **open [I]**.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | No duty in force in Spain; withdrawal-button transposition pending. |
+| S2 Buyers | 2 | Probably 5k–20k online fashion, footwear and electronics SMEs (inference). |
+| S3 Willingness to pay | 4 | Shops already pay $19–375 a month. |
+| S4 Reachability | 4 | App stores are high-intent channels. |
+| S5 Competitive gap | 2 | Several decent tools at and below the price. |
+| S6 Build speed | 4 | 1–2 months. |
+| S7 Defensibility | 1 | None. |
+| S8 Retention | 3 | Embedded in operations once adopted. |
+| **Sellability** | **2.75** | |
+| **P** | **4** | Returns are a large, frequent cost for fashion e-commerce. |
+| **Overall** | **3.25** | 0.6 × 2.75 + 0.4 × 4 (a real problem with no open gap: the kill criterion decides) |
+
+**Open [I] checks:** interview 10 small fashion e-shops on whether the cost is logistics or abusive returners.
+
+**What would change the verdict:** a Spanish transposition of the withdrawal function with requirements that the Shopify-centric apps do not meet on WooCommerce or PrestaShop (a short-lived opening for a compliance plug-in, not a returns business).
+
+---
+
+#### IDEA-39: Commission-free direct booking for salons, with deposits and client-data import — KILL (medium)
+
+**Validated definition.** A €9–15/month booking page and calendar for 1–5 staff, with deposits at cost, reminders, free WhatsApp click-to-chat links and one-click import from Booksy, Treatwell or Koibox. Kill it: the marketplaces already charge nothing on repeat clients, so "commission-free for repeat clients" is not a differentiator; cheaper tools already exist (Setmore's free plan for up to four users with Reserve with Google; Setmore Pro at $5 per user with deposits and SMS); the market is crowded; and there is no moat.
+
+**(a) Problem reality and rule status**
+- **Treatwell:** Starter and Advanced plans with no monthly fee shown ("Empieza gratis"); "25 % de comisión por cada nuevo cliente"; "0% de comisión por reservas repetidas"; 2% on online prepayments; "la duración mínima del contrato con Treatwell es de 12 meses"; unlimited staff; Advanced adds VeriFactu or TicketBAI invoicing [new: https://www.treatwell.es/partners/precios/, seen 23 Oct 2026].
+- **Booksy:** €34.99 + IVA a month including the first user; €8 + IVA per extra member; Boost takes 30% of a new client's first visit; mobile payments 2% + €0.15, Tap to Pay 0.99% + €0.10, instant payouts 1.5%; no lock-in [new: https://biz.booksy.com/es-es/blog/cuanto-cuesta-un-software-de-reservas-para-salones, 10 Aug 2026]. Pabau (a competitor) gives the Boost cap as €50 + IVA, €66.99 + IVA for five staff, 100 marketing SMS a month, and Capterra complaints about support, unexpected commissions, weak Boost results, data export and payment failures [new: https://pabau.com/es/blog/booksy-precio/, updated 8 Oct 2026].
+- **Fresha:** no free plan now; Independent $19.95 a month, Team $14.95 per bookable member a month; a one-time 20% fee on marketplace new clients (minimum $6), none for clients from the salon's own link or social pages; payments 2.29–2.79% + $0.20; no minimum contract; prices shown in USD [new: https://www.fresha.com/es/pricing, seen 23 Oct 2026].
+- **No-show deposits (batch 4's consumer-law check).** TRLGDCU art. 85.6 makes "una indemnización desproporcionadamente alta" abusive, so a disclosed, proportionate deposit or no-show fee is lawful in principle (my reading; no specific rule found, and search 17 was inconclusive). Withdrawal is the sharper risk: art. 103.l excludes from the 14-day withdrawal right only services "relacionados con actividades de esparcimiento" with a fixed date [new: BOE TRLGDCU, seen 23 Oct 2026]. Hair and beauty are arguably not leisure, so a prepaid online booking may carry a withdrawal right until the service is performed (art. 103.a), and a client who cancels in time could reclaim the deposit (my reading, unverified by any source). The same risk applies to Booksy, Fresha and Treatwell.
+- **WhatsApp:** since 1 Oct 2026 utility messages inside the customer-service window are charged; 1,000 free service messages a month per number; messages within 7 days of a Click-to-WhatsApp ad are free [new: https://developers.facebook.com/docs/whatsapp/pricing/, seen 23 Oct 2026]. Click-to-chat links that the client opens and sends from the free app avoid API fees (general knowledge).
+- No regulatory trigger; VeriFactu dates are batch 1's (C-08).
+
+**(b) Competitors:** the three above, plus Setmore Free ("$0 user / month", up to 4 users, unlimited appointments, branded booking page, online and in-person payments, Instagram "Book Now" and Reserve with Google; no deposits or SMS) and Setmore Pro ("$5 user / mo" on annual billing, with deposits and SMS reminders) [new: https://www.setmore.com/pricing, seen 23 Oct 2026]; Reservio Free (40 bookings per 30 days, 100 clients, too small for a working salon) [new: https://www.reservio.com/es/precios, seen 23 Oct 2026]; SimplyBook.me with a free version; Capterra Spain ratings Fresha 4.8 (1,447 reviews), Treatwell 4.4 (285), Reservio 4.6 (142) [new: capterra.es, search 16 summary]; Koibox from €40 and Flowww from €59 a month [notes: RET-19].
+
+**(c) Buyers and market size (C-21 not settled at class level):** INE DIRCE publishes no 4-digit classes. Group 960 (other personal services) has 155,724 companies, 61,954 with employees, an upper bound that also includes laundries, funeral services and spas [new: INE table 39372]. Informa (via Empresite) counts 27,497 companies in the sector, legal entities only [new: empresite.eleconomista.es, search 21 summary]. DBK's 72,300 establishments (2021, including beauty) and the sector's 35,000 salons (2021) [notes: RET-19, RET-20] differ in definition. CNAE-2025 introduces class 9621 "Peluquerías y barberías" (search 21). My best range: 40k–75k salons and beauty centres.
+
+**(d) Willingness to pay:** clear. Salons pay Booksy €35–67 a month, Koibox €40, Fresha about $15–20 per member, so €9–15 is affordable, but a cheaper global tool already exists.
+
+**(e) Distribution:** distributors, associations, Instagram and "alternativa a Booksy" searches. Unproven.
+
+**(f) Build and legal:** 4–6 weeks; card-on-file with strong customer authentication through a payment provider; invoicing through a certified partner; the withdrawal risk above.
+
+**(g) Defensibility:** none.
+
+**Type A check:** the incumbents' prices are high enough (Booksy €35–67 a month), and switching is realistic for repeat-client salons, but the cheap end is already taken by global tools at $0–5 per user, so a new entrant has no price edge.
+
+**(h) Kill criteria**
+- "A free tool with the same features is widely used": **partly met**. The tool exists (Setmore, nearly free, with deposits on Pro); wide use in Spain was not shown.
+- "Repeat clients already book by WhatsApp or phone at no cost and owners see no gain": **open [I]**.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | Steady cost irritation, no deadline. |
+| S2 Buyers | 3 | About 40k–75k salons and beauty centres. |
+| S3 Willingness to pay | 4 | Salons already pay €35–67 a month. |
+| S4 Reachability | 3 | Distributors and associations exist; unproven. |
+| S5 Competitive gap | 2 | Several decent tools, including near-free ones. |
+| S6 Build speed | 4 | 4–6 weeks. |
+| S7 Defensibility | 1 | None. |
+| S8 Retention | 4 | Daily tool with accumulated client data once adopted. |
+| **Sellability** | **2.88** | |
+| **P** | **3** | €10–12 per new marketplace client plus €35–67 a month; moderate. |
+| **Overall** | **2.93** | 0.6 × 2.875 + 0.4 × 3 |
+
+**Open [I] checks:** interview 20 salons in Madrid and Valencia on marketplace against repeat bookings, commissions paid and current tools; ask a consumer-law specialist whether prepaid salon bookings carry the 14-day withdrawal right.
+
+**What would change the verdict:** evidence that Spanish salons reject the global tools (language, invoicing, Bizum) and that a distributor will bundle a local tool; a legal opinion that turns the withdrawal risk into a feature (compliant deposit terms).
+
+---
+

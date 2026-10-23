@@ -74,7 +74,7 @@
 
 **(e) Distribution**
 - Administradores are concentrated (about 16,000) and have a colegio channel: CAF Madrid has published MASC guidance [notes: PRO-12].
-- Gestorías: Copilot Gestoría's positioning shows they are already being sold AR automation.
+- Gestorías are already being sold AR and "expediente MASC" automation (Copilot Gestoría), so that channel is contested.
 - Invoicing APIs exist for an overdue-invoice "start MASC" button without needing a partnership: TS Facturas lists "Integración con API" on every plan, and Holded allows 70–1,000 API calls a day by plan [new: https://www.billin.net/precios/ and https://www.holded.com/es/precios, seen 23 Oct 2026].
 - High-intent search exists ("MASC monitorio", "burofax MASC"), but its volume is unmeasured.
 
@@ -101,6 +101,10 @@
 | More than 10% of pilot files inadmitted | Open [I]. The desk proxy is favourable | Appellate trend |
 | A free official channel with court-accepted certificates announced for 2027 | Not met. PIMASC is a register for neutrals, not a delivery channel. Watch item | Ministerio de Justicia page |
 | MASC made voluntary after 29-N | Open; no evidence either way | Search 3 |
+
+**Type checks**
+- **A (secondary).** The incumbents' price is high enough to undercut: €99.90–150 + VAT per file, against €19–29. Switching is realistic for claims under €2,000, where agencies and lawyers are uneconomic.
+- **C (secondary).** The €3–5/month lease-monitoring add-on is dropped: evictions are shrinking and lawyer-bound. For administradores, about €1 per community per month only works bundled in their software.
 
 **Scores (reshaped version)**
 | Score | Value | Justification |
@@ -179,6 +183,11 @@ Quipu, Anfix, Contasimple and FacturaDirecta mention no reminders on their prici
 - "Entry tiers already ship reminders plus statutory interest." **Half met:** reminders yes (TS Facturas Básico, Cuéntica), interest no.
 - "Fewer than half of trial users keep reminders on after 60 days." **Open [I].**
 - **Additional reason to kill:** the e-invoice payment statuses from 2027–2028 commoditise the "is it paid?" signal.
+
+**Type check (C, €5/month).** Not viable.
+- It is automated and low-support, but its value is visible only in months with overdue invoices.
+- Reminders already ship inside €6.60–12 invoicing tools.
+- A standalone tool would need roughly €15–25/month to recover SME acquisition costs. That is above what the market pays for reminders (my estimate, not tested).
 
 **Scores (stand-alone version)**
 | Score | Value | Justification |
@@ -418,6 +427,11 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 | Fewer than 1 in 5 complainers would switch | Open [I] |
 | Saturation | Effectively met: Cuéntica plus €0–5 plans |
 
+**Type check (A).** Fails.
+- **Incumbent prices are not high:** Anfix €4.99, TS Facturas €6.60, Holded Plus €7.50, Cuéntica €9, Declarando €9.90; Contasimple, Qonto, B2Brouter and the AEAT app have €0 tiers.
+- **The terms gap is already closed** by Cuéntica.
+- **Switching is realistic** only at the VeriFactu and e-invoicing moments, and only if the gestor agrees.
+
 **Scores**
 | Score | Value | Justification |
 |---|---|---|
@@ -485,6 +499,10 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 | SMEs will not pay €5/month before a loss | Open [I] | No contrary evidence found |
 | Banks bundle the feature | Met (VoP for all; Valitic through Bankinter and Powens) | — |
 
+**Type check (C, €5/month).** Not viable at any low price.
+- The value is invisible month to month: it pays off only when an attack happens.
+- The headline check is free at every bank.
+
 **Scores**
 | Score | Value | Justification |
 |---|---|---|
@@ -542,6 +560,10 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 | Median target user has fewer than three contracts | Open. The INE proxy is weak |
 | Banks add subscription views | Met (Qonto Premium) |
 
+**Type check (C, €3–5/month).** Not viable.
+- The value is front-loaded in the first clean-up, then monthly value fades.
+- A savings-share model would capture one-off savings of tens to hundreds of euros, which is too small to fund acquisition.
+
 **Scores**
 | Score | Value | Justification |
 |---|---|---|
@@ -593,6 +615,11 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 | Most Kit sites cannot be exported | Open; domains are owned by the SME by rule |
 | Median upkeep below about €15/month | Open; one vendor snippet at €21.98 |
 | Window closes | Met over 2026 (inference) |
+
+**Type check (A).** Partly passes.
+- **The incumbent's price is high:** €21.98–66/month (anecdotal) against €7–10 for hosting.
+- **Switching is legally realistic:** the bases make the domain the SME's.
+- **But the realistic alternative is to cancel,** not to buy a managed migration, so the price gap does not create a durable business.
 
 **Scores**
 | Score | Value | Justification |
@@ -682,6 +709,8 @@ How many platforms a typical subcontractor uses is unknown ([I]; no data found).
 | Platforms forbid automated uploads and principals refuse share-links | First half met for the OFA group (Dokify terms; Nalanda in the same group). Second half open [I] |
 | DocuPRL or others already sell the same wallet cheaply | Met for the wallet (DocuPRL €0–39/month); not for cross-platform sync |
 | Subcontractors' willingness to pay is untested | Open [I] |
+
+**Type check (A, secondary principal module).** Fails. At €49–99/month the principal module is not cheaper than the existing principal-paid options: DocAcces €32–99/month, DocuPRL from €34–39/month, UCAE from €80/month, Dokify from €490/year.
 
 **Scores**
 | Score | Value | Justification |

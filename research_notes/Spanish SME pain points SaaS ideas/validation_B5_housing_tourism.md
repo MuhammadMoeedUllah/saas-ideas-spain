@@ -64,7 +64,7 @@ One section per idea follows, in longlist order.
   - **Coliving and the cap (C-14): unresolved.** Pisos.com says coliving "queda fora"; the Sindicat de Llogateres says the law applies; the Generalitat is "analitzant com abordar el fenomen del coallotjament" [new: 3Cat, 16 Feb 2026, https://www.3cat.cat/3catinfo/els-habitatges-de-coliving-es-doblen-en-dos-anys-estan-dins-o-fora-del-topall-de-preus/noticia/3394906/]. Search 2 found no later official interpretation. A product must handle both readings.
 - **Enforcement: real but thin, so the main penalty is civil, not administrative.**
   - **Administrative files:** Catalonia opened 13 sanction files (7 Consum, 6 Habitatge) plus 132 preliminary inquiries. Fines: €27,000 in total for two serious Consum cases; €1,750 paid for a missing index in an ad; Habitatge two at €30,000 and two at €3,000; range "entre 3.000 i 90.000 euros" [new: https://consum.gencat.cat/ca/detalls/noticia/primers-sancionadors-contencio-preu-lloguers, 3 Feb 2026]. The note does not say whether any case involved seasonal or room lets.
-  - **Inspection capacity:** by March 2026 only "3 sancions" had been imposed, and inspectors were "only now" being incorporated (3Cat, 16 Mar 2026, above).
+  - **Inspection capacity:** 3Cat (16 Mar 2026, above) reports that the government had imposed only "3 sancions" and that inspectors were "only now" being incorporated. That is fewer than the Consum note implies; the two probably count different things (final fines against proposals). Either way, administrative enforcement is thin.
 - **Courts keep re-classifying, whatever happens to the decree.**
   - **SAP A Coruña, 26 Feb (2026 per the notes):** an 11-month-15-day lease to a tenant "testing" the city was ruled a "simulación relativa", so the company landlord faces 7 years. Indicators: rent in full months, a deposit lodged on an annual rent of €4,800, utilities and insurance imposed on the tenant, a pre-emption waiver, an extension clause, and no objective event bounding the term ("la duración, por sí sola, no determina la existencia de un verdadero alquiler de temporada") [new: idealista, 6 Jul 2026, https://www.idealista.com/news/inmobiliario/vivienda/2026/07/06/901838-la-clave-no-es-la-duracion-cuando-un-alquiler-de-temporada-pasa-a-ser-de-vivienda].
   - **SAP Cantabria 166/2026, 10 Mar 2026:** a room let as a permanent home falls under the LAU.
@@ -97,7 +97,7 @@ One section per idea follows, in longlist order.
   - INCASÒL took 28,079 deposits of all lease types in Q1 2026, 20,141 of them in Barcelona province, with no split by type [new: search 6 → habitatge.gencat.cat lloguers per àmbits geogràfics, Q1 2026].
 - **Nomad demand: better than the notes' single source.** UGE teleworker (DNV) permits stood at 44,966 in Sept 2025: Barcelona 15,073, Madrid 8,087, Málaga 4,916 [notes: EXP-08, El Nacional 12 Feb 2026, attributed to the UGE]. That supersedes the 27,875 figure (end-2024).
 - **Paying entities (my estimate):** professional mid-term managers, coliving operators, company landlords and agencies with mid-term books, in the low thousands to about 10,000 nationally, with Catalonia a fraction. No official count exists.
-- **Revenue ceiling (my calculation):** 20,000–40,000 professionally managed mid-term units × €10/month × 12 = €2.4–4.8M a year in Spain if every unit were captured. At a realistic 10–20% share, that is €0.25–1M ARR. Coliving adds 20,000 beds × €2.5 × 12 = €0.6M at full capture. **This is a niche product, viable for a 1–3 person team, not a large market.**
+- **Revenue ceiling (my calculation):** I *assume* 20,000–40,000 professionally managed mid-term units. No source gives this; the only floors are about 58,900 temporary NRUA applications and about 20,000 coliving beds. On that assumption, × €10/month × 12 = €2.4–4.8M a year in Spain if every unit were captured. At a realistic 10–20% share, that is €0.25–1M ARR. Coliving adds 20,000 beds × €2.5 × 12 = €0.6M at full capture. **This is a niche product, viable for a 1–3 person team, not a large market.**
 
 **(d) Willingness to pay (anchors)**
 - **Lawyers and gestorías:** drafting a residential lease costs €120–300 and a review €50–75 (search-level, several law-firm blogs) [new: search 8 → blog.melendos.es, derechojudicial.com, 2026]. ANA puts drafting at "entre 150 y 300 euros" and agency fees at "entre el 50% y el 100% de una mensualidad" [new: https://agencianegociadoradelalquiler.es/cuales-son-los-gastos-del-contrato-de-alquiler-que-debe-asumir-el-propietario/, 11 Oct 2024].
@@ -106,7 +106,7 @@ One section per idea follows, in longlist order.
 - **Reading:** €8–12 per active contract per month (€48–72 over a 6-month lease) sits below one lawyer-drafted contract and far below the cost of a 5–7-year re-classification. Adjacent spend is clear. **Direct willingness to pay for software is unproven** [I].
 
 **(e) Distribution (evidence)**
-- **Filing intermediaries:** electronic filing at INCASÒL is mandatory for legal persons and for licensed professionals such as administradors (Llei 39/2015 art. 14.2). INCASÒL runs a "Concerts" mailbox (fiances.concerts@gencat.cat) for professional filers [new: INCASÒL FAQ]. The Cambres de la Propietat Urbana take in-person deposits. Together these give concentrated filers and landlord bodies who already handle every Catalan contract. Their partner appetite is unproven [I].
+- **Filing intermediaries:** electronic filing at INCASÒL is mandatory for legal persons and for licensed professionals such as administradors (Llei 39/2015 art. 14.2). The INCASÒL FAQ also lists a "Concerts" mailbox (fiances.concerts@gencat.cat) without explaining it. That it serves an agreement regime for professional filers is my inference, to verify [new: INCASÒL FAQ]. The Cambres de la Propietat Urbana take in-person deposits. Together these give concentrated filers and landlord bodies who already handle every Catalan contract. Their partner appetite is unproven [I].
 - **Other channels:**
   - AICAT (mandatory Catalan agent register) and the API/COAPI colleges;
   - ICAB courses on RDL 29/2026 [notes: HOU-02];
@@ -149,7 +149,7 @@ One section per idea follows, in longlist order.
 
 **Open [I] checks**
 - Interview 10 Catalan mid-term managers or coliving operators (Be Casa, Cotown, Smart Rental, Node Living, Vandor, AICAT members) on their current file, legal spend per contract, and €8–12 per contract.
-- Ask 3 INCASÒL "concert" filers or administradors whether they would push a filing pack to their clients.
+- Ask 3 professional INCASÒL filers (administradors, agents; and confirm what the "Concerts" regime is) whether they would push a filing pack to their clients.
 - Ask 2 partner law firms (for example ALY, DiG) whether they would co-brand templates and take escalations.
 - Ask Homming and Rentger whether a cause and RDL 29/2026 module is on their roadmap.
 
@@ -187,7 +187,7 @@ One section per idea follows, in longlist order.
   - **Cap rule:** DF 6ª(b) of RDL 29/2026: "el incremento de la renta a aplicar no podrá ser superior al dos por ciento" for updates due from entry into force to 31 Dec 2027. Art. 18 LAU caps updates at the IRAV [new: BOE RDL 29/2026 and consolidated LAU, seen 23 Oct 2026].
   - **IRAV:** 2.54% for Sept 2026, published 14 Oct 2026, "máximos" since INE began publishing it [new: search 9 → elEconomista, Oct 2026, https://www.eleconomista.es/vivienda-inmobiliario/noticias/14020787/10/26/el-indice-de-referencia-del-ine-para-la-actualizacion-del-alquiler-escala-a-maximos-del-254-en-septiembre-aunque-se-mantiene-muy-por-debajo-del-ipc.html; also Fotocasa, 14 Oct 2026].
   - **CPI:** 4.9% for Sept 2026, core 3.1% [new: INE, https://www.ine.es/dyngs/Prensa/es/IPC0926.htm, 14 Oct 2026].
-  - **What each regime means:** while the decree stands, the update is the lower of 2% and the IRAV. If it lapses around 12 Nov, the IRAV (2.54%) applies to contracts signed since 26 May 2023, and contracts with an IPC clause revert to their own index.
+  - **What each regime means:** while the decree stands, an update due before 31 Dec 2027 is capped at 2% (unless newly agreed), within the IRAV ceiling. If the decree lapses around 12 Nov, contracts signed from 26 May 2023 are capped at the IRAV (2.54% for Sept 2026), and older contracts apply their own clause, often the CPI (4.9%). The IRAV-as-ceiling rule for post-26 May 2023 contracts is as stated by Alquigest (28 Sep 2026) and art. 18 LAU.
 - **Many sources are already out of date.** Lexway's page says "no existe ningún tope extraordinario" because RDL 8/2026 was rejected [new: https://lexway.es/actualizacion-renta/, seen 23 Oct 2026]. Alquigest (28 Sep 2026) says the 2% cap is "ya no está vigente" [new: https://alquigest.com/noticias/actualizacion-renta-alquiler-irav-ipc/]. Both predate or ignore RDL 29/2026. Confusion is real, but it is fixed with a free, up-to-date calculator, not a subscription.
 - **Tensioned zones.** 53 new Catalan municipalities were added by Resolución TER/3740/2026 (DOGC 19 Oct 2026), "Pendiente de publicación en el BOE", with a three-year duration [new: OCU, 20 Oct 2026, https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis/2026/10/nuevas-zonas-tensionadas-cataluna]. Counts by region conflict (C-14):
   - Basque Country: 15 (Vivara, 9 Sep 2026 [new: https://www.vivara.io/blog/legal/zona-tensionada-alquiler/]); 17 (Inmostats, latest resolution BOE-A-2026-9175 of 27 Apr 2026 adding Pasaia, Zestoa and Arrasate [new: https://inmostats.com/alquiler/zonas-tensionadas]); 17–19 [notes: CON-17].
@@ -276,7 +276,7 @@ One section per idea follows, in longlist order.
 The urgency rests partly on RDL 29/2026's guarantee caps, which may lapse. What survives is a **screening and evidence-intake step inside IDEA-29**. There the same documents prove the temporary cause and the tenant's solvency, and a referral fee comes from an existing guarantor instead of a scoring model of our own.
 
 **(a) Problem reality and regulation status**
-- **Tenant-side fees: banned and enforced.** Art. 20.2 LAU: management and formalisation costs "no podrán ser repercutidos al arrendatario" [new: BOE RDL 29/2026, verbatim].
+- **Tenant-side fees: banned and enforced.** Art. 20.2 LAU: management and formalisation costs "no podrán ser repercutidos al arrendatario" [new: BOE RDL 29/2026, verbatim]. The ban dates from Ley 12/2023; RDL 29/2026 rewrote it, and it survives a lapse.
   - **Alquiler Seguro fine now final:** Consumo's **€3.6M fine on Alquiler Seguro became final in the administrative route on 8 Apr 2026** ("La resolución deviene firme y agota la vía administrativa"). It comprises six very serious infractions (€1,000,000; €990,900; 3 × €500,000; €100,001) and one serious (€10,001).
   - **Conduct punished:** imposing a "Servicio de Atención al Inquilino" (treated as management and formalisation costs), home insurance for the landlord's benefit, charges for debt and court claims, a blacklisting clause, and excluding the right of withdrawal.
   - **More to come:** a second agency is under investigation [new: https://www.dsca.gob.es/en/comunicacion/notas-prensa/consumo-multa-36-millones-euros-alquiler-seguro-practicas-abusivas-sus, 8 Apr 2026]. Alquiler Seguro will appeal to the courts [new: search 12 → idealista, 9 Apr 2026].
@@ -363,7 +363,7 @@ Gap left: a standardised scorecard plus an audit log plus cross-border income ch
 **Validated definition (after reshape).** A register-matching monitor sold as an add-on through PMS and channel-manager marketplaces. It reads each unit's registration code and address from the manager's PMS, not by scraping platforms, which Airbnb's terms forbid. It checks them daily against the official regional open-data registers where these exist: Andalucía (OpenRTA, daily API), Comunitat Valenciana (daily API), Comunidad de Madrid (weekly) and Canarias (CSV/JSON). It flags inactive or mismatched codes and zone eligibility (Málaga's three-band zoning, Madrid's Plan Reside floor and centre rules), and keeps an inspection evidence pack. Catalonia and Baleares are added only once a data route is confirmed. A secondary buyer is the agent or investor running a pre-purchase eligibility check. Price: €2–3 per listing per month (minimum €49) for managers; a per-check fee for pre-purchase checks.
 
 **(a) Problem reality and regulation status**
-- **Platform enforcement is real and final at the interim stage.** Consumo's **€64,055,311** fine on Airbnb (signed Dec 2025) covers 65,122 listings: "sin licencia" ads and untruthful information on hosts' status (€63,980,311, six times the illicit profit), plus minor and serious items. The TSJ de Madrid "ha denegado la solicitud de medidas cautelares" [new: https://www.dsca.gob.es/es/comunicacion/notas-prensa/justicia-obliga-airbnb-pagar-64-millones-euros-previstos-multa-que-le, 22–23 Mar 2026]. The release mentions no proceedings against managers or Booking. Consumo's 2025 files against large managers remain without a published outcome [notes: HOS-24].
+- **Platform enforcement is real, and Airbnb lost its bid for interim relief.** Consumo's **€64,055,311** fine on Airbnb (signed Dec 2025) covers 65,122 listings: "sin licencia" ads and untruthful information on hosts' status (€63,980,311, six times the illicit profit), plus minor and serious items. The TSJ de Madrid "ha denegado la solicitud de medidas cautelares" [new: https://www.dsca.gob.es/es/comunicacion/notas-prensa/justicia-obliga-airbnb-pagar-64-millones-euros-previstos-multa-que-le, 22–23 Mar 2026]. The release mentions no proceedings against managers or Booking. Consumo's 2025 files against large managers remain without a published outcome [notes: HOS-24].
 - **National registry gone; EU duties stay.** The national registry was annulled (May–June 2026). EU 2024/1028 has applied since 20 May 2026: platforms must ask for and display numbers, run random checks and send data [notes: HOS-13, HOU-11].
 - **Spanish penalty regime for platforms is pending.** RDL 29/2026's new LAU Title V fines platforms €1M (very serious: not collecting and transmitting data), €500,000 (serious: incomplete or inaccurate data) and €100,000 (minor) [new: BOE RDL 29/2026, arts. 40–43, verbatim]. It **lapses if the ~12 Nov vote fails**.
 - **Regional and municipal rules (verified this pass):**
@@ -496,6 +496,7 @@ Sold to PMS, channel-manager and online check-in vendors (per booking or per uni
 - **Adjacent spend:** Chekin's €3.95–7.95 per unit already includes tourist taxes, and gestorías charge per return.
 - **The new spend is for municipal granularity and filing,** which nobody sells today. Willingness to pay for it is unproven [I].
 - **Joint liability for intermediaries (art. 7)** gives managers a reason to pay for accuracy.
+- **Type A check (secondary angle, "cheaper than Chekin"): it fails.** Chekin's €3.95 per property is not expensive, and the €3–6 per unit hypothesis would not undercut it. The A angle is dropped; the reshaped product is a B2B data and API layer, not a cheaper substitute.
 
 **(e) Distribution**
 - **Channels:** PMS and check-in vendors as API customers (one contract reaches many units), Basque gestorías, and hotel and tourist-flat associations in the three territories (names not validated).
@@ -582,6 +583,7 @@ Sold to PMS, channel-manager and online check-in vendors (per booking or per uni
 **(d) Willingness to pay**
 - **Weak.** A whole cloud ERP costs about €2.50 per community per month (Fynkus), and Gesfincas bundles juntas and certified notices.
 - Administradores' fees per community were not retrieved [I].
+- **Type A check (secondary angle, "lighter alternative to ERPs"): it fails.** The incumbents' prices are already low: Fynkus €0.10 per unit per month (minimum €2.50 per community) or €1 per unit per year, Fincasoft free under 50 components, Adminet pay-per-use. That leaves no price room for a cheaper alternative, and switching an accounting ERP is costly for an ageing profession.
 
 **(e) Distribution**
 - **Channels:** CGCAFE and the colegios territoriales; ERP vendors (as licensees, not as channels for a competing app); consolidators (inmho, standardising acquired offices).
@@ -679,10 +681,10 @@ No cheap self-serve kit for micro agencies was found in one search. That is weak
 - **Type C at about €5/month is not viable.** The value is visible only at deal time, and AML questions generate support. **€99–149 a year** is the realistic price, and it must be validated [I].
 
 **(e) Distribution**
-- **Associations:** API, COAPI, AICAT, AMADEI, FADEI. Their newsletters will cover RD 813/2026 in the coming weeks: InmoDiario's column is dated 23 Oct.
+- **Associations:** API, COAPI, AICAT, AMADEI, FADEI. The trade press has started covering RD 813/2026 (InmoDiario column, 23 Oct 2026), which gives a news hook for association partnerships.
 - **Agency CRMs:** integration or white-label, via Inmovilla and Witei.
 - **Franchise networks:** Tecnocasa, RE/MAX and others.
-- **Search:** there will be a demand spike around "representante SEPBLAC inmobiliaria".
+- **Search:** likely high-intent queries around "representante SEPBLAC inmobiliaria" (an inference; volume not measured).
 
 **(f) Build feasibility and legal constraints**
 - **MVP: 4–6 weeks.** Templates, the appointment pack (SEPBLAC's communication form must be checked), deal checklists, a screening API, a vault and reminders. No certification.
