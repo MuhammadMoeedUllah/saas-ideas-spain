@@ -56,6 +56,9 @@ runs it also carries each pain point's filter status. Rebuild it with
 ## Status
 
 - [x] Stage 1: capture (395 pain points, ~1,500 source links, 17 tracks)
-- [ ] Stage 2: filter into idea longlist (in progress)
+- [x] Stage 2: filter into idea longlist. 201 pain points kept, 194 filtered with reason codes
+  (`stage2_noise_log_combined.md`); 75 candidate ideas from six group passes
+  (`stage2_G*.md`, indexed in `stage2_idea_index.md`), merged into 64 ideas with a validation
+  plan in `stage2_idea_longlist.md`
 - [ ] Stage 2b: multi-angle validation
 - [ ] Stage 3: ranking and final report
