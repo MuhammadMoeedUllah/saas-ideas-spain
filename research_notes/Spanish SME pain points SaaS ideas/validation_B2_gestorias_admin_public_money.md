@@ -488,12 +488,17 @@ Every answer is reviewed by a planning professional during the MVP. The subscrip
   - the 4% ICIO tax.
 
   Results against the standards are published separately on madrid.es ("Cartas de Servicios"), and **the 2025 results were not retrieved** [new: https://www.madrid.es/UnidadesDescentralizadas/Calidad/CARTAS%20SERVICIOS/SistemaCartasServicio/41%20CS_de%20la%20Agencia%20de%20Actividades/DEFINITIVA/CS_ADA_2026.pdf, read via WebFetch, 23 Oct 2026].
-- Municipal rules are not exposed to the election. Not verified here: the 2027 ECU prices approved on 15 Oct 2026 [notes: ADM-01] and the status of València's 2025 draft ordinance, which is unknown.
+- Municipal rules are not exposed to the election. The 2027 ECU prices approved on 15 Oct 2026 were not re-verified [notes: ADM-01].
+- **València.** Drafting of the new procedural ordinance began in May 2025 [notes: ADM-02]. A construction-regulation aggregator lists an "Ordenanza reguladora de licencias urbanísticas y de actividades y de otros títulos habilitantes en Valencia", "Versión 2026", published 27 Jan 2026 [new: https://normatia.com/es/normativa/licencias-urbanisticas-actividades-valencia/, seen 23 Oct 2026]. This is single source; approval and BOP publication are not verified, and it is unclear whether it is the new text.
 
 **(b) Competitors.**
 - **Technicians:** viability studies "around 300 €" for a change of use (Habitissimo guide). Technicians on Certicalia offer no-commitment assessments whose fee is deducted if they are later hired for the project. That is lead-generation-like, but not free [new: search summaries of https://www.habitissimo.es/presupuestos/estudio-viabilidad and https://www.certicalia.com/preguntas/p/convertir-local-en-vivienda-en-madrid-18478, 2026].
 - **ECUs** (19 in Madrid; e.g. SGS): €500–1,000 for an urban-compatibility certificate [notes: ADM-01]. No ECU was found offering a free pre-check (1 search).
-- **The council's paid consulta urbanística:** fee and turnaround not retrieved. Madrid also publishes past planning consultations, e.g. CU 27-18 [new: https://transparencia.madrid.es/UnidadesDescentralizadas/UDCUrbanismo/Consultas Urbanisticas/2018/CU 27-18.pdf, search summary]. They are a free interpretive corpus a product could use, and that users can read themselves.
+- **The council's paid consulta urbanística:**
+  - "consulta urbanística especial de actividades": tasa €347.35 (2016 figure), documents "firmada por técnico competente", "un plazo de un mes para contestar". The council "quedará vinculado al informe técnico" only if the licence is later sought "en idénticos términos";
+  - consulta común: tasa €52.85 (2016) [new: https://papelea.com/es/ayuntamiento-de-madrid/consulta-urbanistica-especial-de-actividades, updated 3 Aug 2020; Papelea's consulta común page, same site, via search summary].
+
+  Current 2026 fees not verified. The official route is cheap-to-mid priced but slow (one month) and needs a technician, which is the speed gap a 48-hour pre-screen would fill. Madrid also publishes past planning consultations, e.g. CU 27-18 [new: https://transparencia.madrid.es/UnidadesDescentralizadas/UDCUrbanismo/Consultas Urbanisticas/2018/CU 27-18.pdf, search summary]. They are a free interpretive corpus a product could use, and that users can read themselves.
 - **Málaga's free ALU assistant** [notes: ADM-03].
 - No online "can I open X at address Y" product for Madrid was found (2 searches).
 
@@ -503,7 +508,7 @@ Every answer is reviewed by a planning professional during the MVP. The subscrip
 - Ceiling for Madrid: 300 agents and teams × €150/month ≈ €0.54M ARR. Each extra city needs its own rules work.
 
 **(d) Willingness to pay.**
-- Openers already pay €300 for a technician's viability study, €500–1,000 for an ECU certificate, and €600–1,250+ for an ECU-managed declaración responsable [notes: ADM-01].
+- Openers already pay €300 for a technician's viability study, €500–1,000 for an ECU certificate, and €600–1,250+ for an ECU-managed declaración responsable [notes: ADM-01]. The council's own consulta cost €52.85 (común) or €347.35 (especial) in 2016, with a one-month answer [new: Papelea, above].
 - A €49–149 pre-screen sits well under these anchors, but is less authoritative.
 - Agents' willingness to pay is unevidenced [I].
 
@@ -546,7 +551,7 @@ Every answer is reviewed by a planning professional during the MVP. The subscrip
 **Open [I] checks.**
 - Will 10 Madrid commercial agents or franchise teams pay €99–199/month?
 - Madrid's 2025 results against its charter standards.
-- The consulta urbanística fee and turnaround.
+- The current consulta urbanística fees (last seen at €52.85 and €347.35, 2016).
 - Whether ECUs will pay referral fees.
 - Data and rules in Barcelona, València, Sevilla and Málaga.
 

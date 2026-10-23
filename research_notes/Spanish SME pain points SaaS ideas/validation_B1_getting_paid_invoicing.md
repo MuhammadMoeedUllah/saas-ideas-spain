@@ -36,7 +36,7 @@
 
 **(a) Problem reality and rule status**
 - **In force, no lapse.** LO 1/2025 is an enacted organic law. The BOE consolidated text shows no amendment since 4 Jun 2025 [new: BOE LO 1/2025, seen 23 Oct 2026]. The dissolution does not affect it; only a new law could change it.
-- **Scope covers monitorios, community monitorios and evictions.** Art. 5.2 applies the requirement to all declarative processes in Book II of the LEC and the special processes in Book IV, which include the monitorio. Its exceptions list (fundamental rights, art. 158 CC, disability, filiation, summary possession, ruin demolition, minors, juicio cambiario) excludes neither the monitorio, nor the LPH art. 21 community monitorio, nor eviction for non-payment [new: BOE LO 1/2025]. This settles the G3 validation question on LPH art. 21 in favour of "MASC required", by the text. I found no court decision on that point.
+- **Scope covers monitorios, community monitorios and evictions.** Art. 5.2 applies the requirement to all declarative processes in Book II of the LEC and the special processes in Book IV, which include the monitorio. Its exceptions list (fundamental rights, art. 158 CC, disability, filiation, summary possession, ruin demolition, minors, juicio cambiario) excludes neither the monitorio, nor the LPH art. 21 community monitorio, nor eviction for non-payment [new: BOE LO 1/2025]. By the text, this answers the G3 validation question on LPH art. 21: MASC is required. That matches AP Málaga (Section 6, 6 Jun 2025), which upheld the rejection of a homeowners' association monitorio filed without a MASC [notes: FIN-06, a search summary in Stage 1; not re-fetched].
 - **Proof rules.** Without a neutral third party, the attempt is proved by a document signed by both parties, or by "cualquier documento que pruebe que la otra parte ha recibido la solicitud... en qué fecha, y que ha podido acceder a su contenido íntegro" (art. 10.2). The process ends without agreement 30 calendar days after receipt with no reply (art. 10.4). A binding offer lapses after one month (art. 17.4). Sending a request that defines the dispute interrupts limitation, including when sent "a través del medio de comunicación electrónico empleado por las partes en sus relaciones previas" (art. 7.1) [new: BOE LO 1/2025].
 - **Courts are relaxing:**
   - Madrid's first-instance judges (26 Sep 2025) accept burofax, buromail, buroSMS, email, SMS and WhatsApp if identity, content, dates and real receipt are proven; a refused or uncollected notice counts as received [new: ECIJA, https://www.ecija.com/actualidad-insights/eidas-y-masc-claves-para-acreditar-electronicamente-la-negociacion-previa-en-determinados-procesos-civiles-y-mercantiles/, 15 Oct 2025].
@@ -66,7 +66,7 @@
 
 **(c) Buyers and market size**
 - **Monitorios.** 179,846 were filed in Q2 2026 (−20.7%), a run rate of about 720k a year, all creditor types included [new: LegalToday/CGPJ, 16 Oct 2026]. The share filed by SMEs and the share under €2,000 are not published (gap).
-- **Evictions.** 25,540 in 2025 (C-15 resolved in favour of 25,540) [notes: CON-20]. 2,244 LAU evictions in Q2 2026 [new: LegalToday/CGPJ].
+- **Evictions.** 25,540 in 2025, using that total as section 6 instructs for C-15 [notes: CON-20]. I did not re-fetch the CGPJ 2025 release, so C-15 stays settled by convention, not re-verified. 2,244 LAU evictions in Q2 2026 [new: LegalToday/CGPJ].
 - **Communities.** About 16,000 administradores and 1M communities [notes: CON-24].
 - **Rough ceiling (my arithmetic, not a forecast).** 60k SME creditors × 2 claims × €25 = €3M a year. 3,000 administradores × €40/month = €1.4M a year. This is a niche of €2–5M ARR, not a large market.
 
@@ -439,7 +439,7 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 
 ---
 
-#### IDEA-11: Supplier bank-detail change guard (anti-IBAN-fraud payment check) — KILL (medium-high)
+#### IDEA-11: Supplier bank-detail change guard (anti-IBAN-fraud payment check) — KILL (high)
 
 **Validated definition.** A €5–9/month tool for micro and small firms. It keeps a register of verified supplier IBANs, watches invoices, emails and SEPA payment files for new or changed IBANs and look-alike senders, and enforces a call-back plus second approval before payment. **Verdict: KILL.** The core check is now a free, mandatory bank service, and the stronger tax-ID check is sold through banks.
 

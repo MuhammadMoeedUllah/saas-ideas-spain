@@ -267,3 +267,118 @@
 
 ---
 
+#### IDEA-23: CCTV compliance kit with a ready response pack for data-protection complaints — KILL (high)
+
+**Validated definition.** A €29 set-up plus €2.90/month kit for shops, bars, workshops, gyms and comunidades with cameras: a guided set-up with a photo of each camera's view, the warning sign, the staff notice and the record-of-processing entry, one-month deletion reminders, an evidence vault and an AEPD response pack, with an installer edition at €1 per site per month. Kill it: the AEPD gives away the sign template, the guide and a factsheet for public establishments; small-business cases end in a warning or in fines of €500 per infraction (€600–1,500 paid in the cases found); a procedure is a rare event for any given business; and once the sign is up there is almost no monthly value.
+
+**(a) Problem reality and rule status**
+- **AEPD 2025 totals (settles C-07).** BDO's table, sourced to the AEPD Memoria Anual 2025: complaints 18,855 → 30,931 (+64%); fines 281 → 325; total fined €35,592,200 → €48,108,765 (+35%); average about €148,000; 12 fines above €1M. Video surveillance held second place with 4,050 complaints (+19%) [new: BDO, "La AEPD en 2025", May 2026, https://es-admin.bdo.global/getattachment/29fdc619-d1c8-40fd-af4f-57757c6ceb21/AEPD-2025.pdf?lang=es-ES, text extracted 23 Oct 2026]. Lawwwing's €33.9M (13 Jul 2026), also attributed to the Memoria, does not match that table [new: https://lawwwing.com/aepd-sanciones-2025/, seen 23 Oct 2026]. **Use €48.1M and 325 fines.**
+- **The "+1,653%" headline is one fine.** The sector line "Comercio, transporte y hostelería" went from €613,800 to €10,760,152, and the largest 2025 fine was AENA's €10,043,002 (art. 35 GDPR, impact assessment; sector "Transporte") [new: BDO, same]. If AENA sits in that line, as BDO's sector label suggests, it is about 93% of it, and the remainder (about €0.72M) is similar to 2024 (my arithmetic). The headline says nothing about shops or bars.
+- **Small-case outcomes (kill test).**
+  - PA/00024/2024: a bar with an indoor camera and no sign, found at a police inspection, got a *procedimiento de apercibimiento* (warning under GDPR art. 58.2.b), no fine [new: https://www.aepd.es/documento/pa-00024-2024.pdf, text extracted 23 Oct 2026].
+  - PS/00561/2023: a comunidad de propietarios, arts. 5.1.c and 13 GDPR: €1,000 proposed (€500 + €500), €600 paid on 28 May 2024 after the two 20% reductions for admitting liability and paying voluntarily (LPACAP art. 85) [new: https://www.aepd.es/documento/ps-00561-2023.pdf, text extracted 23 Oct 2026].
+  - Selectra's table of AEPD files: PS/00161/2024, a shop over-capturing with no sign, €1,000 (2 × €500); PS/00092/2023, a company filming the street with no retention limit and no information, €1,500 (3 × €500); PS/00295/2025, a business recording sound without telling staff, €2,000 reduced to €1,200; private individuals, warnings or €300–600 [new: https://selectra.es/alarmas/kits-alarmas/videovigilancia/multa, updated 29 Jul 2026].
+  - A Spanish restaurant with terrace cameras and no signs: €1,000 [new: Diario Constitucional (Chile), 5 Dec 2025, search 8 summary; page returned 403].
+- **Rules in force:** LOPDGDD art. 22: public road only "en la medida en que resulte imprescindible"; deletion "en el plazo máximo de un mes desde su captación", unless the footage proves acts against people, property or premises, in which case it must be given to the authority "en un plazo máximo de setenta y dos horas"; the information duty is met by a visible sign (art. 22.4) [new: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673, seen 23 Oct 2026]. The AEPD guide is dated February 2025 [new: https://www.aepd.es/documento/guia-videovigilancia.pdf, text extracted 23 Oct 2026].
+- Election risk: none.
+
+**(b) Competitors and free substitutes**
+- AEPD, free: the downloadable sign (cartel-videovigilancia.pdf), the guide, six factsheets including "Establecimientos públicos" and "Control laboral", and 16 legal reports such as sign dimensions [new: https://www.aepd.es/areas-de-actuacion/videovigilancia, seen 23 Oct 2026].
+- Facilita RGPD, free, for low-risk processing: generates information clauses, processor-contract clauses, a record of processing and a minimum-security annex; the page does not mention video surveillance [new: https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd, seen 23 Oct 2026].
+- Consultancies quote on request (Atico34 / protecciondatos-lopd.com, search 9); PymeLegal publishes no prices [notes: LEG-10]; Lawwwing €9.9–79/month focuses on websites [notes: LEG-05]; installers hand out templates [notes: LEG-06].
+
+**(c) Buyers and market size:** CCTV users are not counted anywhere I found. Proxies: about 1.08M B2C-facing companies (DIRCE 2025, see IDEA-20) plus offices and workshops, and about 1 million comunidades [notes: CON-24]. Against that base, 4,050 complaints a year in all video-surveillance settings, including neighbours and workplaces, and 81 finished procedures in the area in 2025 [notes: LEG-06] make a case against a given business very unlikely in any year (inference).
+
+**(d) Willingness to pay:** weak. The sign is free, the expected penalty is small, and consultancies bundle the work.
+
+**(e) Distribution:** installers at the moment of installation are the only plausible channel; administradores de fincas and gestorías bundle LOPD work. Unproven.
+
+**(f) Build and legal:** trivial (2–3 weeks). Camera-view photos make the vendor a data processor. Preparing a response pack is document preparation; filing for the client is representation under LPACAP art. 5 (my reading).
+
+**(g) Defensibility:** none.
+
+**Type C check (~€2.90–5/month):** automatable and low-support, but there is no visible monthly value after set-up. The realistic price is a one-off €29–49 at installation, bundled by the installer (hypothesis).
+
+**(h) Kill criteria**
+- "Typical small-business CCTV cases end in warnings or fines under €500": **partly met**. Warnings do occur (PA/00024/2024 and private-person cases), and where fines are imposed they are €500 per infraction, typically €600–1,500 paid. Not strictly under €500, but small.
+- "Installers will not bundle the kit": **open [I]**.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | Complaint-driven, rare, no deadline. |
+| S2 Buyers | 4 | Probably 100k–500k businesses with cameras (inference). |
+| S3 Willingness to pay | 2 | Free AEPD sign and guide; small expected penalty. |
+| S4 Reachability | 3 | Installers are a real channel but unproven. |
+| S5 Competitive gap | 2 | Free official tools, installer templates and consultancies. |
+| S6 Build speed | 5 | 2–3 weeks. |
+| S7 Defensibility | 1 | Trivially copyable. |
+| S8 Retention | 2 | Value ends once the sign is up. |
+| **Sellability** | **2.63** | |
+| **P** | **2** | €600–1,500 when it happens, and it rarely happens. |
+| **Overall** | **2.38** | 0.6 × 2.625 + 0.4 × 2 |
+
+**Open [I] checks:** ask 10 installers what they hand clients today and whether they would pay €1 per site; ask the AEPD whether it plans a CCTV module in Facilita.
+
+**What would change the verdict:** an AEPD enforcement wave against small premises with fines well above €1,000, or an installer or alarm company (for example an alarm-monitoring firm) wanting a white-label compliance step at install.
+
+---
+
+#### IDEA-24: Shop theft incident log and police-ready report pack — RESHAPE (low)
+
+**Validated definition (after reshape).** A theft-incident log and 72-hour evidence file for independent food and convenience shops, sold to shops directly (€5–9/month) and to retail associations in bulk (€3–5 per member shop): one-minute capture of each incident (items, values, time, staff witness); CCTV clip handling built around LOPDGDD art. 22.3 (keep only incident clips, hand them to the police within 72 hours, delete the rest within a month); the data the Interior Ministry's in-store complaint protocol asks staff to prepare for Policía Nacional and Guardia Civil, plus the Mossos and Ertzaintza routes; a case tracker for court dates; and a monthly loss report for staffing and insurance. No facial recognition, no shared offender lists. The original "police-ready pack" is reshaped to fit the state's existing protocol instead of inventing a format.
+
+**(a) Problem reality and rule status**
+- **LO 1/2026 (settles C-02).** BOE-A-2026-7966, BOE núm. 87, 9 Apr 2026, in force 10 Apr 2026 [new: https://www.boe.es/eli/es/lo/2026/04/08/1/con, seen 23 Oct 2026].
+  - CP art. 234.2: a theft of €400 or less is fined (one to three months), but if the offender "hubiera sido condenado ejecutoriamente al menos por tres delitos de la misma naturaleza" in the same Title, "siendo al menos uno de ellos leve", the art. 234.1 penalty applies. The €400 refers to the current theft; there is no cumulative-value threshold on the prior convictions.
+  - New LECrim art. 105.3: "las entidades locales podrán ejercer la acción penal por los delitos de hurto". Art. 544 bis allows bans from places; DF primera adds judges.
+  - AECOC: the reform removes the €400 cumulative threshold and keeps the 6–18-month prison range [new: Última Hora / Europa Press, 5 Dec 2025, https://www.ultimahora.es/noticias/comunidades/2025/12/05/2525909/aecoc-celebra-reforma-multirreincidencia-causa-perdidas-comerciales-2800-millones.html]. The Justice Ministry recalls that the repeat-offender rule itself dates from 2022 [new: https://www.mjusticia.gob.es/es/institucional/gabinete-comunicacion/noticias-ministerio/Balance-Plan-Choque-Multirreincidencia, 24 Apr 2026].
+  - **Resolution:** RET-04 and AECOC were right; the LegalToday snippet (cumulative €400 still applies) was wrong; the cities track's worry that the reform might lapse was wrong, since an organic law in force is unaffected by the dissolution.
+- **Loss figure (settles the €2,817M against €2,917M conflict):** €2,817M, 1.1% of turnover (Barómetro del Hurto 2025, Checkpoint Systems and AECOC); external theft 59%, internal 18%, errors 15%, suppliers 9%; 51% of thefts by people stealing three or more times a year [new: https://theobjective.com/economia/2025-11-04/hurtos-perdida-2817-millones-comercios-espanoles/, 4 Nov 2025]. AECOC says "más de 2.800 millones" and that small shops suffer about 30% more thefts [new: Última Hora, above]. Ara's €2,917M is a lone snippet [notes: RET-04]. Summer 2026: 27% of thefts fall in June–September (€760.5M), and 35% are by organised gangs [new: Euronews, 27 Jul 2026, search 11 summary, not opened].
+- **Where the bottleneck is.** Barcelona had 470 active repeat offenders in 2025, arrested 4,001 times [new: Ara, Feb 2026, search 12 summary, not opened]. The Justice–Generalitat–Ajuntament shock plan added 10 judicial units, a new duty court for fast trials of delitos leves, cut fast-trial scheduling by 4 months in 2025 and produced 1,380 more fast-trial sentences than in 2024; local police in 57 places now consult the SIRAJ criminal-records system [new: Justice Ministry, 24 Apr 2026]. AECOC says the old need for sentences from different courts made the offence "casi inaplicable" [new: Última Hora, above]. The state already tracks repeat offenders; the binding constraints are court throughput and getting each incident reported and tried, not paperwork alone.
+- **Councils:** no council was found using the new art. 105.3 power; Junts in Tarragona proposed it [new: Diari de Tarragona, search 12 summary, not opened].
+
+**(b) Competitors and alternatives**
+- Interior's "Protocolo de denuncias in situ" (Secretaría de Estado de Seguridad, reported 6 Nov 2020): for delitos leves de hurto with the suspect caught in the act, Policía Nacional or Guardia Civil officers take the complaint in the shop; staff fill in an online complaint form before the officers arrive and prepare CCTV footage or stills and a valuation of the goods [new: https://www.economistjurist.es/?p=86566, 6 Nov 2020]. A free official route therefore exists for flagrant cases.
+- AlertCops (Interior): SOS, chat with PN and GC, location sharing; no shop or complaint features [new: https://alertcops.ses.mir.es/mialertcops/, seen 23 Oct 2026].
+- Auror (New Zealand): retail-crime intelligence for large chains (H&M, Best Buy, Boots), "85,000 stores and 3,500+ law enforcement agencies" in North America, the UK, Ireland, Australia and New Zealand; no Spain, no published prices [new: https://www.auror.co/, seen 23 Oct 2026].
+- No Spanish shop-incident tool or association programme was found (search 11). EAS tags, CCTV and guards are the incumbents (unpriced) [notes: RET-04].
+
+**(c) Buyers and market size:** DIRCE 2025: non-specialised retail (CNAE 471) 35,696 companies; specialised food retail (472) 80,030; other specialised retail (477) 120,270 [new: INE table 39372, 23 Oct 2026]. Ceiling: 2% of the 115,726 food and convenience companies at €7/month is about €194k ARR; bulk association deals lower the price per shop.
+
+**(d) Willingness to pay:** shops spend on EAS, CCTV and guards (no prices found); there is no evidence of spend on reporting software, and the demand link to LO 1/2026 is still an inference [notes: RET-04].
+
+**(e) Distribution:** AECOC (large food retail), COCEM and neighbourhood associations, councils' commerce departments, shop insurers. Unproven.
+
+**(f) Build and legal:** low to medium; weeks for the MVP. LOPDGDD art. 22.3 sets the clip rules above [new: BOE LOPDGDD, seen 23 Oct 2026]. The AEPD guide allows handing images to police on a reasoned request, proportionately, and to courts as a legal obligation [new: AEPD guide, Feb 2025]. Mossos and Ertzaintza online routes were not verified.
+
+**(g) Defensibility:** low. Association contracts, templates per police force and an anonymised loss dataset are the only edges.
+
+**(h) Kill criteria**
+- "Fewer than about a third of interviewed owners would report more with a one-minute flow": **open [I]**.
+- "The main police forces will not accept prepared packs": **partly answered**. PN and GC already run an in-store digital protocol whose form the product can pre-fill; Mossos and Ertzaintza are open.
+- "A free association or council tool already exists": **not met**. None was found; the state's in-store protocol is a free official route for flagrant cases only.
+
+**Scores (reshaped version)**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 3 | Strong recurring loss, no deadline. |
+| S2 Buyers | 4 | About 116k food and convenience retailers; about 236k shops overall. |
+| S3 Willingness to pay | 2 | Spend on hardware and guards, none on reporting software. |
+| S4 Reachability | 3 | Associations are a concentrated but unproven channel. |
+| S5 Competitive gap | 4 | Only paper, the official form and enterprise tools abroad. |
+| S6 Build speed | 4 | 1–2 months with per-force variants. |
+| S7 Defensibility | 2 | Partnerships and a dataset, both slow to build and copyable. |
+| S8 Retention | 3 | Used whenever incidents happen; monthly loss report. |
+| **Sellability** | **3.13** | |
+| **P** | **4** | 1.1% of turnover lost; small shops hit about 30% more. |
+| **Overall** | **3.48** | 0.6 × 3.125 + 0.4 × 4 |
+
+**Open [I] checks:** interview 15–20 food and convenience shops in Madrid and Barcelona on the share of incidents reported, time per report, court attendance and willingness to pay; ask COCEM and one Barcelona association whether they would buy in bulk; ask a Policía Nacional *participación ciudadana* unit how the in-store protocol works today.
+
+**What would change the verdict:** a council using art. 105.3 and wanting case files (would open a B2G line); an association pilot showing higher reporting and conviction rates (GO); evidence that owners will not testify or that courts are the only bottleneck (kill).
+
+---
+
