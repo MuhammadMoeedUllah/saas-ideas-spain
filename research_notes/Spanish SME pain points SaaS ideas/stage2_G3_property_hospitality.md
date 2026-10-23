@@ -278,3 +278,166 @@
 | CON-21 | Squatting (okupación) | N2 | The bottleneck is the courts. Civil filings are falling (−21% to −24% year on year), and insurance at €39.85 a year already covers urgent costs. |
 | CON-25 | No legal cover for online community meetings | N3 | The PP bill admitted in May 2026 likely lapsed with the dissolution (inference). Meeting tools already exist; the gap is legal. |
 | CON-26 | Coordinating works and maintenance in communities | N7 | Duplicate of CON-24 (supplier coordination, grants) and CON-07; evidence is medium-low. |
+
+## 4. Candidate SaaS ideas
+
+Ten ideas are listed here. The eleventh, G3-I11, is the reshaped user idea U1 (ColivEs) and is written out in section 5. G3-I01 and G3-I11 overlap on purpose: G3-I01 is a light, cheap monitor for any landlord, while G3-I11 is the full per-contract file for mid-term operators. A later merge may combine them. The ideas are not ranked. All prices are hypotheses to test.
+
+### G3-I01: Rent-cap, update and deadline autopilot for landlords and rental agencies
+- **Type:** C (primary); secondary A, as a cheaper substitute for agency or gestoría hand calculations.
+- **Buyer:**
+  - Individual landlords with 1–10 homes, and small agencies or rental managers paying per lease. Agencies could also resell it to the landlords they manage.
+  - Count: unknown — validate. The notes have no count of individual landlords. Proxies:
+    - 683,920 long-term homes on the market at end-2025 (Observatorio del Alquiler, CON-12);
+    - 510,091 permanent idealista listings in 2025 (CON-12);
+    - tensioned zones: 271 + 53 Catalan municipalities, 17–19 Basque, 21 Navarrese, A Coruña and 5 Asturian (CON-17).
+- **Pains addressed:** CON-17, CON-18 (only the RDL 29/2026 parts), HOU-03, HOU-22, HOU-12, HOU-02.
+- **Problem:** Every lease carries recurring legal calculations that depend on region, zone and date:
+  - the first-rent cap in tensioned zones, from the previous rent or the SERPAVI index, with ad disclosure;
+  - the annual update (IRAV; 2% cap until 31 Dec 2027; no increase if rent is above the index);
+  - regional deposit-lodging deadlines, with fines of up to €90,000 in Madrid.
+
+  The rules changed three times in two weeks of October 2026 (CON-18, HOU-02), and landlords still work them out by hand with SERPAVI or a gestoría (CON-17).
+- **Product:**
+  - **Set up once per lease:** address, signing date, rent, lease type (habitual, temporary or room) and landlord type (individual or large holder).
+  - **What it computes and sends:**
+    - the legal maximum first rent and the ad-disclosure text where a cap applies;
+    - the legal annual update on each anniversary, with a draft notice;
+    - the deposit-lodging deadline and later the refund for the lease's region;
+    - the extension windows created by RDL 29/2026 (extraordinary extension for leases ending before 31 Dec 2028);
+    - "rule changed" alerts that name the leases affected.
+  - **MVP:** national rules plus Catalonia, a zone lookup from the published municipality lists, an IRAV table, email or WhatsApp reminders and PDF notices.
+  - **Deliberately not:** legal advice, rent collection, dynamic pricing, filing deposits on the landlord's behalf (possibly later), or any feature based on RDL 28/2026.
+- **Why now:**
+  - Catalonia declared 53 more tensioned municipalities on 19 Oct 2026, pending BOE publication. Asturian zones started on 30 Jul 2026 and Basque additions on 28 Apr 2026 (CON-17).
+  - RDL 29/2026's 2% cap has applied since 8 Oct; the convalidation vote is around 12 Nov 2026.
+  - The notes say the volatility "makes software more valuable, not less" (CON-17).
+- **Alternatives today:**
+  - The free SERPAVI index, which has gaps under 30 m² and over 150 m².
+  - Hand calculation by agencies and gestorías; lawyers.
+  - Full rental management at 6–10% of rent (CON-12).
+  - Homming's free tier (1–5 properties); cap features unverified.
+  - Blogs listing tensioned zones (Arrenta, Inmostats, Vivara).
+  - None of these gives per-lease alerts or versions the rules.
+- **Price hypothesis:** €4–5/month for up to 3 leases (individual landlords); €1–1.50 per lease per month white-label for agencies; annual billing.
+- **Channels:**
+  - Agencies and rental managers as resellers; landlord and owner associations (CON-18); gestorías.
+  - Search terms: "límite alquiler zona tensionada", "actualización renta IRAV 2%", "plazo fianza INCASÒL".
+  - Content partnerships with landlord-facing portal news (idealista).
+- **Build notes:**
+  - Needs official zone lists (the ministry page blocked automated access, CON-17), SERPAVI and Catalan index values, the IRAV series (the October 2026 value is unverified) and deposit rules for 12 regions.
+  - Regular legal review is a running cost.
+  - Data sensitivity: low to medium (addresses, rents). Complexity: low to medium.
+- **Moat in an AI-flooded market:** Thin. Speed, rules upkeep and agency distribution are the only edges. Portals, Homming or PMS vendors could copy it quickly, and the core is easy to clone.
+- **Key risks and kill criteria:**
+  - If RDL 29/2026 is not convalidated around 12 Nov, the 2% cap and the art. 17.8 ceiling lapse. Ley 12/2023 caps and Catalonia's rules remain.
+  - Small landlords' willingness to pay is unknown, and wrong calculations carry liability.
+  - Kill if portals give equivalent calculators away free, if fewer than about 1 in 10 surveyed landlords would pay €5/month, or if official zone and index data cannot be obtained reliably.
+- **Evidence strength:** Medium. The rules are well documented (BOE, OCU), but the time cost per landlord and the number of landlords are not quantified.
+- **Validation questions:**
+  1. Do Homming, Rentger, Vivara, Arrenta or Inmostats already sell per-lease cap and update calculators with alerts? At what price?
+  2. Was RDL 29/2026 convalidated around 12 Nov 2026, and which update rules survive if not?
+  3. What IRAV value is in force in Oct–Nov 2026, and where is it published?
+  4. Is there a machine-readable official list of tensioned municipalities and SERPAVI values? Have the 53 new Catalan municipalities been published in the BOE?
+  5. How many individual landlords exist in Spain (for example AEAT rental-income declarants), and how many are in tensioned zones?
+  6. Do idealista or Fotocasa already offer free cap or update calculators?
+  7. Can an automated cap calculation be sold without counting as legal advice, and what professional-liability cover is needed?
+
+### G3-I02: Landlord-paid tenant screening and trust pack for foreign and mid-term tenants
+- **Type:** B.
+- **Buyer:**
+  - Rental agencies, property managers, mid-term and coliving operators. The landlord or agency pays, per screening or per seat.
+  - Count: unknown — validate. Agencies take part in about 70% of transactions (FADEI, CON-11), and Inmovilla alone claims more than 3,000 agency clients (CON-16).
+- **Pains addressed:** CON-13, CON-11, HOU-06, HOU-07, HOU-09; HOU-23 as a triage input.
+- **Problem:** Each listing draws 135 contacts in 10 days, and 462 in Barcelona (CON-13). Agencies must screen without charging tenants: Consumo proposed a €3.6M fine on Alquiler Seguro for an "estudio de solvencia" among other disguised fees (CON-11). Foreign tenants lack Spanish payslips and credit files, and the landlord's usual fallbacks (6-month avales, tenant-paid insurance) are now capped or banned (HOU-06, HOU-07). Meanwhile newcomers are targeted by fake listings (HOU-09).
+- **Product:**
+  - **Tenant side:** an applicant link that bundles:
+    - commodity ID and liveness KYC;
+    - cross-border income evidence (foreign payslips, employer or assignment letters, bank statements);
+    - an affordability check against the 35–40% rent-to-income ratio insurers use (HOU-07);
+    - a standard criteria scorecard;
+    - an audit log of how every applicant was ranked, as evidence against discrimination claims (HOU-08).
+  - **Landlord side:** an ownership check (nota simple, Catastro) that produces a "verified landlord" link tenants can check, to counter scams (HOU-09).
+  - **MVP:** a KYC API (e.g., Didit) plus document OCR, a manual review queue, the scorecard and a PDF audit report, in Spanish and English.
+  - **Deliberately not:** charging tenants, underwriting guarantees or insurance itself (a partner insurer could come later), using nationality or other protected traits, or taking fully automated decisions.
+- **Why now:** RDL 29/2026 removed avales above one or two months and tenant-paid insurance from 8 Oct 2026, pending convalidation. The Ley 12/2023 fee ban is being enforced. Mid-term demand is mostly foreign: about 60% of Barcelona coliving tenants (HOU-07).
+- **Alternatives today:**
+  - Didit KYC, $0.33 per applicant (500 free a month): identity only, not solvency.
+  - GarantíaYa (no prices).
+  - Spotahome Plus "verified solvent tenants", inside a 10%-of-contract-value plan (UK/Ireland page).
+  - Landlord-paid insurance (€306–658 a year).
+  - Bank avales (0.5–2% per quarter).
+  - HousingAnywhere first-month escrow.
+  - Veriff, Onfido and Sumsub (unverified).
+  - Weaknesses: identity checks do not prove a foreigner's solvency, and the marketplaces bundle screening into high commissions.
+- **Price hypothesis:** €9–15 per screened applicant, landlord-paid; or an agency seat at €39–79/month with bundled screenings. Later, a revenue share from a guarantee partner.
+- **Channels:**
+  - Agencies and franchise networks; coliving operators (Be Casa, Cotown, Smart Rental, Node Living); mid-term managers.
+  - Relocation agencies and corporate HR (expat track).
+  - Agent associations (API, COAPI, AICAT, AMADEI, FADEI).
+  - Search: "verificar solvencia inquilino extranjero".
+- **Build notes:**
+  - Financial and identity data is high-sensitivity under GDPR. The AEPD fined a hotel €2,000 for scanning guests' IDs (HOS-12), which shows how strictly data minimisation is policed.
+  - Anti-discrimination design is essential.
+  - Any embedded guarantee falls under insurance-distribution rules, so it needs a licensed partner.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** Moderate only if it secures data partnerships (foreign income verification) and a guarantee underwriter. The KYC layer alone has no moat.
+- **Key risks and kill criteria:**
+  - Agencies may refuse to pay for something they used to bill tenants for.
+  - If RDL 29/2026 lapses, avales return and urgency drops.
+  - Screening can draw discrimination complaints, and the marketplaces already screen.
+  - Kill if agencies will not pay at least €9 per screening, or if no insurer will back a landlord-paid guarantee for foreign tenants.
+- **Evidence strength:** Medium. The law and lead volumes are strong; the foreign-tenant screening gap rests on insurer ratios and a 2024 article on aval practice.
+- **Validation questions:**
+  1. What do GarantíaYa, Spotahome (Spanish rates) and HousingAnywhere (landlord commission) charge? Are there Spanish tenant-scoring startups?
+  2. Does the rewritten art. 20.2 LAU also ban tenant-side screening or platform fees? Has Consumo acted against one?
+  3. Will agencies in Barcelona, Madrid and Málaga pay per screening? Interview at least 10.
+  4. Which insurers or guarantee firms would back a landlord-paid guarantee for foreign tenants, and at what premium compared with 3–5% of annual rent?
+  5. What legal basis and retention periods apply to income verification under GDPR? Is there AEPD guidance on tenant screening?
+  6. What does a nota simple cost per check through Registradores, and can it be automated?
+  7. What are the official 2025–26 figures for nomad and relocation arrivals by city? (The 27,875 figure is single-source.)
+
+### G3-I03: Rent-arrears and MASC case file for landlords, agencies and administradores
+- **Type:** B (primary); secondary C, as an arrears-monitoring subscription.
+- **Buyer:**
+  - Small landlords, agencies managing rentals, and administradores de fincas (for community arrears).
+  - Counts: 18,317 LAU evictions in 2025 (CGPJ, CON-20); about 16,000 administradores and 1 million communities (CON-24). Landlord count unknown — validate.
+- **Pains addressed:** CON-20, CON-23 (HOU-14 is its duplicate).
+- **Problem:** Defaulting tenants owe €8,489 on average, about seven months' rent (CON-20). Since April 2025 a documented negotiation attempt (MASC) is required before an eviction claim, and the vulnerability suspension regime has been switched off and on again until 2030 (CON-20). Communities chasing unpaid fees and derramas probably face the same pre-filing step (CON-23).
+- **Product:**
+  - **Early warning:** an alert when rent is missed (bank feed, or a manual "rent received" tick).
+  - **Guided escalation:** reminder → formal demand (requerimiento) → a MASC offer with the content LO 1/2025 requires, sent through a certified channel (burofax or a certified-email partner) → a timestamped evidence log → a court-ready file (contract, debt statement, proof of the MASC attempt) handed to a lawyer.
+  - **Community version:** debt certificate signed by the secretary with the president's approval, the 20% surcharge where statutes allow it (upheld by a Cantabria court), and a monitorio pack.
+  - **MVP:** templates, a certified-email partner, a timeline and the evidence export.
+  - **Deliberately not:** filing in court, acting as a lawyer, giving legal advice, or aggressive collection.
+- **Why now:** The MASC step has applied since 3 Apr 2025. The suspension regime was repealed twice in early 2026 and re-created by RDL 29/2026 (pending around 12 Nov). The notes say "the new negotiation step adds a documented procedure that software can generate, log and time-stamp".
+- **Alternatives today:**
+  - Lawyers; rent-guarantee firms (Alquiler Seguro).
+  - Rent-default insurance with legal defence, €306–658 a year (OCU; Arag, Allianz and Mapfre rated best).
+  - Legálitas, €16.92–45.50/month, though one plan covers "vida familiar (no empresarial ni profesional)".
+  - Administradores' software (unverified).
+  - Weaknesses: insurance needs income ratios and can no longer be demanded from the tenant, and lawyers are expensive for an €8,000 debt.
+- **Price hypothesis:** €29–49 per case file plus €3–5/month of monitoring per lease; €1 per community per month as an arrears module for administradores.
+- **Channels:**
+  - Integrations with administradores' software (Gesfincas, Fincas Pro, Comunidad Feliz, Fynkus) and the colegios de administradores.
+  - Agencies; insurers and law firms as referral partners.
+  - Search: "inquilino no paga MASC", "requerimiento previo desahucio".
+- **Build notes:**
+  - Integration with a certified-notification provider.
+  - Templates reviewed by lawyers and versioned as rules change.
+  - Debt and personal data are GDPR-sensitive.
+  - Complexity: low to medium.
+- **Moat in an AI-flooded market:** Low. Templates and workflow are easy to copy. Integrations with certified channels and admin ERPs, plus a lawyer network, help a little. This idea should be merged with the legal track's MASC idea (LEG-01).
+- **Key risks and kill criteria:**
+  - Law-firm or legal-tech MASC tools may already serve landlords cheaply.
+  - Rules on what a valid MASC attempt contains are still being settled by the courts.
+  - Reserved-profession limits apply.
+  - Kill if the legal-track competitors already cover rental evictions at a similar price, or if insurers bundle the same workflow free.
+- **Evidence strength:** Strong. Backed by CGPJ data, the BOE text of LO 1/2025 and the Observatorio del Alquiler figures. Community arrears are medium.
+- **Validation questions:**
+  1. What must a MASC attempt contain for an eviction claim for non-payment, and which channels count as proof? Look for case law since April 2025.
+  2. Do courts require MASC before a community monitorio under LPH art. 21?
+  3. Which MASC, burofax and legal-tech platforms already serve landlords (cross-check names in LEG-01 and FIN-06), and what do they charge? What do Arag, Mapfre and Legálitas business plans cost?
+  4. After the vote around 12 Nov 2026, which eviction-procedure rules from RDL 29/2026 remain?
+  5. Do Gesfincas, Fincas Pro, Comunidad Feliz or Fynkus already include arrears, monitorio and MASC workflows?
+  6. What do lawyers charge for a non-payment eviction, and would small landlords pay €29–49 per case?

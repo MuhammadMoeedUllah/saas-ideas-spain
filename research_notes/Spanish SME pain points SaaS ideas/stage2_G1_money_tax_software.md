@@ -483,3 +483,217 @@ Share of one-star reviews: Holded 8%, Quipu 11%, Factorial 14% (VOX-09).
 - Police cybercrime units; lawyers, using unfair-competition law or the right to honour; certified screenshots as evidence.
 - Reputation agencies such as OnbrandinG (prices not captured).
 - Manual QR cards to ask for legitimate reviews (VOX-01, VOX-02).
+
+---
+
+## 3. Noise log
+
+These 30 pains were filtered out. The codes mean:
+
+| Code | Meaning | Count |
+|---|---|---|
+| N1 | Weak evidence | 7 |
+| N2 | Not software-solvable | 7 |
+| N3 | Regulation postponed, a draft, or likely to lapse | 1 |
+| N4 | Already solved cheaply, or saturated | 7 |
+| N5 | Too niche or too small | 1 |
+| N6 | Legally risky to automate | 2 |
+| N7 | Duplicate of another pain; its evidence was merged into that pain's cluster | 5 |
+
+| Pain ID | Title | Code | Justification |
+|---|---|---|---|
+| TAX-08 | Basque TicketBAI/Batuz: real-time reporting, adaptation costs, technical churn | N4 | The roll-out is complete: Bizkaia's last phase started on 1 Jan 2026. Free official apps (FakturaBAI, FakturAraba, Haz tu factura) and certified vendors exist, and the notes found no evidence of ongoing small-business distress. The leftover multi-regime need is a feature question for G1-I04 and G1-I05. |
+| TAX-11 | No small-business VAT franchise | N2 | A policy decision: Spain has not transposed the EU scheme. All the evidence traces back to ATA. Software can only reduce the filing effort, which C8 already covers. |
+| TAX-24 | 10% VAT on renovations depends on payment method (from 1 Dec 2026) | N3 | RDL 29/2026 still needs convalidation while the Cortes are dissolved, and its sister decree RDL 26/2026 already failed. The details come from a single press source, and trades are a niche. Passed to the construction track. |
+| TAX-25 | Underserved regimes (Canarias IGIC, foral territories, Ceuta/Melilla, módulos) | N1 | The only evidence is one provider's exclusion list (TaxDown) plus facts about the regimes. There is no data on demand, prices or business counts, and these are also small regional markets (N5). |
+| FIN-04 | Public-sector late payment in specific regions and cities | N2 | Software cannot make administrations approve invoices faster. Official payment periods are within the limit nationally (regions 27.05 days), which conflicts with the 70-day survey figure. The pain is local: Balears 53.42 days, Palma 51.69, Las Palmas 48.40. |
+| FIN-09 | Checking a customer's solvency is fragmented and paid | N1 | Medium-low confidence, with no scale or price data. The registries are controlled by credit bureaus, so this works better as an integration. Scoring payers from the user's own ledger stays as a feature of G1-I02. |
+| FIN-10 | Working capital squeezed; short-term finance dearer | N2 | The cost of credit is set by banks and interest rates, which is a macro problem. Its software-solvable root is late collection (FIN-01, FIN-05, in C1). Factoring prices could not be evidenced. |
+| FIN-11 | Public guarantee and credit schemes fragmented, routed via banks | N1 | The notes call the evidence of pain weak. Only 3% of Spanish firms report financing obstacles (ECB SAFE survey, Q2 2026). |
+| FIN-13 | Card and POS acceptance costs, juggling payment methods | N4 | Commoditised: SumUp 0–1.49%, Qonto 0.8–1.2%, Stripe Terminal 1.4% + €0.10. Cards are already accepted in 94% of small shops. |
+| FIN-14 | Bank fees and disputes with banks | N1 | Low confidence. The evidence is mostly about consumers (Banco de España complaints, Asufin's consumer fee data). Switching to a free account or a neobank solves much of it. |
+| FIN-15 | Autónomo insolvency and Segunda Oportunidad complexity | N6 | A court process run by specialist lawyers, and discharging public debt is legally contested. Automating the documents would be a tool for law firms, which belongs to the legal track. |
+| FIN-18 | Young, tiny firms fail early; autónomos quit for economic reasons | N2 | Structural: weak demand, thin margins, fixed costs. 90% of those leaving the RETA do so for economic reasons. There is no specific software lever beyond generic cash-runway tools. |
+| FIN-19 | DANA 2024 recovery: slow business claims, fragmented aid | N5 | Only a residual tail is left: 691 business claims (3%) were pending in June 2026, and 99.7% of all claims were processed by October 2026. Regional and shrinking. |
+| FIN-20 | Catastrophes keep recurring in 2026, each with a claims burden | N2 | These are physical events. Payouts depend on policy cover and on loss adjusters, and no complaints are documented. The only software help would be a checklist, which the CCS (the state's catastrophe insurer) already publishes. |
+| FIN-21 | Underinsurance and missing business-interruption cover | N1 | Medium-low confidence and no SME statistic. The ratios of about 60% uninsured and about 20% lost-profit claims are the researcher's own calculations. Cover is sold by insurers and brokers. |
+| FIN-22 | April 2025 blackout losses left uncompensated | N2 | A one-off grid failure, with the €1.6bn estimate from a single aggregator source. The notes say there is "mostly no" software angle. |
+| FIN-23 | Cash forecasting and one view of all bank accounts | N4 | Already sold at SME prices: Banktrack €59–119, Qonto forecasting €9–19, Agicap. Its distinctive part, predicting payment dates, is folded into G1-I02 through FIN-05. |
+| FIN-24 | Cash crunches from tax and Social Security debts | N7 | Duplicate of TAX-19: the same deferral and seizure mechanism, from headline-level sources. Merged into C7. |
+| FIN-25 | Mandatory B2B e-invoicing with payment-status reporting | N7 | Duplicate of TAX-05 and TAX-06. Merged into C2, where its law-firm dates are flagged as conflicting with the AEAT's. |
+| VOX-03 | Phishing, vishing, CEO/BEC fraud aimed at small businesses | N7 | Duplicate of FIN-12. Its evidence (BEC losses above €15,000 per incident, secondary source) is merged into C10. |
+| VOX-04 | Breaches at SaaS vendors put notification duties on SME customers | N1 | The official trend is strong (AEPD breach notifications up 163% in Jan–Aug 2026), but there is no SME cost data and no owner voice. The root cause sits with the vendors, and GDPR duties belong to the legal track. |
+| VOX-06 | Energy mis-selling by phone; exit penalties | N1 | The data is old (CNMC 2017–2019), plus one 2023 complaint where the complainant's business status is unclear. |
+| VOX-07 | Banking and card-acceptance costs; funds held by payment fintechs | N4 | The fee data covers consumer accounts. Free accounts and cheap card acceptance exist, and this is a banking product rather than software. Overlaps FIN-13 and FIN-14. |
+| VOX-12 | VeriFactu forces new software amid deadline confusion and rejected invoices | N7 | Duplicate of TAX-01 and TAX-02. Its user reports (Holded error 4124, Quipu's January outage) are merged into C3 and C4. |
+| VOX-13 | Errors in automated tax filings by low-cost platforms | N7 | Duplicate of TAX-22 (errors by advisers and platforms). Merged into C5. |
+| VOX-14 | HR and time-tracking software minimums for micro-employers | N4 | Cheap per-employee options exist: Holded's HR add-on at €1.50 per employee, Kenjo at €6–10. The status of the time-recording obligation is the labour track's question. |
+| VOX-15 | Low-quality Kit Digital deliverables, harassment, pressure to sign | N4 | The programme closed to new applications in October 2025, and fixing a bad site is cheap: hosting about €8/month, rebuilds offered from €20. The part still live is VOX-16, which is kept. |
+| VOX-18 | Agentes digitalizadores (registered Kit Digital suppliers) unpaid for months | N2 | An administrative payment process in a closed programme. Software could only help with paperwork. |
+| VOX-19 | Gestoría cost and partial substitution by online platforms | N4 | Online asesorías already charge €24.95–€59.90 a month (+IVA). The notes say the remaining dissatisfaction is about accuracy, not price, and that is kept as TAX-22. |
+| VOX-20 | Legal-advice subscriptions: coverage disputes, cancellation friction | N6 | Legal advice is a regulated profession, so AI triage would need lawyers behind it. Evidence is medium-low (few reviews). |
+
+---
+
+## 4. Candidate SaaS ideas
+
+The ideas are numbered by cluster, not ranked; ranking happens after validation. All price hypotheses are this stage's own assumptions to be tested. They are not facts from the notes.
+
+### G1-I01: MASC-ready claim kit for unpaid B2B invoices
+- **Type:** B (primary), secondary A.
+  - B: a new product for a mandatory step that nobody packages end to end.
+  - A: cheaper than agency success fees or per-file legal fees.
+- **Buyer:** autónomos and micro and small B2B firms with unpaid invoices of a few hundred to a few thousand euros. A secondary buyer is gestorías and small law firms acting for them.
+  - More than 2.9M pymes and autónomos (Cámara de Comercio, cited by AyE; FIN-01).
+  - 179,846 monitorios were filed in Q2 2026 alone, and each now needs a prior MASC attempt (FIN-06).
+  - How many creditors attempt MASC each year: unknown, to validate.
+- **Pains addressed:** FIN-06, FIN-07, FIN-08, FIN-03, FIN-01, FIN-02, TAX-20.
+- **Problem:**
+  - Since April 2025, a creditor must prove a valid MASC attempt before filing a monitorio: a real offer, sent through a certified channel, followed by up to a month's wait. A missing or invalid attempt is incurable and the claim is rejected (FIN-06).
+  - Agencies charge 5–25% of what they recover, or about €100 per file, so small invoices get written off (FIN-08).
+  - Statutory interest and the €40 per invoice are almost never claimed (FIN-03).
+- **Product:**
+  - *What it does,* claim by claim:
+    1. Import the unpaid invoices, by upload or from the user's invoicing tool.
+    2. Calculate principal, statutory interest and €40 per invoice.
+    3. Generate a MASC-compliant offer, for example a confidential binding offer with a settlement option such as "interest waived if paid within 10 days".
+    4. Send it through a certified-channel partner (certified email or SMS, or burofax).
+    5. Track the one-month waiting clock and the one-year validity of a failed attempt, and log the debtor's reply.
+    6. Output an evidence pack and a pre-filled monitorio file.
+    7. Above €2,000, where the notes say a lawyer and procurador (court representative) are required (FIN-07), hand the file to partner lawyers at a fixed fee.
+    8. Optionally, send a VAT-recovery reminder and a draft corrective invoice when the debtor is insolvent (TAX-20).
+  - *MVP in weeks:*
+    - two or three offer templates reviewed by a litigation lawyer;
+    - one certified-email API;
+    - an interest calculator and a deadline tracker;
+    - the PDF evidence pack;
+    - monitorio form pre-fill.
+  - *It does not:*
+    - advise on disputed debts;
+    - represent anyone in court;
+    - buy debts or report debtors to registries;
+    - use channels that are not valid for MASC (WhatsApp, ordinary email).
+- **Why now:**
+  - LO 1/2025 has been in force since 3 April 2025, and the courts mostly apply MASC to the monitorio (Audiencia Provincial de Málaga, 6 June 2025) (FIN-06).
+  - Monitorios fell 20.7% in Q2 2026 while Madrid's backlog grew 10.4%. That suggests creditors are holding back while the criteria settle, which is demand for a safe, cheap path (FIN-06, FIN-07).
+  - No late-payment sanctions can arrive before 2027: the Cortes are dissolved and the EU regulation is blocked (FIN-01). Self-help is the only lever.
+- **Alternatives today** (FIN-06, FIN-08):
+  - RedClaimer: flat €99.90 + IVA per file; it says other agencies charge 10–25%.
+  - Absolut from 5%; Debitura from 6% (EU debtors) or 7.5%.
+  - Recobrarte: €1,500 minimum per debtor file.
+  - Intercobros: success fee only.
+  - GW Abogados: €110 for a first consultation.
+  - BuroMail, BuroSMS and burofax: prices not verified.
+  - *Weaknesses:* priced for larger claims; success rates are vendor claims only (30–40%, 60–70%, 77%); no self-serve flow tied to the creditor's own invoices.
+- **Price hypothesis:**
+  - €19–39 per claim, including one certified send (pass-through cost to be validated), or €9–15/month for a bundle of claims.
+  - Lawyer hand-off at a fixed fee shared with partner firms.
+  - No success fee.
+- **Channels:**
+  - A "send to MASC" button in invoicing tools (Holded, Quipu, TS Facturas, Anfix, Contasimple), through their integrations or marketplaces.
+  - Gestorías, white-labelled for their clients.
+  - Associations: PMcM, Cepyme, ATA, construction trade federations.
+  - Searches: "MASC reclamación factura", "burofax MASC", "monitorio requisito MASC", "reclamar factura impagada autónomo".
+  - Colegios de abogados and procuradores, to build the hand-off network.
+- **Build notes:**
+  - A certified-communication partner is essential.
+  - Templates must be reviewed by litigation lawyers and updated as the Audiencias Provinciales rule.
+  - GDPR applies to debtor data.
+  - No registry reporting and no debt purchase.
+  - Complexity: medium. The legal content is harder than the code.
+- **Moat in an AI-flooded market:** moderate.
+  - What protects it:
+    - legal know-how, meaning templates and evidence packs that courts accept, maintained case by case;
+    - certified-channel partnerships;
+    - a lawyer and procurador hand-off network;
+    - later, triggers fed by e-invoice payment statuses (2027–2029).
+  - The interface itself is copyable, and agencies or invoicing vendors could bolt it on.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - a reform or a higher-court ruling changes MASC for monitorios;
+    - flat-fee agencies undercut it (RedClaimer at €99.90 is already close);
+    - fear of upsetting customers suppresses use (89% never claim interest);
+    - certified-send costs make claims under about €300 uneconomic.
+  - *Kill if:*
+    - fewer than about 1 in 4 interviewed creditors with unpaid B2B invoices would pay €20 or more per claim;
+    - or a valid certified send costs more than about €15;
+    - or a free official MASC channel appears.
+- **Evidence strength:** strong.
+  - The obligation is in the BOE and in force, the volumes are official (CGPJ), and several vendors give price points.
+  - Weak points: the effect size and success rates are unproven.
+- **Validation questions:**
+  1. Confirm in the BOE text of LO 1/2025 the valid MASC methods, the one-month rule (art. 17) and the interruption of limitation (art. 7). Check current Audiencia Provincial and Supreme Court positions on MASC before a monitorio (see the vLex, ETL Ilia and Duplo sources in FIN-06).
+  2. Confirm that monitorios of €2,000 or less can be filed and enforced by the creditor without a lawyer and procurador, and exactly what changes above €2,000.
+  3. Price the valid channels per send: burofax with acknowledgment of receipt, BuroMail/BuroSMS, and qualified certified email.
+  4. Look up RedClaimer, Intercobros, Debitura, Absolut and Recobrarte self-serve offers, and search for any existing "MASC" SaaS. Check whether Holded, Quipu or Anfix already offer dunning or MASC flows.
+  5. Find CGPJ or Ministry of Justice data on MASC outcomes (agreement rates) and on monitorio duration; both are gaps in FIN-06 and FIN-07.
+  6. Interview 15–20 autónomos and micro firms with unpaid B2B invoices about typical invoice size, the amount below which they write debts off, and their willingness to pay per claim.
+
+### G1-I02: Receivables autopilot (reminders, statutory interest and payment-date forecasts)
+- **Type:** C (primary), secondary B.
+  - C: a subscription that is set up once and runs on its own.
+  - B: no invoicing tool is documented as automating interest and €40 claims (FIN-03).
+- **Buyer:** B2B autónomos and micro and small firms that invoice on credit: services, wholesale, industry and construction subcontractors. The user is the owner or the one admin person.
+  - More than 2.9M pymes and autónomos (FIN-01).
+  - How many of them invoice B2B on credit: unknown, to validate.
+- **Pains addressed:** FIN-05, FIN-03, FIN-01, FIN-02, TAX-20. It escalates to G1-I01.
+- **Problem:**
+  - Fewer than half of invoices are paid on time (41.51% in Q3 2026), so cash planning is guesswork (FIN-05).
+  - About 9 in 10 suppliers never claim the statutory interest or €40 that Ley 3/2004 grants them (FIN-03).
+  - VAT on unpaid invoices can only be recovered through a formal modification of the taxable base, within deadlines (TAX-20).
+- **Product:**
+  - *What it does:*
+    - Reads issued invoices from the invoicing tool, or from PDFs and email, and matches collections from the bank feed.
+    - Sends polite reminders on a schedule by email or WhatsApp, escalating over time.
+    - Shows the accrued statutory interest and €40 per invoice and offers them as an optional settlement lever ("pay by Friday and we waive the interest"). The H2 2026 interest rate of 10.40% comes from a single source.
+    - Learns each customer's real payment delay and forecasts collection dates in a 13-week cash view.
+    - Flags customer contracts with terms beyond the 60-day legal cap.
+    - Alerts VAT base-modification deadlines for insolvent debtors.
+    - Escalates to G1-I01 in one click.
+  - *MVP:* CSV import plus one or two invoicing-tool integrations, a bank feed through a licensed aggregator, the reminder engine, the interest calculator and per-customer delay statistics.
+  - *It does not:* lend money, do factoring (it could refer), or make phone calls.
+- **Why now:**
+  - No sanctions regime or EU cap is coming before 2027 (FIN-01).
+  - The e-invoice payment-status data due in 2027–2029 will make real payment dates available, and the product can be built ready to use it (FIN-05, TAX-06).
+  - Carrying late customers costs more as finance gets dearer (FIN-10).
+- **Alternatives today:**
+  - Banktrack €59–119; Qonto forecasting €9–19, but only for Qonto account holders; Agicap on quote (FIN-23).
+  - Collection agencies at 5–25% (FIN-08); factoring such as Novicap, on quote (FIN-10).
+  - Reminder features in invoicing tools are not documented in the notes.
+  - *Weaknesses:* none of these is documented as automating interest and €40 claims, predicting payment dates per customer, or linking to the MASC step.
+- **Price hypothesis:**
+  - €5–9/month, with paid escalation through G1-I01.
+  - Gestoría bulk plans at about €2 per client.
+- **Channels:**
+  - Invoicing-software marketplaces.
+  - Gestorías.
+  - Business-account providers such as Qonto, as partners (speculative).
+  - PMcM and Cepyme late-payment campaigns.
+  - Searches: "calcular intereses de demora factura", "reclamar 40 euros ley morosidad", "recordatorio de pago factura".
+- **Build notes:**
+  - A licensed bank-account aggregation partner, the invoicing APIs and the WhatsApp Business API.
+  - The statutory rate table must be updated each half-year from the BOE.
+  - GDPR applies.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** low to medium.
+  - Invoicing vendors and banks can copy the features.
+  - What protects it is the breadth of integrations, the payment-behaviour data it accumulates, and the MASC escalation path.
+  - Plainly: mostly speed and distribution.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - invoicing vendors bundle reminders for free;
+    - the behavioural barrier (fear for the customer relationship) keeps the interest features unused;
+    - sharing payer scores across users may be legally constrained.
+  - *Kill if:*
+    - fewer than half of trial users keep reminders switched on after 60 days;
+    - or the main invoicing tools already ship reminders plus statutory interest on their entry tiers.
+- **Evidence strength:**
+  - Strong for the problem: PMcM, Cepyme and Informa agree.
+  - Medium for whether users will act on interest and €40 (FIN-03 rates willingness as medium).
+- **Validation questions:**
+  1. Check which of Holded, Quipu, TS Facturas, Anfix, Contasimple, FacturaDirecta and Cuéntica already send automatic payment reminders or calculate late-payment interest, and on which tier.
+  2. Verify the BOE resolution setting the H2 2026 statutory interest rate (10.40% is single-source, via Novicap) and the €40 rule in arts. 7–8 of Ley 3/2004. The consolidated text returned a 404 in Stage 1.
+  3. Look up Banktrack, Agicap, Embat and Qonto for per-customer payment-date prediction features.
+  4. Price licensed bank-aggregation providers in Spain, and confirm whether a partner licence suffices.
+  5. Survey B2B autónomos on whether they would switch on automatic interest notices if framed as "waived if paid by a date".
+  6. Legal check: can anonymised payer-behaviour scores be shared across customers under GDPR and the rules on credit information?
