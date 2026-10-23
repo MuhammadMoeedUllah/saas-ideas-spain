@@ -45,9 +45,17 @@ User-supplied ideas (ColivEs, PermisoFast, EcoRoute, Fandango Arena, LigaHub) an
 behind them are recorded in `00_user_supplied_ideas.md`. They go through the same validation
 and ranking as every other idea.
 
+## Datasets
+
+`data/pain_points.csv` (and `.jsonl`) holds all structured pain points from stage 1, one row
+each, with who/where, evidence and source URLs, scale, cost, regulatory status as of
+October 2026, current solutions and prices, software-solvability and confidence. Once stage 2
+runs it also carries each pain point's filter status. Rebuild it with
+`python3 scripts/build_datasets.py`.
+
 ## Status
 
-- [ ] Stage 1: capture (in progress)
-- [ ] Stage 2: filter into idea longlist
+- [x] Stage 1: capture (395 pain points, ~1,500 source links, 17 tracks)
+- [ ] Stage 2: filter into idea longlist (in progress)
 - [ ] Stage 2b: multi-angle validation
 - [ ] Stage 3: ranking and final report
