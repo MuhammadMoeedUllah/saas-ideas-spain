@@ -73,7 +73,7 @@ FIELD_RE = re.compile(r"^- (?:\*\*)?([A-Za-z][^:*]{0,80}?)(?::\*\*|\*\*:|:)\s*(.
 HEADING_RE = re.compile(r"^#{1,3} ")
 URL_RE = re.compile(r"\]\((https?://[^)\s]+)\)")
 # A noise-log table row: | PAIN-ID | ... | N1 | ...
-NOISE_ROW_RE = re.compile(r"^\|\s*\**([A-Z]+-\d+)\**\s*\|.*?\|\s*\**(N[1-7])\**\s*\|")
+NOISE_ROW_RE = re.compile(r"^\|\s*\**([A-Z]+-\d+)\**\s*\|.*?\|\s*\**(N[1-7])\b[^|]*\|")
 
 
 def parse_notes(path):
