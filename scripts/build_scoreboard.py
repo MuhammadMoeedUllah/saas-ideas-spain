@@ -23,8 +23,9 @@ DATA = ROOT / "data"
 IDEA_ID_RE = re.compile(r"IDEA-(\d+)")
 NUMBER_RE = re.compile(r"-?\d+(?:\.\d+)?")
 SCORES = [f"S{i}" for i in range(1, 9)]
-COLUMNS = ["rank", "id", "name", "type", "verdict", *SCORES, "sellability", "P",
-           "overall", "confidence", "batch", "check"]
+COLUMNS = ["rank", "id", "name", "type", "verdict", "verdict_note", *SCORES,
+           "sellability", "P", "overall", "confidence", "batch", "check"]
+VERDICT_RE = re.compile(r"^\W*(GO|RESHAPE|KILL)\W*(.*)$", re.IGNORECASE)
 
 
 def cells(line):
@@ -77,8 +78,11 @@ def parse_batch(path):
             if not idea:
                 continue
             get = lambda key: row[mapping[key]] if key in mapping and mapping[key] < len(row) else ""
+            verdict = VERDICT_RE.match(get("verdict").replace("*", ""))
             entry = {"id": f"IDEA-{int(idea.group(1)):02d}", "name": get("name"),
-                     "type": get("type"), "verdict": get("verdict").upper(),
+                     "type": get("type"),
+                     "verdict": verdict.group(1).upper() if verdict else get("verdict"),
+                     "verdict_note": verdict.group(2).strip(" ,;:()") if verdict else "",
                      "confidence": get("confidence").lower(), "batch": path.stem}
             for key in SCORES + ["sellability", "P", "overall"]:
                 entry[key] = number(get(key))
@@ -117,7 +121,7 @@ def main():
         writer.writerows(rows)
 
     fmt = lambda v: "" if v is None else (f"{v:g}" if isinstance(v, float) else str(v))
-    verdicts = Counter(r["verdict"].split()[0] if r["verdict"] else "?" for r in rows)
+    verdicts = Counter(r["verdict"] or "?" for r in rows)
     lines = [
         "# Validation scoreboard",
         "",
@@ -129,7 +133,7 @@ def main():
         f"**{len(rows)} ideas.** Verdicts: " + ", ".join(
             f"{v} {n}" for v, n in verdicts.most_common()) + ".",
         "",
-        "| Rank | ID | Name | Type | Verdict | " + " | ".join(SCORES)
+        "| Rank | ID | Name | Type | Verdict | Verdict note | " + " | ".join(SCORES)
         + " | Sell. | P | Overall | Conf. | Batch | Check |",
         "|" + "---|" * (len(COLUMNS)),
     ]

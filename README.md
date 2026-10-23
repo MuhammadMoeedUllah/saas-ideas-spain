@@ -60,5 +60,10 @@ runs it also carries each pain point's filter status. Rebuild it with
   (`stage2_noise_log_combined.md`); 75 candidate ideas from six group passes
   (`stage2_G*.md`, indexed in `stage2_idea_index.md`), merged into 64 ideas with a validation
   plan in `stage2_idea_longlist.md`
-- [ ] Stage 2b: multi-angle validation
+- [x] Stage 2b: multi-angle validation of all 64 ideas in 8 batches (`validation_B*.md`), each idea
+  checked on 8 angles and scored on a common rubric. Combined in `validation_scoreboard.md` and
+  `data/saas_ideas_validated.csv`: 2 GO (pilot), 21 RESHAPE, 42 KILL
+- [ ] Adversarial review of the survivors, bundle analysis, and a fair-hearing pass on the
+  user-supplied ideas
+
 - [ ] Stage 3: ranking and final report
