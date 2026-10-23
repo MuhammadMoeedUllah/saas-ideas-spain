@@ -697,3 +697,843 @@ The ideas are numbered by cluster, not ranked; ranking happens after validation.
   4. Price licensed bank-aggregation providers in Spain, and confirm whether a partner licence suffices.
   5. Survey B2B autónomos on whether they would switch on automatic interest notices if framed as "waived if paid by a date".
   6. Legal check: can anonymised payer-behaviour scores be shared across customers under GDPR and the rules on credit information?
+
+### G1-I03: E-invoice inbox and payment-status reporter for small firms
+- **Type:** B
+- **Buyer:** micro and small companies that receive supplier invoices, usually with the owner or a gestoría handling accounts payable. Asesorías are a second buyer, filing in bulk for their clients.
+  - Small firms must receive structured e-invoices from 6 October 2028.
+  - The AEAT says companies at or below €8M must report invoice statuses from 2028. Law-firm sources say 2029 (a conflict, see C2).
+  - Suppliers of firms above €8M will feel pressure from 6 October 2027.
+  - There is no official count of B2B invoicers (TAX-05); this needs validating. As a baseline, 557M B2B e-invoices were exchanged in 2024.
+- **Pains addressed:** TAX-06, TAX-05, FIN-26. FIN-25 is merged as a duplicate.
+- **Problem:**
+  - Accounts payable becomes regulated, deadline-bound reporting. The recipient must reject an invoice within the window or it counts as accepted, and must report its due date and the date of full payment (TAX-06).
+  - One vendor gives the window as 4 calendar days (single-source).
+  - Nobody serves micro firms here yet. The free SPFE handles the exchange of invoices, but not the matching of bank payments to invoices (TAX-05, inference).
+- **Product:**
+  - *What it does:*
+    - An inbox connected to the SPFE and to private platforms that reads all four formats.
+    - Approve or reject in one tap on mobile.
+    - Extracts the due date and reports the payment date automatically, by matching the bank feed to invoices.
+    - A queue that warns before reporting deadlines.
+    - A bulk mode for asesorías.
+    - A "my payment period" report that doubles as the art. 13.3 bis LGS self-certificate for subsidies above €30k (FIN-26).
+  - *MVP:*
+    - parse UBL and Facturae;
+    - receive through one partner platform or access point, then connect to the SPFE when its interface is published;
+    - bank-feed matching;
+    - the reporting queue and mobile approval.
+  - *Does not:* issue invoices (it pairs with any issuer, including G1-I05), act as an ERP, or become a registered exchange platform at launch (whether that is needed must be validated).
+- **Why now:**
+  - Orden HAC/1028/2026 has been in force since 6 October 2026.
+  - The dates (6 October 2027, 2028 and 2029) are fixed in the BOE and do not depend on Parliament.
+  - The SPFE must be live two months before 6 October 2027.
+  - Customers above €8M will push their suppliers from 2027 (TAX-05).
+- **Alternatives today:**
+  - The SPFE: free.
+  - B2Brouter: €0 for 24 transactions a year, then €110 or €300 a year + IVA.
+  - Invoicing SaaS with Facturae or UBL output: TS Facturas, Contasimple Profesional, Anfix.
+  - ERPs, which are "only starting to build status workflows" (TAX-06).
+  - *Weakness:* these focus on exchanging invoices. Status reporting and payment matching are unsolved.
+  - *Constraint:* the free SPFE sets a price floor of zero for basic sending and receiving.
+- **Price hypothesis:**
+  - €5–12/month per company, tiered by invoice volume.
+  - Asesoría bulk plan at €1–3 per client per month.
+- **Channels:**
+  - Asesorías: the notes name bulk reporting by asesorías as a use case (TAX-06).
+  - Invoicing vendors that have no receiving or accounts-payable module, as partners.
+  - Searches: "recibir factura electrónica pyme", "estado de pago factura electrónica", "Solución Pública de Facturación Electrónica".
+  - Trade associations.
+- **Build notes:**
+  - RD 238/2026 requirements (free interconnection, the copia fiel).
+  - Multi-format conversion.
+  - Bank feeds through a licensed aggregator.
+  - Retention of 4 years for tax and 6 years under the Código de Comercio.
+  - Very sensitive data: every supplier invoice the firm receives.
+  - Complexity: high.
+- **Moat in an AI-flooded market:** medium.
+  - The hard parts are format and platform interoperability, accurate bank matching, the asesoría channel, and accumulated payment-date data, which also feeds G1-I02.
+  - Incumbents (TeamSystem, Visma/Holded, Wolters Kluwer) will add status features, and the free SPFE caps the price.
+- **Key risks and kill criteria:**
+  - *Risks:* the SPFE ships a good free interface; incumbents bundle the feature; obligations for small firms slip, or reporting stays voluntary until 2029.
+  - *Kill if:* the SPFE's own app covers receiving, status reporting and bank matching for free; or third-party software gets no programmatic access to the SPFE.
+- **Evidence strength:**
+  - Strong on the regulation (BOE).
+  - Weak on cost and willingness to pay: there is no compliance-cost estimate (TAX-05 and TAX-06 rate cost confidence low).
+- **Validation questions:**
+  1. Read Orden HAC/1028/2026 (BOE-A-2026-20587) and RD 238/2026 and establish:
+     - which statuses are mandatory;
+     - the actual reporting deadline (is it 4 calendar days?);
+     - who reports what in 2028 versus 2029, to resolve the TAX-05 versus FIN-25 conflict.
+  2. Check whether the SPFE will offer an interface for third-party software, and when its technical specifications are due.
+  3. Does a receive-and-report tool have to register as a private exchange platform under RD 238/2026? What does registration involve?
+  4. Check the status-reporting roadmaps of B2Brouter, TS Facturas, Holded, Quipu, Anfix, a3 and Sage. List the Spanish Peppol access points.
+  5. Confirm the sanctions for not reporting statuses; the €10,000 figure is single-source.
+  6. Estimate how many firms have turnover above €8M and how many suppliers they have (a TAX-05 gap).
+  7. Confirm the art. 13.3 bis LGS details: when self-certification applies, and the 10-working-day deadline.
+
+### G1-I04: VeriFactu retrofit adapter for legacy tills and scales
+- **Type:** B
+- **Buyer:** shop and bar owners (autónomos and micro firms) whose existing tills or scales issue tickets, in three groups:
+  - small retailers with digital weighing scales, such as fruterías and carnicerías;
+  - bars and restaurants with older POS terminals or cash registers;
+  - personal services with cash registers.
+
+  POS and scale installers and distributors are the channel. The number of such businesses is not in the G1 notes and needs validating with the retail and hospitality tracks. For context, VeriFactu applies to about 2.5M autónomos and 2.1M companies (single-source estimate).
+- **Pains addressed:** TAX-01, TAX-02, TAX-03 (partly).
+- **Problem:**
+  - Tickets are simplified invoices, so tills and scales count as invoicing systems under VeriFactu.
+  - ATA (single-source) says adapting a digital scale can cost more than €2,500, and a bar cash register up to €1,800.
+  - Setups that integrate POS and ordering need more than a software update (TAX-01).
+  - In the Basque roll-out of TicketBAI, these segments were phased in last and needed exemptions (TAX-08 context).
+- **Product:**
+  - *What it does:* a small bridge, either a capture device on the printer line or a driver, plus a cloud SIF (invoicing-system) layer.
+    - It receives each ticket the legacy device issues.
+    - It generates the VeriFactu record: hash chaining, event log, and a QR code printed on the existing printer.
+    - It submits the record to the AEAT in VERI*FACTU mode.
+    - A dashboard serves the owner and the gestoría.
+  - *MVP:* support the most common scale and POS models in one city, working with one installer partner.
+  - *Does not:* replace the POS, manage inventory, or support TicketBAI at launch.
+- **Why now:**
+  - The BOE still sets 1 January and 1 July 2027.
+  - The announced move to October 2028 is not yet in the BOE (TAX-02). It would give time to build, but it also weakens urgency.
+- **Alternatives today:**
+  - Replacing hardware, at €1,800–€2,500+ per device type (ATA).
+  - Upgrades from the POS vendor.
+  - The AEAT's free app, which cannot issue simplified invoices (VOX table), so it does not cover tickets.
+  - Handwritten tickets, which fall outside VeriFactu.
+  - POS SaaS such as SumUp TPV Plus at €49/month.
+  - *Weakness:* every option costs capex or a full system switch. The notes document no retrofit option.
+- **Price hypothesis:**
+  - €150–300 one-off for the device and installation.
+  - €5–8/month for the service.
+- **Channels:**
+  - POS and scale distributors and installers, who know the installed base.
+  - ATA and retail and hospitality federations.
+  - Gestorías serving módulos shops and bars.
+  - Any regional adaptation incentive, as in the Basque precedent of 30–60% deductions. None was found in common territory, so this needs validating.
+- **Build notes:**
+  - The maker becomes a producer of an invoicing system. It must file a declaración responsable (self-declaration of compliance) and faces sanctions of up to €150,000 per year and per system type (TAX-01).
+  - The DGT's position on bridges or middleware is unknown.
+  - Drivers are needed model by model, plus hardware logistics.
+  - Complexity: high.
+- **Moat in an AI-flooded market:** high, if it is legal and works.
+  - The protection is device integrations, producer liability and an installer network.
+  - Hardware and field work cannot be cloned by software alone.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - a bridge may not satisfy the integrity and inalterability requirements if the legacy device can still print tickets outside the chain;
+    - POS vendors may cut their upgrade prices;
+    - the postponement to 2028 reduces urgency;
+    - the base of device models is fragmented.
+  - *Kill if:* DGT or AEAT criteria rule out capturing tickets externally; or typical vendor upgrade quotes come in below about €300.
+- **Evidence strength:** medium.
+  - The hardware costs are advocacy figures from a single source (ATA).
+  - That tickets and tills are in scope is well sourced (LRB Tax via AyE).
+  - The Basque precedent supports how hard this segment is.
+- **Validation questions:**
+  1. Search the DGT binding rulings (consultas) and the AEAT VeriFactu FAQ for criteria on middleware that makes legacy cash registers or scales compliant.
+  2. Identify the leading scale and POS brands in Spain and get VeriFactu upgrade quotes, to test ATA's €1,800–€2,500 figures.
+  3. Check whether Basque TicketBAI-era products retrofitted legacy cash registers, and how they were certified.
+  4. Count retail businesses using scales, and hospitality businesses, by city (cross-check with the retail and hospitality tracks).
+  5. Track the October 2028 postponement: which instrument (RD or RDL) and when it is published.
+  6. Confirm producer obligations under Orden HAC/1177/2024 (the declaración responsable and technical specifications) and the producer sanction regime.
+
+### G1-I05: Fair-terms invoicing and e-invoicing for micro businesses
+- **Type:** A.
+- **Buyer:** autónomos and micro firms that invoice (professionals, trades, small B2B services). Two groups: those still on Excel or Word, and those unhappy with an incumbent tool.
+  - There were 3.48M RETA members at the end of September 2026. About half of autónomos use no invoicing software (ENA; TAX-03).
+  - Incumbent user bases are vendor claims: Holded more than 80,000, Quipu more than 20,000, Billin more than 180,000 users.
+- **Pains addressed:** VOX-08, VOX-09, VOX-10, VOX-11, TAX-07, TAX-03, TAX-01. VOX-12 is merged in.
+- **Problem:**
+  - Cheap invoicing already exists. The complaints are about terms, not list price (C4):
+    - invoice caps and yearly price rises;
+    - forced upgrades;
+    - cancellation that is obstructed;
+    - losing invoice history at exit;
+    - phone support only on paid tiers;
+    - VeriFactu bugs.
+  - Mandatory e-invoicing in 2027–2028 will be a second upsell moment (TAX-07).
+- **Product:**
+  - *What it does:*
+    - VeriFactu, Facturae and UBL B2B e-invoicing, and the SPFE copy, all included at one flat price.
+    - Unlimited invoices, sent from the user's own email domain.
+    - One-click cancellation.
+    - After cancelling, a free read-only archive for 6 years (UBL/Facturae plus PDF/A), with full export.
+    - An importer for Excel and Word templates that keeps the numbering series.
+    - A free seat for the gestor, with exports to a3, Contasol and Sage.
+    - Spanish-speaking human support on WhatsApp in business hours, with AI triage first.
+  - *MVP:* a compliant invoicing core, the importer, the archive and WhatsApp support.
+  - *It does not do:* accounting, payroll, POS, inventory or tax filing.
+- **Why now:**
+  - The BOE still sets VeriFactu for 2027. Even if it moves to October 2028, owners face a switching window (TAX-02).
+  - E-invoicing in 2027–2028 forces another upgrade (TAX-05).
+  - Consolidation and complaints keep rising (C4).
+  - Why would customers switch? Only when an incumbent's next price rise, tier change or e-invoicing upsell bites, and only if their gestor accepts the tool. The importer and the archive lower the cost of switching.
+- **Alternatives today** (prices from TAX-01, the VOX table and C3):
+  - Free:
+    - the AEAT app (no simplified invoices, no export);
+    - FacturaScripts (open source);
+    - Contasimple's free tier (12 documents a year).
+  - Paid:
+    - Contasimple €10.95–19.95;
+    - TS Facturas/Billin €6.60–28 (the notes contain two conflicting price lists);
+    - Holded €7.50–99.50 on annual billing, about double that monthly (sources conflict);
+    - Quipu €17–59;
+    - Anfix €4.99–99.99 (another source says "from €15");
+    - FacturaDirecta €0–40;
+    - Declarando VeriFactu Plus €9.90;
+    - Cuéntica €9;
+    - a3factura from €9.95;
+    - SumUp Facturas Plus €10.
+  - Weaknesses: caps, support behind paid tiers, lock-in at exit. But many are cheap, and Cuéntica already sells "sin permanencia" (no minimum term) with export at any time.
+- **Price hypothesis:**
+  - €6/month, or €60/year, flat.
+  - Archive-only plan at €1/month, or free.
+- **Channels:**
+  - Gestorías: a free gestor seat and bulk onboarding of clients who invoice in Excel (6 in 10 asesorías invoice with Excel themselves; TAX-03).
+  - Searches: "alternativa a Holded", "programa facturas Verifactu exportar".
+  - Comparison and review pages where incumbents collect complaints.
+  - Associations.
+- **Build notes:**
+  - As a producer of an invoicing system, it must file a declaración responsable (self-declaration of compliance) and faces producer sanctions of up to €150,000.
+  - It needs AEAT VERI*FACTU submission and Facturae/UBL output with the SPFE copy.
+  - It must be able to serve Basque customers through TicketBAI (TAX-08 was filtered as a standalone pain).
+  - Retention: 4 years for tax, 6 years under the Código de Comercio.
+  - Human support is the main cost driver.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:**
+  - None; speed only. Every feature is a product decision any incumbent can copy, and Cuéntica already offers some of them.
+  - The only edge is distribution through gestorías.
+- **Key risks and kill criteria:**
+  - Risks:
+    - a saturated market, with €0–10 plans and the state's free app;
+    - human support at €6/month destroys the margin;
+    - gestores are locked into a3 and TeamSystem;
+    - incumbents could add free archives.
+  - Kill if:
+    - acquiring a customer through gestorías costs more than 12 months of revenue;
+    - or fewer than about 1 in 5 users who complained about Holded or Quipu say they would switch for these terms.
+- **Evidence strength:** medium.
+  - Reviews are unverified but consistent across at least six vendors.
+  - Saturation is also well evidenced, and that cuts against the idea.
+- **Validation questions:**
+  1. Verify current list prices and caps:
+     - Holded (the 250-invoice Plus cap; the three conflicting price sources);
+     - TS Facturas/Billin (two conflicting lists);
+     - Contasimple, Anfix (€4.99 versus "from €15"), FacturaDirecta, Cuéntica, Declarando VeriFactu Plus.
+  2. Read the AEAT free app's guide for its limits on volume, simplified invoices and export. The PDF was not read in Stage 1.
+  3. Resolve Contasimple's ownership (Shine versus Cegid).
+  4. Check which vendors already offer a free archive after cancellation, or one-click cancellation.
+  5. Confirm the record-keeping periods and whether the copies the SPFE holds satisfy them.
+  6. Interview 10 gestorías: would they accept or promote a new tool if it exports to their a3 or Contasol?
+  7. Benchmark the cost per user of human WhatsApp support.
+
+### G1-I06: Asesoría compliance cockpit
+- **Type:** B.
+- **Buyer:** small asesorías and gestorías with 1–9 staff and 25–200 clients each, plus graduados sociales (labour and social-security advisers).
+  - The total number in Spain is unknown and must be validated.
+  - Cegid surveyed 8,000 advisers: 71% of firms have three or fewer staff and 30% are sole practitioners. Sole advisers often serve up to 25 clients; firms of 4–9 staff serve 101–200 (TAX-23).
+- **Pains addressed:** TAX-23, TAX-22, VOX-21, TAX-02, TAX-04, TAX-14, TAX-13, TAX-09. VOX-13 is merged in.
+- **Problem:**
+  - Every regulatory change forces a client-by-client review in Excel. Recent and coming examples:
+    - societario contribution bases in April 2026;
+    - each client's VeriFactu tool and submission mode;
+    - the e-invoicing date by turnover band;
+    - módulos limits every winter.
+  - Asesorías are the default educators: 72% have to re-educate their clients (TAX-23, TAX-04).
+  - Errors and missed notices turn into client penalties (TAX-22).
+- **Product:**
+  - *What it does:*
+    - Imports the client list from a3, Contasol or Sage exports, or from CSV.
+    - Tags each client by regime: estimación directa or módulos, IS or IRPF, B2B or B2C, turnover band, and territory (common, foral, Canarias).
+    - Generates an obligations calendar and a monthly "at-risk clients" list, covering:
+      - VeriFactu tool and mode;
+      - e-invoicing date and readiness;
+      - societario base check (€1,424) and regularisation exposure;
+      - módulos limits;
+      - filings due.
+    - Includes a curated "rule status" feed showing what is in the BOE versus what is only announced (for example, VeriFactu 2027 versus 2028; the convalidation status of decree-laws).
+    - Sends plain-language circulars to clients in bulk by email or WhatsApp, with questionnaire links to collect missing data.
+  - *MVP:* CSV import, a rules engine for five obligations, bulk messaging, and a weekly curated status feed.
+  - *It does not do:* bookkeeping, filing or payroll. It runs alongside a3, TeamSystem or Sage.
+  - *Extension:* the rule-status feed could also be sold to SMEs on its own. It was folded in here because free press coverage weakens it as a standalone product.
+- **Why now:**
+  - The 2026–2028 wave:
+    - VeriFactu (2027 in the BOE, 2028 announced);
+    - e-invoicing (2027, 2028, 2029);
+    - societario regularisation in 2027–2028;
+    - the MEI surcharge rising to 1% in 2027;
+    - módulos limits for 2027 still pending.
+  - Repeated failures to convalidate decree-laws make "is this rule actually in force?" a recurring question (TAX-02, TAX-14).
+- **Alternatives today:**
+  - a3 (Wolters Kluwer), TeamSystem/DELSOL, Sage (asesoría prices not retrieved).
+  - Kabilio for invoice processing (promotional claims).
+  - Excel.
+  - Free content from AyE, the Infoautónomos blog and vendor blogs.
+  - Weakness: the suites centre on bookkeeping and filing. The notes show no cross-client regulatory-readiness tracker.
+- **Price hypothesis:**
+  - €39–79/month per asesoría, by client count.
+  - No asesoría software prices appear in the notes, so this must be validated.
+- **Channels:**
+  - The Consejo General de Gestores Administrativos and colegios of graduados sociales (not researched in Stage 1).
+  - Asesoría events; a3 and Sage marketplaces; LinkedIn.
+  - Vendors' asesoría programmes (Quipu has one) as partners or as competitors.
+  - Searches: "software asesorías control clientes verifactu".
+- **Build notes:**
+  - A rules engine maintained by a tax specialist. The editorial work is a recurring cost.
+  - Import of a3, Contasol and Sage exports.
+  - WhatsApp Business API.
+  - GDPR: the tool acts as a data processor for client data held by the asesoría.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** medium.
+  - The strengths:
+    - an accurate, maintained rules engine;
+    - switching costs once client tags and history live in the tool;
+    - the client-communication layer.
+  - It is also a distribution base for G1-I03, G1-I07, G1-I08 and G1-I10.
+  - It can be copied by Wolters Kluwer or TeamSystem, which own the installed base.
+- **Key risks and kill criteria:**
+  - Risks:
+    - asesorías are slow to adopt: Excel-heavy, and only 41% of individual advisers are up to date;
+    - incumbents could bundle a dashboard;
+    - tiny firms have little room to pay.
+  - Kill if:
+    - fewer than 1 in 5 interviewed asesorías would pay €30/month or more;
+    - or a3 or TeamSystem already offer equivalent client-readiness tracking.
+- **Evidence strength:** medium.
+  - The workload evidence comes from vendor surveys (Cegid, Quipu), but they are consistent.
+  - The regulatory calendar is documented in the BOE and by the AEAT.
+- **Validation questions:**
+  1. Find the number of asesorías, gestorías and graduados sociales in Spain (Consejo General de Gestores Administrativos, colegios); this was a Stage 1 gap.
+  2. Check a3 (Wolters Kluwer), TeamSystem/DELSOL, Sage and Cegid asesoría products for multi-client regulatory dashboards, and their prices.
+  3. Look up Kabilio and similar asesoría add-ons: prices and integrations.
+  4. Interview 15 small asesorías about how they track VeriFactu readiness and societario bases today, and what they would pay.
+  5. Confirm that a3 and Contasol export client master data in a usable format.
+  6. Test whether asesorías would pay for a white-label rule-status feed for their clients.
+
+### G1-I07: Cuota and regularisation tracker for autónomos
+- **Type:** C
+- **Buyer:**
+  - Autónomos (personas físicas) in estimación directa.
+  - Societarios (owner-managers who pay RETA through their own SL) and family collaborators.
+  - Gestorías and graduados sociales (labour and social-security advisers), buying in bulk.
+  - Scale: 3,483,645 people were registered in the RETA at the end of September 2026. About 1.2M societarios and collaborators had their minimum base changed (TAX-13).
+- **Pains addressed:** TAX-12, TAX-13.
+- **Problem:**
+  - Choosing a tramo is a forecast, and it is settled a year later.
+  - In the ENA survey, 35.1% had to pay after regularisation. They rated the handling 2.2 out of 10, and 15% did not know their own tramo (TAX-12).
+  - Societarios who do not update their base now face about €135/month more, and a lump-sum back-charge in 2027–2028 (TAX-13).
+- **Product:**
+  - *What it does:*
+    - Pulls income from invoicing and bank data, or takes a monthly manual entry.
+    - Estimates year-to-date net income and maps it to a tramo.
+    - Shows the "regularisation exposure" in euros, with a suggested monthly amount to set aside.
+    - Reminds the user of the six base-change windows a year and of the date the €80 tarifa plana (flat starter rate) ends.
+    - In societario mode, checks the €1,424 minimum base.
+    - Produces a one-page "how to change your base in Import@ss" guide, or a request to send to the gestor.
+  - *MVP:* the calculator, an invoice or bank import, and a monthly alert.
+  - *What it does not do (at least in the MVP):*
+    - It does not change bases for the user. That needs Seguridad Social authorisation or RED access.
+    - It gives no tax or labour advice.
+- **Why now:**
+  - The 2026 tables are frozen.
+  - The MEI (intergenerational equity surcharge) rises to 1% in 2027, and the 2027 bases are still pending.
+  - The societario regularisation will land in 2027–2028.
+  - Negotiations on contributions have stalled for more than a year (TAX-12, TAX-13).
+- **Alternatives today:**
+  - Gestorías and graduados sociales, inside fees of €25–150/month.
+  - Cuéntica's autónomo-fee calculator, part of its €19 plan.
+  - Free published tables and calculators, such as Infoautónomos' cuota page.
+  - Changing bases by hand in Import@ss.
+  - Weakness: the calculators are one-off. Nothing tracks income continuously or warns of exposure.
+- **Price hypothesis:**
+  - €3–4/month or €29/year.
+  - A gestoría bulk plan at €0.50–1 per client per month.
+- **Channels:**
+  - Invoicing apps, as an embedded or white-label module.
+  - Gestorías and graduados sociales.
+  - New-autónomo journeys, with regional "cuota cero" refunds and tarifa plana timing as hooks.
+  - Searches: "regularización cuota autónomos", "qué tramo de autónomos me corresponde", "calculadora cuota autónomos 2027".
+- **Build notes:**
+  - Yearly cotización tables and the RDL 13/2022 net-income rules. The exact deductions are not in the notes; validate them.
+  - A bank feed or invoice import.
+  - A deep link to Import@ss.
+  - Income data is sensitive.
+  - Complexity: low.
+- **Moat in an AI-flooded market:** low.
+  - The formula is public and free calculators exist.
+  - The only edges are continuous automation through integrations and distribution through gestorías. In plain terms: speed and distribution.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - Invoicing vendors and online asesorías add it for free.
+    - The system is redesigned.
+    - Willingness to pay for a calculator is low.
+  - *Kill if:*
+    - Fewer than about 1 in 10 trial users pay at least €2/month.
+    - Or retention collapses once the user has been through one regularisation.
+- **Evidence strength:** strong for the pain; medium for software fit.
+  - The pain rests on the ENA survey (878 responses), ATA data and the official tables.
+- **Validation questions:**
+  1. Confirm the 2026 cotización tables, which rest on a single source (Orden PJC/297/2026), and resolve the conflicting maximum base (€4,909 versus the table) noted in TAX-12.
+  2. Confirm how net income for the RETA is computed, including deductions, and how the TGSS calculates and notifies the regularisation.
+  3. Check whether the Junts proposición de ley (bill) on societario bases lapsed with the dissolution of the Cortes.
+  4. Find official TGSS totals for the 2023 and 2024 regularisations, a TAX-12 gap.
+  5. Look up whether Cuéntica, Infoautónomos, Declarando, TaxDown and Quipu offer continuous tramo tracking, and on which plans.
+  6. Check what authorisation lets a third party view or change bases (Import@ss, RED).
+
+### G1-I08: Official mailbox and tax-debt guard
+- **Type:** C
+- **Buyer:**
+  - Companies, which must receive electronic notifications.
+  - Autónomos who are obliged to, or have opted in.
+  - Gestorías that monitor mailboxes for clients.
+  - Scale: unknown how many use electronic notification; to validate. VeriFactu-scope estimate: 2.1M companies (single-source).
+- **Pains addressed:** TAX-18, TAX-19, TAX-10, VOX-17. FIN-24 is merged in.
+- **Problem:**
+  - A notification counts as delivered after 10 days unopened, even when no email alert arrives.
+  - After failed postal attempts, notice goes to the BOE.
+  - Owners often find out only when an account is embargoed. Embargos now execute overnight (TAX-18, TAX-19).
+  - Small slips cost €100–€600 in fixed fines (TAX-10).
+  - Procedures have been filed in autónomos' names without their consent (VOX-17).
+- **Product:**
+  - *What it does:*
+    - Checks the AEAT sede, DEHú and TGSS mailboxes daily, using the client's power of representation or collaborator status. The aim is to avoid holding their certificate.
+    - Classifies each notice: requerimiento (formal request), providencia de apremio (enforcement order), embargo, sanction, or proposed assessment.
+    - Computes the deadline and the 10-day deemed-delivery date.
+    - Alerts by WhatsApp or SMS well before day 10.
+    - Suggests the next step, such as "forward to gestor" or "pay by this date to keep the reduction".
+    - Tracks debt and deferral instalments so a deferral is not cancelled by a missed payment.
+    - Optionally, searches BOE edictal notices by NIF.
+  - *MVP:* read and classify DEHú and AEAT notifications, send alerts, and offer a gestoría multi-client view.
+  - *What it does not do:* it does not answer, appeal or represent. Those go to the gestor or a lawyer.
+- **Why now:**
+  - The 24-hour embargo roll-out runs to November 2026 (single-source).
+  - An Audiencia Nacional ruling (489/2026) backs deemed delivery to the designated address.
+  - The AEAT is fining post-campaign Renta corrections at €100 (October 2026) (TAX-10, TAX-18, TAX-19).
+- **Alternatives today:**
+  - Gestorías checking mailboxes by hand, inside their fees.
+  - Official email alerts, which sometimes never arrive.
+  - Personal vigilance.
+  - The notes name no product, so validation must look for one.
+- **Price hypothesis:**
+  - €4–6/month per NIF.
+  - A gestoría bulk plan at about €1 per NIF.
+- **Channels:**
+  - Gestorías: sold as automation of a job they already do.
+  - Banks and neobanks, as an embargo-prevention add-on (speculative).
+  - Searches: "notificación Hacienda no la abrí 10 días", "embargo cuenta Hacienda 24 horas", "buzón DEHú avisos".
+- **Build notes:**
+  - It needs a lawful, programmatic way to read the mailboxes, through representation or collaborator status. The fallback is holding clients' certificates, which carries a severe security and legal risk.
+  - The data is highly sensitive and needs a security audit.
+  - Complexity: medium to high, driven by access rather than code.
+- **Moat in an AI-flooded market:** medium.
+  - Integration with official systems and a security reputation are hard to fake.
+  - The alerting logic is easy to copy once the access pattern is known.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - There is no legal or technical access route without storing private keys.
+    - The AEAT, DEHú or TGSS could improve their own alerts, for example through app push.
+    - Gestorías may see this as their job.
+  - *Kill if:* access requires holding clients' certificates, or the official apps already push reliable notices.
+- **Evidence strength:** medium-high.
+  - The rules are in the BOE (LGT) and the Audiencia Nacional ruling is reported by the press.
+  - The 24-hour embargo rests on a single source.
+  - There is no frequency data.
+- **Validation questions:**
+  1. Confirm the mechanisms for third-party access to the AEAT, DEHú and TGSS mailboxes: types of apoderamiento, colaboración social, any interface. Is automated reading allowed?
+  2. Verify the AEAT resolution of 4 June 2026 on 24-hour embargos, which rests on a single source, and its roll-out.
+  3. Find AEAT figures on electronic notifications, deemed deliveries and embargos, a TAX-18 gap.
+  4. Search for notification-monitoring products for gestorías and SMEs in Spain, with prices.
+  5. Confirm which taxpayers are obliged to receive electronic notifications.
+  6. Check whether BOE edictal notices can be monitored automatically by NIF.
+
+### G1-I09: Hacienda letter shield (pre-filing cross-check and evidence pack)
+- **Type:** B (primary), secondary C.
+- **Buyer:**
+  - B2C autónomos and micro firms that take cards or Bizum: hospitality, dental and vet clinics, hairdressers, retail (including recargo de equivalencia, the special VAT regime for small retailers) and taxis.
+  - Professionals in estimación directa whose expenses are at risk of challenge.
+  - Gestorías, as resellers.
+  - Count: unknown, to validate. Cards are accepted in 94% of small retail and hospitality businesses (FIN-13).
+- **Pains addressed:** TAX-15, TAX-16, TAX-17, TAX-09.
+- **Problem:**
+  - Since January 2026, banks report card and Bizum collections to the AEAT every month (modelo 170). Mismatches with the VAT return (303) trigger letters.
+  - Letters after the Renta (annual income-tax return) target unproven expenses and sector-ratio outliers.
+  - The deductibility rules are "excesivamente restrictivas" (excessively restrictive).
+  - Owners reconcile "operación por operación" (transaction by transaction), and must assemble proof under short deadlines (TAX-15, TAX-16, TAX-17).
+- **Product:**
+  - *What it does:*
+    - Before each quarterly filing, it ingests card-acquirer, POS and Bizum settlement exports plus the bank feed.
+    - It reconciles them against issued tickets and invoices and the draft 303/130 bases.
+    - It explains each gap using the five known causes: cross-quarter refunds, tips, personal Bizum, third-party collections and exempt services.
+    - An expense-risk checker flags vehicle, phone, meals and home-office lines, and asks for proof (a photo and the business purpose) when the expense is captured.
+    - When a letter arrives, it assembles a response pack: invoices, bank proofs, the reconciliation and a deductibility rationale.
+  - *MVP:* CSV import from SumUp, Stripe and banks, the comparison against 303 bases, and the PDF pack.
+  - *It does not:* file returns, represent anyone before the AEAT, or argue disputes.
+- **Why now:**
+  - Monthly modelo 170 reporting has applied since 1 January 2026, with no minimum.
+  - Letter waves run from September.
+  - The Consejo para la Defensa del Contribuyente report came out in October 2026.
+- **Alternatives today:**
+  - Manual reconciliation by owners or gestorías.
+  - Declarando's deductible-expense recommender (Pro plan, €69.90 with filings).
+  - Receipt scanning in TaxDown and Quipu.
+  - Gestorías or Legálitas once a letter has arrived.
+  - Weakness: none of these is documented as checking the business's own figures against the third-party data Hacienda holds.
+- **Price hypothesis:**
+  - €7–12/month per business, or about €20 per quarter.
+  - Gestoría bulk plans.
+- **Channels:**
+  - Gestorías, since letters land on their desks.
+  - Acquirer and POS partners (SumUp and similar).
+  - Associations of dental and vet clinics and of hairdressers.
+  - Searches: "carta Hacienda Bizum descuadre", "modelo 170 datáfono 303".
+- **Build notes:**
+  - Settlement exports or APIs from acquirers; business-Bizum data through banks; bank aggregation.
+  - Rules for VAT bases.
+  - The data is highly sensitive.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** medium.
+  - Data integrations with acquirers and banks, plus know-how about the AEAT's matching patterns.
+  - Accounting suites could copy it.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - The letter wave rests on a single press source, and how often letters arrive is unknown.
+    - If taxpayers cannot see the modelo 170 data their bank filed, the product has to rebuild it.
+    - Gestorías may already absorb this work within their fees.
+  - *Kill if:*
+    - Letters reach fewer than about 5% of B2C businesses a year.
+    - Or acquirer data cannot be obtained without manual work.
+- **Evidence strength:** medium.
+  - The modelo 170 letters come from a single press source.
+  - The post-Renta letter waves and the Consejo report are known only via the press (Gestha is the source for the letters).
+- **Validation questions:**
+  1. Verify RD 253/2025 and Orden HAC/747/2025 in the BOE: monthly modelo 170, no minimum, scope including Bizum.
+  2. Can taxpayers, or their authorised representatives, download the modelo 170 data reported about them?
+  3. Find AEAT or Gestha figures on letters sent over card and Bizum mismatches.
+  4. Check whether SumUp, Stripe, Redsys-based bank terminals and Bizum for business offer exports or APIs of settlement data.
+  5. Look up the reconciliation features of Holded, Quipu, Anfix, Declarando and TaxDown.
+  6. Interview gestorías about how many requerimientos (formal AEAT requests) they handle per year and the hours each takes.
+
+### G1-I10: SL director guard (dissolution-trigger and accounts-deposit alerts)
+- **Type:** C
+- **Buyer:**
+  - Owner-managers of micro and small SLs, who are often autónomos societarios.
+  - Sold mainly through their asesoría.
+  - Count: the number of SLs is unknown (a TAX-21 gap), to validate. About 1.2M societarios and collaborators (TAX-13) gives a rough proxy for owner-managers.
+- **Pains addressed:** FIN-17, FIN-16, TAX-21.
+- **Problem:**
+  - When losses push net equity below half of share capital, directors have two months to convene the shareholders. Those who miss the window can become personally liable for debts that arise in that period (STS 1477/2026).
+  - Micro firms tend to file for insolvency only when it is too late: only 52 of 1,427 micro procedures aimed at continuation.
+  - Missing the annual accounts deposit brings a registry block and ICAC fines of €1,200–€60,000 (FIN-16, FIN-17, TAX-21).
+- **Product:**
+  - *What it does:*
+    - Reads the trial balance each month or quarter, from the accounting tool or an asesoría export.
+    - Computes net equity against share capital and a cash runway, shown as a traffic light.
+    - When the half-capital trigger is hit, starts a two-month countdown and offers a template notice convening the shareholders.
+    - Keeps a dated log proving the directors acted in time.
+    - Reminds the user of the annual-accounts deposit, due within a month of approval.
+  - *MVP:* ledger or CSV import, the ratio check, alerts and lawyer-reviewed templates.
+  - *It does not:* give insolvency advice or file anything (it refers to lawyers), or audit accounts.
+- **Why now:**
+  - STS 1477/2026 (October 2026) reinforces directors' personal liability.
+  - Company insolvencies rose 15.5% year-on-year in Q4 2025 (FIN-17, FIN-16).
+- **Alternatives today:**
+  - Gestorías and accountants, "when they notice"; lawyers.
+  - Accounting services at €59.95–€129/month.
+  - Software with corporate-tax returns from €58.33/month (Anfix Empresarial).
+  - Weakness: nothing in the notes alerts on the dissolution trigger.
+- **Price hypothesis:**
+  - €5/month per SL.
+  - Asesoría bulk plan at €1–2 per SL.
+- **Channels:**
+  - Asesorías, which hold the books.
+  - Accounting-software marketplaces.
+  - Directors' liability insurers and brokers (speculative).
+  - Searches: "causa de disolución por pérdidas responsabilidad administrador", "depósito de cuentas plazo multa".
+- **Build notes:**
+  - Imports from a3, Contasol, Holded and Quipu.
+  - The LSC articles need confirming, because the press article cites none.
+  - Templates reviewed by a commercial lawyer.
+  - Complexity: low.
+- **Moat in an AI-flooded market:** none; speed only. Any accounting vendor can add the ratio. The value lies in the legal workflow and the evidence log.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - Owners of struggling firms ignore the alerts.
+    - Asesorías treat it as a free feature.
+    - Ledgers are often updated only quarterly.
+  - *Kill if:*
+    - Asesorías will not distribute it.
+    - Or the main accounting suites already alert on the half-capital trigger.
+- **Evidence strength:** medium.
+  - STS 1477/2026 comes from a single press source.
+  - The accounts-deposit fines come from the BOE (LSC).
+  - The insolvency statistics are strong (Registradores).
+- **Validation questions:**
+  1. Read STS 1477/2026 and identify the LSC articles on the dissolution cause, the two-month duty and directors' liability.
+  2. Count the SLs in Spain and the share that file abbreviated accounts (Registradores, INE).
+  3. Check whether a3, Contasol, Holded, Quipu or Anfix alert on the half-capital trigger.
+  4. Find data on how often directors face liability claims, and on how many companies fail to deposit accounts (Registradores, ICAC).
+  5. Interview asesorías on whether they would pay for or distribute this to SL clients.
+
+### G1-I11: Supplier bank-detail change guard (anti-IBAN-fraud payment check)
+- **Type:** C (primary), secondary B.
+- **Buyer:** micro and small firms (10–49 staff) where an owner or admin pays suppliers by bank transfer, and autónomos with recurring suppliers. How many such firms exist is unknown and needs validating.
+- **Pains addressed:** FIN-12 (VOX-03 merged in).
+- **Problem:**
+  - Fraudsters email fake IBAN changes or pose as the boss, and the transfers they trigger cannot be reversed.
+  - A secondary source puts BEC (business email compromise) losses above €15,000 per incident.
+  - A vendor survey says 22% of SMEs were hit by invoice or payment fraud in 12 months.
+  - INCIBE, the national cybersecurity institute, reports online fraud up 19% (FIN-12, VOX-03).
+- **Product:**
+  - *What it does:*
+    - Keeps a register of verified supplier IBANs.
+    - Watches incoming invoices and emails, and outgoing payment batches or SEPA files.
+    - Flags any new or changed IBAN, mismatches between the bank and the supplier's country, look-alike sender domains and urgent "CEO" requests.
+    - For any flagged payment, requires a call-back to the phone number on file (never one taken from the email) and approval by a second person.
+    - Logs evidence for a later bank claim.
+  - *MVP:* an email add-in, the IBAN register and a check on payment files.
+  - *Does not:* replace bank security or cyber insurance.
+- **Why now:**
+  - Fraud is rising: INCIBE incidents +26% and helpline queries +44.9% in 2025.
+  - Attackers now hijack autónomos' email sessions by stealing cookies instead of passwords (an October 2026 headline).
+  - Structured B2B e-invoices from 2027–2028 offer a chance to tie each IBAN to a verified invoice.
+- **Alternatives today:**
+  - Banks' strong customer authentication and fraud alerts.
+  - Verification of Payee, if it is in force (not verified).
+  - INCIBE's 017 helpline (free).
+  - Cyber insurance (not priced) and IT providers.
+  - Weakness: these are reactive or generic. Nothing in the notes ties supplier identity to payment approval at the SME level.
+- **Price hypothesis:** €5–9/month per company.
+- **Channels:**
+  - Cyber insurers and brokers (possibly as a premium discount), IT managed-service providers, gestorías.
+  - Banks, as partners.
+  - Searches: "fraude cambio de cuenta bancaria proveedor", "fraude del CEO pyme".
+- **Build notes:**
+  - Integrations with email suites, the SEPA payment-file format and optional bank aggregation.
+  - A Verification of Payee lookup, if banks expose one.
+  - GDPR applies.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** low.
+  - The idea is easy to copy, and banks could bundle it.
+  - The only edges are integrations and, later, linking IBANs to e-invoices.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - Verification of Payee already does the name–IBAN check for free.
+    - SMEs under-invest in security until they are hit.
+    - Liability perception if a fraud slips through.
+  - *Kill if:* Verification of Payee coverage makes IBAN-change fraud rare, or interviews show SMEs will not pay at least €5/month before suffering a loss.
+- **Evidence strength:** medium. The trend data is official (INCIBE, Banco de España), but SME euro losses come only from a vendor survey and a secondary source.
+- **Validation questions:**
+  1. Verify Regulation (EU) 2024/886: Verification of Payee obligations and dates, and what Spanish banks show business customers.
+  2. Find Spanish loss figures for CEO/BEC and IBAN-change fraud (INCIBE, Policía Nacional, Banco de España). The notes found none.
+  3. Look up existing SME tools for verifying IBANs or controlling payments in Spain, including banks' own offers.
+  4. Check whether e-invoices under RD 238/2026 carry a payee IBAN field that could be validated automatically.
+  5. Price SME cyber insurance and check whether insurers discount premiums for payment controls.
+
+### G1-I12: B2B subscription and contract guard
+- **Type:** C
+- **Buyer:** autónomos and micro firms with several SaaS, telecom, web and service contracts, especially former Kit Digital beneficiaries. Kit Digital made more than 860,000 grants (VOX-16). Beyond that, the number of buyers is unknown.
+- **Pains addressed:** VOX-09, VOX-16, VOX-05, VOX-08, TAX-07.
+- **Problem:**
+  - Small businesses lose money to:
+    - annual auto-renewals they forget;
+    - cancellations that only "request" cancellation;
+    - telecom permanencias (minimum-term penalties) that consumer protection does not cover;
+    - Kit Digital leftovers (about €22–66/month for a website versus about €8/month hosting).
+  - The notes found no one tracking renewal dates for them (VOX-05, VOX-09, VOX-16).
+- **Product:**
+  - *What it does:*
+    - Detects recurring charges and contracts from bank and card feeds and from invoice emails.
+    - Builds a renewal calendar with notice periods and permanencia end dates, and alerts 30 and 7 days before each renewal.
+    - Flags price rises compared with the last period.
+    - Generates cancellation requests sent with proof of delivery (certified email), then tracks the replies.
+    - Suggests cheaper equivalents, for example moving a Kit website to €8–10 hosting (see G1-I13).
+  - *MVP:* a bank feed, recurring-charge detection, the calendar and cancellation templates.
+  - *Does not:* switch energy or telecom suppliers for commission, since that would create a conflict of interest.
+- **Why now:**
+  - Kit Digital's subsidised years have ended.
+  - The VeriFactu and e-invoicing upsell wave is coming (C4).
+  - Price-creep complaints are recurring (VOX-08).
+- **Alternatives today:**
+  - Spreadsheets.
+  - Chargebacks and disputed SEPA direct debits.
+  - Lawyers.
+  - Spendbase: a blog post of theirs appears in the VOX gaps; the product and its Spanish availability are not verified.
+- **Price hypothesis:** €3–5/month, or free with a share of first-year savings.
+- **Channels:**
+  - Business-account providers (neobanks and banks).
+  - Gestorías.
+  - Searches: "dar de baja kit digital", "cancelar suscripción Holded", "permanencia telefonía empresa".
+  - Owner communities, organically (the Forocoches business subforum).
+- **Build notes:**
+  - Bank aggregation through a licensed partner.
+  - Email parsing.
+  - A partner for certified email.
+  - Light regulatory burden, but medium-high data sensitivity.
+  - Complexity: low to medium.
+- **Moat in an AI-flooded market:** none; speed only. Banks can add subscription views.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - The notes found no data on willingness to pay.
+    - Savings are mostly one-off, so users may churn after the first clean-up.
+    - The typical micro firm may have too few contracts to need this.
+  - *Kill if:*
+    - fewer than about 40% of users are retained after three months;
+    - or the median target user has fewer than three recurring business contracts.
+- **Evidence strength:** medium. Cancellation complaints are consistent across six or more vendors, but there are no data on how many contracts SMEs hold or what they would pay.
+- **Validation questions:**
+  1. Look up Spendbase and any Spanish B2B subscription-management tools, and check the subscription-detection features of business accounts (Qonto and the banks).
+  2. Find survey data on how many software and telecom contracts a Spanish micro firm holds (ONTSI and INE pages could not be retrieved in Stage 1).
+  3. Check which legal protections autónomos and companies have against auto-renewal and permanencia clauses.
+  4. Check the Kit Digital terms on beneficiaries' obligations after the subsidy and on early-exit fees.
+  5. Run a landing-page test aimed at former Kit Digital beneficiaries to measure willingness to pay.
+
+### G1-I13: Kit Digital website rescue and low-cost managed hosting
+- **Type:** A.
+- **Buyer:** former Kit Digital beneficiaries, mostly autónomos and micro firms, who still pay for website upkeep after the subsidised year.
+  - Kit Digital made more than 860,000 grants. How many included a website is unknown and must be validated (VOX-16).
+- **Pains addressed:** VOX-16 (and the background of VOX-15, which was filtered out).
+- **Problem:**
+  - After the subsidised year, upkeep for a templated site costs from €21.98/month (Arsys) to €66/month (a forum figure).
+  - Hosting costs about €8/month and a domain about €10/year.
+  - Some contracts carry early-exit fees (VOX-16).
+- **Incumbent and why a cheaper offer can work:**
+  - Incumbents are the agentes digitalizadores (registered Kit Digital suppliers) and hosting firms. Arsys charges from €21.98/month after the subsidised year; one forum figure is €66/month.
+  - Hosting and templated sites are commodities.
+  - The monthly bill makes owners look for alternatives.
+  - Trust in agents is damaged by pitches like "gratis, solo firma" ("it's free, just sign"), so a transparent, no-minimum-term offer stands out.
+- **Product:**
+  - *What it does:*
+    - A free audit: what the owner pays, what they own (domain, content, access) and what their contract says (minimum term, exit fees).
+    - Guided migration: export the content, transfer the domain, set up managed hosting.
+    - Managed hosting with basic updates at €8–10/month, no minimum term.
+    - An optional content refresh.
+  - *MVP:* migration playbooks for the three to five builders that agents used most, plus a hosting partner.
+  - *It does not:* sell SEO services, run ads or offer anything subsidy-dependent.
+- **Why now:**
+  - The last calls closed in October 2025, so most subsidised years end during 2026 (an inference).
+  - Agents' upkeep fees are now charged in full.
+- **Alternatives today:**
+  - Freelancers (one forum offer was a rebuild for €20 plus hosting).
+  - Cheap hosting and site builders (prices not captured in the notes).
+  - Staying with the agent at €21.98–66/month.
+- **Price hypothesis:** €8–10/month all-in, with free migration on annual plans.
+- **Channels:**
+  - Searches: "dar de baja web kit digital", "mantenimiento web kit digital precio".
+  - Owner forums such as Forocoches.
+  - Gestorías, which advised many clients on Kit Digital.
+  - Local business associations.
+- **Build notes:**
+  - Migration tooling and a hosting partner.
+  - A domain-transfer workflow.
+  - Lawyer-reviewed letters for exit-fee disputes.
+  - Complexity: low.
+- **Moat in an AI-flooded market:** none; speed only. Any hosting company can copy this overnight.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - Sites built on proprietary builders may not export.
+    - Many owners do not value their site.
+    - Margins are thin and the work is service-heavy.
+    - The window is time-limited.
+  - *Kill if:* most Kit sites cannot be exported, or median upkeep turns out to be below about €15/month.
+- **Evidence strength:** medium.
+  - The forum evidence is consistent, and there is a vendor price (from a search snippet).
+  - There is no aggregate data on renewals or cancellations.
+- **Validation questions:**
+  1. Find Red.es and Acelera Pyme data on how many Kit Digital grants covered websites, and the renewal rate after the subsidised year.
+  2. Collect post-subsidy prices and exit clauses from the main agentes digitalizadores (Arsys and others).
+  3. Identify which site builders agents used and whether sites and domains can be exported.
+  4. Confirm how long beneficiaries had to keep the subsidised solution, and when they became free to cancel.
+  5. Price low-cost hosting and site builders in Spain.
+
+### G1-I14: Review-attack alarm and evidence kit for local businesses
+- **Type:** C.
+- **Buyer:** restaurants, bars and local service businesses with Google or Tripadvisor listings. Their number is not in the G1 notes and must be validated with the hospitality and retail tracks.
+- **Pains addressed:** VOX-01, VOX-02.
+- **Problem:**
+  - Attackers post bursts of fake reviews; one bar received about 20 one-star reviews from suspicious profiles in under an hour.
+  - Extortion offers follow: pay up, or face more negative reviews.
+  - Google's reporting tool "rara vez funciona" (rarely works), and owners have no evidence or process to fall back on (VOX-01).
+  - Owners are also pitched illegal paid reviews (VOX-02).
+- **Product:**
+  - *What it does:*
+    - Monitors the listings every few minutes.
+    - Detects anomalies: bursts, new or empty accounts, copied text.
+    - Alerts the owner at once.
+    - Captures timestamped evidence through a certification partner.
+    - Pre-fills platform reports and a complaint file for the police or a lawyer, then tracks the outcome of each report.
+    - Optionally sends legitimate post-visit review requests with no incentive attached, to keep a healthy baseline of reviews.
+  - *MVP:* Google listing monitoring, a spike detector, alerts and a PDF evidence pack.
+  - *It does not:* remove reviews, buy or sell reviews, or offer incentives for reviews (illegal, VOX-02).
+- **Why now:**
+  - Attacks were still being reported in April 2026 (Merca2).
+  - Fake reviews have been illegal since May 2022, with fines of up to €100,000, which gives evidence packs a legal path.
+- **Alternatives today:**
+  - Google's free tools.
+  - Police cybercrime units and lawyers.
+  - Reputation agencies such as OnbrandinG (not priced).
+  - Illegal paid reviews at €1.5–2.5 each, or €200/month packages.
+- **Price hypothesis:** €5–9/month per location.
+- **Channels:**
+  - Hospitality associations.
+  - Booking and POS vendors, as an add-on.
+  - Searches: "extorsión reseñas falsas restaurante", "ataque reseñas negativas Google".
+- **Build notes:**
+  - Access to listing data under platform terms; Tripadvisor access is unknown.
+  - An evidence-certification partner.
+  - Anomaly detection.
+  - Complexity: low to medium.
+- **Moat in an AI-flooded market:** low.
+  - The product is easy to copy and depends on the platforms' goodwill.
+  - Data on attack patterns across many listings is a slight edge.
+- **Key risks and kill criteria:**
+  - *Risks:*
+    - Platforms restrict automated access.
+    - Attacks may be too rare per business to justify a subscription.
+    - Google may improve its own detection.
+  - *Kill if:* fewer than about 1 in 20 restaurants report an attack a year, or listing data cannot be monitored within platform terms.
+- **Evidence strength:** weak to medium. The evidence is press and opinion pieces, mostly from Catalonia, with no Spanish scale data.
+- **Validation questions:**
+  1. Find Spanish data on how often review extortion and review bombing happen (police, OCU, hospitality associations).
+  2. Check the terms and quotas for automated monitoring of Google business listings and Tripadvisor.
+  3. Look up OnbrandinG and other Spanish reputation tools, and their prices.
+  4. Verify the Spanish legal basis and fines for fake reviews (the Omnibus rules) and whether court awards reach €20,000 (unverified).
+  5. Get counts of restaurants and bars by city from the hospitality track.
+
+---
+
+## 5. Cross-group links
+
+These overlaps are flagged so that a later merge can combine them. Track names are the Stage 1 file names.
+
+| G1 pains or ideas | Overlapping track(s) | Why they overlap |
+|---|---|---|
+| C1, G1-I01, G1-I02 (FIN-06, FIN-07, FIN-08) | `legal_disputes_compliance.md` | MASC is a general civil requirement: monitorio, consumer claims and the lawyer/procurador threshold. Merge the MASC kits from both tracks into one product. |
+| C1, G1-I01, G1-I02 (FIN-06, FIN-07, FIN-08) | `construction_realestate.md`, `midterm_housing_coliving.md` | The Málaga ruling (FIN-06) involved a homeowners' association, and rent arrears also pass through MASC. A single MASC engine could serve landlords, comunidades de propietarios and B2B creditors. |
+| FIN-02 (subcontracting chains, 87–96.5 days), TAX-24 (filtered: renovation VAT tied to payment method) | `construction_realestate.md` | Subcontractor payment tracking and rule-aware invoicing for trades. The construction track should own TAX-24 and recheck whether RDL 29/2026 is convalidated. |
+| C2, G1-I03 (TAX-05, TAX-06; FIN-25 merged) | All sector tracks, especially `transport_industry_agrifood.md` and `retail_ecommerce_services.md` | Every B2B invoicer is affected. Suppliers to firms above €8M feel it first, from 6 Oct 2027. |
+| FIN-26 (proving payment periods for subsidies above €30k) | `bureaucracy_licensing_funds.md` | The same subsidy files and grant workflows. The 19% of firms that reportedly avoid public tenders because of late payment (FIN-04, filtered) also belongs there. |
+| C3, G1-I04 (TAX-01 tills and scales), TAX-14 (módulos) | `retail_ecommerce_services.md`, `hospitality_tourism.md`, `transport_industry_agrifood.md` | Fruterías, carnicerías and bars with TPVs are where VeriFactu hardware costs land. Módulos users are concentrated in bars, haulage (Fenadismer) and about 800,000 farmers. These tracks should provide business counts per segment for G1-I04. |
+| C5, G1-I06 (TAX-22, TAX-23, VOX-21) | `health_professional_education_care.md` | That track covers gestorías and law firms as businesses. Its pain points about asesorías should be merged into the asesoría cockpit, and gestorías should be treated as a shared channel across all groups. |
+| C6, G1-I07 (TAX-12, TAX-13) | `labor_hr_litigation.md`, `startups_tech_ecosystem.md`, `bureaucracy_licensing_funds.md` | Graduados sociales and Social Security procedures (RED, Import@ss); founders who are societarios; regional "cuota cero" refunds (subsidies). |
+| C7, G1-I08 (TAX-18, TAX-19, VOX-17) | `bureaucracy_licensing_funds.md`, `legal_disputes_compliance.md`, `expat_relocation_bureaucracy.md` | Monitoring official mailboxes (DEHú) and identity misuse in e-government overlap with e-government friction. Appeals against notifications are a legal matter. Foreign founders may also struggle to keep track of official notifications. |
+| C8, G1-I09 (TAX-15 card/Bizum letters) | `hospitality_tourism.md`, `health_professional_education_care.md` (dental and vet clinics), `retail_ecommerce_services.md` (hairdressers, shops), `transport_industry_agrifood.md` (taxis) | These are the sectors the notes name as most exposed to card and Bizum mismatch letters. |
+| C9, G1-I10 (FIN-16, FIN-17), FIN-15 (filtered, N6) | `legal_disputes_compliance.md`, `startups_tech_ecosystem.md` | Insolvency, Segunda Oportunidad and directors' liability are legal-track topics; most startups are SLs. |
+| C10, G1-I11 (FIN-12; VOX-03 merged), VOX-04 (filtered) | `legal_disputes_compliance.md` (GDPR, NIS2), `hospitality_tourism.md` (breach at a booking-software provider) | Cyber-fraud and breach notification duties. A combined "SME cyber hygiene" bundle may be stronger than either track alone. |
+| C11, G1-I12, G1-I13 (VOX-16, VOX-05), VOX-15 and VOX-18 (filtered) | `bureaucracy_licensing_funds.md` (Kit Digital), `cities_macro_surveys.md` (telecom and energy costs) | Kit Digital aftermath and B2B telecom contracts. VOX-06 (energy mis-selling) was filtered for old evidence. Given the 2026 energy shock reported in the project brief, other tracks may hold fresher evidence on SME energy contracts that would revive a "contract guard" angle. |
+| C12, G1-I14 (VOX-01, VOX-02) | `hospitality_tourism.md`, `retail_ecommerce_services.md` | Review extortion and review dependence for restaurants and local services. Those tracks should provide business counts and any further evidence. |
+| VOX-14 (filtered: HR software seat minimums) | `labor_hr_litigation.md` | The labour track owns the status of the time-recording obligation. Recheck micro-employer HR tools against Holded's €1.50-per-employee add-on. |
+| FIN-19, FIN-20, FIN-21 (filtered: catastrophes and insurance) | `cities_macro_surveys.md` (Valencia), `bureaucracy_licensing_funds.md` (aid calls) | DANA recovery aid and recurring regional disasters, if another track finds stronger evidence of SME pain. |
+
+---
+
+## 6. Group top 5
+
+These are the five strongest ideas, listed in ID order. They are not ranked; ranking comes after validation.
+
+1. **G1-I01, MASC-ready claim kit.** A mandatory step in force since April 2025 now precedes about 180,000 monitorios a quarter. The legal templates and certified-channel partnerships make it harder to copy than most ideas, and per-claim pricing beats €99.90 per file or 5–25% success fees.
+2. **G1-I03, E-invoice inbox and payment-status reporter.** It has the most certain regulatory driver in the group: dates fixed in the BOE that do not depend on Parliament. Status reporting and bank matching are unsolved for micro firms. The free SPFE caps what basic exchange can charge, but not the value of automation.
+3. **G1-I06, Asesoría compliance cockpit.** It sells to the people who choose their clients' software (VOX-21) during a 2026–2028 wave that forces client-by-client reviews. It is also the distribution base for G1-I03, G1-I07, G1-I08 and G1-I10.
+4. **G1-I07, Cuota and regularisation tracker.** It has the largest addressable base: 3.48M RETA members, 35% of whom paid after regularisation, and who rate the process 2.2/10, plus about 1.2M societarios facing back-charges. It is cheap to build and fits the €3–5 low-touch model, but it is plainly copyable.
+5. **G1-I08, Official mailbox and tax-debt guard.** Notifications count as delivered after 10 days, and embargos now execute overnight, so a missed notification is expensive. It delivers visible value once set up. Lawful access to official mailboxes is both its moat and its kill risk.

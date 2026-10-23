@@ -113,7 +113,7 @@
   - **Valencia and Alicante.** Moratoria (HOS-21).
   - **Baleares and Canarias.**
     - Palma has announced a ban, and Airbnb has removed more than 2,300 Mallorca listings without the island registration number.
-    - The Balearic Ley 4/2026 adds daily coercive fines of €500–5,000 (single source).
+    - The Balearic Ley 4/2026 adds daily coercive fines of €500–5,000. The fines are reported by two outlets, but the law number comes from a single source.
     - Canarias' Ley 6/2025 fines advertising without a number at €30,001–300,000 (HOS-22; HOU notes).
     - The Consell de Mallorca opened 146 sanction files in January–July 2026, 40% more than in all of 2025.
   - **Platforms and consumer law.** Consumo fined Airbnb €64,055,311 over 65,122 listings with missing or mismatching registration numbers, and the TSJ de Madrid denied interim suspension in March 2026 ([Consumo, Mar 2026](https://www.dsca.gob.es/es/comunicacion/notas-prensa/justicia-obliga-airbnb-pagar-64-millones-euros-previstos-multa-que-le)). Consumo also opened proceedings against large managers, with fines of up to €100,000 or 4–6× the illicit profit (HOS-24).
@@ -191,8 +191,8 @@
   - **Fee signals from unverified reviews:** Nalanda fees rising from "300 y pico" to "más de 1400 euros"; "2000 euros anuales" for 15 workers; €50 for phone support; a TrustScore of 1.3/5 from 135 reviews, 97% of them one-star ([Trustpilot](https://es.trustpilot.com/review/www.nalandaglobal.com)).
   - **Published prices:** Dokify charges contractors from €102.90/yr plus €15.44 per employee or machine ([DocuPRL comparison](https://docuprl.es/blog/mejores-plataformas-cae-2026.html), vendor-authored).
   - **Main contractors' duties (Ley 32/2006).** Before each subcontract they must:
-    - check the sub's REA registration, which lasts 3 years;
-    - check its permanent-staff quota (10%, 20% or 30% depending on age);
+    - check the sub's REA registration, which lasts 3 years (single commercial source);
+    - check its permanent-staff quota: 10% in the first 18 months, 20% in months 19–36, 30% from month 37;
     - respect chain limits (a third-level subcontractor may not subcontract);
     - keep the on-site Libro de Subcontratación.
 
@@ -407,7 +407,7 @@ Ten ideas are listed here. The eleventh, G3-I11, is the reshaped user idea U1 (C
 - **Product:**
   - **Early warning:** an alert when rent is missed (bank feed, or a manual "rent received" tick).
   - **Guided escalation:** reminder → formal demand (requerimiento) → a MASC offer with the content LO 1/2025 requires, sent through a certified channel (burofax or a certified-email partner) → a timestamped evidence log → a court-ready file (contract, debt statement, proof of the MASC attempt) handed to a lawyer.
-  - **Community version:** debt certificate signed by the secretary with the president's approval, the 20% surcharge where statutes allow it (upheld by a Cantabria court), and a monitorio pack.
+  - **Community version:** debt certificate signed by the secretary with the president's approval, surcharge handling (the Audiencia Provincial de Cantabria upheld a 20% surcharge on a defaulting owner, CON-23), and a monitorio pack.
   - **MVP:** templates, a certified-email partner, a timeline and the evidence export.
   - **Deliberately not:** filing in court, acting as a lawyer, giving legal advice, or aggressive collection.
 - **Why now:** The MASC step has applied since 3 Apr 2025. The suspension regime was repealed twice in early 2026 and re-created by RDL 29/2026 (pending around 12 Nov). The notes say "the new negotiation step adds a documented procedure that software can generate, log and time-stamp".
@@ -441,3 +441,448 @@ Ten ideas are listed here. The eleventh, G3-I11, is the reshaped user idea U1 (C
   4. After the vote around 12 Nov 2026, which eviction-procedure rules from RDL 29/2026 remain?
   5. Do Gesfincas, Fincas Pro, Comunidad Feliz or Fynkus already include arrears, monitorio and MASC workflows?
   6. What do lawyers charge for a non-payment eviction, and would small landlords pay €29–49 per case?
+
+### G3-I04: Short-term-rental listing compliance and eligibility monitor for property managers
+- **Type:** B (primary); secondary C, a self-serve alert tier for owners with a single flat.
+- **Buyer:**
+  - Tourist-rental managers (gestoras) running 10–500 units across several regions.
+  - Also individual VUT owners, and buyers or agents checking a property's eligibility before purchase.
+  - Count: 341,001 listed tourist homes (INE, May 2026, via HOS-12/HOS-24). Number of managers unknown — validate.
+- **Pains addressed:** HOS-19, HOS-20, HOS-21, HOS-22, HOS-24 (context: HOU-19).
+- **Problem:** Since the national registry was annulled, compliance means matching each listing to a regional code and register, and to municipal zoning: Madrid Plan Reside, Málaga's 43 barrios and 3-year suspension, the Valencia and Alicante moratoria, Palma, Canarias. Enforcement now arrives through platforms and consumer law: the €64M Airbnb fine over 65,122 listings, Consumo proceedings against managers (up to €100,000 or 4–6× profit), Mallorca's 146 files in seven months, and Balearic daily coercive fines (HOS-19–24). One mismatched code can mean delisting and losing every booking.
+- **Product:**
+  - **Inputs:** the manager's listings, by Airbnb, Booking or Vrbo URL or through a PMS.
+  - **Continuous checks:**
+    - does the displayed code match an active entry in the official regional register?
+    - is the manager's trader status disclosed (art. 27 of the unfair-competition law)?
+    - zone eligibility for new units, such as Madrid's floor and centre rules or Málaga's barrios;
+    - delisting events and rule changes, with alerts.
+  - **Evidence pack** for inspections: licence, acquired-rights papers for pre-3 Apr 2025 units, community approval.
+  - **MVP:** register lookups where public (Andalucía RTA, Catalonia HUT, Valencia RTV, Madrid, Baleares ETV, Canarias VV/HVV), listing checks for code display, and a dashboard with alerts.
+  - **Deliberately not:** obtaining licences, lobbying, evasion tactics, or pricing.
+- **Why now:**
+  - TSJ Madrid denied Airbnb interim relief in March 2026.
+  - Mallorca's sanction files are up 40%. Balearic daily coercive fines have applied since 14 Jun 2026 (the law number is single-source), and Canarias' Ley 6/2025 fines advertising without a number at €30,001–300,000.
+  - EU 2024/1028 (since 20 May 2026) makes platforms display numbers and run random checks, and RDL 29/2026 adds platform sanctions (pending).
+  - The national registry's annulment left a patchwork of regional codes (RTA, HUT, RTV, VUT, ETV, VV).
+- **Alternatives today:**
+  - Lawyers; in-house platform-compliance staff at large managers.
+  - PMS fields that store and display the code (Smoobu, Chekin, net2rent): storage, not auditing.
+  - Inside Airbnb and AirDNA data, which appear in the notes as data sources, not compliance products.
+  - No cross-platform audit tool was found (HOS-24).
+- **Price hypothesis:** €2–3 per listing per month for managers (minimum €49/month); €5/month per unit for the self-serve alert tier.
+- **Channels:**
+  - Manager and owner associations: Apartur, Fevitur, Aptur CV, StayAlliance.
+  - Integrations with PMS and channel managers (Avantio, Smoobu, Hostaway; unverified).
+  - Investors and agents doing pre-purchase checks.
+  - Search: "comprobar licencia piso turístico", "número de registro Airbnb".
+- **Build notes:**
+  - Access to regional registers varies (open data, public search or none), and platform terms may restrict scraping.
+  - Zoning needs geodata.
+  - Owners' data in the registers falls under GDPR.
+  - Complexity: medium to high.
+- **Moat in an AI-flooded market:** Moderate. Regional register pipelines and zoning maps for 6+ regions and many municipalities are tedious to build and keep current. But platforms could build native checks, and regional governments are signing their own delisting deals with Airbnb.
+- **Key risks and kill criteria:**
+  - Supply is shrinking (−10.7% listings year on year), and Barcelona's flats end in 2028.
+  - Platforms may make this redundant under EU 2024/1028.
+  - Managers may prefer not to know.
+  - Kill if the registers cannot be queried at scale, or if managers will not pay at least €2 per listing.
+- **Evidence strength:** Strong on enforcement (high-confidence HOS-19 and HOS-24). Some city rules' final status and managers' demand for a tool are unverified.
+- **Validation questions:**
+  1. Which regional registers (Andalucía RTA, Catalonia HUT, Comunitat Valenciana RTV, Madrid, Baleares, Canarias) publish open data, an API or a public search, and on what terms?
+  2. Do Chekin, net2rent, Avantio, Hostaway, Smoobu, AirDNA or Inside Airbnb already offer code validation or compliance monitoring? Prices?
+  3. Have Málaga's 43-barrio ban and 3-year suspension been published in the BOP? Has Palma's ban been approved? What are the transition rules of Canarias' Ley 6/2025 and the number and date of Baleares' Ley 4/2026?
+  4. What came of Consumo's proceedings against large managers (names, fines)?
+  5. How many professional STR managers operate in Spain, and how many units does a typical one run? Ask Fevitur, Apartur and Aptur CV.
+  6. Do RDL 29/2026's platform sanctions survive convalidation, and has Spain adopted a penalty regime for EU 2024/1028?
+  7. Do Airbnb's or Booking's partner APIs expose registration fields, and do their terms forbid scraping?
+
+### G3-I05: Tourist-tax and regional traveller-reporting engine (Basque Country and Catalonia first)
+- **Type:** B (primary) for the new Basque tax; secondary A, as a more complete or cheaper alternative to Chekin and PMS modules in these regions.
+- **Buyer:**
+  - Hotels, hostales, hostels, campsites, rural houses and VUT owners or managers in the Basque Country and Catalonia.
+  - PMS vendors and gestorías as API customers.
+  - Counts: Catalonia has 51,300 listed tourist homes (INE, May 2026, HOS-15). Basque establishments and listings: unknown — validate. Booking has about 200,000 partners nationally.
+- **Pains addressed:** HOS-15, HOS-12.
+- **Problem:** The establishment collects tourist tax from each guest as "sustituto del contribuyente". Rates vary by category, municipality and season, with exemptions, night caps and surcharges, and in Gipuzkoa the establishment files quarterly. From 1 Jan 2027 every Basque lodging must start doing this. Catalan rates outside Barcelona double from April 2027. Both regions also run police reporting outside SES (Ertzaintza, Mossos) (HOS-15, HOS-12).
+- **Product:**
+  - **Rates database:**
+    - Gipuzkoa's Norma Foral 3/2026 bands, 6-night cap, municipal surcharges of up to 50% and the 100% rebate where there are 25 places or fewer;
+    - Bizkaia and Álava;
+    - Catalonia's Ley 2/2026 rates and its April 2027 step;
+    - Galician cities and the Baleares tax.
+  - **Outputs:** a per-booking tax calculation (API plus a guest receipt), a ledger per property, and draft quarterly returns (Gipuzkoa autoliquidación; Catalan filing data).
+  - **Optional module:** traveller-report transmission to the Ertzaintza, Mossos or SES.
+  - **MVP:** a calculator for Gipuzkoa, Bizkaia and Álava with booking import (CSV or iCal) and a quarterly-return export, plus a PMS API.
+  - **Deliberately not:** a PMS, payment processing at first, or filing as the taxpayer's representative (gestorías do that).
+- **Why now:**
+  - The Basque tax starts on 1 Jan 2027; bookings made before 5 Feb 2026 are exempt.
+  - Municipalities have six months to adapt their ordinances, so surcharges will keep changing.
+  - Catalonia's second step comes on 1 Apr 2027.
+- **Alternatives today:**
+  - Chekin: tourist-tax handling in all plans, €3.95–7.95 per property per month with minimums of 3, 10 or 20 units.
+  - PMS modules; gestorías.
+  - Weaknesses: coverage of the new Basque rules, municipal surcharges and Ertzaintza or Mossos reporting is unverified, and the minimum unit counts hurt single-unit owners.
+- **Price hypothesis:** €3–6 per unit per month for small lodgings; €0.10–0.20 per booking through the API for PMSs; €29/month per gestoría seat.
+- **Channels:**
+  - Basque and Catalan hotel and tourist-flat associations (CEHAT members; names to validate).
+  - Gestorías in Gipuzkoa and Bizkaia; PMS partners.
+  - Search: "impuesto turístico Gipuzkoa autoliquidación", "taxa turística Catalunya 2027".
+- **Build notes:**
+  - Rates must be maintained from BOPV, the Bizkaia and Álava gazettes and municipal ordinances.
+  - The Ertzaintza and Mossos interface specs are unverified.
+  - Guest identity data is high-sensitivity: the AEPD and the EU infringement case both focus on proportionality.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** Low to moderate. Regional regulatory know-how and being first before 1 Jan 2027 help, but Chekin or a PMS could match it within a quarter. It is copyable; speed and gestoría distribution are the edge.
+- **Key risks and kill criteria:**
+  - The incumbents may already cover it by January 2027, and the regional market is small.
+  - The EU infringement case could reshape the reporting module.
+  - Kill if Chekin and the major PMSs already compute the Basque rates and produce the quarterly return, or if associations or the Basque treasuries give out free calculators.
+- **Evidence strength:** Medium. The rules are official (BOPV, Catalan law), but Chekin's claimed coverage leaves the unmet need unproven.
+- **Validation questions:**
+  1. What are the Bizkaia and Álava norm numbers, rates and filing periods? Have San Sebastián, Bilbao and Vitoria adopted the municipal surcharge?
+  2. Do Chekin, Smoobu, Avantio, Hostaway, net2rent, Mews or Cloudbeds already support Basque rates and generate the quarterly return? Prices, including minimum units?
+  3. How many lodging establishments and listed tourist homes are there in Euskadi (INE or Eustat)?
+  4. Do the Ertzaintza and Mossos traveller-reporting systems offer web services, in what formats, and which tools support them?
+  5. What are the exact Barcelona amounts in the DOGC tables (Forbes and DonPorqué disagree)?
+  6. Can software prepare and submit the self-assessment on the establishment's behalf (apoderamiento)?
+  7. What stage has EU infringement INFR(2026)4005 reached?
+
+### G3-I06: Hoj@ complaint-deadline monitor for Andalusian businesses
+- **Type:** C.
+- **Buyer:**
+  - Every consumer-facing SME and autónomo in Andalusia (shops, bars, accommodation, services), plus managers with Andalusian units.
+  - Count: unknown — validate. Andalucía has 90,649 listed tourist homes (INE, May 2026, HOS-17) alone.
+- **Pains addressed:** HOS-17.
+- **Problem:** Businesses must register on Hoj@ by 20 May 2027 (20 Nov 2026 for large firms), display a QR poster, keep paper forms and answer every electronic complaint within 10 working days. A complaint counts as received after 10 calendar days even if unopened, and not replying is an infraction (HOS-17).
+- **Product:**
+  - **Onboarding wizard:** registration checklist, QR poster generator, paper-form pack.
+  - **Deadline engine:** forwards or parses the Hoj@ notification emails (or polls the platform where allowed) and counts the 10 calendar days plus 10 working days, using local holiday calendars.
+  - **Reminders** by WhatsApp or SMS, AI-drafted reply templates, and an archive for inspections.
+  - **MVP:** email parsing, a deadline calendar and templates.
+  - **Deliberately not:** sending replies without human approval, representing the business before consumer authorities, or mediating.
+- **Why now:** Hard deadlines of 20 Nov 2026 and 20 May 2027, set by an Order of 24 Apr 2026 (single source).
+- **Alternatives today:** None found. Helpdesk or PMS vendors could add it, and gestorías could offer it as a service.
+- **Price hypothesis:** €3–5/month or €39/year; bundled through gestorías and associations.
+- **Channels:**
+  - Andalusian gestorías and asesorías (bulk onboarding before May 2027), chambers of commerce, hospitality and retail associations.
+  - PMS marketplaces for accommodation.
+  - Search: "Hoj@ Junta de Andalucía alta", "hojas de reclamaciones electrónicas Andalucía".
+- **Build notes:**
+  - No API is known, so it relies on email parsing.
+  - Needs working-day calendars by municipality.
+  - Consumer complaints contain personal data (GDPR).
+  - Complexity: low.
+- **Moat in an AI-flooded market:** None — speed only. The Junta's platform could add reminders itself, and anyone can clone this in days.
+- **Key risks and kill criteria:**
+  - The BOJA text is unverified.
+  - Many SMEs receive few complaints, so the value the customer sees is low and churn will be high. It works better bundled into a broader consumer-compliance kit with the retail and legal tracks.
+  - Kill if the BOJA Order does not impose these duties and dates, or if Hoj@ already sends deadline reminders.
+- **Evidence strength:** Weak. A single vendor source (Chekin); the BOJA was not checked.
+- **Validation questions:**
+  1. Read the Order of 24 Apr 2026 (BOJA nº82, 30 Apr 2026) and Decreto 82/2022: who is obliged, what the deadlines are, and what art. 71.8.3ª of Ley 13/2003 fines.
+  2. Does Hoj@ send email or SMS notifications and reminders? Does it offer an API or delegated users?
+  3. How many businesses must register (Junta data, or DIRCE for consumer-facing Andalusian firms)?
+  4. Are other regions planning similar electronic complaint systems?
+  5. Have any helpdesk, PMS or gestoría providers announced Hoj@ services, and at what price?
+  6. Is an AI-drafted reply acceptable, and who is liable for mistakes?
+
+### G3-I07: Digital APPCC, allergen and food-waste logbook for bars and restaurants
+- **Type:** C (primary); secondary A, as a cheaper substitute for consultancy paper systems and apps.
+- **Buyer:**
+  - Owners and managers of bars, restaurants, cafés, small hotel kitchens and caterers (micro and small).
+  - Count: more than 300,000 hospitality companies; restaurants, bars, cafés and pubs employ 1.39 million (Hostelería de España, HOS-09).
+- **Pains addressed:** HOS-09, HOS-08.
+- **Problem:** Kitchens must keep daily food-safety records (temperatures, cleaning, pests, maintenance, traceability) and a written or electronic allergen record for every dish, updated whenever the menu changes. Fines reach €600,000 with closure of up to five years (HOS-09). Since April 2026, larger venues also need a food-waste prevention plan and donation agreements (HOS-08). Many still keep paper logbooks.
+- **Product:**
+  - **Daily checklists** on a phone for temperatures, cleaning, pests, maintenance and deliveries, with photo evidence and timestamps.
+  - **Allergen matrix built from recipes**, which regenerates the allergen sheet and customer signage (RD 126/2015) at every menu change.
+  - **Food-waste module** for venues covered by Ley 1/2025: plan template, waste measurement, donation log.
+  - **Inspection-ready PDF export**, and optional temperature sensors.
+  - **MVP:** checklists, allergen matrix and exports; works offline; Spanish, Catalan and English.
+  - **Deliberately not:** writing the APPCC plan itself (templates only; consultants keep that role), training staff, or certifying compliance.
+- **Why now:** Ley 1/2025's article 6 duties apply from about 3 Apr 2026, and RD 1021/2022 has replaced the old rules. Extracting allergens from recipes is now cheap with AI.
+- **Alternatives today:**
+  - APPCC consultancies (plan plus training; prices unverified), paper logbooks, digital APPCC apps and sensor kits (prices unverified).
+  - Allergen builders inside POS and menu tools (Last.app, Qamarero and others).
+  - Hostelería de España's hosteleriacircular.es for food waste.
+  - Weakness: the incumbent landscape is unpriced, so this may already be crowded.
+- **Price hypothesis:** €5–9/month per venue; sensors as a one-off add-on; multi-site discount.
+- **Channels:**
+  - APPCC consultancies as resellers.
+  - Hostelería de España and provincial associations.
+  - POS marketplaces and integrations (Last.app, Qamarero, Revo, Ágora); food distributors.
+  - Search: "registro APPCC digital", "carta de alérgenos obligatoria".
+- **Build notes:**
+  - Whether regional health inspectors accept digital records needs validating.
+  - Data sensitivity is low.
+  - Complexity: low.
+- **Moat in an AI-flooded market:** None — speed and distribution only. It is trivially copyable, and POS vendors could bundle it free. Lock-in through the consultancy channel and sensor hardware partnerships adds a little stickiness.
+- **Key risks and kill criteria:**
+  - Enforcement intensity is unknown, so owners may not pay.
+  - Kill if several apps already sell for €5/month or less, if POS suites include it free, or if inspectors rarely ask for records.
+- **Evidence strength:** Medium. The legal duties are certain (BOE), but inspection frequency and incumbent prices are unknown.
+- **Validation questions:**
+  1. Which digital APPCC apps and sensor kits are sold in Spain, and at what price? Does Qamarero, which publishes APPCC guides, sell its own APPCC module?
+  2. How often are APPCC and allergen records inspected and sanctioned in Madrid, Catalonia and Andalusia (health-department annual reports)?
+  3. Do regional inspectors accept digital and photo logs as APPCC evidence?
+  4. What do APPCC consultancies charge for a plan plus yearly maintenance?
+  5. Do the Last.app, Qamarero, Revo or Ágora allergen modules already produce sheets that comply with RD 126/2015?
+  6. How many establishments are covered by article 6 of Ley 1/2025, and do any regional sanction regimes add infractions?
+
+### G3-I08: Subcontractor CAE document wallet with platform sync and subcontracting-chain checks
+- **Type:** B (primary); secondary A, a flat-fee module for small main contractors.
+- **Buyer:**
+  - Subcontractors and autónomos in construction, installation and industrial maintenance (micro and small), usually the owner or office manager.
+  - Secondarily, small main contractors (Libro and REA checks) and suppliers to owners' communities.
+  - Count: unknown — validate. The notes give 1.53 million construction workers but no firm counts.
+- **Pains addressed:** CON-02, CON-03, CON-04.
+- **Problem:** Each client picks its own CAE platform, so subcontractors pay each one (reviews cite €300 to €1,400+ a year and €2,000 a year for 15 workers on Nalanda) and upload the same prevention paperwork again and again. An expired document can block site access or payment (CON-02). Main contractors must also check REA registration, staff quotas and chain levels and keep the Libro, or become jointly liable (CON-03). Construction deaths rose 21.5% in 2025, which raises inspection exposure (CON-04).
+- **Product:**
+  - **One wallet** of company and worker documents: REA certificate and expiry, Social Security filings, insurance, prevention training and medical-fitness certificates for each worker, machinery papers.
+  - **Expiry alerts**, and a map of which client platform needs which document.
+  - **Assisted sync:** a browser extension or RPA that fills each platform's forms from the wallet (Nalanda, Dokify, Ctaima, e-coordina, Obralia, Metacontratas), with a status dashboard. A share-link serves clients with no platform.
+  - **For small main contractors:** a digital register mirroring the Libro de Subcontratación, plus REA, quota and chain-level checks with alerts.
+  - **MVP:** wallet, alerts, share-link, and extension support for two platforms.
+  - **Deliberately not:** replacing the external prevention service or the safety coordinator, certifying documents, or promising to remove platform fees. Clients impose those fees; the honest pitch is time saved and no blocked sites.
+- **Why now:** Several October 2026 reviews complain of Nalanda fee rises (from "300 y pico" to "más de 1400 euros"), and a December 2025 review describes a renewal "duplicando el precio". Construction deaths are up 21.5%. AI document extraction makes onboarding cheap.
+- **Alternatives today:**
+  - Nalanda: price on request; complaints as above.
+  - Dokify: €490/yr for the principal; contractors from €102.90/yr plus €15.44 per employee or machine.
+  - DocAcces €32–99/month; UCAE from €80/month; PlayCAE €199/month with no cost to subcontractors.
+  - DocuPRL, the author of the comparison (product and price unverified).
+  - Prevention consultancies.
+  - Weaknesses: duplicated work on every platform, and lock-in chosen by the principal.
+- **Price hypothesis:** Per subcontractor: €9/month for 1–5 workers, €19/month for 6–20, €39/month for 21–50. Principal module: €49–99/month.
+- **Channels:**
+  - FENIE (installers), CNC and regional construction associations.
+  - FLC as a partner for training certificates.
+  - External prevention services (SPAs) as resellers.
+  - Search: "alternativa a Nalanda", "subir documentación CAE".
+- **Build notes:**
+  - RPA against third-party platforms is brittle and may breach their terms.
+  - Worker data includes medical-fitness certificates, a GDPR special category: store only the "apto" (fit) certificate, never medical details.
+  - Complexity: medium to high.
+- **Moat in an AI-flooded market:** Moderate. Integrations with 6+ platforms, plus network effects if principals accept wallet share-links, are hard to copy. Incumbents could block access, though.
+- **Key risks and kill criteria:**
+  - If the platforms block automation, the value is only time saved.
+  - Subcontractors' willingness to pay is untested.
+  - Kill if platform terms forbid automated uploads and principals refuse share-links, or if DocuPRL or others already sell the same wallet cheaply.
+- **Evidence strength:** Strong. OCU complaint, Trustpilot pattern (unverified reviews), published competitor prices and in-force law. Subcontractor counts and hours lost are missing.
+- **Validation questions:**
+  1. What does DocuPRL sell and at what price? Does any "upload once, sync" wallet or shared CAE credential already exist (Dokify's contractor network, Obralia, others)?
+  2. What do the terms of Nalanda, Dokify, Ctaima, e-coordina, Obralia and Metacontratas say about automated uploads or APIs?
+  3. How many subcontractors are registered on the main platforms (vendor claims), and how many platforms does a typical subcontractor use?
+  4. Interview 10 installers or subcontractors: hours per month spent on CAE, and total annual platform fees.
+  5. Is an electronic Libro de Subcontratación legally valid (habilitación by the regional labour authority), and can regional REA registries be queried?
+  6. What are the GDPR and prevention-law rules for storing and sharing medical-fitness certificates?
+
+### G3-I09: Building-compliance calendar and owners'-vote module for administradores de fincas
+- **Type:** B (primary); secondary A, as a lighter alternative to full administradores' ERPs.
+- **Buyer:**
+  - Administradores de fincas (micro offices with 50–60 communities each) and the consolidators buying them.
+  - Count: about 16,000 administradores and about 1 million communities (idealista, 30 Jul 2026, CON-24).
+- **Pains addressed:** CON-24, CON-22.
+- **Problem:** Each building generates deadlines and obligations: CAE with suppliers, data protection, accessibility works, renovation grants, certifications, maintenance. Administradores track them across "correos electrónicos, documentación física, múltiples plataformas independientes" (CON-24). Since April 2025 tourist-flat requests need votes and minutes under the 3/5 rule (owners and quotas) (CON-22). The profession is ageing and consolidating, and buyers like inmho need standard tooling (CON-24).
+- **Product:**
+  - **Obligations calendar** for each building, auto-filled from building data (installations, certifications, insurance, data-protection tasks, grant milestones).
+  - **Supplier compliance intake**, receiving CAE documents (linked to the G3-I08 wallet).
+  - **Owner notices** with proof of receipt.
+  - **3/5 majority calculator** (owners and quotas) with minutes and certificate generator.
+  - **Export** to administradores' ERPs.
+  - **MVP:** calendar, supplier-document intake, majority calculator and minutes templates.
+  - **Deliberately not:** accounting or a full ERP, or legally binding online meetings, which lack legal cover (CON-25).
+- **Why now:** inmho bought 50 firms in a year and many owners have no succession plan (CON-24). The 3/5 rule has applied since 3 Apr 2025, and Barcelona funds community ban votes until 31 Dec (CON-22).
+- **Alternatives today:**
+  - Gesfincas, Fincas Pro, Comunidad Feliz, Fynkus: prices and features unverified.
+  - Conversia-type compliance services; email and paper.
+- **Price hypothesis:** €1–2 per community per month (€50–100/month for a typical 50-community office).
+- **Channels:**
+  - Consolidators (inmho), the colegios territoriales and CGCAFE.
+  - Partnerships with ERP vendors; compliance-service firms.
+  - Search: "software administrador de fincas cumplimiento", "calcular mayoría tres quintos LPH".
+- **Build notes:**
+  - Needs a database of building obligations by region and municipality; its scope is unverified and includes lift rules under RD 355/2024.
+  - Integrations with the ERPs.
+  - Owners' personal data falls under GDPR.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** Moderate. The obligations database, ERP integrations and consolidator contracts are hard to copy; the calendar itself is not.
+- **Key risks and kill criteria:**
+  - The ERPs may already include this, and an ageing profession may be slow to adopt new tools.
+  - Kill if Gesfincas or Fincas Pro already ship a compliance calendar, or if administradores will not pay €1 per community.
+- **Evidence strength:** Medium. The scale is solid; the burden is described qualitatively by a vendor (Conversia).
+- **Validation questions:**
+  1. What do Gesfincas, Fincas Pro, Comunidad Feliz and Fynkus offer (compliance calendar, supplier CAE, votes), and at what price?
+  2. Which recurring legal inspections, certifications and deadlines apply to residential buildings by region, including lifts under RD 355/2024?
+  3. Does inmho build or buy its tooling, and would it run a pilot?
+  4. What do administradores charge per community (to anchor the price)?
+  5. What does CGCAFE know about software adoption among administradores?
+  6. Do courts accept electronic notices and minutes as "cualquier medio que permita tener constancia de su recepción" under LPH arts. 16–17?
+
+### G3-I10: AML compliance kit for small real-estate agencies ahead of the EU AMLR (July 2027)
+- **Type:** C.
+- **Buyer:**
+  - Real-estate agencies and small developers that broker sales.
+  - Count: unknown — validate. Agencies take part in about 70% of transactions (FADEI, CON-11), and Inmovilla claims more than 3,000 agency users (CON-16).
+- **Pains addressed:** CON-14.
+- **Problem:** Agencies brokering sales already have AML duties under Ley 10/2010 (identifying clients and beneficial owners, assessing risk, reporting), and many small ones do not know it. From July 2027 the EU AMLR requires evidence-based risk self-assessments, sanctions and adverse-media screening and a compliance officer (CON-14).
+- **Product:**
+  - **Guided setup:** risk self-assessment, AML manual and internal procedures, and a whistleblowing channel if required.
+  - **Per-deal checklist** covering KYC and beneficial owners, with commodity ID checks and sanctions, PEP and adverse-media screening.
+  - **Record vault**, annual training reminders, and rule updates as the AMLR applies.
+  - **MVP:** templates, the deal checklist, a screening API and the vault.
+  - **Deliberately not:** filing suspicious-activity reports automatically (a human decides), or acting as the external AML reviewer.
+- **Why now:** The AMLR applies from July 2027, and SEPBLAC has flagged deficiencies in the sector (snippet-level).
+- **Alternatives today:** AML training courses and consultants (no prices); KYC vendors as components (Didit: $0.33 per full KYC, $0.07 per user per year for ongoing AML).
+- **Price hypothesis:** €9–19/month per agency, plus per-check fees.
+- **Channels:**
+  - Agent associations and registries (AICAT, API, COAPI, AMADEI, FADEI).
+  - CRM integrations (Inmovilla, Witei, Mobilia); franchise networks.
+  - Search: "prevención blanqueo inmobiliaria obligaciones".
+- **Build notes:**
+  - Follow SEPBLAC guidance.
+  - ID and beneficial-owner data is high-sensitivity.
+  - Complexity: low to medium.
+- **Moat in an AI-flooded market:** Low. The regulatory content is easy to copy; distribution through associations and CRMs is the only edge.
+- **Key risks and kill criteria:**
+  - Without enforcement against small agencies there is little urgency, and the notes call this "a future pain".
+  - CRMs could add AML modules.
+  - Kill if SEPBLAC enforcement against small agencies is negligible and agencies show no willingness to pay before July 2027.
+- **Evidence strength:** Weak. The obligations are verified, but the pain and enforcement are weakly evidenced.
+- **Validation questions:**
+  1. How many SEPBLAC inspections and sanctions of real-estate agencies were there in 2023–26?
+  2. What is the exact AMLR application date, and does it ease duties for small entities (for example the compliance-officer requirement)?
+  3. Which AML kits for agencies exist (associations, consultants, Inmovilla or Witei modules), and at what price?
+  4. How many agencies are there (DIRCE CNAE 6831), and what share broker sales?
+  5. Does Spanish AML law, or the AMLR, also cover rental intermediation above a threshold? The notes found only sales.
+
+## 5. User-supplied idea U1 (ColivEs): assessment
+
+U1 as given: a B2B dashboard for Barcelona, Madrid and Málaga landlords to turn traditional or tourist apartments into flexible coliving hubs. It would automate local rent caps and regional legal compliance, integrate eIDAS identity verification, and offer dynamic pricing based on digital-nomad movements.
+
+| U1 claim or feature | What the notes say | Verdict | Pain IDs |
+|---|---|---|---|
+| Severe housing shortage | Permanent rental listings fell 10% year on year (Barcelona −22%, Málaga −11%, Madrid −6%). idealista's permanent listings fell from 902,664 (2018) to 510,091 (2025). Listings draw 135 contacts in 10 days, 462 in Barcelona. But Fotocasa (search-level) shows rents falling in July 2026: Catalonia −16.3%, Madrid region −10.6%. | Supported, but structural. It is a demand driver, not a software need in itself. | HOU-20 (N2), CON-12 (N2), CON-13 |
+| Strict municipal crackdowns on holiday licences | Barcelona's 10,101 HUT licences end in Nov 2028. Madrid's Plan Reside fines run up to €190,000 per home. Málaga bans new VUT in 43 barrios, plus a 3-year licence suspension. Airbnb was fined €64M. | Supported | HOS-18, HOS-19, HOS-20, HOS-24, HOU-19 |
+| So tourist flats will convert to mid-term rentals or coliving | The escape route is now regulated. Barcelona's seasonal offer is down 37% year on year under Llei 11/2025. Madrid is up 52%, but every lease now needs a genuine temporary cause. There is no data on Málaga owners switching. | Partly contradicted. The pipeline is real in Madrid, narrow in Málaga and largely closed in Barcelona. | HOU-19, HOU-01 |
+| Constant influx of high-earning digital nomads and remote corporate workers | Only one unverified source counts nomad-visa holders (27,875 including dependants at end-2024), with no city split. The rankings cited (Spain first in a nomad-visa index; Savills puts Málaga 3rd, Palma 6th, Barcelona 7th) are indices, not volumes. About 60% of Barcelona coliving tenants are foreign. People "moving their life here" may not qualify for a temporary lease. | Weakly evidenced in numbers. The cause rule may exclude part of this demand. | HOU-07, HOU-23 |
+| Turn apartments into flexible coliving hubs | There is no national legal category for coliving. Madrid's "residencia compartida" requires an exclusive building, units of at least 15 m² and at least 25 m² of shared space. Barcelona pursues permit breaches and the 30% protected-housing reserve; NAD was fined more than €20,000 and Vandor has four buildings under council files. Room-rent sums are capped at the whole-flat rent. | Legally constrained. Planning work cannot be automated (HOU-18 filtered, N2). | HOU-18, HOU-04 |
+| Automate local rent caps | Among U1's cities only Barcelona is a tensioned zone; Madrid and Málaga are not. Nationally, the IRAV ceiling on successive temporary contracts and the room-sum cap apply (RDL 29/2026, pending). | Supported as a need, but it is a Barcelona and Catalonia feature | HOU-03, HOU-04, HOU-22, CON-17 |
+| Automate regional legal compliance | Each contract now needs a proven cause, duration and chaining counts, a deposit filing, a condition record, a repair deadline and transparent charges. The notes found no tool, and the mid-term track's own inference says this "supports the B2B compliance dashboard thesis". | Strongly supported. This is the core to keep. | HOU-01, HOU-02, HOU-05, HOU-12, HOU-13, HOU-15, HOU-16, HOU-24 |
+| eIDAS (EU digital identity wallet) verification | Landlords are not obliged to accept the EUDI wallet; private acceptance from 24 Dec 2027 is required only of regulated sectors and very large platforms. Spain's Cartera Digital has no launch date, MiDNI is for DNI holders, and Didit lists no Spanish eID. Tenant KYC costs about $0.33 per check. | Contradicted as a differentiator. Keep commodity KYC as a component only. | HOU-10 (N4) |
+| Dynamic pricing based on nomad movements | While RDL 29/2026 stands, art. 17.8 caps rent rises between successive temporary contracts on the same flat at the IRAV, Catalonia adds index caps, and only the first rent is free outside tensioned zones. There is no data on nomad movements by city. PriceLabs ($19.99 per listing) already serves stays of 31 days or fewer. | Contradicted for mid-term lets. It only revives if the decree lapses, and then it is a commodity. | HOU-22; mid-term noise list |
+| Target cities | Barcelona: rules in force since January 2026 (the durable anchor) but shrinking supply. Madrid: 60% of operating flex-living beds and 72% of the pipeline, seasonal offer +52%, national rules only. Málaga: seasonal lets 37% of the rental offer, national rules only. | Keep all three, but anchor in Barcelona and Catalonia and extend to Madrid. Málaga's mid-term rules depend on RDL 29/2026, which is lapse-prone. | HOU-03, HOU-18, HOU-19 |
+
+**Verdict: reshape. Do not discard.** The regional compliance core is the strongest-evidenced idea in this group. Three features should be dropped as headline pillars:
+- Dynamic pricing is legally neutralised while RDL 29/2026 stands.
+- eIDAS identity is not required of landlords and is a commodity.
+- "Convert flats into coliving hubs" is planning law; it becomes a feasibility triage instead.
+
+The main risk is regulatory: if RDL 29/2026 is not convalidated around 12 Nov 2026, the national market shrinks to Catalonia plus the courts' re-classification risk. That risk still exists everywhere, because judges re-classify leases under art. 6.4 Código Civil regardless of the decree.
+
+### G3-I11: ColivEs reshaped — mid-term lease compliance file for landlords, managers and coliving operators
+- **Type:** B (primary); secondary C, as per-contract monitoring after signature.
+- **Buyer:**
+  - Managers of furnished flats and rooms let for 32 days to 12 months, coliving operators, and small company landlords. Company landlords are the most exposed, since a re-classified lease runs 7 years.
+  - Barcelona and Catalonia first, then Madrid and Málaga.
+  - Count: no count of mid-term landlords exists in the notes. Proxies:
+    - seasonal lets are 34% of rental listings nationally (Barcelona 57%, Málaga 37%, Madrid 35%) (HOU-01);
+    - 19,089 operating flex-living beds (JLL; the notes infer this appears to include student residences) and about 20,000 coliving rooms (press) (HOU-04);
+    - my calculation from HOS-13: about 58,900 temporary-rental registry applications by 8 Jan 2026.
+- **Pains addressed:** HOU-01, HOU-02, HOU-04, HOU-05, HOU-12, HOU-13, HOU-15, HOU-16, HOU-17, HOU-19, HOU-23, HOU-24.
+- **Problem:** Every temporary lease must now be backed by a file the landlord can produce in court: a written, proven cause; duration and chaining within limits; a lodged deposit; a signed condition record; repairs answered within 5 working days; and room sums and charges within the caps (HOU-01, HOU-04, HOU-05, HOU-12, HOU-15, HOU-16, HOU-24). Without that file the lease becomes a 5–7-year habitual lease retroactively, and the courts are already ruling this way (HOU-13). The applicable rules depend on the signing date and the region and may change again in November 2026 (HOU-02).
+- **Product:**
+  - **Tenant-profile triage:** routes each enquiry to a tourist stay (31 days or fewer), a temporary lease or a habitual lease, and flags "moving their life here" profiles (HOU-23).
+  - **Guided contract builder** that writes the specific cause and requests the matching evidence (employer or assignment letter, enrolment letter, proof of a home abroad), stored in a timestamped vault (HOU-01).
+  - **Regime stamp on every contract:** Catalonia's Llei 11/2025, the RDL 29/2026 version, or the pre-8 Oct "uso distinto" regime under DT 8ª. Contracts are re-checked automatically after the vote around 12 Nov 2026 (HOU-02).
+  - **Lifecycle tools:**
+    - duration and chaining counters, with renewal alerts; in Catalonia a renewal must show the cause persists (HOU-05);
+    - deposit-filing checklist and deadline (INCASÒL Model 2, Madrid, Canarias) (HOU-12);
+    - room-sum and charges check, with allocated utility billing kept in the landlord's name (HOU-04, HOU-24);
+    - photo check-in and check-out condition record with e-signature (HOU-15);
+    - repair-request timer for the 5-working-day deadline (HOU-16);
+    - VAT flag for stays of 30 nights or fewer from 1 Dec 2026, if convalidated (HOU-17).
+  - **Re-classification risk score**, built from the indicators courts have used: identical successive contracts, empadronamiento, utilities in the tenant's name, a pre-emption waiver, full-month rent, a deposit lodged on an annual rent (HOU-13).
+  - **Conversion feasibility check** for tourist-flat owners facing licence loss in Barcelona, Madrid or Málaga (HOU-19).
+  - **KYC through a commodity API**, not eIDAS.
+  - **MVP:** Catalonia plus the national regime; triage, contract builder (templates co-written with a partner law firm), evidence vault, counters and alerts, condition-record app, and a first version of the risk score.
+  - **Deliberately not:** dynamic pricing; eIDAS wallet integration; coliving planning or licensing; listings or a marketplace; legal advice (the partner firm provides templates and an escalation line).
+- **Why now:**
+  - RDL 29/2026 has applied since 8 Oct 2026; the vote is around 12 Nov, the elections on 29 Nov and the new Cortes sit on 23 Dec.
+  - Llei 11/2025 has been in force since January 2026, and the Constitutional Court did not suspend it.
+  - Pre-8 Oct seasonal contracts expire without extension, so every renewal falls under the new regime (DT 8ª).
+  - The courts are already re-classifying, and Barcelona's tourist-flat licences end in November 2028.
+- **Alternatives today:**
+  - Law-firm templates and checklists: Captain Legal, Lázaro Amable and Garrigues publish on the topic; prices unknown.
+  - Gestorías and agencies; ICAB courses.
+  - Homming's free tier; cause and chaining tracking unverified.
+  - Spotahome e-signed contracts, and its All-in plan at 15% of contract value (UK/Ireland page).
+  - Signaturit at €35 per user per month; spreadsheets.
+  - Weaknesses: none validates and archives cause evidence or versions contracts by regime (HOU-01, HOU-02).
+- **Price hypothesis:** €8–12 per active contract per month, or €49/month for up to 10 units; €2–3 per bed per month for coliving operators; an optional onboarding fee for templates.
+- **Channels:**
+  - Mid-term managers rebranding from tourist lets in Barcelona, Madrid and Málaga.
+  - Coliving operators (Be Casa, Cotown, Smart Rental, Node Living, Vandor).
+  - AICAT and the agent associations.
+  - Referral partnerships with the law firms writing on the topic; ICAB training.
+  - Search: "causa alquiler de temporada", "contrato temporal RDL 29/2026", "lloguer de temporada INCASÒL".
+- **Build notes:**
+  - A versioned rules engine and legal templates.
+  - E-signature integration (e.g., Signaturit).
+  - INCASÒL Model 2 filing requires a digital certificate; it may need assisted submission or third-party authorisation.
+  - Employer letters and IDs are sensitive data under GDPR.
+  - Complexity: medium.
+- **Moat in an AI-flooded market:** Moderate. Regulatory know-how, rules versioned by date and region, a risk model built from court rulings and a law-firm partnership are harder to copy than the templates, which legal-tech tools can clone. Shipping before the November regime change is part of the edge.
+- **Key risks and kill criteria:**
+  - **Lapse risk:** if RDL 29/2026 is not convalidated around 12 Nov, the national rules fall away, leaving Catalonia plus case-law risk. A new government after 29 Nov could repeal or replace the rules.
+  - The Catalan law is under Constitutional Court review.
+  - Owners may exit mid-term letting rather than comply (Barcelona seasonal −37%).
+  - Liability for templates; willingness to pay is unknown.
+  - Kill if convalidation fails and Catalan operators will not pay at least €8 per contract, if a law firm or legal-tech tool already sells the same file, or if interviews show courts and landlords do not value documentary cause evidence.
+- **Evidence strength:** Strong. Built on the verbatim BOE text, Catalonia's law and court rulings. Willingness to pay and landlord counts are unknown.
+- **Validation questions:**
+  1. What was the outcome of the Diputación Permanente vote on RDL 29/2026 (around 12 Nov 2026), and what happens to contracts signed between 8 Oct and the vote?
+  2. Do Homming, Rentger, Spotahome, Ukio, Blueground or any legal-tech or law-firm product (Captain Legal, Lázaro Amable) offer cause-evidence vaults, chaining counters or regime versioning? Prices?
+  3. How many temporary-lease deposits are lodged each year at INCASÒL and the other regional bodies, split by contract type?
+  4. Interview 10 mid-term managers or coliving operators in Barcelona, Madrid and Málaga: what is their process today, what do they spend on legal work per contract, and what would they pay?
+  5. Can INCASÒL Model 2 filing be automated (an API, or authorisation to file for third parties)?
+  6. Does the Generalitat treat coliving as inside the cap (the 3Cat report says this is disputed)? What stage has the Constitutional Court appeal reached?
+  7. What professional-liability cover does a contract builder need, and will partner law firms co-brand the templates?
+  8. Does SES.Hospedajes apply to temporary leases of 32–90 days? (The notes call this ambiguous.) If it does, add a reporting module.
+
+## 6. Cross-group links
+
+Other tracks' IDs come from their entry headings only; their content was not used as evidence here.
+
+| G3 pain or idea | Overlaps in other tracks | Merge note |
+|---|---|---|
+| G3-I03 arrears and MASC (CON-20, CON-23, HOU-14) | LEG-01 (MASC: proving the attempt, inadmission risk), LEG-04 (litigation cost risk), FIN-06 (MASC before claiming unpaid invoices), PRO-12 (MASC for small law firms) | Build one MASC evidence engine with a landlord and community vertical (LAU and LPH steps, vulnerability procedures) instead of separate tools. |
+| CON-05 late payment in subcontracting (filtered, N7) | FIN-02 (late payment along subcontracting chains), CITY-18, ADM-19 (missing subcontractor information in public contracts) | The finance track owns it. G3-I08 could later carry progress-certificate and invoice status if the merge wants a single tool for subcontractors. |
+| G3-I08 CAE wallet (CON-02, CON-03, CON-04); CON-01 | LAB-20 (prevention law, dependence on external prevention services, heat-stress duties); LAB-07, CITY-16, IND-11 (trade-skill shortages) | Prevention-document duties overlap with the labour track. Industrial maintenance subcontractors are also CAE users, so check the transport and industry track. |
+| HOS-01, HOS-26 staffing and seasonal housing (filtered) | LAB-07, LAB-14 (fijo-discontinuo contract risk), CITY-05 (housing costs undermine staff recruitment in tourist and island cities), CITY-06 (Balearic seasonality), CITY-16 | If the labour or city tracks carry a seasonal rehiring or staff-housing idea, hospitality is its main buyer. |
+| HOS-07 fake reviews (filtered, N1) | VOX-01, VOX-02, LEG-14 | Handled by the voice and legal tracks. |
+| HOS-05 terraces and noise (filtered, N5) | LEG-21 (municipal noise sanctions and closures) | A noise-evidence or terrace-licence module could join a LEG-21 idea or G3-I07. |
+| G3-I07 APPCC and food waste (HOS-08, HOS-09) | IND-25 (Ley 1/2025 prevention plans and donation agreements on the agrifood side) | One Ley 1/2025 compliance module could serve restaurants, retailers and food producers. |
+| HOS-10 POS and Verifactu (filtered, N4) | TAX-01, TAX-02, TAX-04, VOX-12 | Tax track. |
+| G3-I06 Hoj@ (HOS-17) | No Hoj@ entry was found in the other tracks' headings, although the duty covers every consumer-facing Andalusian business (retail, services, health) | Flag to the retail and legal tracks; it works best inside a broader consumer-compliance kit. |
+| G3-I05 traveller reporting and G3-I02 screening (HOS-12, HOU-07) | LEG-08, LEG-09 (data protection and breaches), VOX-04 (breaches at booking-software vendors pushing notification duties onto SMEs), ADM-07 (company digital certificates, also needed to file SES and INCASÒL forms) | Data-protection design and certificate custody are shared concerns. |
+| G3-I02 and G3-I11 foreign tenants (HOU-07, HOU-10, HOU-23) | EXP-08 (nomad visa evidence), EXP-12 (digital-identity chicken-and-egg), EXP-15 (empadronamiento proof of address; also a re-classification indicator in HOU-13), EXP-21 (fragmented relocation services), STA-10; user idea U2 PermisoFast | Relocation agencies and HR teams are a channel for temporary-lease evidence packs and tenant screening. U2 and U1 could share the employer-letter and cause-evidence flow. |
+| HOU-17 VAT on stays of 30 nights or fewer (lapse-prone) | Tax track. TAX-24: the 10% VAT rate on renovations depends on payment method from 1 Dec 2026, which affects G3's renovation contractors but was not captured in the construction notes | Tax track to confirm whether both rules come from RDL 29/2026 and lapse together. |
+| CON-06 licences, CON-07 grants (filtered) | ADM-01, ADM-02, ADM-03 (licences, use compatibility); ADM-14, ADM-15, ADM-16 (NextGenerationEU, grant justification, grant discovery) | The bureaucracy track owns them. Rehabilitation agents are a construction-side buyer if a grant-file idea survives there. |
+| HOS-04 margin squeeze (filtered) | CITY-14 (2026 Iran-war energy shock), VOX-06 (energy mis-selling), RET-02 (commercial rent shocks) | Macro context for any cost-control idea. |
+| HOS-02 no-shows (filtered) | RET-19 (booking marketplaces and no-shows), PRO-03 (clinic no-shows) | Only worth reviving as a cross-vertical deposit and reminder tool, if at all. |
+| HOU-02, CON-18 regulatory whiplash (the engine behind G3-I01 and G3-I11) | ADM-05 (regulatory inflation), TAX-02 (Verifactu compliance limbo), EXP-06 (fast-changing rules in scattered channels) | A shared "rules versioned by date and jurisdiction" engine is a pattern that recurs across groups. |
+
+## 7. Group top 5
+
+Not a final ranking; this is the shortlist judged strongest before validation.
+
+1. **G3-I11 ColivEs reshaped: mid-term lease compliance file.** The best-evidenced pain in the group (verbatim BOE text, Catalonia's law in force, rulings already re-classifying leases), and no tool sells it. Its national half carries lapse risk around 12 Nov 2026.
+2. **G3-I08 subcontractor CAE document wallet.** Recurring, imposed spending with documented anger (OCU complaint, 1.3/5 TrustScore), and an integration moat across 6+ platforms. Platform blocking is the main risk.
+3. **G3-I04 STR listing compliance and eligibility monitor.** Real enforcement (the €64M Airbnb fine, Consumo proceedings against managers, Mallorca's 146 files, Balearic daily fines), and regional register and zoning pipelines are hard to copy. The market is shrinking.
+4. **G3-I03 rent-arrears and MASC case file.** The largest landlord money pain (€8,489 average debt, 18,317 LAU evictions) plus a mandatory, documentable step since April 2025. Merge with the legal track's MASC work.
+5. **G3-I05 Basque and Catalan tourist-tax and traveller-reporting engine.** Hard dates (1 Jan 2027; 1 Apr 2027) and official texts give a regulatory-know-how edge, but Chekin already claims tourist-tax handling, so the window is short.
+
+Runners-up:
+- **G3-I01 (lease rules autopilot):** the cleanest low-touch ~€5 product, but its moat is thin and it is partly lapse-prone.
+- **G3-I07 (APPCC logbook):** the largest buyer base (300,000+ companies), but no moat and an unpriced incumbent field.
