@@ -1,16 +1,39 @@
 # Validation batch 5: housing, short-term rentals and property (IDEA-29 to IDEA-35)
 
-*Validator: batch 5 of 8. Date of work: 23 October 2026. Status: IN PROGRESS (sections are appended as each idea is finished).*
+*Validator: batch 5 of 8. Date of work: 23 October 2026. Status: COMPLETE. Searches used: 22 of the 24 allowed; 2 are left in the shared pool.*
 
 *Conventions: [new: URL, date seen or published] = fetched or searched in this validation; [notes: PAIN-ID] = stage-1 evidence. "Single-source" marks claims with one source. Prices exclude VAT unless stated. Today is 23 Oct 2026: the Diputación Permanente vote on RDL 29/2026 (expected ~12 Nov 2026) and the 29 Nov 2026 general election have NOT happened yet, so they are treated as scenarios, not outcomes.*
 
 ## 1. Batch summary table
 
-(to be filled when all ideas are done)
+| ID | Name | Type | Verdict | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | Sellability | P | Overall | Confidence |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| IDEA-29 [U1] | ColivEs reshaped: Catalonia-first mid-term lease compliance file (INCASÒL-ready; national module gated on the 12 Nov vote) | B (C) | **RESHAPE** | 4 | 2 | 4 | 3 | 4 | 4 | 2 | 4 | 3.38 | 4 | **3.63** | medium |
+| IDEA-30 | Rent-cap, update and deadline autopilot | C (A) | **KILL** (merge into IDEA-29 as its light tier) | 3 | 5 | 2 | 2 | 2 | 5 | 1 | 3 | 2.88 | 3 | **2.93** | high |
+| IDEA-31 | Landlord-paid tenant screening and trust pack | B | **KILL** (keep as an IDEA-29 module with a guarantor referral) | 3 | 3 | 3 | 3 | 2 | 3 | 2 | 3 | 2.75 | 3 | **2.85** | medium |
+| IDEA-32 | STR listing compliance and eligibility monitor (PMS add-on, open-data regions first) | B (C) | **RESHAPE** | 4 | 3 | 3 | 3 | 4 | 3 | 3 | 3 | 3.25 | 4 | **3.55** | medium |
+| IDEA-33 | Basque municipal tourist-tax rates and quarterly-return API (for PMS, check-in vendors and gestorías) | B (A) | **RESHAPE** | 5 | 2 | 3 | 3 | 3 | 4 | 2 | 4 | 3.25 | 3 | **3.15** | medium |
+| IDEA-34 | Building-compliance calendar and owners'-vote module for administradores | B (A) | **KILL** (at most a data feed licensed to ERPs) | 3 | 2 | 2 | 3 | 2 | 3 | 2 | 3 | 2.50 | 3 | **2.70** | medium |
+| IDEA-35 | AML starter kit for small agencies (RD 813/2026 representative deadline and AMLR readiness) | C | **RESHAPE** | 5 | 3 | 3 | 3 | 3 | 4 | 2 | 4 | 3.38 | 3 | **3.23** | medium |
+
+*Notes on the table:*
+- *Sellability is the mean of S1–S8, shown to two decimals. Overall = 0.6 × Sellability + 0.4 × P, computed from the unrounded mean.*
+- *Reshaped ideas are scored as reshaped. Killed ideas are scored as originally proposed.*
+- *Order by Overall: IDEA-29 (3.63), IDEA-32 (3.55), IDEA-35 (3.23), IDEA-33 (3.15), IDEA-30 (2.93), IDEA-31 (2.85), IDEA-34 (2.70). No idea in this batch reaches GO before interviews; IDEA-29 and IDEA-32 are the two worth piloting.*
+- *Verdicts are provisional, for the adversarial review.*
+
+**Batch-level reading**
+- **Cuts in all three directions.**
+  - Positive: a Spanish rule already in force. IDEA-35's hard trigger is RD 813/2026, in force from 28 Oct 2026, and IDEA-29's is INCASÒL's demand for the cause document.
+  - Negative: free incumbents. IDEA-30's calculations are already free on Fotocasa and the ministry; IDEA-34's votes and minutes are already in Gesfincas; and every layer of IDEA-31 is already sold.
+  - Lapse risk: the national half of IDEA-29, the guarantee caps in IDEA-31 and the platform fines in IDEA-32 all depend on a one-vote margin around 12 Nov.
+- **Market size is small in every idea.** Every revenue ceiling estimated is in the €0.1–1M ARR range at realistic shares. That suits a 1–3 person team, but no single idea here is large.
+- **Defensibility is the weakest score across the batch.** S7 is 1–3 everywhere. Templates, calculators and rate tables are copied quickly; Fotocasa updated its calculator six days after the IRAV release. Only maintained date-and-region rule histories, regional data pipelines and channel partners (INCASÒL filers, PMS marketplaces, associations) give any edge.
+
 
 ## 2. Ideas
 
-(appended below as each idea is finished)
+One section per idea follows, in longlist order.
 
 
 #### IDEA-29: ColivEs reshaped: Catalonia-first mid-term lease compliance file (INCASÒL-ready; national module gated on the RDL 29/2026 vote) [user idea U1] — RESHAPE (medium)

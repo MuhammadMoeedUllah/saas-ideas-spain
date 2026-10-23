@@ -58,7 +58,8 @@
 | eGarante | Certified email (a sending layer, not a MASC product) | Packs of 5 for €14.90, 20 for €24.90, 150 for €89.90, 500 for €199.90 (VAT included), so €0.40–2.98 per send | QTSP status not stated [new: https://www.egarante.com/precios/, seen 23 Oct 2026] |
 | Correos burofax | Physical certified letter | About €13.14 incl. VAT for one page in 2023, with certified copy and acknowledgment extra | Secondary, dated source; 2026 tariff not verified (search 6) |
 | Agencies | Debitura 6–7.5%, Absolut from 5%, Recobrarte €1,500 minimum, Intercobros success fee | — | [notes: FIN-08] |
-| Copilot Gestoría | AR automation for gestorías: reminders, interest, €40, claim letter | €15 or €150–450/month (the page contradicts itself) | Vendor claim [new: https://copilotgestoria.com/blog/gestion-impagos-morosidad-gestorias-2025-automatizar-cobros, 17 Dec 2025, updated 22 Oct 2026] |
+| Copilot Gestoría | AR automation for gestorías: reminders, interest, €40, claim letter. It also claims to generate "el expediente MASC en 5 minutos", with a timestamped, hashed evidence file and a one-year expiry alert. No certified sending and no reply clock are described | €15 or €150–450/month (the page contradicts itself); no separate MASC price | Vendor claims [new: https://copilotgestoria.com/blog/gestion-impagos-morosidad-gestorias-2025-automatizar-cobros, 17 Dec 2025, updated 22 Oct 2026; https://copilotgestoria.com/blog/masc-ley-1-2025-reclamar-impagados-protocolo-gestorias-errores-procesales, 27 May 2026] |
+| Large creditors' and debtors' own channels | Endesa publishes a MASC intake address for clients, suppliers and citizens | Free | [new: https://www.endesa.com/es/te-ayudamos/contactanos/masc, seen 23 Oct 2026]. Large counterparties are building their own MASC inboxes, which weakens the "free recipient inbox" module |
 
 - **The gap.** Nobody publishes a self-serve, sub-€40, per-claim MASC-plus-monitorio flow for small B2B claims. The building blocks, however, cost €0.40–3 (certified email), and the incumbents are one pricing decision away from it.
 - **Court-criteria datasets.** Law-firm blogs and bar associations already publish judges' agreements (Martínez Bernabéu [notes: LEG-01]; ICASAL), so a criteria dataset is not proprietary.
@@ -611,3 +612,99 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 **Open [I] checks.** Sample 50 Kit Digital sites: which builder, exportability, current fee.
 
 **What would change the verdict.** Red.es data showing more than 300k sites still paying more than €20/month with exportable builders. Even then it is a service business, not low-touch SaaS.
+
+---
+
+#### IDEA-36: Subcontractor CAE document wallet with platform sync and subcontracting-chain checks — KILL (medium)
+
+**Validated definition.** For subcontractors and autónomos in construction, installation and maintenance: one store of company and worker documents with expiry alerts, plus "assisted sync" (a browser extension or RPA) that fills Nalanda, Dokify, Ctaima, e-coordina, Obralia and Metacontratas, and share-links for clients without a platform. A principal module adds a digital Libro de Subcontratación and REA, quota and chain checks. Price: €9/€19/€39 per subcontractor per month; €49–99 for principals. **Verdict: KILL.** The pain is real (P = 4), but the differentiating sync is contractually blocked by the dominant group, and the wallet alone is already sold cheaply.
+
+**(a) Problem reality and rule status**
+- **The laws are in force:** RD 171/2004 (CAE), Ley 32/2006, and RD 1109/2007 (last update 23/03/2010) [new: BOE ELI, https://www.boe.es/eli/es/rd/2007/08/24/1109/con, seen 23 Oct 2026]. No lapse risk.
+- **Libro de Subcontratación.** It must be "habilitado por la autoridad laboral correspondiente al territorio en que se ejecute la obra" and follow the Annex III model (arts. 13–14). RD 1109/2007 provides no electronic format, so a digital Libro can only mirror the habilitado book unless a region enables an electronic version (regional rules not checked).
+- **REA:**
+  - Registration lasts three years; renewal must be requested in the six months before expiry (art. 6.1).
+  - The register is public, and certificates are issued "a solicitud de... cualquier otra persona física o jurídica" (arts. 9–10).
+  - A REA certificate obtained in the month before the contract exonerates the principal from the art. 7.2 joint liability for registration and accreditation failures (art. 6.3–6.4) [new: BOE RD 1109/2007].
+  - The Ministry offers public lookup by CIF without a digital certificate (search 17 summary). The 2008 count was more than 60,500 registered firms [new: Ministerio de Inclusión, https://www.inclusion.gob.es/w/mas-de-60.500-empresas-ya-se-han-inscrito-en-el-registro-de-empresas-acreditadas-en-la-construccion; old]. There is no current total (gap).
+- **The pain is loud and current.** Nalanda's TrustScore is about 1.3–1.5 from 135 reviews (97% one-star) [new: https://es.trustpilot.com/review/www.nalandaglobal.com, seen 23 Oct 2026]:
+  - "suben todos los años" (20 Oct 2026);
+  - "en una factura de 2000 euros anuales no puedo dar de alta más que a 15 trabajadores" (19 Oct 2026);
+  - "más de 1400 euros para un micropyme" (7 Oct 2026);
+  - renewals with unrequested services (17 Jul 2026).
+- **The +21.5% figure** for construction deaths in 2025 is correct; El Español's "29 deaths" misreads INSST's "+29" (C-17 settled in favour of +21.5%) [notes: CON-04].
+
+**(b) Competitors and market structure**
+- **Consolidation:**
+  - Nalanda (backed by PSG Equity) bought Dokify; the combined group claimed more than 70,000 clients in 16 countries [new: Capital Riesgo, https://capital-riesgo.es/en/articles/nalanda-participada-por-psg-equity-compra-dokify/, 4 May 2023].
+  - Nalanda now presents itself as "brought to you by ONCE FOR ALL" [new: https://nalandaglobal.com/en/?p=6371, seen 23 Oct 2026], and Dokify's contact address is @onceforall.com [new: https://www.dokify.net/api, seen 23 Oct 2026].
+  - obralia.com redirects to Nalanda's login [new: direct fetch of https://www.obralia.com/, 23 Oct 2026].
+  - So Nalanda, Dokify and Obralia sit in one group.
+- **"Upload once" already exists inside the network.** Nalanda describes subcontractors uploading documentation once "para cualquier contratista" within its network, and a "Comunidad Nalanda" of 63,000 suppliers (data at Jan 2024) [new: OFA/Nalanda infographic, https://nalandaglobal.com/wp-content/uploads/Infografia-OFA-Soluciones-frente-a-los-riesgos-de-la-subcontratacion-Nalanda.pdf; search 16 summary].
+- **Konvergia.** A search summary says Nalanda integrates with Konvergia to connect documentation with other CAE platforms automatically. I could not verify this; konvergia.com was unreachable and search 20 found nothing.
+- **Other platforms:**
+  - Ctaima claims "+3.500 clientes" and "+500.000 contratistas" [new: https://www.ctaima.com/, seen 23 Oct 2026].
+  - Metacontratas claims 80,000 companies [new: https://www.metacontratas.com/, seen 23 Oct 2026].
+- **Prices (DocuPRL comparison, prices checked 20 Oct 2026)** [new: https://docuprl.es/blog/mejores-plataformas-cae-2026.html, June 2026, updated Oct 2026]:
+  - **DocuPRL:** a PRL document SaaS with AI that proposes each document's type and expiry, expiry alerts and a traffic-light status. Starter free up to 3 workers, €9/month up to 10, €19 up to 30, €39 up to 100 including CAE (the table also says "CAE desde 34 €/mes"). "Tus subcontratas nunca pagan." No network and no cross-platform sync.
+  - DocAcces: €32/59/99 per month for 5/10/25 subcontractors; subcontractors pay nothing.
+  - PlayCAE: on quote (announced €199/month in July).
+  - UCAE: from €80/month.
+  - Nalanda: on demand.
+  - Dokify contractor licence: "Temporal" €34.99 (3 elements, 5 days); "Premium" from €102.90/year plus €15.44 per employee or machine per year, excluding VAT [new: https://www.dokify.net/cae/tarifas, seen 23 Oct 2026].
+- **The wallet half of IDEA-36** (store, AI expiry detection, alerts) is therefore already sold at €0–39/month (DocuPRL), at the same price points the idea proposed.
+
+**(c) Buyers and market size.** DIRCE 2025 [new: INE table 73019]:
+| CNAE | Activity | Companies | No employees | 1–9 employees | 10–49 employees |
+|---|---|---|---|---|---|
+| 41 | Building construction | 198,061 | 114,288 | 75,108 | 8,058 |
+| 43 | Specialised construction | 182,151 | 88,234 | 82,663 | 10,410 |
+| 432 | Electrical, plumbing and other installations (within 43) | 78,775 | 34,757 | 38,065 | 5,452 |
+
+How many platforms a typical subcontractor uses is unknown ([I]; no data found).
+
+**(d) Willingness to pay.** Subcontractors already pay €100 to €2,000+ a year per platform [notes: CON-02; new: Dokify tariffs; Trustpilot]. A wallet does not remove those fees, which principals impose, so willingness to pay is for time saved only, and DocuPRL gives the wallet away for up to 3 workers.
+
+**(e) Distribution.** FENIE, CNC and external prevention services (SPAs) are plausible but untested [I].
+
+**(f) Build feasibility and legal constraints**
+- **The kill blocker.** The Once For All group's terms of use (1 Jul 2026, covering Dokify) say users may not "(ii) desarrollar productos o servicios que compitan con la Plataforma, ni (iii) utilizar sistemas automatizados (incluyendo robots, 'scrapers' o herramientas similares) para acceder, recopilar o explotar datos". Users may also not use the platform "para prestar servicios a terceros". Breach allows OFA to "retirar, bloquear o limitar el acceso" [new: https://www.dokify.net/legales/terminos-de-uso-dokify-once-for-all, seen 23 Oct 2026].
+- **Nalanda's own general terms** could not be retrieved (HTTP 504); because it is in the same group, similar terms are likely (inference).
+- **Dokify's API** exists for principals' integrations (Randstad, Euroconstruc), but needs the platform's agreement [new: Dokify API page].
+- **Data protection.** Medical-fitness certificates should be held only as "apto" conclusions (LPRL art. 22.4 reasoning; [notes: G3-I08 build notes]). This is still sensitive data that needs care (legal inference).
+- **Time to MVP.** The wallet alone takes 1–2 months. Sync via RPA would take 2–4 months, is brittle, and breaches the terms.
+
+**(g) Defensibility.** The network effects belong to the incumbent group. A wallet is copyable, and the platforms can cut off automated access.
+
+**(h) Kill criteria**
+| Criterion | Status |
+|---|---|
+| Platforms forbid automated uploads and principals refuse share-links | First half met for the OFA group (Dokify terms; Nalanda in the same group). Second half open [I] |
+| DocuPRL or others already sell the same wallet cheaply | Met for the wallet (DocuPRL €0–39/month); not for cross-platform sync |
+| Subcontractors' willingness to pay is untested | Open [I] |
+
+**Scores**
+| Score | Value | Justification |
+|---|---|---|
+| S1 Urgency | 3 | Strong recurring pain (expiries block access and payment); no deadline. |
+| S2 Buyers | 4 | About 380k companies in CNAE 41+43, plus maintenance firms. |
+| S3 Willingness to pay | 3 | They pay platforms because they are forced to, but not for a wallet on top. |
+| S4 Reachability | 3 | Associations and SPAs exist; untested. |
+| S5 Competitive gap | 2 | DocuPRL, the platforms' own "upload once" networks, and SPA portals. |
+| S6 Build speed | 3 | The wallet is quick; sync is integration-heavy and prohibited. |
+| S7 Defensibility | 2 | Incumbent network effects; RPA can be blocked. |
+| S8 Retention | 4 | Recurring expiries and accumulated records. |
+| **Sellability** | **3.00** | |
+| P | 4 | Costly and widespread: €300–2,000 a year per platform plus office hours. |
+| **Overall** | **3.40** | |
+
+The overall score is mechanically decent because the pain is strong. The verdict is KILL because the defining feature fails the kill test.
+
+**Open [I] checks**
+- Ten installer interviews: number of platforms, annual fees, hours.
+- Whether principals without a platform (small builders, owners' communities) accept share-links.
+- Whether any platform outside OFA (Ctaima, e-coordina, Metacontratas) offers a contractor-side API.
+
+**What would change the verdict**
+- A written API or partnership from at least two non-OFA platforms (Ctaima and e-coordina) plus FENIE as a channel. That would revive a narrower "non-OFA sync wallet".
+- A regulatory push for CAE interoperability; I found none.

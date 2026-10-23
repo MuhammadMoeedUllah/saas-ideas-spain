@@ -99,72 +99,6 @@ IDEA-17 survives only as a narrow, AI-exposed adviser tool that needs interview 
 
 **What would change the verdict:** a3 and DELSOL raising client-portal prices sharply, or gestorías reporting that clients refuse their payroll vendor's portal. A decree approved with a transition would raise urgency, but it would favour incumbents that are already decree-ready (Timu, a3, DELSOL) rather than a new entrant.
 
-#### IDEA-19: Household-employer autopilot for domestic and care workers — KILL (medium)
-
-**Validated definition.** As tested: a C-type app at €5/month or €49/year per household (contract wizard, monthly payslips, contribution calendar, minimum-wage recalculation, Prevencion10 vault, inspection vault), plus a gestoría white-label at €1–2 per household. Validation shows that the state now provides free tools for the steps that carry legal weight: online registration and direct-debit contributions in Import@ss, the risk assessment in Prevencion10, and the INSST guide and harassment protocol. Enforcement inside homes is weak, and the job left over (a monthly payslip plus a few event-driven documents) is too thin and support-heavy for €5. Killed as specified. See "what would change the verdict" for the narrow condition under which a paid product makes sense.
-
-**(a) Problem reality and rule status**
-- **Duties in force:**
-  - The employer must always register the worker and pay contributions: "La responsabilidad de tramitar el alta y de ingresar las cuotas corresponderá siempre al empleador" [new: Import@ss "Alta en empleo de hogar", https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Alta+en+empleo+de+hogar, search snippet 23 Oct 2026].
-  - A monthly individual pay receipt: "La documentación del salario se realizará mediante la entrega al trabajador de un recibo individual" (RD 1620/2011 art. 8.6), with Ministry templates available.
-  - Written information on the essential elements of the contract (art. 5.4, which cites RD 1659/1998). RD 723/2026 repealed RD 1659/1998 and says special employment relationships follow their own rules (art. 2.5). My inference is that the art. 5.4 reference now points to RD 723/2026, but that is not verified.
-  - Termination: written notice stating the cause, compensation of 12 days' pay per year of service capped at six months, and notice of 20 days (7 if service is under a year). Missing these is presumed to be an unfair dismissal (art. 11) [new: https://www.boe.es/eli/es/rd/2011/11/14/1620/con, consolidated text last updated 08/09/2022, seen 23 Oct 2026].
-- **Time records (check 3):** domestic employment has a carve-out, "no serán de aplicación las obligaciones de registro de la jornada" for part-time domestic workers (RD 1620/2011 art. 9.3 bis) [new: as above]. The EU Court of Justice ruled on 19 Dec 2024 that the record duty extends to domestic work, but "No hay noticia de que se haya adoptado ninguna medida" [new: https://www.elsaltodiario.com/trabajo-domestico/prevencion10-herramienta-evaluacion-riesgos-empleo-hogar, opinion piece by Isabel Otxoa, 26 May 2025]. The digital decree is unapproved (see IDEA-16), and whether it covers households is unknown. Status: **no enforceable record duty for most households today.**
-- **RD 893/2024 status (check 2):**
-  - The household assessment deadline (14 Nov 2025) has passed.
-  - **Correction to the notes:** the INSST published the technical guide to RD 893/2024 and the "Protocolo de actuación frente a situaciones de violencia y acoso en el servicio del hogar familiar" on **14 May 2026** [new: https://www.insst.es/noticias-insst/el-insst-publica-la-guia-tecnica-para-la-prl-y-el-protocolo-de-actuacion-frente-a-violencia-y-acoso-en-el-servicio-del-hogar-familiar, 14 May 2026]. El Español's 20 May 2026 claim that they were still pending [notes: PRO-18] is therefore out of date. The INSST held a technical session on both on 23 Sep 2026 [new: WebSearch result, insst.es jornada page, 23 Oct 2026].
-  - Worker training runs on a FUNDAE platform. A mutua deck says it was "actualmente adjudicada" to Quirón Prevención for €11,000, and health surveillance is a triennial medical check [new: Asepeyo, "Guía práctica para asesorías", 15 Oct 2025, https://eventos.asepeyo.es/wp-content/uploads/2025/10/Aplicacion-del-reglamento-de-prevencion-para-empleadas-del-hogar_-Guia-practica-para-asesorias-15-10-2025.pdf].
-  - **Enforcement:** no inspection or fine data for households was found [new: WebSearch, 23 Oct 2026]. The result of the assessment "no se envía a ningún lado, se guarda en la casa". RD 893/2024 excludes domestic workers from the benefit surcharge for missing prevention measures, and the Inspectorate does not check "aquello que podría supervisar sin necesidad de entrar al domicilio" [new: El Salto, as above]. UGT and CCOO asked inspectors not to be punitive at first [notes: PRO-18].
-- **MEI (C-03), settled:** the official page states "A partir del 1 de enero de 2026 será el 0,9 por ciento ... del que el 0,75 por ciento será a cargo del empleador y el 0,15 por ciento ... del empleado" (Empleados de Hogar section; the page still carries an "en proceso de actualización" banner pointing to Orden PJC/297/2026) [new: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537, seen 23 Oct 2026]. **0.90% is correct for 2026**; the 0.80% in the notes came from an un-updated section. The 2027 step to 1.0% follows the statutory schedule (LGSS DT 43ª), which was not re-read here. The 2026 domestic contribution scale has 8 pay bands, with bases from €306 to €1,424.40 [new: same page].
-- **SMI:** €9.55 an hour for domestic workers in 2026 [notes: LAB-03].
-
-**(b) Competitors and substitutes**
-- **Free and official:**
-  - Import@ss: online registration in about nine steps with Cl@ve, certificate or SMS, a direct-debit mandate and a contribution simulator [new: Import@ss snippet, as above].
-  - Prevencion10: free assessment and plan.
-  - The INSST guide and protocol: free.
-  - Ministry payslip templates (RD 1620/2011 art. 8.6).
-- **Gestorías:** Billeo charges "20 €/nómina al mes más IVA (desde 15 € por volumen)", covering registration, monthly payslip, contribution review, sick-leave handling, finiquito and Contrat@. Registration, contract and other changes are quoted separately. The page does not mention Prevencion10 [new: https://www.billeo.es/gestoria-empleada-hogar, reviewed 13 Sep 2026].
-- **Care and placement agencies:** Cuideo sells a "Servicio Cuideo Gestión Familiar y Laboral" priced only on request [new: https://cuideo.com/precios, seen 23 Oct 2026]. Familia Fácil was reported at €45/month for its contact service, from an undated page of 2024 or earlier [new: WebSearch snippet of https://elreferente.es/mas/familia-facil-amplia-sus-servicios/, 23 Oct 2026; page returned 403; single source].
-- **Mutuas:** mutuas train asesorías on the household duties for free (the Asepeyo deck above), so gestorías already have the know-how.
-- **No low-cost, all-in-one household app was found** in one competitor search. Weak evidence of a gap, given only one query.
-
-**(c) Buyers and market size (C-22 settled)**
-- **"Más de 348.000 mujeres afiliadas"** counts women only [new: INSST press release, 14 May 2025, text extracted from the PDF at https://www.insst.es/documents/d/portal-insst/yolanda-diaz-presenta-la-herramienta-para-evaluar-los-riesgos-laborales-de-las-trabajadoras-del-hogar-nota-de-prensa].
-- **"Más de 378.000 personas"** are in the special system, "en su mayoría mujeres", with no source date given [new: https://www.elespanol.com/mujer/estilo-vida/20260520/asesora-financiera-nueva-ley-limpiadoras-hogar-unico-consigue-nadie-contrate/1003744249353_0.amp.html, 20 May 2026].
-- **About 540,000** is the EPA count, which includes informal work. The sector also lost 53,000 workers in a year, "la mayor caída de toda la economía" [new: El Español, as above].
-- **Use about 378k registered workers.** The number of employing households (domestic-employer contribution accounts) was not found; it is of the same order, likely about 300–380k (inference). An official affiliation table was not fetched.
-- **Ceiling:** 5% of about 350k households at €49/year is about €0.86M ARR (my arithmetic).
-
-**(d) Willingness to pay.** Households that outsource pay about €20 a month plus one-off fees, which is 4× the price hypothesis. The share that outsources is unknown. Most can register and pay contributions for free, and the residual job (payslip, notice letters) is covered by templates. The "60 € + IVA por cada alta de trabajador" complaint about Declarando [notes: VOX] shows households and autónomos resent setup fees.
-
-**(e) Distribution.** Search terms exist ("nómina empleada de hogar", "contrato empleada de hogar", "Prevencion10"). Otherwise the channel is diffuse B2C. Agencies and gestorías already sell the service themselves. A gestoría white-label adds little, because payroll suites already handle the domestic special system (inference; not verified per vendor).
-
-**(f) Build feasibility.** Payslip, minimum-wage and calendar logic is low complexity: an MVP in 4–6 weeks. A third party cannot file registrations or contributions for a household without being an authorised representative; the Social Security RED authorisation terms were not verified (open). The product would therefore guide the household through Import@ss or hand off to a partner gestoría. Worker data may include immigration status, which calls for data minimisation.
-
-**(g) Defensibility.** Low: templates and calculators are easy to copy, and the state keeps adding free tools.
-
-**(h) Kill criteria**
-- "Free tools dominate": **met for the official steps** (registration, contributions, assessment, protocol, guide). **Not met** for payslips and termination documents, where only templates exist.
-- "Fewer than about 1 in 10 surveyed households would pay €5/month": **open [I].**
-
-**Type-C check.** €5/month is not viable. The visible monthly value is one payslip, because the Social Security direct debit happens without the app. Support questions (sick leave, holidays, dismissal) are frequent and complex for laypeople, and churn follows the end of each employment. A self-serve product would need about €8–10/month or €79–99/year (my estimate) and would then compete with €15–20 human gestorías.
-
-**Scores**
-- S1 Urgency **2**: duties are mostly event-driven (hiring, the yearly minimum-wage change, termination); the assessment deadline has passed and enforcement in homes is light.
-- S2 Buyers **4**: about 300–380k employing households.
-- S3 Willingness to pay **3**: some households pay gestorías €15–20 a month; most do it themselves with free tools.
-- S4 Reachability **2**: diffuse B2C, only SEO; agencies are competitors rather than channels.
-- S5 Competitive gap **3**: free official tools for the steps that carry legal weight, human gestorías for the rest, no cheap app found.
-- S6 Build speed **4**: 4–6 weeks.
-- S7 Defensibility **2**: SEO and trust only.
-- S8 Retention **3**: monthly payslip and records, but churn when the worker leaves.
-- **Sellability 2.88; P 2** (minor for compliant households; the big costs, undeclared work and unfair dismissal, fall on households that would not buy); **Overall 2.53.** Confidence medium: rules and market size come from official sources; willingness to pay and competitors rest on one search.
-
-**Open [I] checks:** the survey of about 200 employing households (current spend, willingness to pay €5 or €8); SEEH employer-account count; RED representation rules for households; whether payroll suites handle the domestic system for gestorías.
-
-**What would change the verdict:** a household survey showing at least 10% would pay €8 or more a month; an ITSS campaign on domestic employment; or the digital time-recording decree explicitly covering households, which would create a recurring daily duty and visible monthly value.
-
 #### IDEA-17: Guided dismissal and termination workflow for owner-managers and their advisers — RESHAPE (low)
 
 **Validated definition (reshaped).** Drop the owner-facing €49-per-termination product and the letter generator as a selling point; letter drafting and severance maths are now free (calculators, AI prompt guides). Sell only to advisers (graduados sociales, gestorías' labour departments and small labour firms) at about €29–49 a month. The core becomes a **pre-termination risk check and evidence file** kept current with case law and Social Security criteria:
@@ -242,7 +176,10 @@ Go-to-market is through one colegio partnership first. This is a narrow, AI-expo
   - RD 723/2026 now requires naming the applicable convenio and pay items in each worker's statement (art. 3.2) [new: https://www.boe.es/eli/es/rd/2026/09/09/723, seen 23 Oct 2026].
 - National collective bargaining to 30 Jun 2026: average agreed wage increase 3.01%, average agreed working time 1,740.67 hours a year [new: CCOO Canarias, "Estadísticas de Convenios Colectivos, junio 2026", 13 Jul 2026, citing the Ministry's Estadística de Convenios Colectivos, https://canarias.ccoo.es/1cc9dae4a6d437a3cd458f3d194f3e21000069.pdf].
 - **Concentration illustration, Canarias:** 112 convenios with economic effects to 30 Jun 2026. 99 are company or group agreements covering 12,049 workers; 13 are sector agreements covering 104,227 [new: same PDF]. A small number of sector convenios covers most workers, which helps an MVP. But the long tail of company agreements is what vendors' customers actually need covered.
-- **The anti-absorption decree-law** announced with the 2026 SMI [notes: LAB-03]: status not checked ([S*] skipped for budget). If it was a pending decree-law, it would not have been approved by a dissolved Cortes. If it was approved and not convalidated before 6 Oct, the Diputación Permanente would handle it. Open.
+- **The anti-absorption reform** announced with the 2026 SMI [notes: LAB-03] **is still unconfirmed** (search 21).
+  - It was left out of RD 126/2026 and expected in a separate decree-law, because absorption and compensation sit in art. 26.5 ET, which has the rank of law. In February the Secretary of State said it could not be approved in parallel with the SMI. RDL 16/2025 (the 2025 SMI extension) had already lapsed unconvalidated, and the ITSS issued Criterio Interpretativo 1/2026. No approval was found [new: WebSearch summary of https://periscopiofiscalylegal.pwc.es/se-fija-la-cuantia-del-smi-el-problema-ahora-es-como-aplicarlo/ and https://augustaabogados.com/wp-content/uploads/2026/02/ALERTA_Salario-minimo-interprofesional-para-2026_Augusta-Abogados_2026.pdf, 23 Oct 2026].
+  - If it is still unapproved, the Government could still issue it as a decree-law before 29 Nov, for convalidation by the Diputación Permanente. That looks unlikely (inference).
+  - For a convenio dataset it would only add one more rule to encode.
 
 **(b) Competitors and existing data**
 - **Wolters Kluwer a3convenios / "a3innuva | Convenios":** "más de 1.500 convenios ya mecanizados para descargar en a3innuva | Nómina", plus "a3innuva | BOE Laboral: para estar informado diariamente de los cambios normativos" [new: a3innuva Nómina product sheet, https://assets.contenthub.wolterskluwer.com/api/public/content/d515a50d17e347909eb536cc5b9828dc, text extracted 23 Oct 2026]. The a3convenios page claims "más de 1.400 convenios colectivos" with automatic updates of contribution tables, email notices when subscribed convenios change, and mass application of changes to affected workers [new: search snippet for https://www.wolterskluwer.com/es-es/solutions/a3convenios, 23 Oct 2026; direct fetch blocked with 403]. No open API is described.
@@ -283,6 +220,128 @@ Go-to-market is through one colegio partnership first. This is a narrow, AI-expo
 **Open [I] checks:** letters of intent from 2–3 non-payroll HR vendors (would Factorial, Sesame or Woffu pay €0.10 per employee for leave and hours rules?); whether a3 licenses a3convenios data to third parties; the national convenio count once the Ministry site is reachable.
 
 **What would change the verdict:** two or more non-payroll HR vendors committing to pay for a leave-and-hours rules API (a much narrower product), or Wolters Kluwer refusing to integrate with those vendors, which would leave a gap for an independent data layer.
+
+#### IDEA-19: Household-employer autopilot for domestic and care workers — KILL (medium)
+
+**Validated definition.** As tested: a C-type app at €5/month or €49/year per household (contract wizard, monthly payslips, contribution calendar, minimum-wage recalculation, Prevencion10 vault, inspection vault), plus a gestoría white-label at €1–2 per household. Validation shows that the state now provides free tools for the steps that carry legal weight: online registration and direct-debit contributions in Import@ss, the risk assessment in Prevencion10, and the INSST guide and harassment protocol. Enforcement inside homes is weak, and the job left over (a monthly payslip plus a few event-driven documents) is too thin and support-heavy for €5. Killed as specified. See "what would change the verdict" for the narrow condition under which a paid product makes sense.
+
+**(a) Problem reality and rule status**
+- **Duties in force:**
+  - The employer must always register the worker and pay contributions: "La responsabilidad de tramitar el alta y de ingresar las cuotas corresponderá siempre al empleador" [new: Import@ss "Alta en empleo de hogar", https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Alta+en+empleo+de+hogar, search snippet 23 Oct 2026].
+  - A monthly individual pay receipt: "La documentación del salario se realizará mediante la entrega al trabajador de un recibo individual" (RD 1620/2011 art. 8.6), with Ministry templates available.
+  - Written information on the essential elements of the contract (art. 5.4, which cites RD 1659/1998). RD 723/2026 repealed RD 1659/1998 and says special employment relationships follow their own rules (art. 2.5). My inference is that the art. 5.4 reference now points to RD 723/2026, but that is not verified.
+  - Termination: written notice stating the cause, compensation of 12 days' pay per year of service capped at six months, and notice of 20 days (7 if service is under a year). Missing these is presumed to be an unfair dismissal (art. 11) [new: https://www.boe.es/eli/es/rd/2011/11/14/1620/con, consolidated text last updated 08/09/2022, seen 23 Oct 2026].
+- **Time records (check 3):** domestic employment has a carve-out, "no serán de aplicación las obligaciones de registro de la jornada" for part-time domestic workers (RD 1620/2011 art. 9.3 bis) [new: as above]. The EU Court of Justice ruled on 19 Dec 2024 that the record duty extends to domestic work, but "No hay noticia de que se haya adoptado ninguna medida" [new: https://www.elsaltodiario.com/trabajo-domestico/prevencion10-herramienta-evaluacion-riesgos-empleo-hogar, opinion piece by Isabel Otxoa, 26 May 2025]. The digital decree is unapproved (see IDEA-16), and whether it covers households is unknown. Status: **no enforceable record duty for most households today.**
+- **RD 893/2024 status (check 2):**
+  - The household assessment deadline (14 Nov 2025) has passed.
+  - **Correction to the notes:** the INSST published the technical guide to RD 893/2024 and the "Protocolo de actuación frente a situaciones de violencia y acoso en el servicio del hogar familiar" on **14 May 2026** [new: https://www.insst.es/noticias-insst/el-insst-publica-la-guia-tecnica-para-la-prl-y-el-protocolo-de-actuacion-frente-a-violencia-y-acoso-en-el-servicio-del-hogar-familiar, 14 May 2026]. El Español's 20 May 2026 claim that they were still pending [notes: PRO-18] is therefore out of date. The INSST held a technical session on both on 23 Sep 2026 [new: WebSearch result, insst.es jornada page, 23 Oct 2026].
+  - Worker training runs on a FUNDAE platform. A mutua deck says it was "actualmente adjudicada" to Quirón Prevención for €11,000, and health surveillance is a triennial medical check [new: Asepeyo, "Guía práctica para asesorías", 15 Oct 2025, https://eventos.asepeyo.es/wp-content/uploads/2025/10/Aplicacion-del-reglamento-de-prevencion-para-empleadas-del-hogar_-Guia-practica-para-asesorias-15-10-2025.pdf].
+  - **Enforcement:** no inspection or fine data for households was found [new: WebSearch, 23 Oct 2026]. The result of the assessment "no se envía a ningún lado, se guarda en la casa". RD 893/2024 excludes domestic workers from the benefit surcharge for missing prevention measures, and the Inspectorate does not check "aquello que podría supervisar sin necesidad de entrar al domicilio" [new: El Salto, as above]. UGT and CCOO asked inspectors not to be punitive at first [notes: PRO-18].
+- **MEI (C-03), settled:** the official page states "A partir del 1 de enero de 2026 será el 0,9 por ciento ... del que el 0,75 por ciento será a cargo del empleador y el 0,15 por ciento ... del empleado" (Empleados de Hogar section; the page still carries an "en proceso de actualización" banner pointing to Orden PJC/297/2026) [new: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537, seen 23 Oct 2026]. **0.90% is correct for 2026**; the 0.80% in the notes came from an un-updated section. The 2027 step to 1.0% follows the statutory schedule (LGSS DT 43ª), which was not re-read here. The 2026 domestic contribution scale has 8 pay bands, with bases from €306 to €1,424.40 [new: same page].
+- **SMI:** €9.55 an hour for domestic workers in 2026 [notes: LAB-03].
+
+**(b) Competitors and substitutes**
+- **Free and official:**
+  - Import@ss: online registration in about nine steps with Cl@ve, certificate or SMS, a direct-debit mandate and a contribution simulator [new: Import@ss snippet, as above].
+  - Prevencion10: free assessment and plan.
+  - The INSST guide and protocol: free.
+  - Ministry payslip templates (RD 1620/2011 art. 8.6).
+- **Gestorías:** Billeo charges "20 €/nómina al mes más IVA (desde 15 € por volumen)", covering registration, monthly payslip, contribution review, sick-leave handling, finiquito and Contrat@. Registration, contract and other changes are quoted separately. The page does not mention Prevencion10 [new: https://www.billeo.es/gestoria-empleada-hogar, reviewed 13 Sep 2026].
+- **Care and placement agencies:** Cuideo sells a "Servicio Cuideo Gestión Familiar y Laboral" priced only on request [new: https://cuideo.com/precios, seen 23 Oct 2026]. Familia Fácil was reported at €45/month for its contact service, from an undated page of 2024 or earlier [new: WebSearch snippet of https://elreferente.es/mas/familia-facil-amplia-sus-servicios/, 23 Oct 2026; page returned 403; single source].
+- **Mutuas:** mutuas train asesorías on the household duties for free (the Asepeyo deck above), so gestorías already have the know-how.
+- **No low-cost, all-in-one household app was found** in one competitor search. Weak evidence of a gap, given only one query.
+
+**(c) Buyers and market size (C-22 settled)**
+- **"Más de 348.000 mujeres afiliadas"** counts women only [new: INSST press release, 14 May 2025, text extracted from the PDF at https://www.insst.es/documents/d/portal-insst/yolanda-diaz-presenta-la-herramienta-para-evaluar-los-riesgos-laborales-de-las-trabajadoras-del-hogar-nota-de-prensa].
+- **"Más de 378.000 personas"** are in the special system, "en su mayoría mujeres", with no source date given [new: https://www.elespanol.com/mujer/estilo-vida/20260520/asesora-financiera-nueva-ley-limpiadoras-hogar-unico-consigue-nadie-contrate/1003744249353_0.amp.html, 20 May 2026].
+- **About 540,000** is the EPA count, which includes informal work. The sector also lost 53,000 workers in a year, "la mayor caída de toda la economía" [new: El Español, as above].
+- **Use about 378k registered workers.** The number of employing households (domestic-employer contribution accounts) was not found; it is of the same order, likely about 300–380k (inference). An official affiliation table was not fetched.
+- **Ceiling:** 5% of about 350k households at €49/year is about €0.86M ARR (my arithmetic).
+
+**(d) Willingness to pay.** Households that outsource pay about €20 a month plus one-off fees, which is 4× the price hypothesis. The share that outsources is unknown. Most can register and pay contributions for free, and the residual job (payslip, notice letters) is covered by templates. The "60 € + IVA por cada alta de trabajador" complaint about Declarando [notes: VOX] shows households and autónomos resent setup fees.
+
+**(e) Distribution.** Search terms exist ("nómina empleada de hogar", "contrato empleada de hogar", "Prevencion10"). Otherwise the channel is diffuse B2C. Agencies and gestorías already sell the service themselves. A gestoría white-label adds little, because payroll suites already handle the domestic special system (inference; not verified per vendor).
+
+**(f) Build feasibility.** Payslip, minimum-wage and calendar logic is low complexity: an MVP in 4–6 weeks. A third party cannot file registrations or contributions for a household without being an authorised representative; the Social Security RED authorisation terms were not verified (open). The product would therefore guide the household through Import@ss or hand off to a partner gestoría. Worker data may include immigration status, which calls for data minimisation.
+
+**(g) Defensibility.** Low: templates and calculators are easy to copy, and the state keeps adding free tools.
+
+**(h) Kill criteria**
+- "Free tools dominate": **met for the official steps** (registration, contributions, assessment, protocol, guide). **Not met** for payslips and termination documents, where only templates exist.
+- "Fewer than about 1 in 10 surveyed households would pay €5/month": **open [I].**
+
+**Type-C check.** €5/month is not viable. The visible monthly value is one payslip, because the Social Security direct debit happens without the app. Support questions (sick leave, holidays, dismissal) are frequent and complex for laypeople, and churn follows the end of each employment. A self-serve product would need about €8–10/month or €79–99/year (my estimate) and would then compete with €15–20 human gestorías.
+
+**Scores**
+- S1 Urgency **2**: duties are mostly event-driven (hiring, the yearly minimum-wage change, termination); the assessment deadline has passed and enforcement in homes is light.
+- S2 Buyers **4**: about 300–380k employing households.
+- S3 Willingness to pay **3**: some households pay gestorías €15–20 a month; most do it themselves with free tools.
+- S4 Reachability **2**: diffuse B2C, only SEO; agencies are competitors rather than channels.
+- S5 Competitive gap **3**: free official tools for the steps that carry legal weight, human gestorías for the rest, no cheap app found.
+- S6 Build speed **4**: 4–6 weeks.
+- S7 Defensibility **2**: SEO and trust only.
+- S8 Retention **3**: monthly payslip and records, but churn when the worker leaves.
+- **Sellability 2.88; P 2** (minor for compliant households; the big costs, undeclared work and unfair dismissal, fall on households that would not buy); **Overall 2.53.** Confidence medium: rules and market size come from official sources; willingness to pay and competitors rest on one search.
+
+**Open [I] checks:** the survey of about 200 employing households (current spend, willingness to pay €5 or €8); SEEH employer-account count; RED representation rules for households; whether payroll suites handle the domestic system for gestorías.
+
+**What would change the verdict:** a household survey showing at least 10% would pay €8 or more a month; an ITSS campaign on domestic employment; or the digital time-recording decree explicitly covering households, which would create a recurring daily duty and visible monthly value.
+
+#### IDEA-40: Private-pay and reimbursement-claim kit for self-employed health professionals — KILL (medium)
+
+**Validated definition.** As tested: a payer-mix calculator (net € per hour by insurer and for private patients, from practice-software exports), per-session reimbursement packs with the fields each insurer requires, a patient guide, and templates for moving panel patients to private sessions, at €9–19/month. The pain is severe, but the product's engine (patients paying up front and claiming reimbursement) applies to a small minority of policies. The analysis is a one-off, and the private-pay tooling is ordinary practice software. Killed.
+
+**(a) Problem reality and rule status**
+- **The squeeze is real** [notes: PRO-01, PRO-02]: €5–20 per allied-health session, about €17–19 per specialist consultation, and 88.76% of surveyed psychologists say the terms are imposed (Infocop, 2023, partly interested parties).
+- **Insurer concentration in 2025 (ICEA data to Dec 2025):** SegurCaixa Adeslas had €4,019M of premiums (29.68% share) and Asisa €1,885M (13.70%). Health premiums totalled €13,541M (+11.31%), of which "seguros de salud privados" €10,129M. The two MUFACE insurers billed €2,126M (+25.37%) under a 2025–2027 contract with a 41.2% premium rise and €4,805M of funding [new: https://www.elespanol.com/invertia/observatorios/sanidad/20260313/aseguradoras-dan-cobertura-muface-disparan-facturacion-pierden-asegurados/1003744167365_0.amp.html, 13 Mar 2026].
+- **Correction to the notes: competition law no longer blocks collective bargaining.**
+  - The CNMC told Unipromel that self-employed private doctors may negotiate "sus condiciones salariales" collectively with insurers and hospital groups, under the European Commission's 29 Sep 2022 guidelines on solo self-employed workers. It identified a bargaining imbalance (and so will not intervene) where the counterparty has €2M or more of turnover or more than ten employees, which covers "la práctica totalidad de las ocasiones" [new: https://okdiario.com/economia/cnmc-informa-unipromel-que-medicos-autonomos-podran-negociar-sus-derechos-aseguradoras-11666103, 3 Oct 2023, updated 18 Sep 2024].
+  - The CNMC "en principio no intervendrá" in collective negotiations by self-employed health professionals with insurers or hospital groups whose aim is to improve working conditions. It answered a consultation that included the psychologists' Consejo General [new: https://www.infocop.es/la-cnmc-no-intervendra-en-las-negociaciones-de-los-autonomos-con-las-aseguradoras, 15 Nov 2023].
+  - The barrier is therefore insurer bargaining power, not law. The March 2026 approach to the CNMC (physiotherapists' council with ATA and the Andalusian councils) [notes: PRO-02] is a follow-up whose outcome was not found.
+  - The Unipromel challenge to the MUFACE contract: no ruling found [new: WebSearch, 23 Oct 2026]. Open.
+- **Lapse risk:** none (market structure, not a rule).
+
+**(b) Competitors.** No payer-mix or reimbursement tool was found.
+- Clinni (€12.95/month plus taxes) covers booking, reminders and invoicing [new: https://clinni.com/precios/, seen 23 Oct 2026].
+- Doctoralia Pro lists an online agenda, reminders, website, reviews and "Noa Notes" AI visit summaries, with no insurer analytics on the page and prices on request [new: https://pro.doctoralia.es/, seen 23 Oct 2026].
+- Gesden (dental; it usually manages insurer tariffs) returned 503 and was not checked.
+- Payer-mix maths is a spreadsheet task, so the gap is real but shallow.
+
+**(c) Buyers and market size**
+- INE DIRCE, 1 Jan 2025: natural-person businesses number 58,119 in CNAE 862 (medical and dental) and 76,906 in CNAE 869 (other health, including physiotherapy, psychology and podiatry) [new: INE table 73019, downloaded 23 Oct 2026].
+- Self-employed psychologists: 43,200 in 2021 [notes: PRO-02].
+- The REPS lists 49,239 physiotherapists, 9,297 podiatrists, 7,286 dietitian-nutritionists, 6,041 speech therapists and 15,625 dentists. These are registered totals and the register is incomplete [new: REPS report 2024, text extracted].
+- The panel-dependent share is unknown.
+
+**(d) Willingness to pay, and the kill test**
+- **Reimbursement is a minority.** Reimbursement products took **€1,056M (+7.35%) of €13,541M** of 2025 health premiums, about **7.8% of premiums** (ICEA via El Español, as above; my arithmetic). Per insured person the share is probably lower, since reimbursement policies cost more (inference; no insured count by type was found).
+- Some care policies add partial reimbursement with prior payment, limits and a one-year waiting period (an ASISA product sheet; FIATC reimburses up to 80%) [new: WebSearch snippets, 23 Oct 2026]. That widens eligibility a little.
+- Professionals already pay €13/month for practice software and opaque Doctoralia fees [notes: PRO-03, PRO-04]. That is adjacent spend, but for other jobs.
+
+**(e) Distribution.** Colegios (COP and the Consejo General de la Psicología; CGCFE), ATA and Unipromel are concentrated channels. Since the CNMC opinions, colegios and associations may pursue collective negotiation themselves, which competes with an "exit the panel" message.
+
+**(f) Build feasibility and legal constraints.** CSV import and templates take 1–2 months. Avoid clinical content (GDPR art. 9). Invoices must follow invoicing rules (VeriFactu dates are owned by batch 1). Deontological limits on advertising sessions as reimbursable: **open [F]**, as the colegio codes were not fetched. Any feature that pools members' fee data would need to sit inside a lawful collective negotiation (the CNMC conditions above), not a vendor product.
+
+**(g) Defensibility.** Low. The insurer-requirements dataset is small and public in policy documents.
+
+**(h) Kill criteria**
+- "Reimbursement cover held by only a small minority of insured patients": **met on premiums** (about 7.8%). The insured-person share is unknown and probably lower.
+- "Colegio interviews show members will not leave panels": **open [I]**.
+
+**Scores**
+- S1 Urgency **2**: a chronic squeeze; leaving a panel is a rare, deliberate decision.
+- S2 Buyers **3**: tens of thousands of self-employed professionals; the panel-dependent subset is unknown.
+- S3 Willingness to pay **3**: they pay for practice software, not for analysis.
+- S4 Reachability **3**: colegios and associations, unproven, now oriented to collective negotiation.
+- S5 Competitive gap **4**: no tool, but spreadsheets suffice.
+- S6 Build speed **4**: 1–2 months.
+- S7 Defensibility **2**: copyable.
+- S8 Retention **2**: one-off analysis, with recurring use only for the minority of reimbursement patients.
+- **Sellability 2.88; P 4** (income "often does not cover the cost of running a practice", widespread); **Overall 3.33.** Confidence medium: premium shares are official ICEA data via press; the insured-person split and demand are unknown.
+
+**Open [I] checks:** interview 15 panel professionals (insurers' share of revenue, willingness to drop panels); the insured-person share of reimbursement policies (ICEA report, not fetched); colegio deontological rules; the outcome of the March 2026 CNMC approach and the MUFACE challenge.
+
+**What would change the verdict:** insured-person data showing reimbursement cover of 20% or more in target cities, or a colegio-led collective negotiation that wants a neutral fee-benchmark tool. The second would be a different B2B product, for about a dozen associations.
 
 #### IDEA-41: Staff qualification file for private health centres (RD 239/2026) — KILL (medium)
 
@@ -503,59 +562,133 @@ Validation first pointed to a RESHAPE: an instructor-only readiness app plus CAP
 
 **What would change the verdict:** evidence that small private-pay SAD operators (outside council contracts, for example families paying directly) lack tools. That is a different, smaller product.
 
-#### IDEA-40: Private-pay and reimbursement-claim kit for self-employed health professionals — KILL (medium)
+---
 
-**Validated definition.** As tested: a payer-mix calculator (net € per hour by insurer and for private patients, from practice-software exports), per-session reimbursement packs with the fields each insurer requires, a patient guide, and templates for moving panel patients to private sessions, at €9–19/month. The pain is severe, but the product's engine (patients paying up front and claiming reimbursement) applies to a small minority of policies. The analysis is a one-off, and the private-pay tooling is ordinary practice software. Killed.
+## 3. Cross-cutting findings (rule status and market facts for other batches)
 
-**(a) Problem reality and rule status**
-- **The squeeze is real** [notes: PRO-01, PRO-02]: €5–20 per allied-health session, about €17–19 per specialist consultation, and 88.76% of surveyed psychologists say the terms are imposed (Infocop, 2023, partly interested parties).
-- **Insurer concentration in 2025 (ICEA data to Dec 2025):** SegurCaixa Adeslas had €4,019M of premiums (29.68% share) and Asisa €1,885M (13.70%). Health premiums totalled €13,541M (+11.31%), of which "seguros de salud privados" €10,129M. The two MUFACE insurers billed €2,126M (+25.37%) under a 2025–2027 contract with a 41.2% premium rise and €4,805M of funding [new: https://www.elespanol.com/invertia/observatorios/sanidad/20260313/aseguradoras-dan-cobertura-muface-disparan-facturacion-pierden-asegurados/1003744167365_0.amp.html, 13 Mar 2026].
-- **Correction to the notes: competition law no longer blocks collective bargaining.**
-  - The CNMC told Unipromel that self-employed private doctors may negotiate "sus condiciones salariales" collectively with insurers and hospital groups, under the European Commission's 29 Sep 2022 guidelines on solo self-employed workers. It identified a bargaining imbalance (and so will not intervene) where the counterparty has €2M or more of turnover or more than ten employees, which covers "la práctica totalidad de las ocasiones" [new: https://okdiario.com/economia/cnmc-informa-unipromel-que-medicos-autonomos-podran-negociar-sus-derechos-aseguradoras-11666103, 3 Oct 2023, updated 18 Sep 2024].
-  - The CNMC "en principio no intervendrá" in collective negotiations by self-employed health professionals with insurers or hospital groups whose aim is to improve working conditions. It answered a consultation that included the psychologists' Consejo General [new: https://www.infocop.es/la-cnmc-no-intervendra-en-las-negociaciones-de-los-autonomos-con-las-aseguradoras, 15 Nov 2023].
-  - The barrier is therefore insurer bargaining power, not law. The March 2026 approach to the CNMC (physiotherapists' council with ATA and the Andalusian councils) [notes: PRO-02] is a follow-up whose outcome was not found.
-  - The Unipromel challenge to the MUFACE contract: no ruling found [new: WebSearch, 23 Oct 2026]. Open.
-- **Lapse risk:** none (market structure, not a rule).
+**Election and rule mechanics**
+1. **Caretaker limits start after the vote, not at dissolution.** "El Gobierno cesa tras la celebración de elecciones generales"; it then "limitará su gestión al despacho ordinario de los asuntos públicos" except for "casos de urgencia debidamente acreditados" or expressly justified "razones de interés general". It may not approve the budget bill or send bills to the Cortes (Ley 50/1997, art. 21.1, 21.3 and 21.5) [new: https://www.boe.es/buscar/act.php?id=BOE-A-1997-25336, seen 23 Oct 2026].
+   - Until 29 Nov 2026 the Government can still approve royal decrees and decree-laws; decree-laws go to the Diputación Permanente.
+   - Afterwards, any non-urgent regulation (for example the digital time-recording decree, the pay-transparency decree or the VeriFactu instrument in batch 1) would be legally exposed.
+   - Owners of those checks should read the decision window as the Councils of Ministers on 27 Oct and 3, 10, 17 and 24 Nov 2026.
+2. **Digital time-recording decree (owned by batch 3): not approved as of 23 Oct 2026.** No official date is set. The transition (6 or 12 months) is unsettled. See IDEA-16 (a). Lapse logic: it needs no convalidation, but it stalls if not approved by 24 Nov.
+3. **SMI anti-absorption reform (LAB-03): status unknown.**
+   - It needs law-rank change, because art. 26.5 ET has the rank of law, so a royal decree cannot do it [new: WebSearch summary of Augusta Abogados and PwC, 23 Oct 2026].
+   - It was not approved alongside RD 126/2026. RDL 16/2025 (the 2025 SMI extension) lapsed unconvalidated, and the ITSS issued Criterio Interpretativo 1/2026 [new: same].
+   - If it was not approved before 6 Oct, it can now come only as a decree-law, convalidated by the Diputación Permanente. Treat it as unlikely before the new legislature (inference).
 
-**(b) Competitors.** No payer-mix or reimbursement tool was found.
-- Clinni (€12.95/month plus taxes) covers booking, reminders and invoicing [new: https://clinni.com/precios/, seen 23 Oct 2026].
-- Doctoralia Pro lists an online agenda, reminders, website, reviews and "Noa Notes" AI visit summaries, with no insurer analytics on the page and prices on request [new: https://pro.doctoralia.es/, seen 23 Oct 2026].
-- Gesden (dental; it usually manages insurer tariffs) returned 503 and was not checked.
-- Payer-mix maths is a spreadsheet task, so the gap is real but shallow.
+**Labour law facts**
+4. **LISOS fine bands, from the BOE** [new: https://www.boe.es/buscar/act.php?id=BOE-A-2000-15060, art. 40.1]: minor €70–750; serious €751–7,500; very serious €7,501–225,018.
+   - Failing to inform workers in writing of the essential elements of the contract (RD 723/2026 statements) is **minor** (art. 6.4).
+   - Time-record and working-time breaches are **serious** (art. 7.5).
+   - Relevant to IDEA-06's rule feed and to any idea claiming large RD 723 fines.
+5. **RD 723/2026, from the BOE:**
+   - in force 5 Oct 2026; covers relationships of more than four weeks;
+   - information is deemed given if the written contract already contains it (art. 3.1);
+   - the SEPE model was due within 20 days, and its absence does not suspend the duty;
+   - no sanctions in the decree;
+   - existing staff who ask must be answered within 30 working days.
+6. **C-04 employer count, settled.** INE DIRCE, 1 Jan 2025: 1,510,381 firms with employees (901,955 with 1–2; 314,941 with 3–5; 132,013 with 6–9; 85,467 with 10–19; 76,005 with 20+). INE CODEM, 2026Q2: 1,231,358 employer units. The Consejo de Estado's 1.35M has no stated base. Use CODEM for paying entities and DIRCE for the size split.
+7. **C-03 MEI, settled:** 0.90% in 2026 (0.75% employer, 0.15% worker), per the official Social Security page (Empleados de Hogar section). Relevant to IDEA-09 and the IDEA-06 rule feed.
+8. **C-18 working-time fines: unresolved.** The 2025 figure of €15.7M is unsourced, and the ITSS 2025 report summary has no breakdown.
 
-**(c) Buyers and market size**
-- INE DIRCE, 1 Jan 2025: natural-person businesses number 58,119 in CNAE 862 (medical and dental) and 76,906 in CNAE 869 (other health, including physiotherapy, psychology and podiatry) [new: INE table 73019, downloaded 23 Oct 2026].
-- Self-employed psychologists: 43,200 in 2021 [notes: PRO-02].
-- The REPS lists 49,239 physiotherapists, 9,297 podiatrists, 7,286 dietitian-nutritionists, 6,041 speech therapists and 15,625 dentists. These are registered totals and the register is incomplete [new: REPS report 2024, text extracted].
-- The panel-dependent share is unknown.
+**Competitors that affect other batches**
+9. **Wolters Kluwer a3 is a direct competitor to IDEA-06 (gestoría cockpit, batch 2).**
+   - a3innuva already offers gestorías "a3innuva | BOE Laboral: para estar informado diariamente de los cambios normativos".
+   - It has "a3innuva | Convenios" with more than 1,500 mechanised convenios (a3convenios: "más de 1.400") with change alerts, and a client–employee collaborative portal with e-signature [new: a3innuva Nómina product sheet, text extracted].
+   - TeamSystem-DELSOL gives advisers free seats in Gestión de Empleados at €2 per employee.
+   - Batch 2 should test IDEA-06's labour module against both.
+10. **Time-tracking price floor in Spain (Oct 2026):** Jibble free (unlimited users); Woffu Lite from €1.5 per user (up to 10 staff); Holded HR €1.50 per employee; DELSOL €2; Timu €9 for 3 seats. Relevant to any batch-4 idea with clock-in features, such as the hospitality and APPCC logbook (IDEA-37).
 
-**(d) Willingness to pay, and the kill test**
-- **Reimbursement is a minority.** Reimbursement products took **€1,056M (+7.35%) of €13,541M** of 2025 health premiums, about **7.8% of premiums** (ICEA via El Español, as above; my arithmetic). Per insured person the share is probably lower, since reimbursement policies cost more (inference; no insured count by type was found).
-- Some care policies add partial reimbursement with prior payment, limits and a one-year waiting period (an ASISA product sheet; FIATC reimburses up to 80%) [new: WebSearch snippets, 23 Oct 2026]. That widens eligibility a little.
-- Professionals already pay €13/month for practice software and opaque Doctoralia fees [notes: PRO-03, PRO-04]. That is adjacent spend, but for other jobs.
+**Corrections to stage-1 notes and section 5**
+11. **PRESVET sanctions (section 5.2): the reform passed.** Ley 1/2025, final provision 5ª(Tres), rewrote art. 83.15 of Ley 8/2003: a missing Presvet notification is a minor infraction, €600–3,000 or a warning. The fetch read final provision 20ª of Ley 1/2025 as setting entry into force on **2 January 2025** for a law published on 2 Apr 2025. That is the C-12 conflict, for batches 4 and 6 to settle.
+12. **RD 767/2025's antimicrobial-reduction documentation duty binds livestock holdings** (art. 40 RD 666/2023), not clinics. Very serious infractions (€60,001–1.2M) cover breaches of reduction obligations "para el rango que corresponda" (Ley 8/2003 art. 85.18). This could matter for batch 6's farm-compliance idea (IDEA-51: fertilisation and nutrient records, which could add an antimicrobial-reduction module for farms).
+13. **Competition law and health professionals (PRO-01, PRO-02).** The CNMC said in Oct and Nov 2023 that it would not intervene in collective negotiation between solo self-employed health professionals and insurers or hospital groups that have €2M or more of turnover or more than 10 staff (European Commission guidelines of 29 Sep 2022). Any idea that assumes a legal bar on collective negotiation is out of date.
+14. **Domestic employment (PRO-18).** The INSST guide to RD 893/2024 and the household harassment protocol were published on 14 May 2026. The notes' "still pending in May 2026" is wrong. Domestic part-time employment is exempt from time records under RD 1620/2011 art. 9.3 bis, although the EU Court of Justice (19 Dec 2024) says the duty extends to domestic work and no national measure has followed. Registration and contributions are online and free through Import@ss.
 
-**(e) Distribution.** Colegios (COP and the Consejo General de la Psicología; CGCFE), ATA and Unipromel are concentrated channels. Since the CNMC opinions, colegios and associations may pursue collective negotiation themselves, which competes with an "exit the panel" message.
+**Market counts and data sources**
+15. **INE DIRCE counts by CNAE group, 1 Jan 2025** [new: INE table 73019, https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73019?nult=1]:
+    - 691 legal activities: 83,943 (67,557 natural persons);
+    - **692 accounting, bookkeeping, audit and tax advice: 62,234** (28,820 natural persons; 30,641 SLs), an upper bound for batch 2's gestoría and asesoría count;
+    - 750 veterinary: 10,186;
+    - 855 other education (includes driving schools): 91,715;
+    - 862 medical and dental: 77,294;
+    - 869 other health: 89,528;
+    - 881 non-residential social services for the elderly and disabled: 3,145.
+16. **Driving schools:** 7,898, against 9,247 in 2015 (CNAE, 8 Nov 2024). The CNMC's 9 Jan 2025 study recommends assigning exams to students rather than schools and publishing pass rates; neither was found adopted. The DGT's PRO data show schools presented under 10% of claimed "waiting" students.
+17. **REPS:** private health centres must report each professional within 7 days of a change. Yet on 1 Jan 2025 only 60,295 active professionals had private activity registered, against 404,541 public. Private-sector staff-data duties have long been weakly enforced, which matters for any health-compliance idea.
+18. **Unreachable official statistics.** The Ministry of Labour statistics site (mites.gob.es: CCT convenio statistics, MAC conciliation statistics) returned 503 throughout, and trabajo.gob.es did not resolve. MAPA's PRESVET pages returned 503 and REGCESS 403. Other batches needing these sources should plan around them.
 
-**(f) Build feasibility and legal constraints.** CSV import and templates take 1–2 months. Avoid clinical content (GDPR art. 9). Invoices must follow invoicing rules (VeriFactu dates are owned by batch 1). Deontological limits on advertising sessions as reimbursable: **open [F]**, as the colegio codes were not fetched. Any feature that pools members' fee data would need to sit inside a lawful collective negotiation (the CNMC conditions above), not a vendor product.
+---
 
-**(g) Defensibility.** Low. The insurer-requirements dataset is small and public in policy documents.
+## 4. Search log
 
-**(h) Kill criteria**
-- "Reimbursement cover held by only a small minority of insured patients": **met on premiums** (about 7.8%). The insured-person share is unknown and probably lower.
-- "Colegio interviews show members will not leave panels": **open [I]**.
+**WebSearch calls: 22 of 24** (all standard mode except #1, extended).
 
-**Scores**
-- S1 Urgency **2**: a chronic squeeze; leaving a panel is a rare, deliberate decision.
-- S2 Buyers **3**: tens of thousands of self-employed professionals; the panel-dependent subset is unknown.
-- S3 Willingness to pay **3**: they pay for practice software, not for analysis.
-- S4 Reachability **3**: colegios and associations, unproven, now oriented to collective negotiation.
-- S5 Competitive gap **4**: no tool, but spreadsheets suffice.
-- S6 Build speed **4**: 1–2 months.
-- S7 Defensibility **2**: copyable.
-- S8 Retention **2**: one-off analysis, with recurring use only for the minority of reimbursement patients.
-- **Sellability 2.88; P 4** (income "often does not cover the cost of running a practice", widespread); **Overall 3.33.** Confidence medium: premium shares are official ICEA data via press; the insured-person split and demand are unknown.
+| # | Query | For | Main result |
+|---|---|---|---|
+| 1 | registro horario digital real decreto Consejo de Ministros aprobación antes elecciones 29N octubre 2026 | IDEA-16, cross-cutting | Not approved; vendor sources only |
+| 2 | a3innuva control horario portal del empleado asesorías clientes registro jornada precio Wolters Kluwer Sage Despachos | IDEA-16 | Irrelevant results (wasted) |
+| 3 | gestión nómina empleada de hogar online precio al mes alta Seguridad Social servicio familias | IDEA-19 | Billeo €20 per payslip; Familia Fácil |
+| 4 | empleo del hogar RD 893/2024 guía técnica INSST protocolo acoso formación Inspección de Trabajo sanciones hogares 2026 | IDEA-19 | INSST guide and protocol, 14 May 2026 |
+| 5 | a3innuva control horario registro de jornada empleados asesoría precio (domains: wolterskluwer.com, a3software.com) | IDEA-16 | a3HRgo, a3gestión del tiempo, product sheet |
+| 6 | empleados de hogar alta Import@ss empleador hogar familiar trámite online representante autorizado RED gestoría cotización domiciliación (domains: seg-social.es, seg-social.gob.es, inclusion.gob.es) | IDEA-19 | Import@ss online registration; RED rules not found |
+| 7 | cuánto cuesta abogado laboralista para la empresa redactar carta de despido y asistir conciliación SMAC precio honorarios 2026 | IDEA-17 | Worker-side fees only |
+| 8 | generador carta de despido online empresa software despidos asesorías calculadora indemnización finiquito automática | IDEA-17 | Free calculators; Economist & Jurist prompt guide |
+| 9 | STS 1250/2024 18 noviembre 2024 audiencia previa despido disciplinario Convenio 158 OIT aplicación despidos posteriores Supremo 2025 2026 doctrina | IDEA-17 | Ruling verified; STS 175/2025 |
+| 10 | API convenios colectivos España tablas salariales base de datos estructurada actualizada integración software RRHH nóminas | IDEA-18 | a3convenios; no public API |
+| 11 | número de convenios colectivos con efectos económicos 2025 2026 trabajadores afectados convenios de empresa sectoriales provinciales estadística Ministerio de Trabajo | IDEA-18 | Regional (Canarias) figures only |
+| 12 | "Real Decreto 239/2026" expediente personal profesionales sanitarios centros privados plazo inspección comunidad autónoma colegio circular REPS | IDEA-41 | Infocop and ICOMEM coverage; no inspection format |
+| 13 | PRESVET sanciones Ley de Sanidad Animal modificación aprobada veterinarios multas infracción notificación antibióticos 2025 2026 reforma régimen sancionador | IDEA-42 | 2025 motions only; enactment found later on the BOE |
+| 14 | programa de gestión clínica veterinaria integración PRESVET comunicación automática recetas antibióticos Qvet software veterinario precio | IDEA-42 | MAPA: 80% of professionals report by web service |
+| 15 | DGT reparto plazas examen práctico autoescuelas fórmula CAPA porcentaje de aprobados criterios asignación puestos examen instrucción | IDEA-43 | CAPA rewards pass rates (2020 press) |
+| 16 | software gestión autoescuela precio mensual programa autoescuelas España clases prácticas evaluación alumnos app profesor | IDEA-43 | AEOL Gestión Plus; CNMC consultation submissions |
+| 17 | número de autoescuelas en España 2025 2026 escuelas particulares de conductores DGT censo secciones profesores | IDEA-43 | 7,898 schools; CNMC 2025 study |
+| 18 | software servicio de ayuda a domicilio SAD gestión auxiliares app fichaje en domicilio NFC pliego ayuntamiento sistema control de presencia empresas | IDEA-44 | Gesad, CIBERSAD |
+| 19 | seguro de salud modalidad reembolso de gastos porcentaje asegurados primas ICEA 2025 asistencia sanitaria cuadro médico España | IDEA-40 | Reimbursement €1,056M of €13,541M |
+| 20 | CNMC informe profesionales sanitarios autónomos negociación colectiva aseguradoras baremos fisioterapeutas psicólogos 2026 Unipromel Audiencia Nacional MUFACE sentencia | IDEA-40 | CNMC 2023 non-intervention |
+| 21 | real decreto-ley prohibir absorción compensación SMI complementos salariales 2026 aprobado Consejo de Ministros convalidación Congreso | IDEA-18, cross-cutting | Status unknown; needs a decree-law |
+| 22 | app autoescuela profesor evaluación clases prácticas alumno preparado examen práctico DGT software seguimiento progreso alumnos | IDEA-43 | Control-L; CNAE app; Odoo module |
 
-**Open [I] checks:** interview 15 panel professionals (insurers' share of revenue, willingness to drop panels); the insured-person share of reimbursement policies (ICEA report, not fetched); colegio deontological rules; the outcome of the March 2026 CNMC approach and the MUFACE challenge.
+**Searches per idea:** IDEA-16 3 (one wasted), IDEA-17 3, IDEA-18 2 plus one cross-cutting, IDEA-19 3, IDEA-40 2, IDEA-41 1, IDEA-42 2, IDEA-43 4, IDEA-44 1.
 
-**What would change the verdict:** insured-person data showing reimbursement cover of 20% or more in target cities, or a colegio-led collective negotiation that wants a neutral fee-benchmark tool. The second would be a different B2B product, for about a dozen associations.
+**Checks left open for lack of budget or reachable sources:**
+- whether the SEPE published the RD 723 model;
+- the share of micro firms still on paper records;
+- employer-side dismissal fees;
+- SMAC statistics;
+- the national convenio count;
+- RED authorisation rules for households;
+- Koibox, Gesden and Doctoralia staff modules;
+- Qvet's category checks;
+- the DGT exam fault criteria;
+- IMSERSO SAD statistics;
+- reimbursement-policy insured counts;
+- colegio deontological codes.
 
+**Main pages fetched directly (unlimited)**
+- **BOE:**
+  - RD 723/2026 (https://www.boe.es/eli/es/rd/2026/09/09/723);
+  - RD 239/2026 (https://www.boe.es/eli/es/rd/2026/03/25/239);
+  - RD 767/2025 (https://www.boe.es/eli/es/rd/2025/09/02/767);
+  - RD 666/2023 consolidated (https://www.boe.es/eli/es/rd/2023/07/18/666/con);
+  - Ley 8/2003 consolidated (https://www.boe.es/eli/es/l/2003/04/24/8/con);
+  - Ley 1/2025 (https://www.boe.es/eli/es/l/2025/04/01/1);
+  - LISOS consolidated (BOE-A-2000-15060);
+  - Ley 50/1997 consolidated (BOE-A-1997-25336);
+  - RD 1620/2011 consolidated (https://www.boe.es/eli/es/rd/2011/11/14/1620/con).
+- **Official statistics and portals:**
+  - INE DIRCE 2025 press release; INE API table 73019 (DIRCE by CNAE group and size);
+  - Seguridad Social bases and rates for 2026;
+  - Ministerio de Sanidad REPS pages and the REPS 2024 annual report;
+  - REGCON public portal;
+  - DGT press note of 16 Jun 2026;
+  - CNMC driving-school study press release (9 Jan 2025);
+  - INSST press release (14 May 2025) and news item (14 May 2026).
+- **Press and professional sources:** El Español (Consejo de Estado, 23 Mar 2026; domestic workers, 20 May 2026; ICEA health premiums, 13 Mar 2026); Law&Trends (dismissal claims; pre-dismissal hearing; RD 723 and graduados sociales); RRHH Digital (RD 723; STS 526/2026; RED 8/2026; Timu launch); El Derecho (ITSS 2025 report); Finantres; Motor.es; Autofácil (CAPA); Ávila Red; Vigo e; Infocop (RD 239/2026; CNMC 2023); OKDiario (CNMC and Unipromel); graduadosocial.org.
+- **Vendor and app pages:** Woffu, Sesame, Factorial, Timu, DELSOL Gestión de Empleados and Nominasol, the a3innuva product sheet, PayFit, Jibble, Billeo, Cuideo, Clinni, Flowww, Doctoralia Pro, the Control-L and "Autoescuelas Clases Prácticas" App Store listings, and the Gesad (Trevenque) and CIBERSAD sheets.
+- **PDFs extracted locally** with pdftotext, from copies in the session scratchpad: Asepeyo (asesorías guide), Economist & Jurist (labour AI prompts), the CCOO Canarias convenio statistics, Colvet (Mar 2025), the ATAAC submission to the CNMC, and the DGT, REPS, INSST, Gesad and CIBERSAD documents.
+- **Failed fetches:**
+  - HTTP 503: SEPE models page, MITES statistics (CCT and MAC), MAPA PRESVET pages, Clinic Cloud, Gesden;
+  - HTTP 403: Wolters Kluwer product pages, REGCESS, Koibox;
+  - unreadable (empty or binary): the TED notice 92082-2025 and the Prevencion10 home page.

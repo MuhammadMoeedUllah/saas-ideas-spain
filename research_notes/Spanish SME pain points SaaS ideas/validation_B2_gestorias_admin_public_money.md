@@ -554,3 +554,231 @@ Every answer is reviewed by a planning professional during the MVP. The subscrip
 - **To GO:** a portal or franchise network commits to a pilot, or measured search demand is high.
 - **To KILL:** Madrid launches a free ALU-style assistant, or reviewers cannot keep turnaround under 48 hours at a viable cost.
 
+#### IDEA-26: Grant justification and repayment-risk workspace — KILL (medium-low)
+
+**Validated definition.** A workspace where an SME (€19/month per active grant) or a grant consultancy (€149/month for up to 20 grants) uploads the award resolution and call rules. AI extracts obligations, deadlines, eligible costs and evidence requirements. An evidence vault maps invoices, payments, contracts and publicity proof to each obligation, and the tool flags repayment risk.
+
+The repayment risk is now formalised and real. The product still fails on four counts:
+- the wave of new NextGenerationEU grants has ended;
+- the largest SME cohort (Kit Digital) is justified by intermediaries;
+- the consultancy segment is already served by an incumbent grant-management platform priced near the hypothesis;
+- no defensible asset remains.
+
+**(a) Problem reality and rule status (settles the NGEU section-5 item).**
+- The official recovery-plan site says "España cierra en plazo el Plan de Recuperación y España Crece toma el relevo para movilizar más de 120.000 M€". It also lists the seventh and final payment request, with 148 milestones (the €25,861M amount appears only in the URL) and the definitive milestones document dated 20 Aug 2026. **No extension of beneficiary execution or justification to 2027 or 2028 is mentioned** [new: https://planderecuperacion.gob.es/, seen 23 Oct 2026].
+- CEOE's request to extend to 2028 remains a proposal [notes: ADM-14].
+- **Orden HAC/580/2026** of 9 June (BOE-A-2026-12520, 10 Jun 2026) regulates the procedure for repaying funds received from the Recovery and Resilience Facility (art. 37 RDL 36/2020) [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-12520, seen 23 Oct 2026]:
+  - **procedure:** where the instrument sets none, Ley 38/2003 art. 42 applies;
+  - **evidence window:** a prior requirement gives "un plazo no inferior a veinte días hábiles" to produce documentation, extendable by 10 working days when it depends on third parties;
+  - **presumption of breach:** missing compliance certificates create a presumption of non-compliance, which "no recaerá sobre los perceptores últimos";
+  - **relief:** private beneficiaries may defer or split repayment debts.
+
+  So the repayment exposure for 2026–2028 is real and has a short evidence window. Merca2 links the order to Kit Digital, digitalisation, energy-efficiency and solar grants [new: https://www.merca2.es/2026/06/11/reintegro-fondos-mrr-orden-hac580-2394640/, 11 Jun 2026, secondary].
+- The flow of *new* NGEU grants ended with the 31 Aug 2026 milestone deadline. Merca2 reports €14,972M of grants still unawarded in July 2026; a vendor blog says about €25,000M is pending execution; the two figures measure different things [new: search summaries of https://www.merca2.es/2026/07/29/fondos-next-generation-plazo-2426560/ and https://tecnociminnova.com/es/noticias/fondos-next-generation-empresas].
+- Ordinary national and regional grants (Ley 38/2003) continue [notes: ADM-16, 81,665 calls].
+
+**(b) Competitors.**
+- **Fandit** [new: https://fandit.es/precios/, seen 23 Oct 2026]:
+  - **plans:** PRO €56/month (annual billing, 1 licence); PREMIUM €200/month (5 licences) with an "ERP de subvenciones" (unlimited files, tasks and internal tracking), white label and a client area; CORPORATE €480/month (15 licences);
+  - **features:** a "Radar de oportunidades" showing "qué ayudas encajan con cada cliente", an AI assistant that drafts technical reports, an API and an MCP server;
+  - **service:** it does not process applications itself and refers users to consultancies through a marketplace.
+
+  Fandit is the natural owner of post-award tracking for consultancies and can add justification checklists.
+- **Consultancies and installers:** fees not found [notes: ADM-14, ADM-15].
+- **GrantBite** compares grant-management software. The page blocked fetching and its tools are mostly aimed at nonprofits [new: search summary of https://www.grantbite.com/es/blog/10-mejores-software-de-gestion-de-subvenciones-en-2026].
+- No Spanish SME-side justification SaaS was found (1 search).
+
+**(c) Buyers and market size.**
+- NGEU had 1.46M beneficiaries, 70% SMEs, mostly Kit Digital, whose paperwork was handled by agents [notes: ADM-14, ADM-12].
+- The number of non-Kit SME beneficiaries who justify grants themselves was **not found**; the BDNS records awards, not who prepares the justification. Those who could buy are plausibly in the tens of thousands (MOVES, energy, hiring and regional lines), but this is inference.
+- The consultancy segment is probably 1–3k firms (inference, not counted).
+- Ceiling at €19 per grant per month: 10k active grants ≈ €2.3M ARR, an optimistic case.
+
+**(d) Willingness to pay.**
+- Consultancies already pay €56–480/month for Fandit (adjacent).
+- SMEs pay consultants (fees unknown) or installers who bundle the paperwork.
+- The €149/month consultancy price sits below Fandit Premium (€200) and would be compared directly with it.
+
+**(e) Distribution.**
+- Consultancies (but Fandit already owns them), installers (MOVES and energy), gestorías, Cámaras.
+- Search terms "justificación subvención" and "reintegro" were not measured.
+
+**(f) Build feasibility.**
+- Document AI for calls and resolutions, an evidence vault and checklists: MVP in about 6 weeks.
+- Programme templates need per-programme legal reading (DNSH, publicity, double-funding and compliance-certificate rules for MRR).
+- Liability: the output is a checklist, not advice. Financial documents are confidential.
+
+**(g) Defensibility.** Low. Extraction is a commodity, templates are copyable, and the channel incumbent (Fandit) has 25,000+ companies and consultancies on its platform [notes: ADM-16].
+
+**(h) Kill criteria.**
+1. Fewer than a quarter of interviewed grant-holding SMEs manage justification themselves: **open [I].** The Kit Digital structure and the Andalusian MOVES "empresa adherida" model point that way [notes: ADM-15].
+2. Consultancies won't pay €149/month: **open [I].** An incumbent at €200 with ERP features makes a new €149 tool a hard sell.
+3. The NGEU wave fades after 2026–2028: **met in direction.** No new NGEU grants after 31 Aug 2026, and the successor "España Crece" is a mobilisation vehicle, not new grants.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | Formal repayment procedure with a 20-working-day evidence window (Orden HAC/580/2026) |
+| S2 Buyers | 3 | Self-justifying SME beneficiaries plausibly 20k–100k (unverified) |
+| S3 WTP | 2 | SMEs rarely pay software per grant; consultancies already have Fandit |
+| S4 Reachability | 2 | Beneficiaries are diffuse; the consultancy channel is owned |
+| S5 Competitive gap | 3 | No SME-side tool found; the consultancy side is served |
+| S6 Build speed | 4 | MVP in about 6 weeks |
+| S7 Defensibility | 2 | Copyable; incumbent channel |
+| S8 Retention | 2 | Grant-bound lifecycle |
+
+- **Sellability** 2.75. **P** 3: repayment plus interest can be large, but frequency is unquantified.
+- **Overall** = 0.6 × 2.75 + 0.4 × 3 = **2.85**.
+
+**Open [I] checks.**
+- The share of non-Kit SME grant holders who justify alone.
+- Consultancy fee models.
+- How many Orden HAC/580/2026 requirements are being issued (IGAE, managing bodies).
+
+**What would change the verdict.** Evidence that thousands of SMEs and installers face 20-day repayment requirements with no consultant. That would justify a narrow, paid "repayment-defence evidence pack". So would a white-label deal with Fandit or a regional agency.
+
+#### IDEA-27: Small public-contract radar, including contratos menores — KILL (high)
+
+**Validated definition.** A €19–39/month feed of small tenders plus a "who buys what, from whom, at what price" database of minor contracts, with alerts on recurring purchases and expiring contracts. Its claimed moat, a normalised minor-contract dataset nobody else has, is **false**:
+- the State publishes minor contracts as daily open data;
+- the State provides a free tool to process them;
+- an incumbent already sells minor-contract intelligence and alerts from €300 a year.
+
+**(a) Problem reality and rule status.**
+- **Thresholds:** contratos menores are below €40,000 for works and €15,000 for supplies and services (LCSP art. 118, 2020 version) [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2017-12902/texto/bloque/a1-30, seen 23 Oct 2026].
+- **Publication duty:** art. 63.4 requires publishing minor contracts "al menos trimestralmente" with "su objeto, duración, el importe de adjudicación, incluido el Impuesto sobre el Valor Añadido, y la identidad del adjudicatario". Only contracts under €5,000 paid through an anticipo de caja fija are exempt [new: BOE-A-2017-12902, block a6-5].
+- **Tribunal de Cuentas:** art. 335.1 adds an annual list of all contracts, including minor ones, sent to the Tribunal de Cuentas [new: block a3-47].
+- **Statistics vs raw data:** OIReScon still states "no se dispone de datos agregados de la contratación menor del Sector Público", and audits flag splitting of minor contracts [new: OIReScon IAS 2025 executive summary, https://www.hacienda.gob.es/rsc/oirescon/informe-anual-supervision-2025/ias2025-resumen-ejecutivo-es.pdf, approved 22 Dec 2025]. That refers to national statistics, not raw availability (see f).
+
+**(b) Competitors.**
+- **Official open data (free).** The Ministry of Hacienda publishes the dataset "Contratos menores publicados en los perfiles del contratante ubicados en la Plataforma de Contratación del Sector Público (desde el 1 de enero de 2018)":
+  - updated daily (ATOM/CODICE), with yearly and monthly zips (sindicación 1143);
+  - alongside tenders aggregated from the regional platforms since 2016;
+  - plus the free **OpenPLACSP** tool "para facilitar el tratamiento de los conjuntos de datos abiertos" [new: https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx and .../contratosmenores.aspx, seen 23 Oct 2026].
+- **A sample of the live feed** (167 entries on 23 Oct 2026) carries the object, contracting body, amounts with and without VAT, the awardee's NIF and name, CPV code, award date and an SME-awarded flag [new: https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1143/contratosMenoresPerfilesContratantes.atom, fetched 23 Oct 2026].
+- **Gobierto Contratación** (company plans) [new: https://contratos.gobierto.es/empresas/planes and https://contratos.gobierto.es/empresas, seen 23 Oct 2026]:
+  - Intro €300/year (3 alerts, 3-month history, awards); Mid €500/year;
+  - Pro €150/month; Intel €300/month; Corp €475/month; Enterprise €1,490/month;
+  - one-off reports on any company, body or sector "Desde 18 €", including "qué contratos de tus competidores terminan pronto";
+  - its explorer lists "Contrato Menor" records.
+- **licitaciones.es:** alerts, AI and ROLECE help; prices not published (pricing URLs return HTTP 410) [notes: ADM-17]; [new: licitaciones.es, seen 23 Oct 2026].
+- **Euroalert:** EU focus [notes: ADM-18].
+- **Free PLACSP tender alerts** for registered operators: background knowledge, not verified this session.
+
+**(c) Buyers and market size.**
+- 206,242 tenders in 2024 (€113.1bn) [notes: ADM-17].
+- The number of micro suppliers selling to public bodies is unknown. 19% of firms reportedly avoid public tenders because of late payment (attribution uncertain) [notes: FIN-04].
+- The price ceiling is set by Gobierto Intro at €300/year.
+
+**(d) Willingness to pay.** Anchors are €18 per report and €300–500/year entry plans (Gobierto). The hypothesised €19–39/month (€228–468/year) is the same price as an incumbent that already has the data.
+
+**(e) Distribution.** SEO ("contratos menores [ayuntamiento]"), Cámaras, sector associations and gestorías. All unproven, and Gobierto and licitaciones.es already compete on SEO.
+
+**(f) Build feasibility.**
+- Easy for PLACSP-hosted bodies: the documented ATOM feed can be ingested in weeks.
+- Harder for bodies on regional platforms that do not syndicate minor contracts: Catalonia, Madrid region and others were not checked.
+- Reuse is permitted under public-sector-data rules [notes: ADM-18].
+
+**(g) Defensibility.** None. The data is public and pre-aggregated by the State, and incumbents already sell the intelligence layer.
+
+**(h) Kill criteria.**
+1. Fewer than half of sampled municipalities publish supplier and amount: **not met** for PLACSP-hosted bodies (legal duty plus open feed). Regional-platform coverage is not sampled.
+2. licitaciones.es already covers minor contracts: **unverified.** The equivalent condition is **met by Gobierto Contratación**, whose explorer includes minor contracts with alerts.
+3. Copy-risk test (does anyone already hold a normalised minor-contract dataset?): **met.** The State (PLACSP open data and OpenPLACSP) and Gobierto do.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | Opportunity-driven; no duty |
+| S2 Buyers | 3 | Public-sector suppliers, plausibly 20k–100k |
+| S3 WTP | 3 | Some spend, but anchors are €300/year |
+| S4 Reachability | 3 | SEO and associations; unproven |
+| S5 Competitive gap | 2 | Several decent tools plus free official data |
+| S6 Build speed | 4 | Documented feed |
+| S7 Defensibility | 1 | Public data |
+| S8 Retention | 3 | Alerts are used periodically |
+
+- **Sellability** 2.63. **P** 2: missed opportunities, not losses.
+- **Overall** = 0.6 × 2.625 + 0.4 × 2 = **2.38**.
+
+**Open [I] checks.**
+- Interviews with 20 micro suppliers on willingness to pay and late-payment fears.
+- Minor-contract syndication on the seven regional platforms.
+
+**What would change the verdict.** Only a distinct product would. For example, a bid-preparation co-pilot for micro firms (ROLECE, the European Single Procurement Document, solvency) with evidence that micro firms convert, or a vertical (cleaning, maintenance) where recurring-contract renewal prediction beats Gobierto. That would be a new idea, not this one.
+
+#### IDEA-28: Flood-ready business evidence vault and multi-programme claims tracker — KILL (medium)
+
+**Validated definition.** A €4/month-per-premises app. Before a flood it guides an inventory of premises, stock and equipment (photos, serial numbers, invoices) and stores policies off-site. After a flood it produces a claim dossier and tracks announced aid programmes. It would be sold through insurers, brokers and gestorías in Valencia and Alicante.
+
+The need is real after an event. But prevention has no observed willingness to pay, the post-event steps are already free and simple, and the product has no moat.
+
+**(a) Problem reality and rule status.**
+- **DANA 2024 (La Moncloa, data at 19 Oct 2026)** [new: https://www.lamoncloa.gob.es/info-dana/Paginas/2026/191026-datos-seguimiento-actuaciones-gobierno.aspx, updated 19 Oct 2026]:
+  - AEAT direct aid: 27,466 applications with a payment order (16,035 autónomos, 11,431 companies); €347.5M paid;
+  - Consorcio: 251,940 claims, €4,658.6M paid, "ya se han gestionado el 99,7%";
+  - ERTE: 4,169 company applications;
+  - Reinicia Auto+: 42,245 grants;
+  - CDTI LIC/LICa: 70 applications, 26 rejected.
+
+  The 2024 backlog is essentially cleared, which weakens the "files still pending two years later" pain [notes: CITY-01].
+- **dana Adam (Oct 2026), single outlet, two articles:**
+  - 6,528 Consorcio claims between 16 and 18 Oct (Valencia province 5,007, Oliva alone 2,760; Alicante 847), with no split by type [new: elDiario.es, 22 Oct 2026, https://www.eldiario.es/comunitat-valenciana/consorcio-compensacion-seguros-recibe-6-500-solicitudes-indemnizacion-dana-adam_1_13605957.html];
+  - the first €23.5M package covers households (€6,000 per main home, €3,000 per second home, €800/month for rehousing) and councils (up to €200,000);
+  - a second package "en los próximos días" will cover vehicles, the primary sector, commerce, hospitality and animal shelters, with no amounts;
+  - there will be "una única solicitud" online at the Generalitat's e-office [new: elDiario.es, 21 Oct 2026, https://www.eldiario.es/comunitat-valenciana/gobierno-valenciano-aprueba-paquete-ayudas-23-5-millones-euros-afectados-dana-adam_1_13603195.html].
+- **What evidence the Consorcio asks for:** policy details, bank account, repair estimates and invoices, and photos of removed damaged goods; an adjuster then visits. Claims can be filed by phone, online or through the insurer or broker, and are accepted after the seven-day legal window [new: elDiario.es, 22 Oct 2026].
+
+  These are simple steps that a phone camera and a folder already cover.
+
+**(b) Competitors.**
+- No Spanish insurer pre-loss inventory app was found. Mapfre's business multi-risk pages describe flood cover only [new: search summary of https://www.mapfre.es/seguros/empresas/negocio/seguro-multirriesgo-empresarial/, seen 23 Oct 2026] (1 search).
+- Substitutes are free: phone photos and cloud storage, the Generalitat's single application, and free legal and notarial help [notes: CITY-02].
+
+**(c) Buyers and market size.**
+- Valencia and Alicante provinces have 186,970 and 145,106 companies [notes: CITY-01 via G5].
+- More than 12% of the Comunitat Valenciana's population lives in flood-susceptible areas [new: MITECO PATRICOVA document, search summary of https://www.miteco.gob.es/es/agua/formacion/Patricova%20Comunidad%20Valenciana_tcm30-82916.pdf].
+- The 2024 DANA hit 2,386 industrial firms in the "zona cero", 21% of the province's industrial firms [new: Cámara Valencia, Apr 2025, search summary of https://www.camaravalencia.com/wp-content/uploads/2025/04/Recuperacion-economica-de-la-zona-cero-seis-meses-despues-de-la-dana.pdf].
+- No count of businesses in mapped flood zones was found. Proportional inference gives roughly 40k in the region (12% of about 332k), unverified.
+
+**(d) Willingness to pay.** None observed for prevention. Post-event help is free (Consorcio filing, Generalitat legal aid). The insurer-bundled route is unevidenced.
+
+**(e) Distribution.**
+- Insurers and brokers (B2B2C), gestorías, associations in affected comarcas.
+- No partner evidence. Post-event search spikes are short.
+
+**(f) Build feasibility.** Low complexity: mobile capture, OCR of invoices, encrypted storage. MVP in 3–4 weeks.
+
+**(g) Defensibility.** None. A generic vault is trivially copyable, and insurers can add an inventory step to their own apps.
+
+**(h) Kill criteria.**
+1. No insurer, broker or gestoría network agrees to a pilot: **open [I].**
+2. Pre-event sign-up converts below 2%: **open [I].**
+
+The desk evidence (free substitutes, simple Consorcio requirements, a cleared 2024 backlog) makes both likely.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | Event-driven; no pre-event duty |
+| S2 Buyers | 3 | Tens of thousands of firms in flood-prone Valencia and Alicante (inference) |
+| S3 WTP | 1 | Prevention unpaid; post-event help free |
+| S4 Reachability | 2 | Depends on unproven insurer or broker deals |
+| S5 Competitive gap | 3 | No dedicated tool, but free substitutes |
+| S6 Build speed | 5 | MVP in 3–4 weeks |
+| S7 Defensibility | 1 | Copyable |
+| S8 Retention | 2 | Rarely used |
+
+- **Sellability** 2.38. **P** 3: catastrophic when it strikes, but rare per firm and largely insured or Consorcio-covered.
+- **Overall** = 0.6 × 2.375 + 0.4 × 3 = **2.63**.
+
+**Open [I] checks.**
+- Broker and insurer pilot appetite.
+- Whether documented pre-loss inventories change Consorcio payouts or speed (ask adjusters).
+- The share of dana Adam claims from businesses.
+
+**What would change the verdict.** An insurer, bank or the Consorcio funding the app per policy, ideally with an adjusting workflow that uses the inventory, or evidence that payouts rise materially with pre-loss documentation. Either would support a B2B2C reshape sold to insurers.
+

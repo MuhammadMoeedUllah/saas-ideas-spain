@@ -16,7 +16,65 @@
 
 ## 2. Ideas
 
-#### IDEA-20: B2C complaint-clock and consumer-duty kit, with Hoj@ (Andalusia) and Catalan modules — KILL (medium-high)
+#### IDEA-14: Review-attack alarm and evidence kit for local businesses — KILL (medium)
+
+**Validated definition.** A €5–9/month monitor of a venue's Google (and, if access allows, Tripadvisor) reviews that detects bursts of 1–2-star reviews from new or empty profiles, alerts the owner, captures timestamped evidence and pre-fills Google's merchant extortion report, a police complaint and a TRLGDCU art. 20.4 removal request. Kill it as a standalone subscription: there is still no Spanish evidence that attacks are frequent; Google now runs its own extortion-report channel and defines the evidence it wants; review monitoring with alerts is sold for €0–19 a month or bundled into POS and booking suites; Tripadvisor access is partner-only; and there is no moat. Burst detection is a feature for review-management or POS vendors, not a business.
+
+**(a) Problem reality and rule status**
+- **Frequency is still unmeasured.** Search 18 found no police, OCU or association figures on review extortion or review bombing in Spain. The stage-1 evidence is anecdotal: one bar hit by about 20 reviews in under an hour, and offers of €200/month for 20 positive reviews [notes: VOX-01, VOX-02, HOS-07]. Search 18 did surface a TheFork Lab survey (July 2026, more than 6,000 diners): 62% drop a venue after reading bad reviews, and 10% admit writing reviews for a benefit the venue offered [new: Vinetur, 15 Jul 2026, search-result summary, page not opened]. CEHAT joined the European #StopFakeReviews campaign in April 2025 [new: cehat.com PDF "08042025 Stop Fake Reviews", search-result listing, not opened].
+- **Legal basis.** TRLGDCU art. 20.4 as amended by Ley 10/2025 (in force 28 Dec 2025): traders must say whether they guarantee that reviews come from real buyers or users; reviews must concern products bought or used in the "treinta días naturales anteriores"; a trader may ask for removal of a fake review if it can prove the reviewer neither bought nor used the product [new: https://www.boe.es/eli/es/l/2025/12/26/10, DF tercera, seen 23 Oct 2026]. The "fines up to €100,000" for fake reviews come from Merca2 and were not checked against the BOE [notes: VOX-01].
+- **Google has moved.** Google Business Profile Help has a page "Report negative review extortion scams on your Business Profile", with a merchant extortion report form. It asks for screenshots of the demands, links to the suspicious reviews, the scammers' identifiers and the timeline of the spike and the demand, and says the team "thoroughly investigates the claim and notifies you about the results". It covers only cases with a direct demand for money or favours [new: https://support.google.com/business/answer/16404809?hl=en-GB, seen 23 Oct 2026, undated]. Local-SEO practitioners report removals after using it (anecdotal) [new: seroundtable.com, search 22 listing, not opened]. Google therefore already defines and receives the "evidence pack" the idea proposed to build.
+- Election risk: none.
+
+**(b) Competitors**
+- A vendor-published comparison (theStacc ranks itself first) lists review-management tools with prices: Reviux (reviux.app) Starter €19, Pro €49, Agency from €99 a month, with "alertas" in the Agency plan; Cinquo free up to 50 reviews, Starter €49.99 a year; Relvio €0–33.33 a month; Trustmary free plan, from €21 a month; EmbedSocial €0–80; Reputation $80 per location per month; Birdeye on quote. Its own summary: "Ninguna herramienta describe la detección de reseñas sospechosas o falsas de forma concreta" [new: https://thestacc.com/es/mejor/software-de-gestion-de-resenas/, updated 20 Aug 2026]. Note that reviux.com redirects to a domain-sale page; the product lives at reviux.app.
+- Gastroranking (Madrid): "Análisis global y multicanal de reputación" with AI replies and custom reports; no public prices [new: https://www.gastroranking.es/, seen 23 Oct 2026]; it has a CoverManager integration [new: app.covermanager.com/en/integrations/gastroranking, search 19 listing].
+- Bundled: Qamarero's Growth plan includes "gestión de reseñas" [new: https://www.qamarero.com/precios/, seen 23 Oct 2026]; Treatwell's plans include review management [new: https://www.treatwell.es/partners/precios/, seen 23 Oct 2026]. Partoo serves restaurant chains (search 19). OnbrandinG remains unpriced [notes: VOX-01].
+- **Gap:** real but narrow. Nobody sells attack detection specifically, but the surrounding job (alerts, replies, reports) is cheap or free, and the evidence format is now set by Google.
+
+**(c) Buyers and market size:** DIRCE 2025 food service 234,900 companies (restaurants 73,296; catering 14,751; bars 146,853) and accommodation 31,576 [new: INE table 39372, https://www.ine.es/jaxiT3/Tabla.htm?t=39372, CSV downloaded 23 Oct 2026]. Ceiling: 1% of food service at €7/month is about 2,350 × €84, or about €197k ARR.
+
+**(d) Willingness to pay:** owners do spend on reputation (illegal paid reviews at €1.5–2.5 each or €200/month packages [notes: VOX-02]), but the legitimate tools above anchor monitoring at €0–19 a month. Paying monthly to insure against a rare event is a weak proposition.
+
+**(e) Distribution:** POS and reservation vendors (Qamarero; CoverManager's integration marketplace), hospitality associations (CEHAT's campaign). Unproven.
+
+**(f) Build and legal**
+- Google: the Business Profile API lists all reviews of a location (`accounts.locations.reviews.list`, `batchGetReviews`) and replies to them (`updateReply`) after OAuth registration [new: https://developers.google.com/my-business/content/review-data, seen 23 Oct 2026]. Access needs approval ("If your quota limit for the Google Business Profile API is 0, you have not yet been granted access"); default 300 queries per minute; a Notifications API exists [new: https://developers.google.com/my-business/content/limits, seen 23 Oct 2026]. Monitoring an owner's own listings is therefore possible within Google's terms.
+- Tripadvisor: the legacy Content API is deprecated ("This API is deprecated") [new: https://tripadvisor-content-api.readme.io/reference/overview, seen 23 Oct 2026]; its successor, Terra, is "a comprehensive content delivery platform for partners" with location allowlists, usage-based pricing and caching and review-implementation policies [new: https://docs.terra.tripadvisor.com/, seen 23 Oct 2026]. Whether monitoring or analytics is a permitted use was not established.
+- MVP: 3–4 weeks plus the API approval wait. A certified-evidence partner is optional, since Google asks for screenshots.
+
+**(g) Defensibility:** low. Any review tool can add burst detection, and Google's own process is improving.
+
+**Type C check (~€5/month):** it can be automated with little support, but the monthly value is invisible in months without an attack, which is most months for most venues. It needs to be a free or €1–3 wholesale add-on inside a review, POS or booking product, or an on-demand incident service (hypothesis: €49–99 per attack response). Neither was tested.
+
+**(h) Kill criteria**
+- "Fewer than about 1 in 20 restaurants report an attack a year": **open**; still no data after searches in two stages.
+- "Listing data cannot be monitored within platform terms": **not met for Google** (official API for owners, subject to approval); **open for Tripadvisor**.
+- Top risk 3, "Google improves its own detection", has partly materialised: a dedicated extortion-report form exists.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 2 | Occasional event; no legal deadline. |
+| S2 Buyers | 4 | About 235k food-service and 32k accommodation companies. |
+| S3 Willingness to pay | 2 | Monitoring is €0–19 a month or bundled; insurance against a rare event. |
+| S4 Reachability | 3 | POS and reservation marketplaces and associations exist; unproven. |
+| S5 Competitive gap | 3 | Review tools are many; none detects attacks, but Google covers the report path. |
+| S6 Build speed | 4 | 1–2 months including Google API approval. |
+| S7 Defensibility | 1 | Trivially copyable. |
+| S8 Retention | 2 | Passive monitoring with value only during attacks. |
+| **Sellability** | **2.63** | |
+| **P** | **2** | Painful when it happens, but no evidence it is frequent. |
+| **Overall** | **2.38** | 0.6 × 2.625 + 0.4 × 2 |
+
+**Open [I] checks:** a 50-venue survey through a hospitality association on attacks in the last 12 months and the revenue impact; a test application for Google Business Profile API access.
+
+**What would change the verdict:** data showing at least 1 in 20 venues attacked a year with measurable revenue loss; a POS or reservation vendor wanting a white-label "attack shield"; Tripadvisor partner terms that allow monitoring.
+
+---
+
+#### IDEA-20: B2C complaint-clock and consumer-duty kit, with Hoj@ (Andalusia) and Catalan modules — KILL (medium)
 
 **Validated definition.** A €5/month register for small B2C businesses: complaint intake with an ID key and written receipt, a 15-day reply clock (national, TRLGDCU art. 21), renewal notices, a Hoj@ deadline watcher for Andalusia (10 working days to reply, complaint deemed received 10 calendar days after notice) and a Catalan-language check of menus and signs. The duties are real and in force, but enforcement of the new clock is not visible, the per-business cost of non-compliance is small and rare, the free Hoj@ platform already handles Andalusian e-complaints end to end, and the product has no moat. Verdict: kill as a standalone product; keep the Hoj@ deadline watcher as a feature for gestoría, POS, booking or PMS products (see "what would change the verdict").
 
@@ -65,6 +123,8 @@
 
 **(g) Defensibility:** none. Any POS or PMS vendor, Lawwwing or the Junta itself can replicate it.
 
+**Type C check (~€5/month):** the product can be fully automated with almost no support, but it fails the "visible monthly value" test: most micro businesses receive a handful of complaints a year, and Hoj@ already notifies them of each one. As a standalone it would churn at any price. Realistic prices are €0 (a free feature inside a POS, booking or PMS product), €1–2 per location wholesale to such vendors, or a one-off €29–49 Hoj@ onboarding sold through gestorías before 20 May 2027 (all hypotheses, untested).
+
 **(h) Kill criteria**
 - "Fewer than 1 in 5 of 30 B2C owners has faced a consumer-office case or worries about the 15-day rule": **open [I]**. Desk proxy points to low concern (confused official messaging; no enforcement of the new clock found).
 - "No regional authority has enforced the new duties by mid-2027": **open**, but as of October 2026 there is no sign of enforcement of the clock; inspections target paper forms and posters.
@@ -102,6 +162,8 @@
   - Sexto: the range must be "plenamente operativo en el plazo de 6 meses"; "Una vez cumplido dicho plazo, las llamadas comerciales sólo podrán efectuarse a través del rango NXY = 400". That is a general rule, with no consumer or B2B qualifier.
   - Operator blocking comes from Ley 10/2025 art. 16.4: operators must block calls that show signs of commercial calling without the specific code or without complying with LGTel art. 66.1, using systems the Secretaría de Estado authorises [new: https://www.boe.es/eli/es/l/2025/12/26/10, seen 23 Oct 2026].
 - **B2B and autónomos (settles the section 5 item as far as text allows).** Neither the resolution nor Ley 10/2025 art. 16 distinguishes consumer from business recipients. Vendors disagree: Aircall says the rule "does not explicitly distinguish between B2B and B2C" and advises preparing regardless [new: https://aircall.io/es/blog/prefijo-400-llamadas-comerciales/, 2 Sep 2026]; Clientify says B2B-only callers are probably unaffected and that autónomos selling to individuals are in a "zona gris" [new: https://clientify.com/prefijo-400, reviewed 23 Sep 2026]. My reading: the numbering rule covers commercial calls generally; the consent and void-contract rules (TRLGDCU) protect consumers only. B2B coverage is not excluded in the text, so the first kill limb fails.
+  - The press reading on switch-on day was muddled. Moncloa.com (a private outlet, not the Government's La Moncloa) said "cualquier empresa que llame para vender" must use a 400 number, but also that Ley 10/2025 "deja fuera a las pymes que no presten servicios básicos", and called 28 Dec 2026 the "plazo real". It reported that the CNMC allocates ranges to operators in blocks of 1,000 numbers, that Movistar (400 00 1004) and Digi (four 400 120 1xx numbers) had published theirs, and that 400 numbers are one-way: "no se puede devolver la llamada" [new: https://www.moncloa.com/2026/10/17/prefijo-400-llamadas-comerciales-3450368/, 17 Oct 2026]. Operator blocking relies on traffic-pattern detection, so SMEs outside Ley 10/2025's scope face detection risk rather than a hard switch (inference).
+  - **Practical consequence for the idea:** numbering is an operator job and its SME scope is disputed, so the durable demand driver is TRLGDCU art. 62.1 (void contracts without express consent renewed within two years), which binds every trader that contracts with consumers by phone.
 - **Consent and void contracts.** TRLGDCU art. 62.1 as amended: consent must be express and "obtenido o renovado de forma expresa en los dos años anteriores a la comunicación"; a phone contract made in breach of the unsolicited-call rules is presumed to lack consent, "deviniendo nulo el contrato"; in force since 28 Dec 2025 with no deferral [new: BOE Ley 10/2025, DF tercera]. LGTel opt-in for commercial calls has applied since June 2023, with prior consent or a prior contractual relationship as the basis (Aircall's reading) [new: https://aircall.io/es/blog/prefijo-400-centros-de-llamadas/, 3 Sep 2026; Maldita explainer in search 2 results].
 - Fines: LGTel serious infringement €50,001–2M for misuse of numbering, with a prior warning usual (single vendor source, Aircall) [new: Aircall, 2 Sep 2026].
 - Election risk: none; all instruments are in force.
@@ -126,7 +188,7 @@
 **(g) Defensibility:** medium-low. Integrations and stored proofs give some lock-in; a telephony vendor can add an expiry field.
 
 **(h) Kill criteria**
-- "Resolution does not cover B2B calls and B2C cold-calling collapses after blocking": **not met** on the first limb (no B2B exclusion in the text). Whether B2C cold-calling collapses after 17 Oct 2026 is **open** (no post-17 Oct data found).
+- "Resolution does not cover B2B calls and B2C cold-calling collapses after blocking": **not met** on the first limb (no B2B exclusion in the text). Whether B2C cold-calling collapses after 17 Oct 2026 is **open**: search 20 found no reports of blocked SMEs, failures or volume data in the first week.
 - "The two largest cloud-telephony vendors in Spain ship equivalent consent gating by Q1 2027": **open**; Aircall had none in September 2026.
 
 **Scores (reshaped version)**
