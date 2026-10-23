@@ -23,7 +23,7 @@ Sellability is the mean of S1–S8. Overall = 0.6 × Sellability + 0.4 × P. Whe
 | IDEA-51 | Fertilisation-plan workspace, reshaped to a cooperative channel with the art. 20 route | B | **RESHAPE** | 4 | 2 | 2 | 3 | 3 | 3 | 2 | 4 | 2.88 | 3 | 2.93 | low |
 
 **Reading the table.**
-- **IDEA-45 scores above two RESHAPE ideas yet is killed.** The formula rewards its urgent duty and large buyer count, but near-free incumbents (DecaFirma, Cargoffer) already include the evidence features (S5 = 2, S7 = 1).
+- **IDEA-45's Overall (3.23) is above IDEA-50 (a GO) and both RESHAPE ideas, yet it is killed.** The formula rewards its urgent duty and large buyer count, but near-free incumbents (DecaFirma, Cargoffer) already include the evidence features (S5 = 2, S7 = 1), so it cannot be sold on its own.
 - **The user's idea (U3, IDEA-48) does not survive as an API business.** Its curated legal-status dataset survives as the engine of IDEA-47. The claim-by-claim verdict is at the end of the IDEA-48 section.
 
 ---
