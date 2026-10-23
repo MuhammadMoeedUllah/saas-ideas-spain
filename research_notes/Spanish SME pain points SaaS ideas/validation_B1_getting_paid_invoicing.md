@@ -1,29 +1,52 @@
 # Validation batch 1: getting paid, invoicing and the SME software bill
 
-*Prepared 23 October 2026 by the batch 1 validator. Ideas: IDEA-01, IDEA-02, IDEA-03, IDEA-04, IDEA-05, IDEA-11, IDEA-12, IDEA-13, IDEA-36.*
+*Prepared 23 October 2026 by the batch 1 validator.*
 
-*Status: work in progress. Sections are appended as each idea is finished.*
+*Ideas covered: IDEA-01, IDEA-02, IDEA-03, IDEA-04, IDEA-05, IDEA-11, IDEA-12, IDEA-13, IDEA-36.*
+
+*Method:*
+- *Each idea was checked on angles (a)–(h) of `stage2_idea_longlist.md` section 6.1, using the batch 1 checks in section 6.*
+- *I made 21 web searches against a limit of 24 (log in section 4) and many direct fetches of official and vendor pages.*
+- *I read the BOE through its open-data API: daily summaries and consolidated texts. The INE was read through its official API.*
+
+*Citations:*
+- *`[new: URL, date]` is a source fetched or found in this validation.*
+- *`[notes: PAIN-ID]` is stage-1 evidence.*
+- *"Search-result summary" marks facts seen only in a search result, not on an opened page.*
+- *Vendor claims are labelled as such.*
 
 ## 1. Batch summary
 
-(to be filled when all ideas are done)
+| ID | Name (as validated) | Type | Verdict | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | Sellability | P | Overall | Confidence |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| IDEA-01 | MASC small-claim lane (≤€2,000 end to end) plus community-arrears module for administradores | B (A, C secondary) | RESHAPE | 4 | 3 | 4 | 3 | 3 | 4 | 2 | 2 | 3.13 | 4 | 3.48 | medium |
+| IDEA-02 | Receivables autopilot (reminders, interest and €40, forecasts) | C (B) | KILL (fold the interest engine into IDEA-01) | 3 | 4 | 2 | 3 | 2 | 4 | 1 | 3 | 2.75 | 4 | 3.25 | medium |
+| IDEA-03 | Payment-status reporter, reshaped to a gestoría bulk service through the SPFE | B | RESHAPE | 4 | 3 | 3 | 3 | 3 | 3 | 2 | 5 | 3.25 | 3 | 3.15 | medium |
+| IDEA-04 | VeriFactu retrofit adapter for legacy tills and scales | B | KILL | 4 | 3 | 2 | 3 | 3 | 2 | 3 | 3 | 2.88 | 3 | 2.93 | medium |
+| IDEA-05 | Fair-terms invoicing and e-invoicing for micro businesses | A | KILL | 4 | 5 | 3 | 3 | 1 | 3 | 1 | 4 | 3.00 | 2 | 2.60 | high |
+| IDEA-11 | Supplier IBAN-change guard | C (B) | KILL | 2 | 4 | 2 | 2 | 2 | 4 | 1 | 3 | 2.50 | 3 | 2.70 | high |
+| IDEA-12 | B2B subscription and contract guard | C | KILL | 2 | 4 | 1 | 2 | 2 | 4 | 1 | 2 | 2.25 | 2 | 2.15 | medium |
+| IDEA-13 | Kit Digital website rescue and low-cost hosting | A | KILL | 2 | 3 | 4 | 2 | 2 | 5 | 1 | 3 | 2.75 | 2 | 2.45 | medium |
+| IDEA-36 | Subcontractor CAE document wallet with platform sync | B (A) | KILL | 3 | 4 | 3 | 3 | 2 | 3 | 2 | 4 | 3.00 | 4 | 3.40 | medium |
+
+*Sellability is the mean of S1–S8. Overall = 0.6 × Sellability + 0.4 × P. Scores for the RESHAPE ideas are for the reshaped version.*
+
+**Reading the table**
+- **No GO in this batch.** Two ideas survive as RESHAPE; seven are KILL.
+- **IDEA-01 is the strongest:** a rule in force, verified prices of €99.90–150 per file to undercut, and a lawyer-free path up to €2,000. It is still a niche of about €2–5M ARR with weak defensibility.
+- **IDEA-03 depends on timing:** its buyers' duty starts on 6 Oct 2028, and it rests on SPFE web services whose specifications are unpublished.
+- **IDEA-36 and IDEA-02 score well only because the pain is severe.** Each fails on a decisive point:
+  - IDEA-36: the dominant CAE group's terms ban the automated sync.
+  - IDEA-02: reminders are bundled into €6.60–12 tools.
+- **Rule status is settled from primary sources** for C-05 (e-invoice status dates), C-06 (Verification of Payee) and C-08 (VeriFactu dates; batch 1 owns this check for batches 2 and 4). See section 3.
+- **Other conflicts:**
+  - **C-10** (invoicing prices) is settled from vendor pages for Holded, TS Facturas, Anfix and Contasimple (IDEA-05). FacturaDirecta's page could not be fetched. Contasimple's owner is consistent with "Shine as a Cegid brand" but not confirmed.
+  - **C-15** (evictions) uses 25,540 as instructed, without re-fetching the CGPJ release.
+  - **C-17** (construction deaths) uses +21.5% from the notes' INSST source.
+  - **Single-source facts confirmed:** the H2 2026 statutory rate (10.40%, BOE) and the four-day status window (RD 238/2026, in effect four working days).
+  - **Single-source fact corrected:** the "€10,000 sanction" is not a status-reporting sanction.
 
 ## 2. Ideas
-
-(appended below as each idea is finished)
-
-## 3. Cross-cutting findings
-
-(to be filled)
-
-## 4. Search log
-
-(running count kept below)
-
-| # | Query | Idea |
-|---|---|---|
-
----
 
 #### IDEA-01: MASC pre-litigation kit and court-ready claim file — RESHAPE (medium)
 
@@ -156,7 +179,7 @@
 |---|---|---|---|---|
 | TS Facturas (TeamSystem) | "Recordatorio de pagos automático" on every plan, from Básico | Not offered | Básico €6.60/month annual (€8 monthly), capped at 0–5 clients; Pro €14/€17; Ilimitado €23/€28 | [new: https://www.billin.net/precios/, seen 23 Oct 2026] |
 | Holded (Visma) | "Recordatorios de pago" only from Avanzado | Not offered | Avanzado €49.50/month annual, €99 monthly | [new: https://www.holded.com/es/precios, seen 23 Oct 2026] |
-| Cuéntica | "Revisa cobros pendientes, envía recordatorios" (Facturación plan) | Not offered | €9 + VAT | [new: https://cuentica.com/precios/, seen 23 Oct 2026] |
+| Cuéntica | Feature list says "Revisa cobros pendientes, envía recordatorios y carga recibos SEPA"; the plan carrying it is not stated (the €9 Facturación plan lists "seguimiento de tus cobros pendientes") | Not offered | From €9 + VAT | [new: https://cuentica.com/precios/, seen 23 Oct 2026] |
 | Qonto | "Facturación automática" module: "cobra, recupera impagos" | Not stated | €12/month (€144/year); forecasting on Smart €19 | [new: https://qonto.com/es/pricing, seen 23 Oct 2026] |
 | Agicap | AR module: "previsiones precisas basadas en el comportamiento real de tus clientes" | Not stated | Mid-market, on quote | [new: https://agicap.com/es/, seen 23 Oct 2026] |
 | Banktrack | Forecasting | Not offered | €59 / €119 per month | [new: https://banktrack.com/precios, seen 23 Oct 2026] |
@@ -180,7 +203,7 @@ Quipu, Anfix, Contasimple and FacturaDirecta mention no reminders on their prici
 **(g) Defensibility.** None. Every invoicing vendor holds the invoices and the bank reconciliation already, and the 2027–2029 e-invoice statuses will be native to their platforms.
 
 **(h) Kill criteria**
-- "Entry tiers already ship reminders plus statutory interest." **Half met:** reminders yes (TS Facturas Básico, Cuéntica), interest no.
+- "Entry tiers already ship reminders plus statutory interest." **Half met:** automatic reminders yes (TS Facturas Básico at €6.60), interest no.
 - "Fewer than half of trial users keep reminders on after 60 days." **Open [I].**
 - **Additional reason to kill:** the e-invoice payment statuses from 2027–2028 commoditise the "is it paid?" signal.
 
@@ -319,7 +342,7 @@ It is sold at €1–3 per client per month and goes live for the 6 Oct 2028 wav
   - The consolidated RD 1007/2023 (last update 03/12/2025) still says IS taxpayers must adapt "antes del 1 de enero de 2027" and the rest "antes del 1 de julio de 2027" [new: https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840, seen 23 Oct 2026].
   - The AEAT FAQ (updated 21 Oct 2026) still gives 1 Jan and 1 Jul 2027 [new: https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes.html].
   - The Hacienda note of 5 Oct 2026 is a "Previsión de modificación". It sets a single date, "hasta octubre de 2028", for all pending obligations, aligned with e-invoicing for firms at or below €8M [new: https://www.hacienda.gob.es/sgt/gabsehacienda/nota-informativa-verifactu.pdf]. It contains no October 2027 date for firms above €8M, so Infoautónomos' split is not supported by the primary source.
-- **The instrument.** RDL 15/2025's final provision 2, "Salvaguarda del rango", states that its amendment "no altera el rango reglamentario del Real Decreto 1007/2023" [new: BOE-A-2025-24446, https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24446]. A plain Real Decreto can therefore move the dates, with no convalidation needed. If the Government uses a decree-law again for speed, the Diputación Permanente must convalidate it within 30 days, and three decree-laws failed in 2026. The Government is not yet "en funciones" before the 29 Nov vote. ATA's line that it is "pendiente de un real decreto ley" [notes: TAX-02] describes the Government's likely choice, not a legal necessity.
+- **The instrument.** RDL 15/2025's final provision 2, "Salvaguarda del rango", states that its amendment "no altera el rango reglamentario del Real Decreto 1007/2023" [new: BOE-A-2025-24446, https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24446]. A plain Real Decreto can therefore move the dates, with no convalidation needed. If the Government uses a decree-law again for speed, the Diputación Permanente must convalidate it within 30 days. At least four decree-laws failed in 2026: RDL 16/2025, RDL 2/2026 and RDL 26/2026 [notes: TAX-02, CON-20], plus RDL 27/2026, whose derogation was published in the BOE on 2 Oct 2026 [new: BOE-A-2026-20527]. The Government is not yet "en funciones" before the 29 Nov vote. ATA's line that it is "pendiente de un real decreto ley" [notes: TAX-02] describes the Government's likely choice, not a legal necessity.
 - **Scope is narrower than the idea assumes** (AEAT FAQ, updated 21 Oct 2026):
   - A scale used only to weigh, with the amount keyed into the till, "no se consideraría SIF, sino un elemento -independiente- auxiliar de medida". Only scales that accumulate and issue the simplified invoice are SIFs.
   - Businesses under recargo de equivalencia, or under the régimen simplificado de IVA, are "No con carácter general" affected, because they are not obliged to invoice consumers [new: AEAT FAQ sub-pages, seen 23 Oct 2026]. This matches ROF art. 3.1.b–c.
@@ -389,7 +412,7 @@ The in-scope legacy share (estimación directa, ticket-issuing device, not upgra
 **Validated definition.** A flat €6/month invoicing tool with VeriFactu, Facturae and UBL e-invoicing, unlimited invoices, one-click cancellation, a free six-year read-only archive after leaving, an Excel/Word importer, a free gestor seat with exports, and human WhatsApp support. **Verdict: KILL.**
 
 **(a) Problem reality.** Complaints about caps, price creep, obstructed cancellation and locked data are real across at least six vendors [notes: VOX-08 to VOX-11]. The switching windows depend on VeriFactu (BOE: 2027; announced: October 2028; see IDEA-04) and on e-invoicing (6 Oct 2027 and 2028; see IDEA-03).
-- **Retention rules:** 4 years for tax and 6 under the Código de Comercio [notes: TAX-05].
+- **Retention rules:** 4 years for tax and 6 under Código de Comercio art. 30 [notes: TAX-07]. Not re-verified this session.
 - **SPFE copies:** the SPFE acts as the invoice repository (RD 238/2026 art. 5.1), and recipients can retrieve their invoices at any time (Orden art. 9.3). I found no provision saying the SPFE copy discharges the taxpayer's own retention duty (open).
 
 **(b) Competitors and price list (C-10 settled where fetched)**
@@ -536,7 +559,7 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
 
 **(b) Competitors**
 - **Qonto** Premium (€39/month annual) includes "Detección de suscripciones y alertas de renovación... para controlar tus pagos y evitar cargos sorpresa" [new: https://qonto.com/es/pricing, seen 23 Oct 2026]. This is the core feature, bundled by a neobank. The risk "banks add subscription views" has materialised.
-- **Spendbase** has pivoted to "Free business banking" with a virtual card per vendor or subscription, budgets and approvals [new: https://www.spendbase.co/, seen 23 Oct 2026].
+- **Spendbase.** The site now presents "Free business banking" with a virtual card per vendor or subscription, budgets and approvals [new: https://www.spendbase.co/, seen 23 Oct 2026]. Earlier, the notes knew it only from a SaaS-spend blog [notes: VOX gaps]; whether it changed model is an inference.
 - **Enterprise SaaS-management tools** (Vendr, Zylo, Torii, Cledara) target larger firms (background; not priced).
 - **Certified cancellation letters** can be sent for €0.40–3 by certified email (eGarante, IDEA-01).
 
@@ -659,7 +682,7 @@ Comparison sites in 2026 are written mostly by the vendors themselves (TS Factur
   - "en una factura de 2000 euros anuales no puedo dar de alta más que a 15 trabajadores" (19 Oct 2026);
   - "más de 1400 euros para un micropyme" (7 Oct 2026);
   - renewals with unrequested services (17 Jul 2026).
-- **The +21.5% figure** for construction deaths in 2025 is correct; El Español's "29 deaths" misreads INSST's "+29" (C-17 settled in favour of +21.5%) [notes: CON-04].
+- **Construction deaths.** Use +21.5% for 2025, per the INSST primary source in the notes; El Español's "29 deaths" misreads INSST's "+29" [notes: CON-04]. C-17 is settled on the notes' primary source; I did not re-fetch INSST.
 
 **(b) Competitors and market structure**
 - **Consolidation:**
@@ -737,3 +760,193 @@ The overall score is mechanically decent because the pain is strong. The verdict
 **What would change the verdict**
 - A written API or partnership from at least two non-OFA platforms (Ctaima and e-coordina) plus FENIE as a channel. That would revive a narrower "non-OFA sync wallet".
 - A regulatory push for CAE interoperability; I found none.
+
+---
+
+## 3. Cross-cutting findings
+
+### 3.1 Rule status (batch 1 owns the VeriFactu and e-invoicing checks)
+
+1. **VeriFactu dates (C-08): still 2027 in law; 2028 announced only.**
+   - **No amending instrument.** The BOE daily summaries of 1–23 Oct 2026 (every Section I item) contain no instrument amending RD 1007/2023. Nor do the full texts of the decree-laws published in that window (RDL 28, 29, 30 and 31/2026) [new: BOE open-data API, seen 23 Oct 2026].
+   - **Consolidated text.** RD 1007/2023 (last update 03/12/2025) still requires adaptation "antes del 1 de enero de 2027" (IS taxpayers) and "antes del 1 de julio de 2027" (everyone else) [new: https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840].
+   - **AEAT.** The FAQ, updated 21 Oct 2026, repeats the 2027 dates [new: AEAT FAQ]. The AEAT's "Nota informativa: Ampliación del plazo" (page updated 13 Oct 2026) refers to RDL 15/2025, not to 2028.
+   - **Hacienda.** The note of 5 Oct 2026 is a "Previsión de modificación". It moves all pending obligations "hasta octubre de 2028" as one date; there is no separate October 2027 date for firms above €8M [new: https://www.hacienda.gob.es/sgt/gabsehacienda/nota-informativa-verifactu.pdf].
+   - **Instrument and lapse risk.** RDL 15/2025's final provision 2, "Salvaguarda del rango", keeps RD 1007/2023 at regulatory rank [new: BOE-A-2025-24446]. A plain Real Decreto can move the dates with no convalidation. Lapse risk exists only if the Government again chooses a decree-law, which the Diputación Permanente would then have to convalidate within 30 days.
+   - **For batches 2 and 4:** plan on 2027 legally and on October 2028 as likely. The postponement is not exposed to the election in the way bills are.
+
+2. **VeriFactu scope is narrower than the notes assume.** Relevant to IDEA-37, IDEA-39, IDEA-40 and IDEA-06.
+   - **AEAT FAQ (21 Oct 2026):**
+     - A scale used only to weigh is "un elemento -independiente- auxiliar de medida", not a SIF.
+     - Retail under recargo de equivalencia, and businesses under the régimen simplificado de IVA, are "No con carácter general" affected, because they are not obliged to invoice consumers.
+   - **ROF (RD 1619/2012):** art. 3.1.b–c sets out those exemptions. Art. 26.1 restores the invoicing duty for anyone on IRPF estimación directa, "con independencia del régimen... del IVA" [new: https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696, last update 31/03/2026].
+   - **Free AEAT app:** it issues "facturas completas, no facturas simplificadas", and its records cannot be exported to other systems [new: AEAT user guide v1.0, 10 Oct 2025].
+
+3. **B2B e-invoicing and status reporting (C-05): the AEAT version is right.**
+   - **Instruments:** RD 238/2026 (BOE-A-2026-7295, in force 20 Apr 2026) and Orden HAC/1028/2026 (BOE-A-2026-20587, in force 6 Oct 2026). Both are regulations, so they do not lapse.
+   - **Dates:**
+     - 6 Oct 2027: firms above €8M, including status reporting.
+     - 6 Oct 2028: everyone else issues and receives; legal entities at or below €8M also report statuses.
+     - 6 Oct 2029: personas físicas and entidades en atribución de rentas report statuses (RD 238/2026 transitional provision 3) [new: AEAT news of 7 Oct 2026; BOE RD 238/2026].
+     - The law-firm reading that everyone below €8M reports voluntarily until 2029 is wrong for legal entities. The Consejo General de Gestores draft dates were superseded. The SPFE must be live at least two months before 6 Oct 2027.
+   - **Mandatory statuses:** acceptance or rejection with its date, and full payment with its date (art. 10.1). The due date also goes to the SPFE (art. 12.3). The deadline is "cuatro días naturales, excluyendo sábados, domingos y festivos nacionales", in effect four working days. Silence counts as acceptance (art. 12.1).
+   - **Sanctions are unclear.** RD 238/2026 has no sanction article. Ley 56/2007 art. 2 bis.9 provides a warning or up to €10,000, worded for not offering e-invoice reception or archive access [new: BOE consolidated Ley 56/2007]. The single-source "€10,000 for status reporting" should not be relied on.
+   - **Third-party access.** The SPFE offers web services and forms for every function. A third party may act through representation (RGAT arts. 79–81) or colaboración social (Orden HAC/1398/2003), and must be a registered apoderado for forms and for automated retrieval (Orden art. 11) [new: BOE Orden HAC/1028/2026]. This also bears on IDEA-06 (gestoría cockpit). The technical specifications are not yet on the AEAT Sede (SPFE page updated 14 Oct 2026).
+   - **Private platforms** that join the system need ISO 27001, AS2/AS4, advanced signature and seal, all four syntaxes, 24/7 support and free interconnection (RD 238/2026 art. 13). That is out of reach for a 1–3 person startup.
+   - **Payee IBAN.** The UBL mapping includes BT-84, the payee IBAN (group BG-17) [new: BOE Orden annex]. This bears on any fraud or payment idea from 2027–2028.
+   - **Public late-payer list.** The AEAT will feed the Observatorio Estatal de la Morosidad Privada with data to list firms that breach Ley 3/2004 (RD 238/2026 art. 14.2). This is a tailwind for IDEA-46 (haulier revenue recovery).
+
+4. **Statutory late-payment rate for H2 2026: 10.40%, confirmed** (ECB 2.40% + 8 points) [new: BOE-A-2026-14327, BOE 1 Jul 2026]. Ley 3/2004 art. 8.1 adds the €40 "en todo caso y sin necesidad de petición expresa" [new: BOE consolidated Ley 3/2004]. Batch 6 can reuse this for IDEA-46.
+
+5. **Verification of Payee (C-06): in force and free.**
+   - Mandatory since 9 Oct 2025 for ordinary and instant euro transfers.
+   - Results: match, close match, no match, could not verify.
+   - The payer bears the loss if it proceeds after a mismatch.
+   - For transfer files the check is "opcional para el usuario no consumidor".
+   - Source: [new: Banco de España, https://clientebancario.bde.es/pcb/es/blog/nuevo-servicio-gratuito-de-verificacion-del-beneficiario-a-partir-del-9-de-octubre-de-2025-.html, 7 Oct 2025].
+   - **Iberpay Valitic** additionally checks IBAN against NIF/CIF/NIE for about 99% of Spanish accounts, through banks (Bankinter) and the Powens API. Powens names property management and rent collection as use cases [new: https://www.powens.com/?p=953]. This is relevant to IDEA-30 and IDEA-31 in batch 5.
+
+6. **MASC (LO 1/2025) facts useful to batch 5 (IDEA-29, IDEA-30, IDEA-34):**
+   - A lawyer is mandatory only for binding offers above €2,000 (art. 6.2).
+   - MASC applies to the monitorio (including the LPH art. 21 community monitorio) and to evictions for non-payment (art. 5.2).
+   - The official services under additional provision 3 are informational. The Ministry's PIMASC is a register of attempts, not a delivery channel, and is not confirmed live.
+   - Appellate courts are lenient on proof (AAP Barcelona 1190/2025; AP Murcia, Feb 2026; the Madrid judges' criteria of 26 Sep 2025).
+   - Certified email costs €0.40–2.98 per send (eGarante packs) [new: https://www.egarante.com/precios/]. This is a cost anchor for any idea that needs provable notices (IDEA-20, IDEA-29, IDEA-30, IDEA-34).
+
+### 3.2 Political calendar from the BOE (October 2026), for the batch owners concerned (seen by title in the daily summaries)
+
+| Date (BOE) | Item | Relevance |
+|---|---|---|
+| 2 Oct 2026 | Congress resolutions derogating RDL 26/2026 and RDL 27/2026 (lease stability). The notes mention only RDL 26/2026 failing; RDL 27/2026 failed too | Batch 5 |
+| 6 Oct 2026 | RD 806/2026 of 5 Oct: dissolution of the Cortes and call of elections | All |
+| 7 Oct 2026 | RDL 28/2026 (lease stability; same title as the derogated RDL 27/2026, so apparently a re-issue, which is an inference) and RDL 29/2026, both pending convalidation by the Diputación Permanente | Batch 5 |
+| 7 Oct 2026 | The LEC consolidated text shows an update published on this date, probably linked to these decrees (not checked) | Batch 5 should check eviction-procedure changes |
+| 14 Oct 2026 | RDL 30/2026 (financial support to Ceuta) | — |
+| 15 Oct 2026 | RD 824/2026, amending the free-legal-aid regulation | Seen by title only |
+| 20 Oct 2026 | Congress resolutions of 16 Oct 2026 convalidating RDL 24/2026 (DANA) and RDL 25/2026 ("se adoptan y se prorrogan determinadas medidas" of the Middle East crisis plan) | Batch 6 should check which haulage measures RDL 25/2026 carries (section 5.2 lists it for IDEA-46) |
+| 21 Oct 2026 | RDL 31/2026, "para la mejora de la acción protectora de la Seguridad Social y de otras normas sociales", pending convalidation | Batch 3 should read it |
+| 22 Oct 2026 | Orden ECM/1101/2026, creating the national AML prevention council | Batch 5, IDEA-35 context; title only |
+
+### 3.3 Market facts (INE DIRCE 2025, table 73019, reference 1 Jan 2025) [new: https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73019]
+
+- **By legal form:** 3,310,824 companies in total; 1,859,925 personas físicas; 1,127,515 SL; 46,763 SA.
+- **By size:**
+  - 1,800,443 have no employees and 1,510,381 have at least one (1–2: 901,955; 3–5: 314,941; 6–9: 132,013).
+  - This is a data point for C-04, which batch 3 owns: it matches G2's figure of about 1.51M.
+- **Selected CNAE groups:**
+
+| CNAE | Activity | Companies | Note |
+|---|---|---|---|
+| 41 | Building construction | 198,061 | — |
+| 43 | Specialised construction | 182,151 | incl. 432 installations 78,775 |
+| 471 | Non-specialised retail | 35,696 | — |
+| 472 | Food retail in specialised shops | 80,030 | — |
+| 561 | Restaurants | 73,296 | — |
+| 562 | Catering | 14,751 | — |
+| 563 | Bars | 146,853 | — |
+| 682 | Renting own property | 153,077 | — |
+| 683 | Real-estate services for third parties | 60,683 | — |
+| 692 | Accounting and tax advice | 62,234 | 30,394 with employees |
+| 711 | Architecture and engineering | 87,222 | — |
+| 855 | Other education | 91,715 | — |
+| 862 | Medical and dental | 77,294 | — |
+| 869 | Other health | 89,528 | — |
+| 960 | Other personal services | 155,724 | — |
+
+- **Adoption ceiling for micro-firm SaaS.** 79.9% of firms with fewer than 10 employees have internet access (−3.9 points), and 44.3% of firms with 10 or more employees buy paid cloud services [new: INE ETICCE, https://ine.es/dyngs/Prensa/ETICCE20241T2025.pdf, 22 Oct 2025]. One micro firm in five is offline, which caps adoption for every batch.
+
+### 3.4 SME software price anchors (vendor pages, seen 23 Oct 2026; excluding VAT)
+
+| Product | Prices |
+|---|---|
+| Holded | Plus €7.50 annual / €15 monthly (250 invoices a year); Básico €14.50/€29; Estándar €29.50/€59; Avanzado €49.50/€99; Premium €99.50/€199. Payment reminders only from Avanzado; free seat for a partner asesoría |
+| TS Facturas | Básico €6.60/€8 (0–5 clients); Pro €14/€17; Ilimitado €23/€28. Automatic reminders on every plan |
+| Anfix | €4.99/€5.99 (60 invoices a year) up to €83.33/€99.99 |
+| Contasimple | €0 / €10.95 / €15.95 ("by Shine", described with Cegid's corporate wording) |
+| Cuéntica | €9; no minimum term; data kept and exportable after leaving |
+| Declarando | VeriFactu Plus €9.90 |
+| Qonto | Starter €0 (e-invoicing and VeriFactu); Basic €9; Smart €19 (forecasting); Premium €39 (subscription detection); collections module €12 |
+| B2Brouter | €0 / €110 a year / €300 a year |
+| Banktrack | €59 / €119 |
+| Paidnice (AR, abroad) | from €59 |
+| DocuPRL (PRL documents) | €0–39 |
+| DocAcces (CAE) | €32–99 |
+| Dokify (contractor licence) | €102.90 a year + €15.44 per element |
+| Hostinger | €1.49 promotional, renewing at €6.99/month |
+| WhatsApp Business | Service replies free up to 1,000 per number a month, charged beyond that from 1 Oct 2026; templates per message since 1 Jul 2025 |
+
+### 3.5 Market structure
+
+- **CAE platforms have consolidated.** Nalanda (PSG Equity) bought Dokify (2023) and presents itself as part of Once For All; obralia.com redirects to Nalanda's login. The OFA terms of use (1 Jul 2026) forbid robots, scrapers and competing services. This is relevant to the supplier-CAE intake in batch 5's IDEA-34.
+- **Invoicing ownership:** TeamSystem (Quipu, TS Facturas, DELSOL), Visma (Holded), Cegid/Shine (Contasimple) [notes: TAX-07; new: vendor pages].
+- **Large counterparties run their own MASC intake** (Endesa) [new: https://www.endesa.com/es/te-ayudamos/contactanos/masc].
+
+---
+
+## 4. Search log
+
+**21 WebSearch calls** were used, against a limit of 24 and an aim of 22. The per-idea plan was rebalanced:
+- IDEA-01 used 7 against a plan of 5, because it is the batch's strongest idea.
+- IDEA-02, IDEA-05, IDEA-12 and IDEA-13 each used one fewer than planned.
+- IDEA-04 used 2 against a plan of 3.
+
+| # | Query | Idea | Result in brief |
+|---|---|---|---|
+| 1 | plataforma MASC online precio certificado intento negociación previa Ley Orgánica 1/2025 reclamación facturas | IDEA-01 | CertiDEMANDA; Madrid criteria (ECIJA); Ministry PIMASC |
+| 2 | Tribunal Supremo MASC requisito de procedibilidad auto sentencia 2026 inadmisión demanda monitorio acreditación burofax correo certificado | IDEA-01 | AAP Barcelona 1190/2025; AP Murcia; Salamanca criteria; no Supreme Court ruling |
+| 3 | elecciones 29 noviembre 2026 programa electoral Justicia MASC voluntario reformar Ley de Eficiencia del Servicio Público de Justicia PP | IDEA-01 | Nothing on 2026 programmes (open) |
+| 4 | reclamar factura impagada online MASC burofax incluido monitorio precio fijo autónomos pymes 2026 | IDEA-01 | Only content marketing (Legálitas, Holded, Agicap) |
+| 5 | software gestión de cobros automatizada pymes España recordatorios automáticos facturas vencidas intereses de demora 40 euros Ley 3/2004 automático | IDEA-02 | Paidnice; Copilot Gestoría; Emprendedores (5% apply interest) |
+| 6 | precio burofax Correos online 2026 acuse de recibo copia certificada euros por página | IDEA-01 | About €13.14 base (2023, secondary); 2026 tariff not found |
+| 7 | automatizar comunicación estados factura y pagos solución pública facturación electrónica AEAT conciliación bancaria software pymes asesorías 2028 | IDEA-03 | Calendars only; no vendor feature found |
+| 8 | cuántas empresas facturan más de 8 millones de euros España factura electrónica obligatoria octubre 2027 número de empresas afectadas | IDEA-03 | No count found (gap) |
+| 9 | dispositivo adaptador caja registradora antigua TicketBAI Verifactu sin cambiar caja impresora QR "caja registradora" adaptación precio | IDEA-04 | fiskaly SIGN ES, EPOS Now, LS Central; no retrofit device |
+| 10 | caja registradora Verifactu precio Olivetti Casio Sharp adaptada Verifactu euros balanza Dibal Epelsa Verifactu actualización precio | IDEA-04 | Replacement prices (€200–600); no upgrade quotes |
+| 11 | alternativa a Holded 2026 programa de facturación Verifactu gratis o barato autónomos nuevo sin permanencia comparativa | IDEA-05 | Vendor-written comparisons; saturation |
+| 12 | verificación del beneficiario 9 octubre 2025 bancos España transferencias empresas pagos en lote renuncia Reglamento 2024/886 coincidencia nombre IBAN | IDEA-11 | Banco de España VoP page; LegalToday |
+| 13 | software verificación cuentas bancarias proveedores fraude cambio IBAN empresas España Trustpair Sis ID pymes precio control pagos proveedores | IDEA-11 | Iberpay Valitic (Bankinter, Powens); Yousign Verify |
+| 14 | microempresas menos de 10 empleados España porcentaje compran servicios cloud software contabilidad CRM encuesta INE TIC empresas 2025 número de suscripciones | IDEA-12 | INE ETICCE (no micro-firm cloud figure) |
+| 15 | kit digital página web después de 12 meses mantenimiento precio dar de baja migrar web hosting agente digitalizador cuota mensual 2026 | IDEA-13 | Generic guides only |
+| 16 | gestión documentación CAE subcontratas todas las plataformas Nalanda Dokify Ctaima e-coordina servicio externalizado subir documentos una sola vez precio mensual autónomos instaladores | IDEA-36 | Nalanda bought Dokify; "upload once" in Nalanda's network; Konvergia claim |
+| 17 | Registro de Empresas Acreditadas REA construcción número de empresas inscritas España 2025 2026 subcontratistas inscritas total | IDEA-36 | Public REA lookup; only the 2008 count (60,500+) |
+| 18 | "MASC" online enviar invitación negociación previa certificado precio "€" autónomos empresas plataforma 2026 -mediación barato requisito procedibilidad gestión online | IDEA-01 | Failed: operators unsupported; irrelevant results |
+| 19 | Holded Quipu a3 Sage Anfix comunicación estados factura pagos AEAT factura electrónica B2B nueva funcionalidad conciliación bancaria comunicar fecha de pago automáticamente | IDEA-03 | No vendor markets automated status reporting yet |
+| 20 | Konvergia CAE interoperabilidad plataformas coordinación actividades empresariales conectar documentación Nalanda Ctaima e-coordina contratas | IDEA-36 | Konvergia not confirmed |
+| 21 | enviar MASC online precio certificado negociación previa autónomos pymes plataforma deuda factura impagada euros | IDEA-01 | Endesa's MASC intake; Copilot Gestoría MASC protocol; no cheap self-serve platform |
+
+**Main pages fetched directly (not counted against the search limit)**
+- **BOE open-data API:** daily summaries for 1–23 Oct 2026, 31 Mar 2026, 25 Jun–10 Jul 2026 and 30–31 Dec 2021.
+- **BOE texts:**
+  - RD 1007/2023 (consolidated); RDL 15/2025; RDL 28, 29, 30 and 31/2026.
+  - RD 238/2026 (consolidated); Orden HAC/1028/2026 (PDF).
+  - Ley 56/2007; Ley 3/2004 (ELI); BOE-A-2026-14327 (rate).
+  - LO 1/2025; LEC; LGS (art. 13.3 bis); RD 1619/2012 (ROF).
+  - Orden ETD/1498/2021 (Kit Digital bases); RD 1109/2007 (ELI).
+- **AEAT:** VeriFactu FAQ index and 18 FAQ sub-pages; VeriFactu portal; "Nota informativa: Ampliación del plazo"; SPFE news of 7 Oct 2026; SPFE page; free-app user guide (PDF).
+- **Hacienda:** note of 5 Oct 2026 (PDF).
+- **Other official sources:**
+  - Banco de España, Portal del Cliente Bancario (VoP).
+  - Ministerio de Justicia (PIMASC).
+  - INE API (DIRCE table 73019) and the ETICCE press release.
+  - CGPJ news (AP Murcia).
+  - España Digital (Kit Digital).
+- **Press and legal:** Moncloa.com (6 Oct 2026; 23 Apr 2025); ECIJA; Gómez-Acebo & Pombo; LegalToday (Q2 2026 CGPJ data); Capital Riesgo.
+- **Vendors:**
+  - Claims and legal: RedClaimer, CertiDEMANDA, Legal Pigeon, eGarante, Paidnice, Copilot Gestoría (two pages), Endesa (MASC).
+  - Invoicing and finance: Holded, TS Facturas, Quipu, Anfix, Contasimple, Cuéntica, Declarando, Qonto, Agicap, Banktrack, B2Brouter (prices and deadlines), the OpenPeppol provider list, the TS Facturas blog, the fiskaly blog.
+  - Hardware, payments and hosting: asest.es, Powens, Spendbase, Hostinger.
+  - CAE: DocuPRL, Trustpilot (Nalanda), Dokify (OFA terms, API, tariffs), Nalanda pages and the OFA infographic, Ctaima, Metacontratas, obralia.com (redirect).
+  - Messaging: Meta WhatsApp pricing.
+- **Fetches that failed or gave no data:** EUR-Lex (blocked), Acelera Pyme FAQ (403), Bankinter press page (403), Embat (403), FacturaDirecta prices (403 or empty), Correos (prices not in HTML), Arsys Kit Digital and IONOS (404), GoCardless (no data), Nalanda general terms (504), konvergia.com (unreachable).
+
+**Checks left open for lack of budget or access**
+- 2026 burofax tariff.
+- Count of firms above €8M.
+- Micro-firm contract counts.
+- Red.es website-grant counts.
+- Current REA total.
+- Konvergia's existence and terms.
+- Nalanda's terms.
+- Spanish AIS provider prices.
+- Party programmes on MASC.
+- The text of Regulation (EU) 2024/886 itself.

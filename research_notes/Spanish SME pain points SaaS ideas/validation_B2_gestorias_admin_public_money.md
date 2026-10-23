@@ -56,7 +56,7 @@
 - regime, turnover band and territory (common, foral, Canarias);
 - invoicing software, and whether that product shows a VeriFactu declaración responsable;
 - the documented VeriFactu or non-VeriFactu mode choice;
-- the e-invoicing date (6 Oct 2027 for turnover above €8M, 6 Oct 2028 for the rest) and the status-reporting date.
+- the e-invoicing date (6 Oct 2027 for turnover above €8M, 6 Oct 2028 for the rest [notes: PRO-11, TAX-05]) and the status-reporting date.
 
 It then sends bulk questionnaires and notices (ES/CA/EU), tracks replies, shows a progress board (contacted, diagnosed, needs new tool, ready) and keeps a dated rule-status feed (in the BOE, announced, draft, lapsed).
 
@@ -71,8 +71,8 @@ Price €29–59/month by client count. The €5/month SME "what changed for me"
 - The job is real and the vendors themselves tell asesorías to do it by hand:
   - TeamSystem's 8-step guide asks asesorías to build "un inventario real de la cartera" by client (entity type, turnover, software, complexity, contact, urgency), segment it and "mide el avance" (clients contacted, diagnosed, needing a tool change) [new: https://teamsystem.es/magazine/verifactu-factura-electronica-asesorias-2027/, 18 May 2026, updated 7 Oct 2026];
   - Sage's checklist asks for a documented per-client choice of VeriFactu mode [new: search summary of https://www.sage.com/es-es/blog/validacion-verifactu-entrada-en-vigor/, 2026; page not opened].
-- **No official list of compliant software exists.** The AEAT FAQ says certification is a self-declaration by the producer, and "no se prevé ningún registro previo del producto SIF por parte de nadie" [new: https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/certificacion-sistemas-informaticos-declaracion-responsable.html, FAQ updated 21 Oct 2026]. A maintained product-declaration database is therefore something only a third party can build. This settles check 5, first part.
-- **E-invoicing dates.** Orden HAC/1028/2026 entered into force the day after its BOE publication (5 Oct 2026). That starts the periods in DF 8ª of Ley 18/2022 and in DT 1ª–3ª and DF 4ª of RD 238/2026 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-20587, seen 23 Oct 2026]. The Consejo General de Gestores' table puts the periods at 12, 24 and 36 months, with status reporting for firms of €8M or less voluntary until the 36-month date [new: https://www.consejogestores.org/?p=14916, 30 Apr 2026, based on the draft order]. Batch 1 owns C-05 and C-08; the cockpit's value grows with exactly this kind of disagreement.
+- **No official list of compliant software exists.** The AEAT FAQ says certification is a self-declaration by the producer, and "no se prevé ningún registro previo del producto SIF por parte de nadie" [new: https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/certificacion-sistemas-informaticos-declaracion-responsable.html, FAQ updated 21 Oct 2026]. Any "is this client's software compliant?" view therefore needs a privately maintained database of producers' declarations. This settles check 5, first part.
+- **E-invoicing dates.** Orden HAC/1028/2026 was published in the BOE on 5 Oct 2026 and entered into force the next day, 6 Oct 2026. That starts the periods in DF 8ª of Ley 18/2022 and in DT 1ª–3ª and DF 4ª of RD 238/2026 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-20587, seen 23 Oct 2026]. The Consejo General de Gestores' table puts the periods at 12, 24 and 36 months, with status reporting for firms of €8M or less voluntary until the 36-month date [new: https://www.consejogestores.org/?p=14916, 30 Apr 2026, based on the draft order]. Batch 1 owns C-05 and C-08; the cockpit's value grows with exactly this kind of disagreement.
 - **Rule churn under dissolution.**
   - Pending bills lapsed on 6 Oct 2026 (Reglamento del Congreso art. 207 [new: BOE-A-1982-5196 art. 207]).
   - Decree-laws now go to the Diputación Permanente.
@@ -116,7 +116,7 @@ Price €29–59/month by client count. The €5/month SME "what changed for me"
 - Adjacent spend:
   - CopilotGestoria from €15/month;
   - MsNotifica €40–120/month (see IDEA-07);
-  - Fandit €56–600/month [notes: ADM-16];
+  - Fandit €56–480/month on annual billing (€70–600 monthly) [new: https://fandit.es/precios/, seen 23 Oct 2026; notes: ADM-16];
   - suites (a3, Sage), prices not published.
 - What gestorías pay for legal-update subscriptions was **not found** (Iberley and other pricing pages blocked automated access).
 - The original €49–149/month band is above what the visible anchors support; €29–59/month is safer.
@@ -217,6 +217,8 @@ AI makes the summaries nearly free, and each suite vendor can add a readiness pa
 
 **(d) Willingness to pay.** Incumbents sell to gestorías at **€0.24–0.80 per client per month**, 2–8× below the hypothesis of €1–2. SMEs that pay an asesoría €25–130/month already get monitoring inside the fee [notes: TAX-22], [new: Ayuda T T&Cs]. Free official push, email and SMS alerts anchor the SME price near zero.
 
+**Type C test (about €5/month).** Not viable direct to SMEs. The product would be automated and need little support, but its value is invisible in most months and the free official channels deliver the core alert. The only prices with evidence are €0.24–0.80 per client per month inside gestoría tools, or a fee paid by a bank or insurer (none found).
+
 **(e) Distribution.**
 - Gestorías are concentrated but are competitors' customers: a3, Cegid and Sage bundle this.
 - Banks offering embargo prevention are speculative; no evidence found.
@@ -283,7 +285,7 @@ The reporting rule is confirmed, but three things make a standalone product unat
 - response handling is already bundled by online asesorías.
 
 **(a) Problem reality and rule status.** Confirmed in the BOE; no election exposure.
-- **RD 253/2025** of 1 April (BOE-A-2025-6599, 2 Apr 2025) reformulates RGAT art. 38 bis to cover "cualesquiera tipo de tarjetas así como los sistemas de cobro asociados a un número de teléfono móvil" (Bizum). Reporting moves "de ser anual a mensual, desapareciendo el umbral anual neto de 3.000 euros", with effect from 1 Jan 2026. A new art. 38 ter adds an annual report on all cards, excluding cards with under €25,000 a year of charges and credits [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-6599, seen 23 Oct 2026]. The €25,000 threshold that press pieces attach to Bizum belongs to the new modelo 174, not to modelo 170.
+- **RD 253/2025** of 1 April (BOE-A-2025-6599, 2 Apr 2025) reformulates RGAT art. 38 bis to cover "cualesquiera tipo de tarjetas así como los sistemas de cobro asociados a un número de teléfono móvil" (Bizum). Reporting moves "de ser anual a mensual, desapareciendo el umbral anual neto de 3.000 euros", with effect from 1 Jan 2026. A new art. 38 ter adds an annual report on all cards, excluding cards with under €25,000 a year of charges and credits [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-6599, seen 23 Oct 2026]. The €25,000 exclusion that some press pieces mention belongs to this new annual all-cards report (art. 38 ter; modelo 174 under the Orden below), not to merchants' monthly modelo 170.
 - **Orden HAC/747/2025** of 27 June (BOE-A-2025-14600, 15 Jul 2025) approves the monthly modelo 170 for operations of "empresarios o profesionales adheridos al sistema de gestión de cobros a través de cualquier tipo de tarjetas y mediante pagos asociados a números de teléfono móvil". The first return, for January 2026, was filed in February 2026 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-14600, seen 23 Oct 2026].
 - **Letters.** "La AEAT ha empezado a remitir cartas de requerimiento" by mismatches appears only in press narration, with **no count and no official source** [new: Xataka Móvil, 19 Aug 2026, https://www.xatakamovil.com/movil-y-sociedad/hacienda-bizum-autonomos-envian-cartas-descuadres-pagos]; [notes: TAX-15] (AyE, 18 Aug 2026). Two searches found no AEAT or Gestha figure.
 - **Structural limit (desk inference from the VAT regimes).** Mismatches between card data and the VAT return can only arise for businesses whose VAT return reflects actual sales:
@@ -390,6 +392,8 @@ Validation confirms the pain and the formula, but finds the core feature already
 
 **(d) Willingness to pay.** The adjacent spend is high (€25–150/month for gestorías and online asesorías [notes: TAX-22]), but this feature is bundled at no marginal price. Free calculators anchor the standalone price at €0. The source's own kill test (at least 1 in 10 trial users paying €2/month) is open [I], but the market anchors are discouraging.
 
+**Type C test (about €5/month).** Not viable. The product would be automated with almost no support, but monthly value is invisible except around regularisation, and free calculators exist. No standalone price above €0 is evidenced. It works only as a bundled feature, in an invoicing app or a gestoría tool.
+
 **(e) Distribution.**
 - High-intent searches exist ("regularización cuota autónomos", "calculadora cuota autónomos"), but they are dominated by Infoautónomos, Declarando, Cuéntica and TaxDown content (desk observation).
 - Gestorías and colegios already campaign on the regularisation: the colegio de gestores and PIMEM did so in Baleares [new: Última Hora].
@@ -455,10 +459,12 @@ Price: €19–39/month per gestoría, or €0.50–1 per SL in bulk, possibly a
 
 **(c) Buyers and market size.**
 - **SLs:** INE DIRCE 2025 counts **1,127,515 SLs**: 334,941 with no employees, 398,349 with 1–2, 180,169 with 3–5 and 94,717 with 6–9. About 1.0M have fewer than 10 employees [new: INE table 73018, seen 23 Oct 2026].
-- **Insolvency context:** SLs are 93.2% of company insolvencies [notes: FIN-17]; 1,427 micro-firm insolvency procedures and 2,656 "sin masa" insolvencies were concluded in 2025 [new: Registradores, Anuario concursal 2025, https://www.registradores.org/documents/d/guest/anuario-concursal-2025, seen 23 Oct 2026]. Counts of art. 367 liability claims and of SLs that fail to deposit accounts were **not found** (1 search).
+- **Insolvency context:** SLs are 93.2% of company insolvencies [notes: FIN-17], and there were 1,427 micro-firm insolvency procedures in 2025 [notes: FIN-16]. In 2025, 2,656 "sin masa" insolvencies were concluded [new: Registradores, Anuario concursal 2025, https://www.registradores.org/documents/d/guest/anuario-concursal-2025, seen 23 Oct 2026]. Counts of art. 367 liability claims and of SLs that fail to deposit accounts were **not found** (1 search).
 - **Reshaped buyer:** about 30k advisory firms with staff (see IDEA-06). At €29/month, 5% ≈ €0.5M ARR. At €0.75 per SL in bulk, 5% of SLs ≈ €0.5M ARR.
 
 **(d) Willingness to pay.** No direct anchor. The adjacent spend is accounting services at €59.95–129/month for SLs [notes: TAX-21]. The gestoría's own professional-liability exposure, if it fails to warn a client, is the likely motive, but it was not evidenced [I].
+
+**Type C test for the original (€5/month per SL).** Not viable. Owners of struggling SLs are the least likely to act on or pay for alerts, and asesorías treat the ratio as a free feature [notes: FIN-17]. The reshaped price is €19–39/month per gestoría, or €0.50–1 per SL in bulk, and still needs testing [I].
 
 **(e) Distribution.**
 - Asesorías, which hold the books.
@@ -493,7 +499,7 @@ Price: €19–39/month per gestoría, or €0.50–1 per SL in bulk, possibly a
 
 - **Sellability** 3.00. **P** 4: personal liability for company debts is existential for owner-managers, and art. 367.2 puts the burden on them; frequency unquantified.
 - **Overall** = 0.6 × 3.0 + 0.4 × 4 = **3.40**.
-- The original €5/month owner app scores about S3 1 and S4 2 for a Sellability of about 2.75.
+- The original €5/month owner app scores about the same on the rubric: S2 rises to 5, while S3 falls to 1, S4 to 2 and S8 to 2, for a Sellability of about 3.0. The reshape is chosen for two reasons the rubric does not capture: it moves the alert to the party with an incentive to act and document it, and it uses a concentrated channel. The behavioural kill risk (owners of struggling firms ignore alerts) applies to the original, not the reshape.
 
 **Open [I] checks.**
 - Would 10 asesorías run a quarterly bulk screen, and pay €19–39/month?
@@ -544,6 +550,7 @@ Every answer is reviewed by a planning professional during the MVP. The subscrip
 **(d) Willingness to pay.**
 - Openers already pay €300 for a technician's viability study, €500–1,000 for an ECU certificate, and €600–1,250+ for an ECU-managed declaración responsable [notes: ADM-01]. The council's own consulta cost €52.85 (común) or €347.35 (especial) in 2016, with a one-month answer [new: Papelea, above].
 - A €49–149 pre-screen sits well under these anchors, but is less authoritative.
+- **Type A (secondary) test.** The price gap is large: €49–149 against €300–1,000. But the switch is not realistic as a substitute, because ECU certificates and the council's consulta carry legal weight and a pre-screen does not. It works as a complement that filters premises before paying for the binding step, which is why the reshape targets repeat placers.
 - Agents' willingness to pay is unevidenced [I].
 
 **(e) Distribution.**
@@ -652,7 +659,7 @@ The repayment risk is now formalised and real. The product still fails on four c
 **(h) Kill criteria.**
 1. Fewer than a quarter of interviewed grant-holding SMEs manage justification themselves: **open [I].** The Kit Digital structure and the Andalusian MOVES "empresa adherida" model point that way [notes: ADM-15].
 2. Consultancies won't pay €149/month: **open [I].** An incumbent at €200 with ERP features makes a new €149 tool a hard sell.
-3. The NGEU wave fades after 2026–2028: **met in direction.** No new NGEU grants after 31 Aug 2026, and the successor "España Crece" is a mobilisation vehicle, not new grants.
+3. The NGEU wave fades after 2026–2028: **met in direction.** No new NGEU grants after 31 Aug 2026. The successor "España Crece" is described only as mobilising more than €120bn; its instruments (grants or loans) were not read.
 
 **Scores**
 
@@ -693,7 +700,7 @@ The repayment risk is now formalised and real. The product still fails on four c
 **(b) Competitors.**
 - **Official open data (free).** The Ministry of Hacienda publishes the dataset "Contratos menores publicados en los perfiles del contratante ubicados en la Plataforma de Contratación del Sector Público (desde el 1 de enero de 2018)":
   - updated daily (ATOM/CODICE), with yearly and monthly zips (sindicación 1143);
-  - alongside tenders aggregated from the regional platforms since 2016;
+  - a separate feed aggregates *tenders* from the regional platforms since 2016, but it explicitly excludes minor contracts. Minor contracts of bodies whose perfil sits only on a regional platform are therefore not in the national feed;
   - plus the free **OpenPLACSP** tool "para facilitar el tratamiento de los conjuntos de datos abiertos" [new: https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx and .../contratosmenores.aspx, seen 23 Oct 2026].
 - **A sample of the live feed** (167 entries on 23 Oct 2026) carries the object, contracting body, amounts with and without VAT, the awardee's NIF and name, CPV code, award date and an SME-awarded flag [new: https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1143/contratosMenoresPerfilesContratantes.atom, fetched 23 Oct 2026].
 - **Gobierto Contratación** (company plans) [new: https://contratos.gobierto.es/empresas/planes and https://contratos.gobierto.es/empresas, seen 23 Oct 2026]:
@@ -712,6 +719,8 @@ The repayment risk is now formalised and real. The product still fails on four c
 
 **(d) Willingness to pay.** Anchors are €18 per report and €300–500/year entry plans (Gobierto). The hypothesised €19–39/month (€228–468/year) is the same price as an incumbent that already has the data.
 
+**Type A (secondary) test.** Fails. The incumbent's entry price (€300/year) is not high enough to leave room for a cheaper alternative, and the underlying data is free.
+
 **(e) Distribution.** SEO ("contratos menores [ayuntamiento]"), Cámaras, sector associations and gestorías. All unproven, and Gobierto and licitaciones.es already compete on SEO.
 
 **(f) Build feasibility.**
@@ -724,7 +733,7 @@ The repayment risk is now formalised and real. The product still fails on four c
 **(h) Kill criteria.**
 1. Fewer than half of sampled municipalities publish supplier and amount: **not met** for PLACSP-hosted bodies (legal duty plus open feed). Regional-platform coverage is not sampled.
 2. licitaciones.es already covers minor contracts: **unverified.** The equivalent condition is **met by Gobierto Contratación**, whose explorer includes minor contracts with alerts.
-3. Copy-risk test (does anyone already hold a normalised minor-contract dataset?): **met.** The State (PLACSP open data and OpenPLACSP) and Gobierto do.
+3. Copy-risk test (does anyone already hold a normalised minor-contract dataset?): **met** for PLACSP-hosted bodies. The State (PLACSP open data and OpenPLACSP) and Gobierto hold it. The only residual gap is minor contracts on the seven regional platforms and on municipal profiles outside PLACSP; Gobierto's coverage of these was not checked.
 
 **Scores**
 
@@ -784,6 +793,8 @@ The need is real after an event. But prevention has no observed willingness to p
 
 **(d) Willingness to pay.** None observed for prevention. Post-event help is free (Consorcio filing, Generalitat legal aid). The insurer-bundled route is unevidenced.
 
+**Type C test (€4/month).** Not viable. The value appears only after a rare event, the refresh tasks need user effort, and free substitutes exist. Only a per-policy fee paid by an insurer or bank could work, and no such price was found.
+
 **(e) Distribution.**
 - Insurers and brokers (B2B2C), gestorías, associations in affected comarcas.
 - No partner evidence. Post-event search spikes are short.
@@ -833,7 +844,7 @@ The desk evidence (free substitutes, simple Consorcio requirements, a cleared 20
   - REA apoderamientos (RD 203/2021 arts. 32–33);
   - DEHú "Gran destinatario" services for automated consultation (terms for third parties not verified).
 
-  This matters to any idea that assumes "we will read the client's official mailbox", for example IDEA-03, IDEA-53, IDEA-57 and the gestoría channel generally [new: AEAT help pages, 16–19 Oct 2026].
+  This matters to any idea that assumes "we will read the client's official mailbox". Examples are the immigration ideas (IDEA-52, IDEA-53, IDEA-57), where colegiado filers receive resolutions electronically as representatives (Ley 39/2015 art. 14.2.c–d), and the gestoría channel generally [new: AEAT help pages, 16–19 Oct 2026].
 - **Free official alerts now exist:**
   - DEHú email to up to 5 addresses, and push through the *Notifica App*;
   - AEAT SMS, email and AEAT-app alerts;
@@ -862,7 +873,7 @@ The desk evidence (free substitutes, simple Consorcio requirements, a cleared 20
 
 **3.5 Tax-tech items for batch 1 and others**
 - **No official list of compliant VeriFactu software.** The AEAT FAQ (updated 21 Oct 2026) says certification is the producer's self-declaration and "no se prevé ningún registro previo del producto SIF". Any idea promising "is my software compliant?" (IDEA-04, IDEA-05, IDEA-06, IDEA-39) must build its own database.
-- **Orden HAC/1028/2026** (BOE-A-2026-20587) entered into force the day after publication (5 Oct 2026), starting the periods in DF 8ª of Ley 18/2022 and in RD 238/2026 DT 1ª–3ª and DF 4ª. The Consejo de Gestores' draft table makes status reporting for firms of €8M or less voluntary until the 36-month date. Batch 1 owns C-05 and C-08.
+- **Orden HAC/1028/2026** (BOE-A-2026-20587), published 5 Oct 2026, entered into force on 6 Oct 2026, starting the periods in DF 8ª of Ley 18/2022 and in RD 238/2026 DT 1ª–3ª and DF 4ª. The Consejo de Gestores' draft table makes status reporting for firms of €8M or less voluntary until the 36-month date. Batch 1 owns C-05 and C-08.
 - **Modelo 170 confirmed in the BOE:**
   - RD 253/2025 (BOE-A-2025-6599): monthly reporting of collections by any card and by "sistemas de cobro asociados a un número de teléfono móvil" (Bizum), with no €3,000 threshold, from 1 Jan 2026;
   - Orden HAC/747/2025 (BOE-A-2025-14600): first return for Jan 2026, filed in Feb 2026; also approves the monthly modelo 196 (accounts) and the annual modelo 174 (cards, €25,000 threshold).
@@ -872,7 +883,7 @@ The desk evidence (free substitutes, simple Consorcio requirements, a cleared 20
 **3.6 Public money**
 - **Orden HAC/580/2026** (BOE-A-2026-12520, 10 Jun 2026) regulates repayment of Recovery Facility funds. A prior requirement gives **at least 20 working days** to produce documentation, extendable by 10; private beneficiaries may defer or split repayment debts. Relevant to IDEA-13 (Kit Digital websites), IDEA-60 (startup public funding post-award) and IDEA-61.
 - **No extension of NGEU beneficiary execution to 2028** is shown on planderecuperacion.gob.es. The site headlines "España Crece toma el relevo para movilizar más de 120.000 M€" (details not read; IDEA-60 should check whether it is grants or loans).
-- **Minor contracts are open data.** PLACSP has published minor contracts daily since 2018 (sindicación 1143), with object, body, amounts, awardee NIF and name, CPV and an SME flag, plus the free OpenPLACSP tool. Gobierto Contratación sells alerts and competitor intelligence from €300/year and reports from €18. Relevant to any procurement or B2G idea (STA-13, PRO-17).
+- **Minor contracts are open data.** PLACSP has published minor contracts daily since 2018 (sindicación 1143), with object, body, amounts, awardee NIF and name, CPV and an SME flag, plus the free OpenPLACSP tool. This covers only bodies whose perfil is on PLACSP; the regional-platform aggregation excludes minor contracts. Gobierto Contratación sells alerts and competitor intelligence from €300/year and reports from €18. Relevant to any procurement or B2G idea (STA-13, PRO-17).
 
 **3.7 Company law (for startup and finance ideas)**
 - LSC arts. 363.1.e, 365, 366 and 367 are confirmed: the two-month duty; joint liability for later debts; a presumption that claimed debts post-date the cause; a safe harbour if insolvency or restructuring is filed within two months.
@@ -937,6 +948,7 @@ The desk evidence (free substitutes, simple Consorcio requirements, a cleared 20
   - BOE Tablón Edictal Único information and alert pages.
 - **AEAT help pages:** notifications, DEHú, apoderamiento GENERALNOT, alerts, días de cortesía (updated 16–19 Oct 2026); VeriFactu FAQ on the declaración responsable (21 Oct 2026).
 - **INE API:** DIRCE tables 73018 and 73019.
+- **datos.gob.es catalogue API:** queried by dataset title for city planning datasets (5 calls, mostly HTTP 403). This is the official open-data catalogue, not a general search engine, and it yielded nothing used here.
 - **Professional bodies and official sites:**
   - Consejo General de Gestores: Memoria 2025 and the e-invoicing calendar post;
   - graduadosocial.org;
