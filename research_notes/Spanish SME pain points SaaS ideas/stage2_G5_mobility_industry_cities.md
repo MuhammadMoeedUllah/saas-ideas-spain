@@ -549,7 +549,7 @@ Eight ideas follow. The ninth, G5-I09 (the reshaped U3 data layer that G5-I03 an
   - Manual web uploads with a digital certificate, at most 5 documents and 5 MB each.
   - The RCA API, for high-volume buyers who build their own integration.
   - Gestorías and consultants; winery ERPs (not verified). No prices in the notes (IND-18, IND-19).
-  - Generic e-signature is costly at harvest volume: Signaturit Business costs €35/user/month for 5 envelopes and Business+ €57 for 20 (software table).
+  - Generic e-signature is costly at harvest volume: Signaturit Business costs €35/user/month on annual billing (€43 monthly) for 5 envelopes a month, and Business+ €57 (€72) for 20 (software table).
 - **Price hypothesis:** €39/month for up to 300 contracts a year and €99/month for up to 3,000. Alternatively, a €149 harvest-season pass for small wineries.
 - **Channels:**
   - FEV, Cooperativas Agro-alimentarias, FIAB, and agri gestorías.
