@@ -8,7 +8,7 @@ turned into ranked SaaS product ideas.
 
 | Stage | What happens | Output |
 |---|---|---|
-| 1. Capture | 13 parallel research tracks collect evidence-backed pain points, lawsuits, sanctions and friction across all domains and cities | `research_notes/Spanish SME pain points SaaS ideas/*.md` |
+| 1. Capture | 17 parallel research tracks collect evidence-backed pain points, lawsuits, sanctions and friction across all domains and cities | `research_notes/Spanish SME pain points SaaS ideas/*.md` |
 | 2. Filter | Drop noise (weak evidence, not software-solvable, postponed rules, already cheaply solved) and turn real pains into candidate SaaS ideas | Idea longlist in `research_notes/` |
 | 2b. Validate | Check each idea from several angles: competitors, regulation status, demand evidence, pricing, distribution, build effort, defensibility, plus an adversarial review | Validation notes in `research_notes/` |
 | 3. Rank | Score validated ideas by how sellable they are and how severe the problem is | `reports/` |
@@ -36,6 +36,14 @@ Ideas are grouped into three types:
 | `startups_tech_ecosystem.md` | Ley de Startups, ENISA, fundraising, hiring, foreign founders |
 | `cities_macro_surveys.md` | City-by-city profiles, low-emission zones, municipal costs, national SME surveys |
 | `voice_of_smes_software_market.md` | Forum complaints, software prices and complaints, Kit Digital aftermath |
+| `midterm_housing_coliving.md` | Mid-term rentals, coliving, remote-worker housing, rent caps, ID verification |
+| `expat_relocation_bureaucracy.md` | NIE/TIE, cita previa, visas, Beckham regime, relocation services market |
+| `zbe_lez_fleets.md` | Low-emission zones by city, enforcement, fleet impact, LEZ data and routing tools |
+| `gaming_streaming_creators.md` | Spanish gaming market, streamers, Kings League, creator leagues, gambling rules |
+
+User-supplied ideas (ColivEs, PermisoFast, EcoRoute, Fandango Arena, LigaHub) and the claims
+behind them are recorded in `00_user_supplied_ideas.md`. They go through the same validation
+and ranking as every other idea.
 
 ## Status
 
