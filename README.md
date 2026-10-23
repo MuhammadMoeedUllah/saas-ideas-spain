@@ -65,5 +65,4 @@ runs it also carries each pain point's filter status. Rebuild it with
   `data/saas_ideas_validated.csv`: 2 GO (pilot), 21 RESHAPE, 42 KILL
 - [ ] Adversarial review of the survivors, bundle analysis, and a fair-hearing pass on the
   user-supplied ideas
-
 - [ ] Stage 3: ranking and final report
