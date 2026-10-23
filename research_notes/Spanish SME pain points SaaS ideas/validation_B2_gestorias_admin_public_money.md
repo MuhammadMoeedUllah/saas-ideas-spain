@@ -1,195 +1,54 @@
 # Validation batch 2: gestorías, the public administration and public money
 
-*Validator: batch 2 of 8. Prepared 23 October 2026. Ideas: IDEA-06, IDEA-07, IDEA-08, IDEA-09, IDEA-10, IDEA-25, IDEA-26, IDEA-27, IDEA-28.*
+*Validator: batch 2 of 8. Prepared 23 October 2026 (Cortes dissolved 6 Oct 2026; general election 29 Nov 2026).*
+*Ideas: IDEA-06, IDEA-07, IDEA-08, IDEA-09, IDEA-10, IDEA-25, IDEA-26, IDEA-27, IDEA-28.*
+*Searches used: 22 of the 24 allowed (log in section 4).*
 
-*Status: in progress. Sections are appended idea by idea; the summary table is filled in at the end.*
-
-*Conventions: [new: URL, date] = fetched or searched in this validation, with the date the page was published or seen; [notes: PAIN-ID] = stage-1 evidence. Prices exclude VAT unless stated. "Single source" marks claims with one origin.*
+*Conventions:*
+- *[new: URL, date] = fetched or searched in this validation. The date is the page's publication or update date where shown, otherwise the date seen (23 Oct 2026).*
+- *[notes: PAIN-ID] = stage-1 evidence.*
+- *"Search summary" = a claim read only in a search-result summary; its page was not opened.*
+- *"Single source" marks claims with one origin.*
+- *Prices exclude VAT unless stated. Scores follow the batch rubric; Sellability is the mean of S1–S8, and Overall = 0.6 × Sellability + 0.4 × P.*
 
 ---
 
 ## 1. Batch summary
 
-(filled in at the end)
+| ID | Name (validated or reshaped form) | Type | Verdict | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | Sellability | P | Overall | Confidence |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| IDEA-06 | Gestoría client-readiness cockpit, reshaped as a cross-vendor tracker for the 2027–29 invoicing wave, with free modules | B | RESHAPE | 4 | 3 | 3 | 3 | 3 | 4 | 2 | 3 | 3.13 | 3 | 3.08 | medium |
+| IDEA-07 | Official e-notification watchdog and tax-debt guard | C (B) | KILL | 4 | 5 | 2 | 2 | 2 | 4 | 1 | 3 | 2.88 | 3 | 2.93 | high |
+| IDEA-08 | Hacienda letter shield (card/Bizum vs 303 cross-check) | B (C) | KILL | 3 | 4 | 2 | 2 | 3 | 3 | 2 | 3 | 2.75 | 3 | 2.85 | medium |
+| IDEA-09 | Autónomo cuota and regularisation tracker | C | KILL | 4 | 5 | 2 | 3 | 2 | 5 | 1 | 3 | 3.13 | 3 | 3.08 | medium-high |
+| IDEA-10 | SL director guard, reshaped as a gestoría-run director-duty screener | B (was C) | RESHAPE | 4 | 3 | 2 | 3 | 4 | 4 | 1 | 3 | 3.00 | 4 | 3.40 | medium-low |
+| IDEA-25 | Pre-lease "can I open here?", reshaped as a B2B address pre-screen for agents and franchise teams (Madrid) | B (A) | RESHAPE | 3 | 2 | 3 | 3 | 4 | 3 | 3 | 3 | 3.00 | 3 | 3.00 | low |
+| IDEA-26 | Grant justification and repayment-risk workspace | B | KILL | 4 | 3 | 2 | 2 | 3 | 4 | 2 | 2 | 2.75 | 3 | 2.85 | medium-low |
+| IDEA-27 | Small public-contract radar, including contratos menores | B (A) | KILL | 2 | 3 | 3 | 3 | 2 | 4 | 1 | 3 | 2.63 | 2 | 2.38 | high |
+| IDEA-28 | Flood-ready business evidence vault and claims tracker | C | KILL | 2 | 3 | 1 | 2 | 3 | 5 | 1 | 2 | 2.38 | 3 | 2.63 | medium |
+
+**Reading the table**
+
+- **No GO in this batch.** Six ideas are killed and three reshaped. The three reshapes (IDEA-06, IDEA-10, IDEA-25) are all B2B products sold to intermediaries, not €5/month direct subscriptions.
+- **Every type C (about €5/month) idea here fails for the same reason.** The administration already gives the core away free, or an incumbent bundles it:
+  - official free alerts in DEHú, the AEAT app and BOE NIF alerts (IDEA-07);
+  - Declarando's recommended cuota and free calculators (IDEA-09);
+  - free Consorcio and Generalitat channels (IDEA-28).
+
+  None of these ideas has a data or integration moat.
+- **The gestoría is the only concentrated channel found.** About 30,400 advisory firms with staff exist (CNAE 692), plus 5,869 practising gestores administrativos and 17,000 colegiados graduados sociales.
+- **The best use of IDEA-06, IDEA-07, IDEA-09 and IDEA-10 is therefore one gestoría product, not four.** Each was too thin on its own:
+  - the cross-vendor client-readiness tracker (IDEA-06) is the core;
+  - the quarterly half-capital and accounts-deposit screener (IDEA-10) is a paid module;
+  - an apoderamiento-based notification view (IDEA-07) and a bulk societario-base check (IDEA-09) are free retention features.
+- **The ideas about dealing with public bodies (IDEA-25 to IDEA-28) are weak.**
+  - IDEA-27: the State already publishes minor-contract data and a free tool.
+  - IDEA-26 and IDEA-28: an incumbent (Fandit) or free public channels cover the job.
+  - IDEA-25: survives only as a niche B2B pre-screen.
 
 ---
 
 ## 2. Ideas
-
-#### IDEA-07: Official e-notification watchdog and tax-debt guard — KILL (high)
-
-**Validated definition.** A €4–9/month alert service per company (and a €1–2/client board for gestorías) that watches DEHú, the AEAT and the TGSS, escalates before the day-10 deemed-delivery date, tracks certificates and debts, and searches BOE edicts by NIF. Validation found that every core function except multi-channel escalation is already offered free by the administration or sold cheaply by incumbents to gestorías, and that the "no lawful access" fear is unfounded. As a standalone product it is killed. What survives is a feature: an apoderamiento-based, multi-client notification view inside IDEA-06, for gestorías that do not already run a3, Cegid or Sage tools.
-
-**(a) Problem reality and rule status (Oct 2026).** The rule is in force and is not exposed to the election.
-- Legal persons, entities without legal personality, professionals in compulsory colegios and their representatives must deal with the administration electronically (Ley 39/2015 art. 14.2). An e-notice is deemed rejected 10 calendar days after it is made available without access to its *content* (art. 43.2). The alert is sent, but "la falta de práctica de este aviso no impedirá que la notificación sea considerada plenamente válida" (art. 41.6) [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-10565/texto/bloque/a43 and /a41, consolidated text, seen 23 Oct 2026].
-- Art. 43.1 defines "comparecencia" as access by the interested party or representative "al contenido de la notificación". Viewing the pending list is therefore not access, and the AEAT's own pending-notices screen separates the list (exportable to CSV) from a signed "Firmar y Enviar" step to open content [new: https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/notificaciones-electronicas-ayuda-tecnica/notificaciones-comparecencia-sede.html, updated 19 Oct 2026]. This settles the batch question "does viewing the pending list count as access": no.
-- **DEHú coverage (settles part of the section-5 e-notification question).** RD 203/2021 art. 42.5: every notice from a state-level issuer "se pondrá a disposición del interesado a través de la Dirección Electrónica Habilitada única"; issuers may also notify in their own sede. Art. 44.3 tells all administrations to make their notices reachable through DEHú, but adhesion by regions and councils is voluntary (art. 65). Art. 43 calls the alert "de carácter meramente informativo" [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2021-5032/texto/bloque/a4-4, /a4-5, /a4-6, seen 23 Oct 2026]. The AEAT says all its notices, "no sólo las electrónicas", go to DEHú [new: AEAT, informacion-general-sobre-notificaciones-electronicas.html, updated 19 Oct 2026]. So the "9,000+ sedes" problem (vendor claim, [notes: ADM-08]) is real only for regional, local and judicial issuers.
-- **Courts.** Legal persons must receive court communications electronically. A first summons unopened for 3 days goes to home delivery and then to the Tablón Edictal Judicial Único; other court communications are deemed made after 3 days (LEC arts. 155.1 and 162.2, versions in force since 20 Mar 2024 and 3 Apr 2025) [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2000-323/texto/bloque/a155 and /a162, seen 23 Oct 2026]. This confirms the snippet-only claim in [notes: ADM-08]; the judicial e-office is a separate channel from DEHú.
-- **24-hour embargoes: confirmed, no longer single source.** Resolución de 4 de junio de 2026 of the AEAT's Directorate-General, BOE-A-2026-13031 (BOE 16 Jun 2026). Orders are made available before 20:00, collected between 20:00 and 07:00, and retained "antes de las 08:00 horas del día siguiente". Embargo extends to up to ten accounts per diligencia at the same entity. It applies to diligencias issued from **2 Nov 2026**, with the REST channel from 1 Mar 2027 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-13031, seen 23 Oct 2026]. The press summary was accurate [new: AyE, 22 Aug 2026, https://www.autonomosyemprendedor.es/articulo/hacienda/hacienda-podra-embargar-cuentas-bancarias-autonomos-menos-24-horas-partir-septiembre/20260821085621055511.html].
-- **Case law is still split; no 2026 Supreme Court ruling was found** (1 search):
-  - strict line: TS 1927/2017 [notes: ADM-08] and AN 489/2026 [notes: TAX-18];
-  - protective line: TS 17 Dec 2024 (Colombo Enterprises SL v Agencia Tributaria de Andalucía). The court annulled an apremio because the switch to electronic notification was unannounced, and said the administration "debió haber tomado medidas alternativas" once it saw the notice had not been accessed [new: https://primeralecturaediciones.com/sentencias/archivo/el-ts-protege-el-derecho-a-la-tutela-judicial-efectiva-en-notificaciones-electronicas, 4 Feb 2025]. Also TSJ Murcia 396/2025 [notes: ADM-08].
-
-  The fear factor that drives demand persists.
-
-**(b) Competitors.**
-
-| Product | Segment | Coverage claim | Price | Source |
-|---|---|---|---|---|
-| **Official DEHú** | everyone | AGE plus adhered bodies | free: email alerts to up to 5 addresses; push alerts through the official *Notifica App*; "Gran destinatario" web services for automated consultation | [new: AEAT help pages acceso-notificaciones-electronicas-dehu.html and recibir-avisos-nuevas-notificaciones-comunicaciones-dehu.html, updated 16 Oct 2026] |
-| **AEAT avisos** | everyone | AEAT | free SMS and email alerts, plus notification alerts in the AEAT app; up to 30 "días de cortesía" a year when no AEAT notice is put in DEHú | [new: AEAT avisos-notificaciones-telefono-movil-correo-electronico.html and dias-cortesia-notificaciones.html, updated 19 Oct 2026] |
-| **BOE TEU and TEJU alerts** | everyone | edicts | free same-day email alert when an edict carrying your NIF is published; companies sign up with a certificate. Caveat: some issuers omit the NIF | [new: https://www.boe.es/notificaciones/ciudadanos_y_empresas/index.php, seen 23 Oct 2026] |
-| **MsNotifica (Cegid Microdata)** | professional firms reselling to clients | DEHú, AEAT, Seguridad Social, DGT, e-NOTUM, Junta de Andalucía, Euskadi; "más de 9000 organismos" | 50 CIFs €40/month; 100 €50; 250 €90; 500 €120; extra CIF from €0.25/month, i.e. **€0.24–0.80 per client per month** | [new: http://msnotifica.com/ and http://msnotifica.com/precios/, © 2025, seen 23 Oct 2026] |
-| **a3ASESOR \| Portal Neos (Wolters Kluwer)** | asesorías | 060/PAG, AEAT, Seguridad Social, DGT, DEH, GENCAT, ORGT Barcelona, Xunta, Comunidad de Madrid NOTE, Basque foral bodies, LexNET; TEU tracking; certificate-expiry control; mass association of the despacho's certificates or apoderamiento; alert manager | pay per use (no list price) | [new: Wolters Kluwer brochure, https://assets.contenthub.wolterskluwer.com/api/public/content/079a0fe3f7f042369c4c1ecb4ee62ade, undated, older vintage] |
-| **IvNeos (Ivnosys, Signaturit group, now Namirial)** | large companies (Cepsa, Iberdrola, Abertis testimonials) | "más de 9.000 organismos públicos" | quote only | [new: https://ivnosys.com/gestor-notificaciones-electronicas-ivneos-2/, seen 23 Oct 2026] |
-| **EdasNEO (ZeroComa)** | asesorías; said to be included in Sage Despachos | not verified | not verified | [new: edasneo.com, seen 23 Oct 2026] |
-| **CopilotGestoria** | gestorías | — | notification module said to be included in its SaaS (from €15/month) | [new: https://copilotgestoria.com/blog/dehu-2026-guia-apoderamiento-protocolo-gestion-notificaciones-electronicas-gestorias, 28 Apr 2026, vendor source] |
-| **Online asesorías bundling it** | autónomos and SMEs | DEHú, via the client's apoderamientos | Ayuda T Pymes: "revisión periódica de DEHú" is part of the service, as an "obligación de medios"; liability capped at 2× fees; plans from €29.95/month | [new: https://www.ayudatpymes.com/terminos_y_condiciones, updated 1 Apr 2026] |
-
-- **Gap.** What is left is multi-channel escalation (WhatsApp and phone call to two named people), a heartbeat, a diligence log, and coverage of non-DEHú regional, local and judicial sedes. All are thin and copyable.
-- **Review complaints.** One vendor blog cites "una tasa de error del 41%" in DEHú and AEDAF criticism that email alerts were lost when DEHú replaced NEO. Both are second-hand, and the 41% figure is internally inconsistent [new: CopilotGestoria blog above]. If verified, they would be the strongest argument for an independent watchdog.
-
-**(c) Buyers and market size.**
-- INE DIRCE (1 Jan 2025):
-  - 3,310,824 active companies, of which 1,859,925 are natural persons;
-  - so 1,450,899 legal entities and entities without personality, including 1,127,515 SLs, 46,763 SAs and 108,354 comunidades de bienes [new: INE API table 73018, https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73018?nult=1, seen 23 Oct 2026].
-- Reachable share: the micro firms without an adviser holding apoderamientos. That share is unknown [I].
-- Revenue ceiling at €5/month: 1% of 1.45M entities ≈ 14,500 × €60 ≈ €0.87M ARR. The gestoría channel at incumbent prices (€0.25–0.80/client) is far lower.
-
-**(d) Willingness to pay.** Incumbents sell to gestorías at **€0.24–0.80 per client per month**, 2–8× below the hypothesis of €1–2. SMEs that pay an asesoría €25–130/month already get monitoring inside the fee [notes: TAX-22], [new: Ayuda T T&Cs]. Free official push, email and SMS alerts anchor the SME price near zero.
-
-**(e) Distribution.**
-- Gestorías are concentrated but are competitors' customers: a3, Cegid and Sage bundle this.
-- Banks offering embargo prevention are speculative; no evidence found.
-- Notaries and company-formation services at incorporation: unproven.
-- Search demand was not measured.
-
-**(f) Build feasibility and legal constraints (settles the cross-cutting access check batch 2 owns).**
-- **Lawful access without holding clients' private keys exists.**
-  - At the AEAT, the obligated party grants a natural or legal person the **GENERALNOT** power, or a specific power to receive notifications. It is granted online with certificate or Cl@ve, in person, or by notarial document, and the apoderado confirms it. The apoderado then sees the poderdante's notices in DEHú and in the AEAT sede ("En nombre de") with its own credentials [new: AEAT acceso-dehu-mediante-apoderamiento.html, updated 16 Oct 2026].
-  - Representation can also be recorded in the State's Registro Electrónico de Apoderamientos (RD 203/2021 arts. 32–33) [new: BOE blocks a3-4, a3-5].
-  - DEHú offers **"Gran destinatario"** services "para la consulta automatizada de notificaciones", with published specifications [new: AEAT acceso-notificaciones-electronicas-dehu.html]. Whether a third-party apoderado may use Gran destinatario for many poderdantes was not verified, because the specifications are on dehu.redsara.es, which blocked automated access.
-- **Constraints.**
-  - The apoderado can open content, which starts deadlines. That is liability (Ayuda T limits it to an "obligación de medios").
-  - Non-DEHú regional and local sedes still need per-sede integration.
-  - Data are confidential tax data.
-  - Holding certificates is not required, but would be needed for sedes without apoderamiento.
-- **Time to MVP:** 2–4 weeks for alert parsing and escalation; 1–2 months for an apoderamiento-based DEHú/AEAT reader (subject to the Gran destinatario terms).
-
-**(g) Defensibility.** None for the alert layer. Incumbents own the gestoría base, and the official channels improve for free (Notifica App push, 5 email addresses). Multi-sede coverage is an integration grind that IvNeos, Cegid and Wolters Kluwer have already done.
-
-**(h) Kill criteria.**
-1. "No lawful programmatic access without holding clients' private keys" (or certificate custody unacceptable to more than 70% of owners): **not met.** Apoderamiento (GENERALNOT/REA) and Gran destinatario exist.
-2. "The official apps already push reliable alerts": **largely met.** DEHú Notifica App push plus up to 5 emails, AEAT SMS/email/app, BOE NIF alerts. Reliability is disputed only by unverified vendor claims.
-3. Pilot: under half of pilot companies receive a notice in six months: **open [I].**
-
-Also met: the gestoría board is saturated at prices below the hypothesis.
-
-**Scores**
-
-| Criterion | Score | Justification |
-|---|---|---|
-| S1 Urgency | 4 | Enforced, continuous duty; overnight embargo regime from 2 Nov 2026 (BOE-A-2026-13031) |
-| S2 Buyers | 5 | About 1.45M legal entities plus colegiados (DIRCE 2025) |
-| S3 WTP | 2 | Official alerts are free; gestoría tools cost €0.24–0.80 per client |
-| S4 Reachability | 2 | Gestorías already equipped by a3, Cegid and Sage; SMEs without advisers are diffuse |
-| S5 Competitive gap | 2 | Several decent tools plus free official push and email; only escalation and non-DEHú sedes are open |
-| S6 Build speed | 4 | Alert layer in weeks; apoderamiento reader in 1–2 months |
-| S7 Defensibility | 1 | Trivially copyable; incumbents bundle it |
-| S8 Retention | 3 | Recurring duty and a diligence log, but invisible value when no notices arrive |
-
-- **Sellability** 2.88 (23/8). **P** 3: severe when it happens (apremio surcharges of 5–20%, embargo), but frequency per firm is unquantified and most firms already have a monitor.
-- **Overall** = 0.6 × 2.875 + 0.4 × 3 = **2.93**.
-
-**Open [I] checks.**
-- Six-month pilot of notice frequency among micro SLs without an adviser.
-- Share of SLs whose gestoría holds GENERALNOT or REA powers.
-- Gran destinatario terms for third-party apoderados (download the specification from DEHú).
-- Measured DEHú alert failure rate.
-
-**What would change the verdict.**
-- Verified evidence that DEHú or AEAT alerts fail often.
-- A large set of high-stakes issuers outside DEHú (regional tax agencies, big-city councils, the judicial e-office) that the incumbents do not cover.
-- A bank or neobank willing to pay for embargo prevention as a white-label service.
-
-Any of these would justify a RESHAPE to a B2B2C watchdog sold through banks. Otherwise the useful parts become a free feature of IDEA-06.
-
-#### IDEA-09: Autónomo cuota and regularisation tracker — KILL (medium-high)
-
-**Validated definition.** A €3–4/month (or €29/year) subscription for autónomos and societarios. It:
-- estimates year-to-date net income for RETA purposes from invoices, bank data or manual entries;
-- maps the estimate to one of the 15 tramos;
-- shows the coming regularisation in euros;
-- reminds the user of base-change windows and checks the societario minimum.
-
-Validation confirms the pain and the formula, but finds the core feature already sold inside the leading autónomo platform and given away as free calculators. Nothing defensible is left for a standalone subscription. It is killed as a product and kept as a free feature (a bulk societario-base check) inside IDEA-06.
-
-**(a) Problem reality and rule status.**
-- **2026 parameters (settles C-09).** The 2026 tables are in Orden PJC/297/2026 of 30 March (BOE-A-2026-7296, 31 Mar 2026), art. 18 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-7296, seen 23 Oct 2026]:
-  - **Bases:** maximum €5,101.20 for every tramo. Fifteen tramos: three reduced (tramo 1 ≤€670: base €653.59–718.94) and twelve general (tramo 12 >€6,000: minimum base €1,928.10).
-  - **Contribution rates:** common contingencies 28.30%, professional 1.30%, MEI 0.90%.
-
-  The "€4,909 maximum base" in [notes: TAX-12] is the 2025 figure; €5,101.20 is correct for 2026. The same table is on the Seguridad Social site [new: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537, seen 23 Oct 2026].
-- **MEI (settles C-03).** LGSS DT 43ª (added by RDL 2/2023) sets 0.80 points in 2025, **0.90 in 2026** and **1.00 in 2027**, rising to 1.2 by 2029 [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-11724/texto/bloque/dt-14, seen 23 Oct 2026]. Orden PJC/297/2026 confirms 0.90% for 2026 and puts it wholly on the autónomo in RETA. The 0.80% figure in the labour notes came from a page that had not been updated.
-- **Net-income rule.** LGSS art. 308.1.c (RDL 13/2022) computes income as IRPF net income plus Social Security contributions, minus a 7% generic-expense deduction (3% for societarios). The TGSS regularises once the tax administration transmits the data the following year [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-11724/texto/bloque/a308, seen 23 Oct 2026]. The formula is public and simple.
-- **Societarios.** Art. 308.1.a, rule 4ª: societarios and family collaborators cannot choose a base below the Régimen General group-7 minimum, and "en el procedimiento de regularización... la base de cotización definitiva no podrá ser inferior a dicha base mínima". For 2026 that minimum is €1,424.40. Orden PJC/297/2026 art. 18.4 lets them keep their 2025 provisional base during 2026, so a lump-sum back-charge arrives when 2026 is regularised. This confirms [notes: TAX-13].
-- **Regularisation calendar.** The 2024 regularisation was notified from January to February 2026. Underpayments are due the month after notification; refunds are automatic [new: Última Hora, 12 Feb 2026, https://www.ultimahora.es/noticias/local/2026/02/12/2568841/pimem-gestores-administrativos-instan-autonomos-revisar-regularizacion-cuotas-2024.html]. Refunds are paid within four months (Seguridad Social page above).
-- **Junts bill on societario bases.** No vote or approval was found (1 search). Opponents (PP, Junts, Vox) planned to act through amendments [new: Forbes, https://forbes.es/economia/903587/pp-junts-y-vox-trataran-de-frenar-en-el-congreso-el-sablazo-a-los-autonomos-societarios-y-colaboradores/, 2026]. Under Reglamento del Congreso art. 207 (as amended 22 Jul 2025), "Disuelto el Congreso... quedarán caducados todos los asuntos pendientes" except those for the Diputación Permanente [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-1982-5196/texto/bloque/art207, seen 23 Oct 2026]. **Any pending bill lapsed on 6 Oct 2026, so the €1,424.40 floor stands.**
-- **2027 bases.** Not set; the 2027 table needs a budget law or decree, and none was found. The MEI rises to 1.0% by law.
-- **Pain evidence.** 35.1% paid after regularisation and rated the process 2.2/10 [notes: TAX-12]. Societarios face about +€135/month, and the Ombudsman criticises the method [notes: TAX-13, ADM-11]. National TGSS totals for the 2023 and 2024 regularisations were **not found** (1 search). Only a regional colegio figure exists: in Baleares, 29% of autónomos had well-adjusted bases [new: Última Hora above].
-
-**(b) Competitors.**
-- **Declarando Pro** (€39.90/month + VAT on the annual plan without filings; €69.90 with filings) includes "Cuota de autónomo recomendada para evitar reclamaciones de Seguridad Social — Usamos un algoritmo patentado que predice lo que vas a ganar durante el año, para que pagues la cuota adecuada". Declarando also publishes a free "Simulador de la cuota de autónomos" [new: https://declarando.es/precios, seen 23 Oct 2026].
-- **Cuéntica** plans: "Calcula la cuota de autónomos y el tramo que te corresponde según tu contabilidad real". It also offers a free public calculator with the 2026 tables [new: https://cuentica.com/precios/ and https://cuentica.com/calculadora-cuota-autonomos/, seen 23 Oct 2026].
-- **Import@ss (TGSS)** shows each person's "Regularización anual de cuotas" result and lets them change bases. No simulator with alerts was found on its landing page [new: https://portal.seg-social.gob.es/wps/portal/importass/importass/, seen 23 Oct 2026].
-- Not checked: Quipu, Holded, TaxDown and Infoautónomos tool pages (Holded's calculator URL returned 404).
-- **Gap.** Only autónomos who use a traditional gestoría or a basic invoicing app lack continuous tracking. Their gestoría already gets the regularisation notices through RED.
-
-**(c) Buyers and market size.**
-- 3,483,645 people in the RETA at end-Sep 2026 [notes: FIN-18], and about 1.2M societarios and collaborators [notes: TAX-13].
-- Ceiling: at €29/year, 1% of the RETA is about 35k × €29 ≈ €1.0M ARR. The share willing to pay is unknown; ENA shows high outsourcing (57%) [notes: TAX-22].
-
-**(d) Willingness to pay.** The adjacent spend is high (€25–150/month for gestorías and online asesorías [notes: TAX-22]), but this feature is bundled at no marginal price. Free calculators anchor the standalone price at €0. The source's own kill test (at least 1 in 10 trial users paying €2/month) is open [I], but the market anchors are discouraging.
-
-**(e) Distribution.**
-- High-intent searches exist ("regularización cuota autónomos", "calculadora cuota autónomos"), but they are dominated by Infoautónomos, Declarando, Cuéntica and TaxDown content (desk observation).
-- Gestorías and colegios already campaign on the regularisation: the colegio de gestores and PIMEM did so in Baleares [new: Última Hora].
-- Invoicing apps can add the feature themselves.
-
-**(f) Build feasibility.**
-- Formula and tables are public (LGSS 308; Orden PJC/297/2026), so an MVP takes under 4 weeks.
-- Changing the base for the user requires an Import@ss authorisation or RED access. The six change windows a year are from the notes [notes: TAX-12]; the regulation article was not re-fetched.
-- Income data is sensitive, so GDPR applies; no certification is needed.
-
-**(g) Defensibility.** None. The calculation is public and incumbents already market it (Declarando's "algoritmo patentado").
-
-**(h) Kill criteria.**
-1. "Declarando, Cuéntica and Quipu already warn users about band changes": **met** for Declarando (continuous recommendation) and Cuéntica (tramo from real accounts); Quipu not checked.
-2. "The TGSS portal already offers a reliable simulator with alerts": **not met** (none found).
-3. "Fewer than 1 in 10 trial users pay €2/month or more", or retention collapses after one regularisation: **open [I].**
-
-**Scores**
-
-| Criterion | Score | Justification |
-|---|---|---|
-| S1 Urgency | 4 | Annual enforced regularisation; societario back-charge on 2026 income; MEI to 1% in 2027 |
-| S2 Buyers | 5 | 3.48M RETA members |
-| S3 WTP | 2 | Bundled in paid plans and free calculators; no standalone spend evidenced |
-| S4 Reachability | 3 | Search demand is real but owned by incumbents' content; gestorías campaign already |
-| S5 Competitive gap | 2 | Declarando and Cuéntica track it; free simulators |
-| S6 Build speed | 5 | Public formula; MVP in under 4 weeks |
-| S7 Defensibility | 1 | Trivially copyable |
-| S8 Retention | 3 | Periodic use; risk of churn after the regularisation |
-
-- **Sellability** 3.13. **P** 3: a lump-sum cash shock (about €1,600/year for societarios) of money owed anyway, with no penalty if paid on time.
-- **Overall** = 0.6 × 3.125 + 0.4 × 3 = **3.08**.
-
-**Open [I] checks.**
-- Paid conversion at €2–3/month among autónomos who use traditional gestorías.
-- Whether gestorías would pay for a bulk societario-base check (about 1.2M affected).
-- National TGSS regularisation totals.
-
-**What would change the verdict.** Official data showing that a large share of autónomos (above 30%) receive back-charges above €1,000, plus a distribution deal with a large invoicing app or bank willing to embed and pay per user. Even then the moat stays at zero, so it would be at best a feature, not a business.
 
 #### IDEA-06: Gestoría client-obligation cockpit — RESHAPE (medium)
 
@@ -316,6 +175,104 @@ AI makes the summaries nearly free, and each suite vendor can add a readiness pa
 - **To GO:** at least 3 of 10 trial gestorías pay €30/month or more, or a colegio agrees to co-brand.
 - **To KILL:** a3 (Wolters Kluwer), TeamSystem or Sage ships a free cross-vendor readiness panel, or interviews show the spreadsheet takes under 2 hours per change.
 
+#### IDEA-07: Official e-notification watchdog and tax-debt guard — KILL (high)
+
+**Validated definition.** A €4–9/month alert service per company (and a €1–2/client board for gestorías) that watches DEHú, the AEAT and the TGSS, escalates before the day-10 deemed-delivery date, tracks certificates and debts, and searches BOE edicts by NIF. Validation found that every core function except multi-channel escalation is already offered free by the administration or sold cheaply by incumbents to gestorías, and that the "no lawful access" fear is unfounded. As a standalone product it is killed. What survives is a feature: an apoderamiento-based, multi-client notification view inside IDEA-06, for gestorías that do not already run a3, Cegid or Sage tools.
+
+**(a) Problem reality and rule status (Oct 2026).** The rule is in force and is not exposed to the election.
+- Legal persons, entities without legal personality, professionals in compulsory colegios and their representatives must deal with the administration electronically (Ley 39/2015 art. 14.2). An e-notice is deemed rejected 10 calendar days after it is made available without access to its *content* (art. 43.2). The alert is sent, but "la falta de práctica de este aviso no impedirá que la notificación sea considerada plenamente válida" (art. 41.6) [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-10565/texto/bloque/a43 and /a41, consolidated text, seen 23 Oct 2026].
+- Art. 43.1 defines "comparecencia" as access by the interested party or representative "al contenido de la notificación". Viewing the pending list is therefore not access, and the AEAT's own pending-notices screen separates the list (exportable to CSV) from a signed "Firmar y Enviar" step to open content [new: https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/notificaciones-electronicas-ayuda-tecnica/notificaciones-comparecencia-sede.html, updated 19 Oct 2026]. This settles the batch question "does viewing the pending list count as access": no.
+- **DEHú coverage (settles part of the section-5 e-notification question).** RD 203/2021 art. 42.5: every notice from a state-level issuer "se pondrá a disposición del interesado a través de la Dirección Electrónica Habilitada única"; issuers may also notify in their own sede. Art. 44.3 tells all administrations to make their notices reachable through DEHú, but adhesion by regions and councils is voluntary (art. 65). Art. 43 calls the alert "de carácter meramente informativo" [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2021-5032/texto/bloque/a4-4, /a4-5, /a4-6, seen 23 Oct 2026]. The AEAT says all its notices, "no sólo las electrónicas", go to DEHú [new: AEAT, informacion-general-sobre-notificaciones-electronicas.html, updated 19 Oct 2026]. So the "9,000+ sedes" problem (vendor claim, [notes: ADM-08]) is real only for regional, local and judicial issuers.
+- **Courts.** Legal persons must receive court communications electronically. A first summons unopened for 3 days goes to home delivery and then to the Tablón Edictal Judicial Único; other court communications are deemed made after 3 days (LEC arts. 155.1 and 162.2, versions in force since 20 Mar 2024 and 3 Apr 2025) [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2000-323/texto/bloque/a155 and /a162, seen 23 Oct 2026]. This confirms the snippet-only claim in [notes: ADM-08]; the judicial e-office is a separate channel from DEHú.
+- **24-hour embargoes: confirmed, no longer single source.** Resolución de 4 de junio de 2026 of the AEAT's Directorate-General, BOE-A-2026-13031 (BOE 16 Jun 2026). Orders are made available before 20:00, collected between 20:00 and 07:00, and retained "antes de las 08:00 horas del día siguiente". Embargo extends to up to ten accounts per diligencia at the same entity. It applies to diligencias issued from **2 Nov 2026**, with the REST channel from 1 Mar 2027 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-13031, seen 23 Oct 2026]. The press summary was accurate [new: AyE, 22 Aug 2026, https://www.autonomosyemprendedor.es/articulo/hacienda/hacienda-podra-embargar-cuentas-bancarias-autonomos-menos-24-horas-partir-septiembre/20260821085621055511.html].
+- **Case law is still split; no 2026 Supreme Court ruling was found** (1 search):
+  - strict line: TS 1927/2017 [notes: ADM-08] and AN 489/2026 [notes: TAX-18];
+  - protective line: TS 17 Dec 2024 (Colombo Enterprises SL v Agencia Tributaria de Andalucía). The court annulled an apremio because the switch to electronic notification was unannounced, and said the administration "debió haber tomado medidas alternativas" once it saw the notice had not been accessed [new: https://primeralecturaediciones.com/sentencias/archivo/el-ts-protege-el-derecho-a-la-tutela-judicial-efectiva-en-notificaciones-electronicas, 4 Feb 2025]. Also TSJ Murcia 396/2025 [notes: ADM-08].
+
+  The fear factor that drives demand persists.
+
+**(b) Competitors.**
+
+| Product | Segment | Coverage claim | Price | Source |
+|---|---|---|---|---|
+| **Official DEHú** | everyone | AGE plus adhered bodies | free: email alerts to up to 5 addresses; push alerts through the official *Notifica App*; "Gran destinatario" web services for automated consultation | [new: AEAT help pages acceso-notificaciones-electronicas-dehu.html and recibir-avisos-nuevas-notificaciones-comunicaciones-dehu.html, updated 16 Oct 2026] |
+| **AEAT avisos** | everyone | AEAT | free SMS and email alerts, plus notification alerts in the AEAT app; up to 30 "días de cortesía" a year when no AEAT notice is put in DEHú | [new: AEAT avisos-notificaciones-telefono-movil-correo-electronico.html and dias-cortesia-notificaciones.html, updated 19 Oct 2026] |
+| **BOE TEU and TEJU alerts** | everyone | edicts | free same-day email alert when an edict carrying your NIF is published; companies sign up with a certificate. Caveat: some issuers omit the NIF | [new: https://www.boe.es/notificaciones/ciudadanos_y_empresas/index.php, seen 23 Oct 2026] |
+| **MsNotifica (Cegid Microdata)** | professional firms reselling to clients | DEHú, AEAT, Seguridad Social, DGT, e-NOTUM, Junta de Andalucía, Euskadi; "más de 9000 organismos" | 50 CIFs €40/month; 100 €50; 250 €90; 500 €120; extra CIF from €0.25/month, i.e. **€0.24–0.80 per client per month** | [new: http://msnotifica.com/ and http://msnotifica.com/precios/, © 2025, seen 23 Oct 2026] |
+| **a3ASESOR \| Portal Neos (Wolters Kluwer)** | asesorías | 060/PAG, AEAT, Seguridad Social, DGT, DEH, GENCAT, ORGT Barcelona, Xunta, Comunidad de Madrid NOTE, Basque foral bodies, LexNET; TEU tracking; certificate-expiry control; mass association of the despacho's certificates or apoderamiento; alert manager | pay per use (no list price) | [new: Wolters Kluwer brochure, https://assets.contenthub.wolterskluwer.com/api/public/content/079a0fe3f7f042369c4c1ecb4ee62ade, undated, older vintage] |
+| **IvNeos (Ivnosys, Signaturit group, now Namirial)** | large companies (Cepsa, Iberdrola, Abertis testimonials) | "más de 9.000 organismos públicos" | quote only | [new: https://ivnosys.com/gestor-notificaciones-electronicas-ivneos-2/, seen 23 Oct 2026] |
+| **EdasNEO (ZeroComa)** | asesorías; said to be included in Sage Despachos | not verified | not verified | [new: edasneo.com, seen 23 Oct 2026] |
+| **CopilotGestoria** | gestorías | — | notification module said to be included in its SaaS (from €15/month) | [new: https://copilotgestoria.com/blog/dehu-2026-guia-apoderamiento-protocolo-gestion-notificaciones-electronicas-gestorias, 28 Apr 2026, vendor source] |
+| **Online asesorías bundling it** | autónomos and SMEs | DEHú, via the client's apoderamientos | Ayuda T Pymes: "revisión periódica de DEHú" is part of the service, as an "obligación de medios"; liability capped at 2× fees; plans from €29.95/month | [new: https://www.ayudatpymes.com/terminos_y_condiciones, updated 1 Apr 2026] |
+
+- **Gap.** What is left is multi-channel escalation (WhatsApp and phone call to two named people), a heartbeat, a diligence log, and coverage of non-DEHú regional, local and judicial sedes. All are thin and copyable.
+- **Review complaints.** One vendor blog cites "una tasa de error del 41%" in DEHú and AEDAF criticism that email alerts were lost when DEHú replaced NEO. Both are second-hand, and the 41% figure is internally inconsistent [new: CopilotGestoria blog above]. If verified, they would be the strongest argument for an independent watchdog.
+
+**(c) Buyers and market size.**
+- INE DIRCE (1 Jan 2025):
+  - 3,310,824 active companies, of which 1,859,925 are natural persons;
+  - so 1,450,899 legal entities and entities without personality, including 1,127,515 SLs, 46,763 SAs and 108,354 comunidades de bienes [new: INE API table 73018, https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73018?nult=1, seen 23 Oct 2026].
+- Reachable share: the micro firms without an adviser holding apoderamientos. That share is unknown [I].
+- Revenue ceiling at €5/month: 1% of 1.45M entities ≈ 14,500 × €60 ≈ €0.87M ARR. The gestoría channel at incumbent prices (€0.25–0.80/client) is far lower.
+
+**(d) Willingness to pay.** Incumbents sell to gestorías at **€0.24–0.80 per client per month**, 2–8× below the hypothesis of €1–2. SMEs that pay an asesoría €25–130/month already get monitoring inside the fee [notes: TAX-22], [new: Ayuda T T&Cs]. Free official push, email and SMS alerts anchor the SME price near zero.
+
+**(e) Distribution.**
+- Gestorías are concentrated but are competitors' customers: a3, Cegid and Sage bundle this.
+- Banks offering embargo prevention are speculative; no evidence found.
+- Notaries and company-formation services at incorporation: unproven.
+- Search demand was not measured.
+
+**(f) Build feasibility and legal constraints (settles the cross-cutting access check batch 2 owns).**
+- **Lawful access without holding clients' private keys exists.**
+  - At the AEAT, the obligated party grants a natural or legal person the **GENERALNOT** power, or a specific power to receive notifications. It is granted online with certificate or Cl@ve, in person, or by notarial document, and the apoderado confirms it. The apoderado then sees the poderdante's notices in DEHú and in the AEAT sede ("En nombre de") with its own credentials [new: AEAT acceso-dehu-mediante-apoderamiento.html, updated 16 Oct 2026].
+  - Representation can also be recorded in the State's Registro Electrónico de Apoderamientos (RD 203/2021 arts. 32–33) [new: BOE blocks a3-4, a3-5].
+  - DEHú offers **"Gran destinatario"** services "para la consulta automatizada de notificaciones", with published specifications [new: AEAT acceso-notificaciones-electronicas-dehu.html]. Whether a third-party apoderado may use Gran destinatario for many poderdantes was not verified, because the specifications are on dehu.redsara.es, which blocked automated access.
+- **Constraints.**
+  - The apoderado can open content, which starts deadlines. That is liability (Ayuda T limits it to an "obligación de medios").
+  - Non-DEHú regional and local sedes still need per-sede integration.
+  - Data are confidential tax data.
+  - Holding certificates is not required, but would be needed for sedes without apoderamiento.
+- **Time to MVP:** 2–4 weeks for alert parsing and escalation; 1–2 months for an apoderamiento-based DEHú/AEAT reader (subject to the Gran destinatario terms).
+
+**(g) Defensibility.** None for the alert layer. Incumbents own the gestoría base, and the official channels improve for free (Notifica App push, 5 email addresses). Multi-sede coverage is an integration grind that IvNeos, Cegid and Wolters Kluwer have already done.
+
+**(h) Kill criteria.**
+1. "No lawful programmatic access without holding clients' private keys" (or certificate custody unacceptable to more than 70% of owners): **not met.** Apoderamiento (GENERALNOT/REA) and Gran destinatario exist.
+2. "The official apps already push reliable alerts": **largely met.** DEHú Notifica App push plus up to 5 emails, AEAT SMS/email/app, BOE NIF alerts. Reliability is disputed only by unverified vendor claims.
+3. Pilot: under half of pilot companies receive a notice in six months: **open [I].**
+
+Also met: the gestoría board is saturated at prices below the hypothesis.
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | Enforced, continuous duty; overnight embargo regime from 2 Nov 2026 (BOE-A-2026-13031) |
+| S2 Buyers | 5 | About 1.45M legal entities plus colegiados (DIRCE 2025) |
+| S3 WTP | 2 | Official alerts are free; gestoría tools cost €0.24–0.80 per client |
+| S4 Reachability | 2 | Gestorías already equipped by a3, Cegid and Sage; SMEs without advisers are diffuse |
+| S5 Competitive gap | 2 | Several decent tools plus free official push and email; only escalation and non-DEHú sedes are open |
+| S6 Build speed | 4 | Alert layer in weeks; apoderamiento reader in 1–2 months |
+| S7 Defensibility | 1 | Trivially copyable; incumbents bundle it |
+| S8 Retention | 3 | Recurring duty and a diligence log, but invisible value when no notices arrive |
+
+- **Sellability** 2.88 (23/8). **P** 3: severe when it happens (apremio surcharges of 5–20%, embargo), but frequency per firm is unquantified and most firms already have a monitor.
+- **Overall** = 0.6 × 2.875 + 0.4 × 3 = **2.93**.
+
+**Open [I] checks.**
+- Six-month pilot of notice frequency among micro SLs without an adviser.
+- Share of SLs whose gestoría holds GENERALNOT or REA powers.
+- Gran destinatario terms for third-party apoderados (download the specification from DEHú).
+- Measured DEHú alert failure rate.
+
+**What would change the verdict.**
+- Verified evidence that DEHú or AEAT alerts fail often.
+- A large set of high-stakes issuers outside DEHú (regional tax agencies, big-city councils, the judicial e-office) that the incumbents do not cover.
+- A bank or neobank willing to pay for embargo prevention as a white-label service.
+
+Any of these would justify a RESHAPE to a B2B2C watchdog sold through banks. Otherwise the useful parts become a free feature of IDEA-06.
+
 #### IDEA-08: Hacienda letter shield (pre-filing cross-check and evidence pack) — KILL (medium)
 
 **Validated definition.** A €7–12/month tool for B2C businesses that take cards or Bizum. Before each quarterly VAT and IRPF filing (modelos 303 and 130) it reconciles acquirer, POS and Bizum settlements against invoices and the draft bases. It explains gaps (refunds, tips, personal Bizum, third-party collections, exempt services) and assembles a response pack when a letter arrives.
@@ -395,6 +352,83 @@ None is proven.
 - An acquirer (SumUp, Revolut Business, a bank) willing to embed the check as a merchant feature and pay per merchant.
 
 Either would support a RESHAPE to a white-label module for acquirers or gestorías.
+
+#### IDEA-09: Autónomo cuota and regularisation tracker — KILL (medium-high)
+
+**Validated definition.** A €3–4/month (or €29/year) subscription for autónomos and societarios. It:
+- estimates year-to-date net income for RETA purposes from invoices, bank data or manual entries;
+- maps the estimate to one of the 15 tramos;
+- shows the coming regularisation in euros;
+- reminds the user of base-change windows and checks the societario minimum.
+
+Validation confirms the pain and the formula, but finds the core feature already sold inside the leading autónomo platform and given away as free calculators. Nothing defensible is left for a standalone subscription. It is killed as a product and kept as a free feature (a bulk societario-base check) inside IDEA-06.
+
+**(a) Problem reality and rule status.**
+- **2026 parameters (settles C-09).** The 2026 tables are in Orden PJC/297/2026 of 30 March (BOE-A-2026-7296, 31 Mar 2026), art. 18 [new: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-7296, seen 23 Oct 2026]:
+  - **Bases:** maximum €5,101.20 for every tramo. Fifteen tramos: three reduced (tramo 1 ≤€670: base €653.59–718.94) and twelve general (tramo 12 >€6,000: minimum base €1,928.10).
+  - **Contribution rates:** common contingencies 28.30%, professional 1.30%, MEI 0.90%.
+
+  The "€4,909 maximum base" in [notes: TAX-12] is the 2025 figure; €5,101.20 is correct for 2026. The same table is on the Seguridad Social site [new: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537, seen 23 Oct 2026].
+- **MEI (settles C-03).** LGSS DT 43ª (added by RDL 2/2023) sets 0.80 points in 2025, **0.90 in 2026** and **1.00 in 2027**, rising to 1.2 by 2029 [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-11724/texto/bloque/dt-14, seen 23 Oct 2026]. Orden PJC/297/2026 confirms 0.90% for 2026 and puts it wholly on the autónomo in RETA. The 0.80% figure in the labour notes came from a page that had not been updated.
+- **Net-income rule.** LGSS art. 308.1.c (RDL 13/2022) computes income as IRPF net income plus Social Security contributions, minus a 7% generic-expense deduction (3% for societarios). The TGSS regularises once the tax administration transmits the data the following year [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-11724/texto/bloque/a308, seen 23 Oct 2026]. The formula is public and simple.
+- **Societarios.** Art. 308.1.a, rule 4ª: societarios and family collaborators cannot choose a base below the Régimen General group-7 minimum, and "en el procedimiento de regularización... la base de cotización definitiva no podrá ser inferior a dicha base mínima". For 2026 that minimum is €1,424.40. Orden PJC/297/2026 art. 18.4 lets them keep their 2025 provisional base during 2026, so a lump-sum back-charge arrives when 2026 is regularised. This confirms [notes: TAX-13].
+- **Regularisation calendar.** The 2024 regularisation was notified from January to February 2026. Underpayments are due the month after notification; refunds are automatic [new: Última Hora, 12 Feb 2026, https://www.ultimahora.es/noticias/local/2026/02/12/2568841/pimem-gestores-administrativos-instan-autonomos-revisar-regularizacion-cuotas-2024.html]. Refunds are paid within four months (Seguridad Social page above).
+- **Junts bill on societario bases.** No vote or approval was found (1 search). Opponents (PP, Junts, Vox) planned to act through amendments [new: Forbes, https://forbes.es/economia/903587/pp-junts-y-vox-trataran-de-frenar-en-el-congreso-el-sablazo-a-los-autonomos-societarios-y-colaboradores/, 2026]. Under Reglamento del Congreso art. 207 (as amended 22 Jul 2025), "Disuelto el Congreso... quedarán caducados todos los asuntos pendientes" except those for the Diputación Permanente [new: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-1982-5196/texto/bloque/art207, seen 23 Oct 2026]. **Any pending bill lapsed on 6 Oct 2026, so the €1,424.40 floor stands.**
+- **2027 bases.** Not set; the 2027 table needs a budget law or decree, and none was found. The MEI rises to 1.0% by law.
+- **Pain evidence.** 35.1% paid after regularisation and rated the process 2.2/10 [notes: TAX-12]. Societarios face about +€135/month, and the Ombudsman criticises the method [notes: TAX-13, ADM-11]. National TGSS totals for the 2023 and 2024 regularisations were **not found** (1 search). Only a regional colegio figure exists: in Baleares, 29% of autónomos had well-adjusted bases [new: Última Hora above].
+
+**(b) Competitors.**
+- **Declarando Pro** (€39.90/month + VAT on the annual plan without filings; €69.90 with filings) includes "Cuota de autónomo recomendada para evitar reclamaciones de Seguridad Social — Usamos un algoritmo patentado que predice lo que vas a ganar durante el año, para que pagues la cuota adecuada". Declarando also publishes a free "Simulador de la cuota de autónomos" [new: https://declarando.es/precios, seen 23 Oct 2026].
+- **Cuéntica** plans: "Calcula la cuota de autónomos y el tramo que te corresponde según tu contabilidad real". It also offers a free public calculator with the 2026 tables [new: https://cuentica.com/precios/ and https://cuentica.com/calculadora-cuota-autonomos/, seen 23 Oct 2026].
+- **Import@ss (TGSS)** shows each person's "Regularización anual de cuotas" result and lets them change bases. No simulator with alerts was found on its landing page [new: https://portal.seg-social.gob.es/wps/portal/importass/importass/, seen 23 Oct 2026].
+- Not checked: Quipu, Holded, TaxDown and Infoautónomos tool pages (Holded's calculator URL returned 404).
+- **Gap.** Only autónomos who use a traditional gestoría or a basic invoicing app lack continuous tracking. Their gestoría already gets the regularisation notices through RED.
+
+**(c) Buyers and market size.**
+- 3,483,645 people in the RETA at end-Sep 2026 [notes: FIN-18], and about 1.2M societarios and collaborators [notes: TAX-13].
+- Ceiling: at €29/year, 1% of the RETA is about 35k × €29 ≈ €1.0M ARR. The share willing to pay is unknown; ENA shows high outsourcing (57%) [notes: TAX-22].
+
+**(d) Willingness to pay.** The adjacent spend is high (€25–150/month for gestorías and online asesorías [notes: TAX-22]), but this feature is bundled at no marginal price. Free calculators anchor the standalone price at €0. The source's own kill test (at least 1 in 10 trial users paying €2/month) is open [I], but the market anchors are discouraging.
+
+**(e) Distribution.**
+- High-intent searches exist ("regularización cuota autónomos", "calculadora cuota autónomos"), but they are dominated by Infoautónomos, Declarando, Cuéntica and TaxDown content (desk observation).
+- Gestorías and colegios already campaign on the regularisation: the colegio de gestores and PIMEM did so in Baleares [new: Última Hora].
+- Invoicing apps can add the feature themselves.
+
+**(f) Build feasibility.**
+- Formula and tables are public (LGSS 308; Orden PJC/297/2026), so an MVP takes under 4 weeks.
+- Changing the base for the user requires an Import@ss authorisation or RED access. The six change windows a year are from the notes [notes: TAX-12]; the regulation article was not re-fetched.
+- Income data is sensitive, so GDPR applies; no certification is needed.
+
+**(g) Defensibility.** None. The calculation is public and incumbents already market it (Declarando's "algoritmo patentado").
+
+**(h) Kill criteria.**
+1. "Declarando, Cuéntica and Quipu already warn users about band changes": **met** for Declarando (continuous recommendation) and Cuéntica (tramo from real accounts); Quipu not checked.
+2. "The TGSS portal already offers a reliable simulator with alerts": **not met** (none found).
+3. "Fewer than 1 in 10 trial users pay €2/month or more", or retention collapses after one regularisation: **open [I].**
+
+**Scores**
+
+| Criterion | Score | Justification |
+|---|---|---|
+| S1 Urgency | 4 | Annual enforced regularisation; societario back-charge on 2026 income; MEI to 1% in 2027 |
+| S2 Buyers | 5 | 3.48M RETA members |
+| S3 WTP | 2 | Bundled in paid plans and free calculators; no standalone spend evidenced |
+| S4 Reachability | 3 | Search demand is real but owned by incumbents' content; gestorías campaign already |
+| S5 Competitive gap | 2 | Declarando and Cuéntica track it; free simulators |
+| S6 Build speed | 5 | Public formula; MVP in under 4 weeks |
+| S7 Defensibility | 1 | Trivially copyable |
+| S8 Retention | 3 | Periodic use; risk of churn after the regularisation |
+
+- **Sellability** 3.13. **P** 3: a lump-sum cash shock (about €1,600/year for societarios) of money owed anyway, with no penalty if paid on time.
+- **Overall** = 0.6 × 3.125 + 0.4 × 3 = **3.08**.
+
+**Open [I] checks.**
+- Paid conversion at €2–3/month among autónomos who use traditional gestorías.
+- Whether gestorías would pay for a bulk societario-base check (about 1.2M affected).
+- National TGSS regularisation totals.
+
+**What would change the verdict.** Official data showing that a large share of autónomos (above 30%) receive back-charges above €1,000, plus a distribution deal with a large invoicing app or bank willing to embed and pay per user. Even then the moat stays at zero, so it would be at best a feature, not a business.
 
 #### IDEA-10: SL director guard (dissolution-trigger and accounts-deposit alerts) — RESHAPE (medium-low)
 
@@ -787,3 +821,157 @@ The desk evidence (free substitutes, simple Consorcio requirements, a cleared 20
 
 **What would change the verdict.** An insurer, bank or the Consorcio funding the app per policy, ideally with an adjusting workflow that uses the inventory, or evidence that payouts rise materially with pre-loss documentation. Either would support a B2B2C reshape sold to insurers.
 
+---
+
+## 3. Cross-cutting findings (rule status and market facts for other batches)
+
+**3.1 E-notifications and third-party access (batch 2 owns this check)**
+- **Who must receive electronically, and the 10-day rule.** Legal persons, entities without legal personality (such as comunidades de bienes), professionals in compulsory colegios and their representatives must deal electronically (Ley 39/2015 art. 14.2). A notice is deemed rejected 10 calendar days after it is made available without access to its *content* (art. 43.2). A missing alert does not invalidate it (art. 41.6; RD 203/2021 art. 43, "meramente informativo"). Viewing the pending list is not access (art. 43.1). All rule status is in force with no election exposure [new: BOE API, Ley 39/2015 and RD 203/2021].
+- **All state-level issuers must notify through DEHú** (RD 203/2021 art. 42.5), and the AEAT sends all its notices there. Regional and local issuers adhere voluntarily, so the residual fragmentation is regional, local and judicial.
+- **Lawful third-party monitoring without holding clients' keys exists:**
+  - the AEAT GENERALNOT power (or a specific power to receive notifications) to a natural or legal person;
+  - REA apoderamientos (RD 203/2021 arts. 32–33);
+  - DEHú "Gran destinatario" services for automated consultation (terms for third parties not verified).
+
+  This matters to any idea that assumes "we will read the client's official mailbox", for example IDEA-03, IDEA-53, IDEA-57 and the gestoría channel generally [new: AEAT help pages, 16–19 Oct 2026].
+- **Free official alerts now exist:**
+  - DEHú email to up to 5 addresses, and push through the *Notifica App*;
+  - AEAT SMS, email and AEAT-app alerts;
+  - up to 30 AEAT "días de cortesía" a year;
+  - BOE same-day email alerts by NIF for the Tablón Edictal Único (administrative edicts) and the judicial edict board.
+- **Courts.** Legal persons receive court communications electronically. A first summons unopened for 3 days goes to physical delivery and then to the judicial edict board; other communications are deemed made after 3 days (LEC arts. 155.1 and 162.2, in force). Relevant to IDEA-01 (MASC and claims, on the defendant side) and IDEA-17 (dismissal claims) [new: BOE API, LEC].
+- **Overnight bank embargoes confirmed.** Resolución AEAT 4 Jun 2026, BOE-A-2026-13031 (16 Jun 2026): retention before 08:00 the day after the order, up to ten accounts per diligencia. It applies to diligencias from **2 Nov 2026**, with a REST channel from 1 Mar 2027. This upgrades TAX-19 from single source to official, and is relevant to IDEA-01, IDEA-02 and any cash-flow idea.
+
+**3.2 Market counts (gestorías and companies)**
+- **CNAE 692** (accounting, bookkeeping, audit, tax advice), INE DIRCE at 1 Jan 2025: **62,234 firms**; 31,840 without employees; **about 30,400 with employees**; 28,440 with 1–9. CNAE 691 (legal): 83,943 [new: INE API table 73019].
+- **Gestores administrativos:** 7,466 colegiados at 31 Dec 2025, **5,869 practising**, in 22 colegios. The largest are Cataluña (1,006 practising), Madrid (912), Valencia (476), Sevilla (453) and Galicia (432) [new: CGCOGA Memoria 2025, Mar 2026].
+- **Graduados sociales:** **17,000 colegiados** in 43 colegios [new: graduadosocial.org].
+- **Legal forms** (DIRCE 2025): 1,127,515 SLs (334,941 with no employees; about 1.0M with fewer than 10); 46,763 SAs; 108,354 comunidades de bienes; 19,181 cooperatives; 140,321 associations; 1,859,925 natural persons [new: INE API table 73018].
+- **Employers (for batch 3, C-04).** DIRCE 2025 counts 1,800,443 companies with no employees, so **1,510,381 have at least one**. This confirms G2's roughly 1.51M arithmetic on the DIRCE basis; the Consejo de Estado's 1.35M and CODEM's 1.23M are different bases.
+
+**3.3 Social-security parameters (settles C-03 and C-09)**
+- **MEI:** 0.90% in 2026 (Orden PJC/297/2026 art. 18.2.c; LGSS DT 43ª), **1.00% in 2027**, 1.10% in 2028, 1.2% from 2029 [new: BOE-A-2026-7296; LGSS DT 43ª]. The 0.80% figure is the 2025 rate. This affects IDEA-16, IDEA-19 and the IDEA-06 feed.
+- **RETA 2026** (Orden PJC/297/2026, BOE-A-2026-7296):
+  - 15 tramos; minimum base €653.59; maximum base €5,101.20 for every tramo (the "€4,909" figure was 2025's);
+  - societarios and family collaborators have a floor of €1,424.40, which also binds in the regularisation (LGSS art. 308.1.a, rule 4ª);
+  - net income for RETA = IRPF net income plus SS contributions, minus 7% (3% for societarios) (LGSS art. 308.1.c).
+
+**3.4 Parliamentary lapse rule (for every batch)**
+- Reglamento del Congreso art. 207 (as amended 22 Jul 2025): "Disuelto el Congreso... quedarán caducados todos los asuntos pendientes de examen y resolución por la Cámara", except matters for the Diputación Permanente (decree-law convalidation) [new: BOE-A-1982-5196 art. 207].
+- **Every bill pending on 6 Oct 2026 has lapsed:** the Junts societario-base bill (IDEA-09), the minors' digital-protection bill (IDEA-63), the PRESVET sanctions reform if it was still a bill (IDEA-42), and others. Regulations (royal decrees, orders) can still be approved by the Government.
+
+**3.5 Tax-tech items for batch 1 and others**
+- **No official list of compliant VeriFactu software.** The AEAT FAQ (updated 21 Oct 2026) says certification is the producer's self-declaration and "no se prevé ningún registro previo del producto SIF". Any idea promising "is my software compliant?" (IDEA-04, IDEA-05, IDEA-06, IDEA-39) must build its own database.
+- **Orden HAC/1028/2026** (BOE-A-2026-20587) entered into force the day after publication (5 Oct 2026), starting the periods in DF 8ª of Ley 18/2022 and in RD 238/2026 DT 1ª–3ª and DF 4ª. The Consejo de Gestores' draft table makes status reporting for firms of €8M or less voluntary until the 36-month date. Batch 1 owns C-05 and C-08.
+- **Modelo 170 confirmed in the BOE:**
+  - RD 253/2025 (BOE-A-2025-6599): monthly reporting of collections by any card and by "sistemas de cobro asociados a un número de teléfono móvil" (Bizum), with no €3,000 threshold, from 1 Jan 2026;
+  - Orden HAC/747/2025 (BOE-A-2025-14600): first return for Jan 2026, filed in Feb 2026; also approves the monthly modelo 196 (accounts) and the annual modelo 174 (cards, €25,000 threshold).
+
+  Relevant to IDEA-39 (salon payments), IDEA-05 and C-24.
+
+**3.6 Public money**
+- **Orden HAC/580/2026** (BOE-A-2026-12520, 10 Jun 2026) regulates repayment of Recovery Facility funds. A prior requirement gives **at least 20 working days** to produce documentation, extendable by 10; private beneficiaries may defer or split repayment debts. Relevant to IDEA-13 (Kit Digital websites), IDEA-60 (startup public funding post-award) and IDEA-61.
+- **No extension of NGEU beneficiary execution to 2028** is shown on planderecuperacion.gob.es. The site headlines "España Crece toma el relevo para movilizar más de 120.000 M€" (details not read; IDEA-60 should check whether it is grants or loans).
+- **Minor contracts are open data.** PLACSP has published minor contracts daily since 2018 (sindicación 1143), with object, body, amounts, awardee NIF and name, CPV and an SME flag, plus the free OpenPLACSP tool. Gobierto Contratación sells alerts and competitor intelligence from €300/year and reports from €18. Relevant to any procurement or B2G idea (STA-13, PRO-17).
+
+**3.7 Company law (for startup and finance ideas)**
+- LSC arts. 363.1.e, 365, 366 and 367 are confirmed: the two-month duty; joint liability for later debts; a presumption that claimed debts post-date the cause; a safe harbour if insolvency or restructuring is filed within two months.
+- Ley 3/2020 art. 13 excluded 2020–21 losses only up to the close of the financial year starting in 2024. **From the 2025 accounts those losses count again.**
+- Relevant to IDEA-59 and IDEA-60: loss-making startups often sit near the half-capital line. The treatment of participative loans as equity for this test appears only in a search summary and was not verified.
+
+**3.8 Disaster data**
+- La Moncloa (19 Oct 2026): 99.7% of the 251,940 DANA-2024 Consorcio claims are processed, and €4.66bn paid.
+- dana Adam: 6,528 Consorcio claims in three days; business aid still undefined (single outlet).
+
+**3.9 City licensing (for IDEA-29, IDEA-32, IDEA-37 and IDEA-39)**
+- Madrid publishes open data on granted licences, declaraciones responsables, the census of premises and activities, and ECUs (per the service charter; datos.madrid.es was "en mantenimiento" on 23 Oct 2026).
+- The Geoportal offers planning layers (WMS/WFS, shapefile downloads).
+- Madrid's consulta urbanística especial: one-month answer, tasa €347.35 (2016 figure).
+
+---
+
+## 4. Search log
+
+**WebSearch queries (22; limit 24)**
+
+| # | Idea | Query |
+|---|---|---|
+| 1 | IDEA-07 | DEHú "gran destinatario" consulta automatizada notificaciones apoderados certificado especificaciones |
+| 2 | IDEA-07 | gestor notificaciones electrónicas DEHú para pymes y autónomos precio al mes alertas WhatsApp |
+| 3 | IDEA-07 | Tribunal Supremo 2026 sentencia aviso notificación electrónica falta de aviso correo validez embargo DEHú casación |
+| 4 | IDEA-06 | asesorías panel cartera de clientes estado VeriFactu factura electrónica por cliente a3 Wolters Kluwer Sage TeamSystem Holded partners |
+| 5 | IDEA-06 | alertas normativas personalizadas por cliente para asesorías y gestorías IA BOE boletines autonómicos precio suscripción |
+| 6 | IDEA-09 | Seguridad Social regularización cuotas autónomos 2024 resultados cuántos pagarán devolución millones Import@ss simulador aviso ajustar base 2026 |
+| 7 | IDEA-09 | proposición de ley Junts base mínima cotización autónomos societarios familiares colaboradores Congreso votación 2026 |
+| 8 | IDEA-06 | software asesorías "radar normativo" OR "obligaciones por cliente" clientes afectados cambios normativos gestoría avisos automáticos clientes VeriFactu |
+| 9 | IDEA-08 | modelo 170 datos fiscales "cobros con tarjeta" consultar autónomo sede AEAT ver información que el banco ha declarado Bizum 2026 |
+| 10 | IDEA-08 | Hacienda cartas requerimientos autónomos descuadre cobros tarjeta Bizum modelo 303 2026 cuántas cartas Gestha comprobaciones |
+| 11 | IDEA-10 | software contabilidad alerta "causa de disolución" patrimonio neto inferior mitad capital social aviso automático a3 Sage Holded Contasol asesoría |
+| 12 | IDEA-10 | Registradores estadística depósito de cuentas anuales 2025 número sociedades que no depositan cuentas cierre registral porcentaje pymes abreviado |
+| 13 | IDEA-25 | Madrid geoportal datos abiertos planeamiento PGOUM normas zonales usos compatibles descarga WFS shapefile visor urbanístico licencias actividad |
+| 14 | IDEA-25 | informe de viabilidad local comercial antes de alquilar Madrid precio compatibilidad urbanística online licencia de actividad estudio previo euros |
+| 15 | IDEA-25 | ECU Madrid "estudio previo" OR "consulta previa" gratuita viabilidad local actividad entidad colaboradora urbanística gratis antes de alquilar |
+| 16 | IDEA-26 | software justificación subvenciones empresas cuenta justificativa plataforma gestión ayudas públicas pymes consultoras precio SaaS |
+| 17 | IDEA-26 | expedientes de reintegro subvenciones Next Generation empresas 2026 número justificación pymes requerimientos reintegro MRR datos IGAE |
+| 18 | IDEA-27 | buscador contratos menores adjudicatarios alertas pymes licitaciones.es precio planes Tendios Licitalia contratos menores base de datos |
+| 19 | IDEA-28 | aseguradora app inventario de bienes fotos antes del siniestro comercio pyme España seguro multirriesgo inventario digital inundación Mapfre AXA Allianz |
+| 20 | IDEA-28 | número de empresas y polígonos industriales en zonas inundables Comunitat Valenciana PATRICOVA estudio 2025 riesgo de inundación actividades económicas |
+| 21 | IDEA-25 | València nueva ordenanza de licencias de obras y actividades 2026 aprobación pleno declaración responsable plazos Urbanismo Catalá |
+| 22 | IDEA-25 | Madrid "consulta urbanística especial" actividades tasa importe euros plazo de respuesta Agencia de Actividades ordenanza fiscal servicios urbanísticos |
+
+- **Allocation against plan:** IDEA-06 3 (plan 4); IDEA-07 3 (4); IDEA-08 2 (2); IDEA-09 2 (3); IDEA-10 2 (2); IDEA-25 5 (3); IDEA-26 2 (2); IDEA-27 1 (2); IDEA-28 2 (2).
+- IDEA-25 overspent because the open-data and official-consultation questions decided its verdict. The IDEA-27 kill came from direct fetches of official data.
+
+**Main pages fetched directly (no general search engine was queried through any fetch tool)**
+
+- **BOE open-data API** (consolidated articles and daily summaries; the daily summaries were scanned by date only to locate BOE identifiers):
+  - Ley 39/2015 arts. 14, 41 and 43;
+  - RD 203/2021 arts. 32–34 and 41–45;
+  - LEC arts. 155 and 162;
+  - LSC arts. 363 and 365–367;
+  - Ley 3/2020 art. 13;
+  - LGSS art. 308 and DT 43ª;
+  - LCSP arts. 63, 118 and 335;
+  - Reglamento del Congreso art. 207;
+  - BOE-A-2026-13031 (embargo resolution), BOE-A-2026-7296 (Orden PJC/297/2026), BOE-A-2026-20587 (Orden HAC/1028/2026), BOE-A-2026-12520 (Orden HAC/580/2026), BOE-A-2025-6599 (RD 253/2025) and BOE-A-2025-14600 (Orden HAC/747/2025);
+  - BOE Tablón Edictal Único information and alert pages.
+- **AEAT help pages:** notifications, DEHú, apoderamiento GENERALNOT, alerts, días de cortesía (updated 16–19 Oct 2026); VeriFactu FAQ on the declaración responsable (21 Oct 2026).
+- **INE API:** DIRCE tables 73018 and 73019.
+- **Professional bodies and official sites:**
+  - Consejo General de Gestores: Memoria 2025 and the e-invoicing calendar post;
+  - graduadosocial.org;
+  - planderecuperacion.gob.es;
+  - La Moncloa DANA tracking (19 Oct 2026);
+  - Hacienda open data for PLACSP and the PLACSP minor-contract ATOM feed;
+  - the OIReScon IAS 2025 summary;
+  - the Madrid Agencia de Actividades service charter 2026 and the Madrid Geoportal;
+  - Seguridad Social cotización 2026 and the Import@ss landing page;
+  - the Registradores Anuario concursal 2025.
+- **Vendors:**
+  - notifications: MsNotifica (home and prices), Ivnosys IvNeos, the Wolters Kluwer a3ASESOR Portal Neos brochure, EdasNEO (JavaScript only), CopilotGestoria (home and DEHú blog), the Ayuda T Pymes T&Cs;
+  - autónomo platforms: Declarando prices, Cuéntica prices and calculator;
+  - VeriFactu content: the TeamSystem magazine;
+  - payments: SumUp and Stripe API docs;
+  - grants and procurement: Fandit prices, Gobierto Contratación (company page and plans), licitaciones.es (prices URL returned HTTP 410);
+  - Normatia.
+- **Press:**
+  - AyE (24-hour embargo article; STS 1477/2026 article);
+  - elDiario.es (two dana Adam articles);
+  - Xataka Móvil (Bizum letters);
+  - primeralecturaediciones.com (TS 17 Dec 2024);
+  - Papelea (Madrid consulta especial).
+- **Blocked or unavailable** (recorded so later stages do not retry blindly): dehu.redsara.es and administracionelectronica.gob.es (WAF); datos.madrid.es (maintenance); sage.com, iberley.es and grantbite.com (403); datos.gob.es API (partly 403).
+
+**Checks left open for later stages ([I] or unresolved desk checks)**
+
+| Idea | Open checks |
+|---|---|
+| IDEA-06 | Gestoría interviews: hours per rule change, WTP at €30/month or more; a3 and Contasol export formats; legal-update subscription prices |
+| IDEA-07 | Notice-frequency pilot; Gran destinatario terms for third-party apoderados; measured alert failure rate |
+| IDEA-08 | Letter counts (AEAT, Gestha); whether taxpayers can see their modelo 170 data; which client types get 303-mismatch letters |
+| IDEA-09 | National TGSS regularisation totals; paid conversion at €2–3/month |
+| IDEA-10 | Gestoría distribution and WTP; counts of art. 367 claims and of SLs failing to deposit accounts; STS 1477/2026 text in CENDOJ |
+| IDEA-25 | Agent and franchise WTP; Madrid's 2025 results against its standards; current consulta fees; other cities' data |
+| IDEA-26 | Share of SMEs justifying grants alone; consultancy fees; volume of Orden HAC/580/2026 requirements |
+| IDEA-27 | Micro-supplier interviews; regional platforms' minor-contract syndication |
+| IDEA-28 | Insurer and broker pilot appetite; effect of pre-loss inventories on payouts |

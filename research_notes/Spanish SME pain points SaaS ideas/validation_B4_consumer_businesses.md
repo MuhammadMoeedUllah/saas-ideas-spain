@@ -551,3 +551,121 @@
 
 ---
 
+## 3. Cross-cutting findings (affect ideas outside batch 4)
+
+**Rule status (all checked against the BOE or BOJA unless stated)**
+
+1. **Ley 10/2025 (batch 4 owns this check).** BOE-A-2025-26698, in force 28 Dec 2025.
+   - The only transitional provision is a *disposición transitoria única*: a 12-month period (to 28 Dec 2026) for firms *within the law's scope*, meaning basic-service providers of any size and large firms (at least 250 staff, or turnover above €50M, or balance sheet above €43M, as alternatives). The preamble's "seis meses" is an error against the operative text.
+   - The TRLGDCU amendments in DF tercera apply to every trader from 28 Dec 2025 with no adaptation period: art. 20.1.c full price; art. 20.4 reviews; art. 21.2–21.3 complaint key, written receipt and 15-day reply; art. 62.1 phone consent; art. 97.1.p 15 days' renewal notice.
+   - Small firms in scope may evaluate and audit every two years (arts. 21.1, 22.1). Telecom and financial providers follow sector rules first, with Ley 10/2025 supplementary.
+   - No extension was found, and ENAC shows no audit scheme as of 14 Oct 2026.
+   - Official and press explainers often get the scope and dates wrong (Comunidad de Madrid page, updated 5 Aug 2026).
+   - *Affects:* IDEA-06's rule feed; any B2C subscription or e-commerce idea (renewal notices, review statements, full-price display), such as IDEA-05, IDEA-29 to IDEA-33 where consumers are involved, and IDEA-62 to IDEA-64.
+2. **Unfair-competition rule on personalisation.** Ley 10/2025 DF primera adds to Ley 3/1991 a misleading practice: addressing consumers individually with personalised offers without disclosing, in the same communication, the parameters used. *Affects:* any idea that scores consumers to set prices or terms (IDEA-38's rules; tenant screening in IDEA-31 if it changes offers; dynamic pricing anywhere).
+3. **Phone sales.** TRLGDCU art. 62.1: consent for commercial calls must be express and obtained or renewed in the previous two years, and a phone contract made in breach is presumed to lack consent and is void. The 400 numbering resolution is BOE-A-2026-8409 (14 Apr 2026, effective 17 Apr 2026, full use after six months, about 17 Oct 2026), with no B2B or consumer distinction in its text. Its scope for SMEs outside Ley 10/2025 is read inconsistently by vendors and the press. 400 numbers are one-way; the CNMC allocates ranges to operators in blocks of 1,000. *Affects:* any idea that relies on outbound phone sales to consumers (energy, insurance, solar, IDEA-46 if it phones shippers).
+4. **LO 1/2026 (repeat theft) is in force** (BOE-A-2026-7966, 10 Apr 2026). There is no cumulative €400 threshold on prior convictions; local authorities may now bring criminal actions for theft (LECrim art. 105.3), and no council was found using the power yet. *Corrects* the cities track (C-02) and the regional-table claims that rely on it.
+5. **Ley 1/2025 (food waste)** (BOE-A-2025-6597). The art. 6 duties (prevention plan, donation agreements) apply from about 3 Apr 2026 but exclude microenterprises (art. 6.6) and establishments of 1,300 m² or less unless premises under one tax ID together exceed it (art. 6.4.c). Art. 20 lists no infraction for failing to offer take-away containers. The "entrada en vigor 02/01/2025" oddity is in DF vigésima itself. *Affects:* IDEA-49's food-waste module (batch 6): only chains and larger retailers or producers are in scope, so do not size it on all food firms.
+6. **EU online withdrawal function (Directive (EU) 2023/2673)** has applied in the EU since 19 Jun 2026, but Spain has not transposed it (OCU, 19 Jun 2026), and the Commission sent Spain a letter of formal notice (reported 30 Jan 2026). With the Cortes dissolved, transposition needs a decree-law (convalidation risk) or waits for the new Cortes (from 23 Dec 2026). Until then Spanish merchants are not directly bound (my reading). *Affects:* every e-commerce and online-subscription idea (IDEA-05, IDEA-38, IDEA-62 to IDEA-64 if they sell to consumers online, IDEA-29 and IDEA-31 if contracts are concluded online).
+7. **Andalusia's Hoj@ is confirmed in the BOJA** (Orden de 24 de abril de 2026, BOJA núm. 82, 30 Apr 2026, in force about 20 May 2026). Registration is due within six months for large firms, basic services, public companies, concessions and firms with more than 20 establishments in Andalusia (about 20 Nov 2026), and within one year for everyone else (about 20 May 2027). Replies are due within 10 working days, with complaints deemed received after 10 calendar days. There is no API, and the Order provides no pre-deadline reminders. Under Ley 13/2003, a late reply is a *leve* infraction fined €200–5,000; *grave* €5,001–60,000; *muy grave* €60,001–1,000,000 (arts. 72 and 74). Lawwwing's "20 Feb 2027" for SMEs is wrong. *Affects:* IDEA-32 and IDEA-33 (Andalusian tourist-rental managers must register and answer through Hoj@), and IDEA-06 (a gestoría deadline module).
+8. **Consumer enforcement style.** Madrid city inspected 2,541 establishments in 2025 (plus 1,924 follow-ups); 67.8% had an irregularity, falling to 16.8% after follow-up, so remediation comes before sanctions. Andalusia's consumer campaigns visit about 600–1,000 restaurants a year. *Affects:* the urgency score of any consumer-compliance idea; expect "fix it" letters, not fines.
+9. **CCTV rules.** LOPDGDD art. 22.3: delete footage within one month unless it proves an offence, and then hand it to the authority within 72 hours of knowing about it. *Affects:* any idea that stores video (IDEA-24; site cameras in IDEA-36; tourist-rental access cameras in IDEA-32 and IDEA-33).
+
+**Market and enforcement facts**
+
+10. **AEPD 2025 (C-07 settled):** €48,108,765 in fines and 325 fines (Memoria table via BDO). The "+1,653% commerce, transport and hospitality" headline is driven by AENA's single €10.04M fine. Small-business outcomes: warnings, or €500 per infraction (typically €600–1,500 paid after the two 20% reductions). *Affects:* the data-protection risk framing in IDEA-31 and IDEA-40 to IDEA-42; do not cite the sector jump as SME risk.
+11. **INE DIRCE at 1 Jan 2025 (table 39372, CSV downloaded 23 Oct 2026)**, reusable by other batches:
+    - Total 3,310,824 companies, of which 1,800,443 without employees (so 1,510,381 with employees, 45.6%, consistent with G2's arithmetic in C-04).
+    - Food service 234,900 (restaurants 73,296; catering 14,751; bars 146,853); accommodation 31,576 (hotels 12,548; tourist and short-stay 16,924).
+    - Retail 377,471; non-store retail (479) 13,663; personal services (960) 155,724.
+    - Estate agencies (683) 60,683; insurance auxiliaries (662) 62,587; call centres (822) 495.
+    - Water (360) 3,158; telecom (61) 5,975; other postal and courier (532) 33,467.
+    - Other education (855) 91,715; medical and dental (862) 77,294; vets (750) 10,186; sport and recreation (931–932) 50,735; car repair (452) 42,965.
+    - B2C-facing groups combined: 1,081,499 nationally; Andalucía 202,933; Cataluña 177,983; Madrid 136,291; C. Valenciana 121,872.
+    - DIRCE publishes no 4-digit classes, and CNAE-2025 class codes (such as 9621 for hairdressing) are starting to appear in commercial directories.
+12. **CNMC electricity-retailer census:** 948 entries, about 541 not marked "Baja" (downloaded 23 Oct 2026; my count). *Affects:* energy-related ideas and IDEA-22.
+13. **Meta WhatsApp pricing:** since 1 Oct 2026, utility messages inside the customer-service window are charged again; there is a free tier of 1,000 service messages a month per number, and messages within 7 days of a Click-to-WhatsApp ad are free. *Affects:* any idea that sends reminders by WhatsApp API (IDEA-02, IDEA-09, IDEA-40, IDEA-43, IDEA-57).
+14. **Lista Robinson:** free "bonificada" tariff for micro and small firms up to 30,000 records a year, otherwise €1,900–5,500 a year; API available; a consultation is valid for one month. *Affects:* any outbound-marketing feature.
+15. **Google Business Profile API:** owner-authorised review listing and replies; access needs approval; default 300 queries per minute. Google also runs an official merchant extortion-report form. Tripadvisor's Content API is deprecated in favour of the partner-only Terra platform. *Affects:* any review or reputation feature (for example in IDEA-32 and IDEA-33 for rentals).
+16. **Booking-software price anchors (October 2026):** Treatwell charges no monthly fee but 25% of a new marketplace client's first booking and has a 12-month minimum; Booksy €34.99 + €8 per extra member, Boost 30% capped at €50; Fresha has no free plan ($19.95 independent, $14.95 per member) and a 20% new-client fee; Setmore is free for up to 4 users, and Pro is $5 per user with deposits. *Affects:* IDEA-40 and IDEA-43 if they include booking.
+17. **Withdrawal right on distance-booked services:** TRLGDCU art. 103.l exempts only accommodation, transport, car hire, catering and *leisure* services with fixed dates. Other prepaid services booked online (beauty, health, classes) may carry a 14-day withdrawal right until performed (my reading, unverified). *Affects:* deposit or prepayment features in IDEA-39, IDEA-40 and IDEA-43.
+18. **Election (29 Nov 2026):** not yet held. None of the rules this batch relies on depends on the Cortes, except the transposition of Directive 2023/2673, which is now hostage to a decree-law or to the new Cortes.
+
+---
+
+## 4. Search log
+
+**WebSearch calls: 22 of the 24 allowed** (2 left unused). The plan's allocation was IDEA-14 2, IDEA-20 4, IDEA-21 3, IDEA-22 3, IDEA-23 2, IDEA-24 3, IDEA-37 2, IDEA-38 2, IDEA-39 3. Actual use: IDEA-14 3, IDEA-20 3, IDEA-21 3, IDEA-22 2, IDEA-23 2, IDEA-24 3, IDEA-37 2, IDEA-38 1, IDEA-39 3. IDEA-38's legal check was answered from the BOE text instead of a search.
+
+| # | Idea | Query |
+|---|---|---|
+| 1 | IDEA-21 | resolución Secretaría de Estado Telecomunicaciones numeración 400 llamadas comerciales BOE abril 2026 empresas autónomos B2B |
+| 2 | IDEA-21 | software registro consentimiento llamadas comerciales dos años artículo 62 TRLGDCU Lista Robinson CRM centralita prefijo 400 |
+| 3 | IDEA-22 | auditoría Ley 10/2025 servicios atención a la clientela ENAC acreditación entidades auditoras esquema norma UNE 2026 |
+| 4 | IDEA-22 | Ley 10/2025 atención a la clientela 28 diciembre 2026 prórroga plazo adaptación comercializadoras pequeñas desarrollo reglamentario medición tres minutos |
+| 5 | IDEA-20 | campaña inspección consumo 2026 reclamaciones plazo 15 días justificante clave identificativa comercios sanciones Ley 10/2025 pymes |
+| 6 | IDEA-20 | software gestión reclamaciones clientes pymes "Ley 10/2025" registro reclamaciones clave identificativa justificante app comercios precio |
+| 7 | IDEA-20 | Hoj@ hojas electrónicas quejas reclamaciones Andalucía alta empresas 20 mayo 2027 gestoría servicio asociación hosteleros comercio |
+| 8 | IDEA-23 | AEPD resolución procedimiento sancionador videovigilancia bar comercio cámara vía pública multa 2025 euros apercibimiento reducción pago voluntario |
+| 9 | IDEA-23 | kit adaptación RGPD videovigilancia comercio precio euros cartel zona videovigilada registro actividades cámaras empresa instaladores servicio |
+| 10 | IDEA-24 | denuncia por internet hurto comercio Policía Nacional adjuntar vídeo cámaras ratificar comisaría Mossos denúncia hurt establiment comerciants multirreincidència 2026 |
+| 11 | IDEA-24 | plataforma app comercios registrar hurtos incidentes compartir policía "Comercio Seguro" AlertCops Auror retail crime España asociación comerciantes 2026 |
+| 12 | IDEA-24 | ayuntamiento ejercerá acción penal hurtos multirreincidencia personarse juicios comercios Barcelona Madrid 2026 artículo 105.3 LECrim |
+| 13 | IDEA-37 | app APPCC digital restaurante precio al mes registros temperatura limpieza trazabilidad alérgenos software autocontrol hostelería España |
+| 14 | IDEA-37 | inspecciones sanitarias establecimientos restauración 2025 memoria control oficial registros APPCC sanciones alérgenos Comunidad de Madrid Cataluña Andalucía número inspecciones registros digitales |
+| 15 | IDEA-38 (cross-cutting) | botón de desistimiento España transposición Directiva 2023/2673 función de desistimiento contratos online 19 junio 2026 ley consumidores |
+| 16 | IDEA-39 | mejor programa gestión peluquería citas online gratis 2026 comparativa precios Fresha Booksy Treatwell Koibox Salonized Reservio Timify España |
+| 17 | IDEA-39 | cobrar señal o penalización por no presentarse a la cita peluquería centro estética legal consumidores cláusula abusiva desistimiento reserva online España |
+| 18 | IDEA-14 | extorsión reseñas falsas restaurantes España cuántos negocios afectados encuesta datos 2026 Hostelería ataques reseñas negativas Google denuncias policía |
+| 19 | IDEA-14 | software gestión reseñas Google restaurantes precio mes alertas reseñas negativas España Partoo Birdeye Trustindex Localo OnbrandinG reputación online pymes |
+| 20 | IDEA-21 (S\*) | prefijo 400 desde 17 octubre bloqueo llamadas comerciales primeros días problemas empresas pymes autónomos comercializadoras números 400 operadores retrasos |
+| 21 | IDEA-39 | número de peluquerías y centros de estética en España 2025 2026 empresas CNAE 9602 Stanpa censo sector peluquería datos afiliados |
+| 22 | IDEA-14 | Google Business Profile review extortion report form 2025 2026 unusual activity reviews temporarily paused review bombing protection Europe merchants |
+
+**Main pages fetched directly (not counted).** No general search engine was queried through WebFetch or curl. Official files were downloaded from their own sites and parsed locally.
+- **BOE:**
+  - Ley 10/2025, ELI and consolidated text (BOE-A-2025-26698);
+  - Resolución 14 Apr 2026 on the 400 range (BOE-A-2026-8409);
+  - LO 1/2026, consolidated (BOE-A-2026-7966);
+  - Ley 1/2025, consolidated (BOE-A-2025-6597);
+  - TRLGDCU, consolidated (BOE-A-2007-20555; arts. 85, 103, 107, 108);
+  - LOPDGDD, consolidated (BOE-A-2018-16673; art. 22);
+  - Andalusian Ley 13/2003, consolidated.
+- **Regional and official:**
+  - BOJA núm. 82/2026 summary and Orden de 24 de abril de 2026 (juntadeandalucia.es/boja/2026/82/1);
+  - Comunidad de Madrid consumer page on Ley 10/2025;
+  - Madrid city's "Evaluación Campaña de Control General de Establecimientos 2025" (PDF);
+  - Consumo Responde (Junta) restaurant-campaign news;
+  - La Moncloa note of 16 Apr 2026;
+  - Justice Ministry balance of the Barcelona repeat-offender plan (24 Apr 2026);
+  - AlertCops;
+  - ENAC home page.
+- **AEPD:** video-surveillance area page, Facilita RGPD page, video-surveillance guide (Feb 2025, PDF), PS-00561-2023 and PA-00024-2024 resolutions (PDF).
+- **Statistics and registers:** INE DIRCE result pages and table 39372 (CSV); CNMC electricity-retailer census (sede.cnmc.gob.es/listado/censo/2); Lista Robinson for companies.
+- **Law-firm and analyst documents:** KPMG legal alert on Ley 10/2025 (PDF); BDO "La AEPD en 2025" (PDF); Lawwwing on AEPD 2025 and on Hoj@; NacióDigital on Catalan language complaints; Chekin on Hoj@; Economist & Jurist on the in-store complaint protocol.
+- **Telephony and CRM vendors:** Aircall (two pages), Clientify, Moncloa.com (17 Oct 2026).
+- **Review platforms and tools:**
+  - Google Business Profile API docs (review data, limits) and the extortion-report help page;
+  - Tripadvisor Content API and Terra docs;
+  - theStacc review-tool comparison;
+  - Gastroranking.
+- **Returns:**
+  - Sendcloud, Outvio, Rever, Shopify help (EU withdrawal);
+  - Shopify App Store listings for AfterShip Returns, Return Prime and ReturnGO;
+  - Loop pricing;
+  - ShippyPro vs Outvio.
+- **Salons:** Treatwell partners pricing, Booksy price blog, Pabau on Booksy, Fresha pricing, Setmore pricing, Reservio pricing, Meta WhatsApp pricing.
+- **Hospitality POS and APPCC:** Qamarero pricing and its APPCC page, Last.app pricing, Andy (andyapp.io), Mitti/SafetyCulture pricing, Alicante Plaza on Conhostur–AINIA.
+- **Shop theft:** The Objective (Barómetro del Hurto), Última Hora (AECOC), Auror.
+- **Fetches that failed** (403, 404 or 500): agendapro.com and bewe.ai pricing pages, koibox.es pricing, dbk.es study summary, Diario Constitucional (restaurant CCTV case), bandaancha.eu, Tripadvisor developers page, consumoresponde.es Hoj@ article (503), reviewlutions.com (wrong site), reviux.com (domain for sale).
+
+**Checks left open because of budget or access**
+- IDEA-14: frequency of review attacks (no data exists publicly); Tripadvisor partner terms.
+- IDEA-20: sanction ranges in the Madrid, Valencian and Catalan consumer laws (only Andalusia's was read); OMIC complaint volumes.
+- IDEA-21: DGSFP register count of insurance agents and brokers (DIRCE proxy used); consent-gating features at Ringover and Zadarma.
+- IDEA-22: auditor method and price (no ENAC scheme yet); bus and postal operator counts; verification that cloud PBXs report the 3-minute service level.
+- IDEA-23: number of businesses running CCTV.
+- IDEA-24: Mossos and Ertzaintza online routes; the shop-size breakdown of the Barómetro del Hurto.
+- IDEA-37: health-inspection frequency; APPCC consultancy prices.
+- IDEA-38: number of Spanish online fashion SMEs; handling cost per return.
+- IDEA-39: salon count at class level (C-21 remains a definitional range); Spanish no-show data; the legal status of deposits under the withdrawal right.
